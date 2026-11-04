@@ -1,0 +1,2464 @@
+{
+ "generated_from": "brightspace.pertamina.com (scrape 2026-11-03)",
+ "rules": {
+  "price_min": 200000,
+  "price_max": 2000000000,
+  "luas_max": 5000,
+  "segments": [
+   "LPG & Bright Gas",
+   "Pelumas & Oli",
+   "Perbankan & ATM",
+   "Energi Baru (EV/PLTS)",
+   "Logistik & Ekspedisi",
+   "Nitrogen & Perawatan",
+   "Pameran & Promosi",
+   "Minimarket & Ritel",
+   "F&B / Kuliner",
+   "Kesehatan & Jasa"
+  ]
+ },
+ "overview": {
+  "spbu": 6627,
+  "spbu_dengan_lahan": 5464,
+  "spbu_dengan_lahan_kosong": 2739,
+  "lahan": 31861,
+  "lahan_tersewa": 26287,
+  "lahan_tersedia": 5574,
+  "okupansi_pct": 82.5,
+  "kota": 456,
+  "provinsi": 36,
+  "harga_tahunan_median": 15000000.0,
+  "harga_per_m2_median": 2000000.0,
+  "lahan_dengan_harga": 20730,
+  "lahan_tanpa_harga_valid": 11131,
+  "pendapatan_idle_diketahui": 106336314752.0,
+  "pendapatan_idle_estimasi": 134551314752.0,
+  "lahan_tersedia_tanpa_harga": 1881,
+  "area_sekitar_titik": 2722,
+  "spbu_dengan_area_sekitar": 1196,
+  "koordinat_diperbaiki": 307,
+  "koordinat_tersedia": 6205
+ },
+ "by_province": [
+  {
+   "provinsi": "Jawa Tengah",
+   "spbu": 892,
+   "lahan": 6304,
+   "tersewa": 5327,
+   "tersedia": 977,
+   "okupansi_pct": 84.5,
+   "pendapatan_idle": 13348324051.0,
+   "harga_median": 11000000.0,
+   "harga_m2_median": 1562500.0,
+   "tersedia_besar": 78,
+   "tersedia_luar": 127
+  },
+  {
+   "provinsi": "Jawa Barat",
+   "spbu": 1010,
+   "lahan": 6118,
+   "tersewa": 5123,
+   "tersedia": 995,
+   "okupansi_pct": 83.7,
+   "pendapatan_idle": 22433987800.0,
+   "harga_median": 16000000.0,
+   "harga_m2_median": 2200000.0,
+   "tersedia_besar": 79,
+   "tersedia_luar": 210
+  },
+  {
+   "provinsi": "Jawa Timur",
+   "spbu": 995,
+   "lahan": 5340,
+   "tersewa": 4625,
+   "tersedia": 715,
+   "okupansi_pct": 86.6,
+   "pendapatan_idle": 8659442943.0,
+   "harga_median": 10000000.0,
+   "harga_m2_median": 1527778,
+   "tersedia_besar": 36,
+   "tersedia_luar": 152
+  },
+  {
+   "provinsi": "DKI Jakarta",
+   "spbu": 280,
+   "lahan": 2460,
+   "tersewa": 2024,
+   "tersedia": 436,
+   "okupansi_pct": 82.3,
+   "pendapatan_idle": 15201581301.0,
+   "harga_median": 28000000.0,
+   "harga_m2_median": 4250000.0,
+   "tersedia_besar": 17,
+   "tersedia_luar": 155
+  },
+  {
+   "provinsi": "Banten",
+   "spbu": 286,
+   "lahan": 1587,
+   "tersewa": 1309,
+   "tersedia": 278,
+   "okupansi_pct": 82.5,
+   "pendapatan_idle": 10037287128.0,
+   "harga_median": 23000000.0,
+   "harga_m2_median": 3333333.0,
+   "tersedia_besar": 20,
+   "tersedia_luar": 84
+  },
+  {
+   "provinsi": "Sumatera Utara",
+   "spbu": 315,
+   "lahan": 1242,
+   "tersewa": 923,
+   "tersedia": 319,
+   "okupansi_pct": 74.3,
+   "pendapatan_idle": 4448424777.0,
+   "harga_median": 16000000.0,
+   "harga_m2_median": 2000000.0,
+   "tersedia_besar": 51,
+   "tersedia_luar": 70
+  },
+  {
+   "provinsi": "DI Yogyakarta",
+   "spbu": 139,
+   "lahan": 948,
+   "tersewa": 742,
+   "tersedia": 206,
+   "okupansi_pct": 78.3,
+   "pendapatan_idle": 3858546135.0,
+   "harga_median": 13275000.0,
+   "harga_m2_median": 1833333.0,
+   "tersedia_besar": 21,
+   "tersedia_luar": 49
+  },
+  {
+   "provinsi": "Riau",
+   "spbu": 176,
+   "lahan": 695,
+   "tersewa": 541,
+   "tersedia": 154,
+   "okupansi_pct": 77.8,
+   "pendapatan_idle": 1906735000.0,
+   "harga_median": 15000000.0,
+   "harga_m2_median": 1393382.5,
+   "tersedia_besar": 18,
+   "tersedia_luar": 16
+  },
+  {
+   "provinsi": "Sumatera Selatan",
+   "spbu": 148,
+   "lahan": 694,
+   "tersewa": 552,
+   "tersedia": 142,
+   "okupansi_pct": 79.5,
+   "pendapatan_idle": 2961544436.0,
+   "harga_median": 19400000.0,
+   "harga_m2_median": 1250000,
+   "tersedia_besar": 31,
+   "tersedia_luar": 13
+  },
+  {
+   "provinsi": "Lampung",
+   "spbu": 147,
+   "lahan": 636,
+   "tersewa": 500,
+   "tersedia": 136,
+   "okupansi_pct": 78.6,
+   "pendapatan_idle": 768000000.0,
+   "harga_median": 10000000.0,
+   "harga_m2_median": 1225000.0,
+   "tersedia_besar": 9,
+   "tersedia_luar": 19
+  },
+  {
+   "provinsi": "Sulawesi Selatan",
+   "spbu": 221,
+   "lahan": 622,
+   "tersewa": 520,
+   "tersedia": 102,
+   "okupansi_pct": 83.6,
+   "pendapatan_idle": 1867535025.0,
+   "harga_median": 15000000.0,
+   "harga_m2_median": 1568780.5,
+   "tersedia_besar": 12,
+   "tersedia_luar": 15
+  },
+  {
+   "provinsi": "Kepulauan Riau",
+   "spbu": 50,
+   "lahan": 613,
+   "tersewa": 484,
+   "tersedia": 129,
+   "okupansi_pct": 79.0,
+   "pendapatan_idle": 3602053942.0,
+   "harga_median": 22800000.0,
+   "harga_m2_median": 2583333,
+   "tersedia_besar": 19,
+   "tersedia_luar": 24
+  },
+  {
+   "provinsi": "Bali",
+   "spbu": 173,
+   "lahan": 573,
+   "tersewa": 477,
+   "tersedia": 96,
+   "okupansi_pct": 83.2,
+   "pendapatan_idle": 941163888.0,
+   "harga_median": 15000000.0,
+   "harga_m2_median": 2708333.5,
+   "tersedia_besar": 4,
+   "tersedia_luar": 12
+  },
+  {
+   "provinsi": "Jambi",
+   "spbu": 103,
+   "lahan": 456,
+   "tersewa": 337,
+   "tersedia": 119,
+   "okupansi_pct": 73.9,
+   "pendapatan_idle": 3450600000.0,
+   "harga_median": 10000000.0,
+   "harga_m2_median": 1000000.0,
+   "tersedia_besar": 17,
+   "tersedia_luar": 25
+  },
+  {
+   "provinsi": "Aceh",
+   "spbu": 125,
+   "lahan": 452,
+   "tersewa": 349,
+   "tersedia": 103,
+   "okupansi_pct": 77.2,
+   "pendapatan_idle": 1507615001.0,
+   "harga_median": 22500000.0,
+   "harga_m2_median": 2777778,
+   "tersedia_besar": 10,
+   "tersedia_luar": 7
+  },
+  {
+   "provinsi": "Sumatera Barat",
+   "spbu": 122,
+   "lahan": 452,
+   "tersewa": 376,
+   "tersedia": 76,
+   "okupansi_pct": 83.2,
+   "pendapatan_idle": 968766666.0,
+   "harga_median": 15000000.0,
+   "harga_m2_median": 1591666.5,
+   "tersedia_besar": 9,
+   "tersedia_luar": 3
+  },
+  {
+   "provinsi": "Kalimantan Selatan",
+   "spbu": 141,
+   "lahan": 330,
+   "tersewa": 247,
+   "tersedia": 83,
+   "okupansi_pct": 74.8,
+   "pendapatan_idle": 911566666.0,
+   "harga_median": 18000000.0,
+   "harga_m2_median": 2250000.0,
+   "tersedia_besar": 2,
+   "tersedia_luar": 13
+  },
+  {
+   "provinsi": "Kalimantan Timur",
+   "spbu": 99,
+   "lahan": 316,
+   "tersewa": 241,
+   "tersedia": 75,
+   "okupansi_pct": 76.3,
+   "pendapatan_idle": 1228015778.0,
+   "harga_median": 20000000.0,
+   "harga_m2_median": 1356666.5,
+   "tersedia_besar": 9,
+   "tersedia_luar": 13
+  },
+  {
+   "provinsi": "Kep. Bangka Belitung",
+   "spbu": 58,
+   "lahan": 311,
+   "tersewa": 252,
+   "tersedia": 59,
+   "okupansi_pct": 81.0,
+   "pendapatan_idle": 536700000.0,
+   "harga_median": 15000000.0,
+   "harga_m2_median": 937500.0,
+   "tersedia_besar": 7,
+   "tersedia_luar": 4
+  },
+  {
+   "provinsi": "Kalimantan Barat",
+   "spbu": 151,
+   "lahan": 309,
+   "tersewa": 202,
+   "tersedia": 107,
+   "okupansi_pct": 65.4,
+   "pendapatan_idle": 3294100000.0,
+   "harga_median": 12000000.0,
+   "harga_m2_median": 976190.5,
+   "tersedia_besar": 16,
+   "tersedia_luar": 21
+  },
+  {
+   "provinsi": "Nusa Tenggara Barat",
+   "spbu": 86,
+   "lahan": 305,
+   "tersewa": 286,
+   "tersedia": 19,
+   "okupansi_pct": 93.8,
+   "pendapatan_idle": 368500000.0,
+   "harga_median": 13125000.0,
+   "harga_m2_median": 2541666.5,
+   "tersedia_besar": 1,
+   "tersedia_luar": 5
+  },
+  {
+   "provinsi": "Bengkulu",
+   "spbu": 47,
+   "lahan": 211,
+   "tersewa": 158,
+   "tersedia": 53,
+   "okupansi_pct": 74.9,
+   "pendapatan_idle": 1043098882.0,
+   "harga_median": 13000000.0,
+   "harga_m2_median": 1900901.0,
+   "tersedia_besar": 4,
+   "tersedia_luar": 7
+  },
+  {
+   "provinsi": "Kalimantan Tengah",
+   "spbu": 77,
+   "lahan": 193,
+   "tersewa": 117,
+   "tersedia": 76,
+   "okupansi_pct": 60.6,
+   "pendapatan_idle": 754255333.0,
+   "harga_median": 8400000.0,
+   "harga_m2_median": 1000000.0,
+   "tersedia_besar": 9,
+   "tersedia_luar": 15
+  },
+  {
+   "provinsi": "Sulawesi Tenggara",
+   "spbu": 58,
+   "lahan": 121,
+   "tersewa": 100,
+   "tersedia": 21,
+   "okupansi_pct": 82.6,
+   "pendapatan_idle": 333000000.0,
+   "harga_median": 14000000.0,
+   "harga_m2_median": 1083333.5,
+   "tersedia_besar": 1,
+   "tersedia_luar": 5
+  },
+  {
+   "provinsi": "Nusa Tenggara Timur",
+   "spbu": 70,
+   "lahan": 101,
+   "tersewa": 83,
+   "tersedia": 18,
+   "okupansi_pct": 82.2,
+   "pendapatan_idle": 225920000.0,
+   "harga_median": 5000000.0,
+   "harga_m2_median": 408333.5,
+   "tersedia_besar": 1,
+   "tersedia_luar": 6
+  },
+  {
+   "provinsi": "Sulawesi Utara",
+   "spbu": 76,
+   "lahan": 87,
+   "tersewa": 79,
+   "tersedia": 8,
+   "okupansi_pct": 90.8,
+   "pendapatan_idle": 284000000.0,
+   "harga_median": 16666666.0,
+   "harga_m2_median": 1074555.0,
+   "tersedia_besar": 2,
+   "tersedia_luar": 0
+  },
+  {
+   "provinsi": "Maluku",
+   "spbu": 22,
+   "lahan": 75,
+   "tersewa": 62,
+   "tersedia": 13,
+   "okupansi_pct": 82.7,
+   "pendapatan_idle": 189800000.0,
+   "harga_median": 15000000.0,
+   "harga_m2_median": 2166666.5,
+   "tersedia_besar": 5,
+   "tersedia_luar": 1
+  },
+  {
+   "provinsi": "Papua",
+   "spbu": 23,
+   "lahan": 67,
+   "tersewa": 57,
+   "tersedia": 10,
+   "okupansi_pct": 85.1,
+   "pendapatan_idle": 67000000.0,
+   "harga_median": 6000000.0,
+   "harga_m2_median": 1000000,
+   "tersedia_besar": 1,
+   "tersedia_luar": 1
+  },
+  {
+   "provinsi": "Sulawesi Tengah",
+   "spbu": 49,
+   "lahan": 64,
+   "tersewa": 60,
+   "tersedia": 4,
+   "okupansi_pct": 93.8,
+   "pendapatan_idle": 24000000.0,
+   "harga_median": 10000000.0,
+   "harga_m2_median": 1250000,
+   "tersedia_besar": 0,
+   "tersedia_luar": 0
+  },
+  {
+   "provinsi": "Papua Barat",
+   "spbu": 15,
+   "lahan": 45,
+   "tersewa": 35,
+   "tersedia": 10,
+   "okupansi_pct": 77.8,
+   "pendapatan_idle": 66250000.0,
+   "harga_median": 5000000.0,
+   "harga_m2_median": 1000000.0,
+   "tersedia_besar": 1,
+   "tersedia_luar": 2
+  },
+  {
+   "provinsi": "Maluku Utara",
+   "spbu": 13,
+   "lahan": 43,
+   "tersewa": 35,
+   "tersedia": 8,
+   "okupansi_pct": 81.4,
+   "pendapatan_idle": 34000000.0,
+   "harga_median": 16250000.0,
+   "harga_m2_median": 1359375.0,
+   "tersedia_besar": 1,
+   "tersedia_luar": 0
+  },
+  {
+   "provinsi": "Gorontalo",
+   "spbu": 18,
+   "lahan": 35,
+   "tersewa": 29,
+   "tersedia": 6,
+   "okupansi_pct": 82.9,
+   "pendapatan_idle": 80000000.0,
+   "harga_median": 20000000.0,
+   "harga_m2_median": 2291667.0,
+   "tersedia_besar": 0,
+   "tersedia_luar": 0
+  },
+  {
+   "provinsi": "Papua Tengah",
+   "spbu": 9,
+   "lahan": 23,
+   "tersewa": 23,
+   "tersedia": 0,
+   "okupansi_pct": 100.0,
+   "pendapatan_idle": 0,
+   "harga_median": 2400000.0,
+   "harga_m2_median": 120000,
+   "tersedia_besar": 0,
+   "tersedia_luar": 0
+  },
+  {
+   "provinsi": "Sulawesi Barat",
+   "spbu": 27,
+   "lahan": 22,
+   "tersewa": 4,
+   "tersedia": 18,
+   "okupansi_pct": 18.2,
+   "pendapatan_idle": 184500000.0,
+   "harga_median": 8550000.0,
+   "harga_m2_median": 1000000.0,
+   "tersedia_besar": 1,
+   "tersedia_luar": 2
+  },
+  {
+   "provinsi": "Kalimantan Utara",
+   "spbu": 9,
+   "lahan": 7,
+   "tersewa": 5,
+   "tersedia": 2,
+   "okupansi_pct": 71.4,
+   "pendapatan_idle": 750000000.0,
+   "harga_median": 30000000.0,
+   "harga_m2_median": 2307692,
+   "tersedia_besar": 0,
+   "tersedia_luar": 0
+  },
+  {
+   "provinsi": "Papua Selatan",
+   "spbu": 1,
+   "lahan": 4,
+   "tersewa": 3,
+   "tersedia": 1,
+   "okupansi_pct": 75.0,
+   "pendapatan_idle": 0,
+   "harga_median": 3300000.0,
+   "harga_m2_median": 26000.0,
+   "tersedia_besar": 0,
+   "tersedia_luar": 0
+  },
+  {
+   "provinsi": "Tidak diketahui",
+   "spbu": 396,
+   "lahan": 0,
+   "tersewa": 0,
+   "tersedia": 0,
+   "okupansi_pct": null,
+   "pendapatan_idle": 0,
+   "harga_median": null,
+   "harga_m2_median": null,
+   "tersedia_besar": 0,
+   "tersedia_luar": 0
+  }
+ ],
+ "by_kota": [
+  {
+   "kota": "Kodya Surabaya",
+   "provinsi": "Jawa Timur",
+   "spbu": 113,
+   "lahan": 890,
+   "tersedia": 152,
+   "okupansi_pct": 82.9,
+   "pendapatan_idle": 2773450651.0,
+   "harga_median": 18000000.0
+  },
+  {
+   "kota": "Kodya Jakarta Selatan",
+   "provinsi": "DKI Jakarta",
+   "spbu": 49,
+   "lahan": 777,
+   "tersedia": 142,
+   "okupansi_pct": 81.7,
+   "pendapatan_idle": 4805001992.0,
+   "harga_median": 27000000.0
+  },
+  {
+   "kota": "Kodya Medan",
+   "provinsi": "Sumatera Utara",
+   "spbu": 93,
+   "lahan": 602,
+   "tersedia": 139,
+   "okupansi_pct": 76.9,
+   "pendapatan_idle": 2599239777.0,
+   "harga_median": 20000000.0
+  },
+  {
+   "kota": "Kodya Jakarta Timur",
+   "provinsi": "DKI Jakarta",
+   "spbu": 81,
+   "lahan": 741,
+   "tersedia": 134,
+   "okupansi_pct": 81.9,
+   "pendapatan_idle": 5317490579.0,
+   "harga_median": 25000000.0
+  },
+  {
+   "kota": "Semarang Kota",
+   "provinsi": "Jawa Tengah",
+   "spbu": 83,
+   "lahan": 787,
+   "tersedia": 123,
+   "okupansi_pct": 84.4,
+   "pendapatan_idle": 3376836102.0,
+   "harga_median": 14500000.0
+  },
+  {
+   "kota": "Kodya Bekasi",
+   "provinsi": "Jawa Barat",
+   "spbu": 79,
+   "lahan": 695,
+   "tersedia": 122,
+   "okupansi_pct": 82.4,
+   "pendapatan_idle": 2968340000.0,
+   "harga_median": 20000000.0
+  },
+  {
+   "kota": "Kabupaten Bogor",
+   "provinsi": "Jawa Barat",
+   "spbu": 119,
+   "lahan": 566,
+   "tersedia": 115,
+   "okupansi_pct": 79.7,
+   "pendapatan_idle": 2765753775.0,
+   "harga_median": 25000000.0
+  },
+  {
+   "kota": "Kodya Batam",
+   "provinsi": "Kepulauan Riau",
+   "spbu": 38,
+   "lahan": 552,
+   "tersedia": 111,
+   "okupansi_pct": 79.9,
+   "pendapatan_idle": 3440351442.0,
+   "harga_median": 23000000.0
+  },
+  {
+   "kota": "Kabupaten Bekasi",
+   "provinsi": "Jawa Barat",
+   "spbu": 86,
+   "lahan": 597,
+   "tersedia": 97,
+   "okupansi_pct": 83.8,
+   "pendapatan_idle": 2771480474.0,
+   "harga_median": 23000000.0
+  },
+  {
+   "kota": "Kab. Sleman",
+   "provinsi": "DI Yogyakarta",
+   "spbu": 54,
+   "lahan": 405,
+   "tersedia": 92,
+   "okupansi_pct": 77.3,
+   "pendapatan_idle": 2336014590.0,
+   "harga_median": 14000000.0
+  },
+  {
+   "kota": "Kodya Tangerang",
+   "provinsi": "Banten",
+   "spbu": 57,
+   "lahan": 456,
+   "tersedia": 90,
+   "okupansi_pct": 80.3,
+   "pendapatan_idle": 5296657135.0,
+   "harga_median": 25000000.0
+  },
+  {
+   "kota": "Kodya Bandung",
+   "provinsi": "Jawa Barat",
+   "spbu": 86,
+   "lahan": 609,
+   "tersedia": 80,
+   "okupansi_pct": 86.9,
+   "pendapatan_idle": 1831207804.0,
+   "harga_median": 15000000.0
+  },
+  {
+   "kota": "Kabupaten Cirebon",
+   "provinsi": "Jawa Barat",
+   "spbu": 55,
+   "lahan": 347,
+   "tersedia": 71,
+   "okupansi_pct": 79.5,
+   "pendapatan_idle": 773006241.0,
+   "harga_median": 12000000.0
+  },
+  {
+   "kota": "Kab. Blitar",
+   "provinsi": "Jawa Timur",
+   "spbu": 40,
+   "lahan": 310,
+   "tersedia": 63,
+   "okupansi_pct": 79.7,
+   "pendapatan_idle": 365900000.0,
+   "harga_median": 5000000.0
+  },
+  {
+   "kota": "Kabupaten Cianjur",
+   "provinsi": "Jawa Barat",
+   "spbu": 36,
+   "lahan": 256,
+   "tersedia": 60,
+   "okupansi_pct": 76.6,
+   "pendapatan_idle": 278856000.0,
+   "harga_median": 10000000.0
+  },
+  {
+   "kota": "Kab. Sidoarjo",
+   "provinsi": "Jawa Timur",
+   "spbu": 62,
+   "lahan": 447,
+   "tersedia": 58,
+   "okupansi_pct": 87.0,
+   "pendapatan_idle": 1018181631.0,
+   "harga_median": 15000000.0
+  },
+  {
+   "kota": "Kabupaten Tangerang",
+   "provinsi": "Banten",
+   "spbu": 77,
+   "lahan": 336,
+   "tersedia": 57,
+   "okupansi_pct": 83.0,
+   "pendapatan_idle": 2267235553.0,
+   "harga_median": 22111111.0
+  },
+  {
+   "kota": "KotaTangerangSelatan",
+   "provinsi": "Banten",
+   "spbu": 50,
+   "lahan": 402,
+   "tersedia": 56,
+   "okupansi_pct": 86.1,
+   "pendapatan_idle": 1499549997.0,
+   "harga_median": 26400000.0
+  },
+  {
+   "kota": "Kab. Bantul",
+   "provinsi": "DI Yogyakarta",
+   "spbu": 30,
+   "lahan": 230,
+   "tersedia": 55,
+   "okupansi_pct": 76.1,
+   "pendapatan_idle": 746067000.0,
+   "harga_median": 15000000.0
+  },
+  {
+   "kota": "Kodya Jakarta Barat",
+   "provinsi": "DKI Jakarta",
+   "spbu": 51,
+   "lahan": 368,
+   "tersedia": 55,
+   "okupansi_pct": 85.1,
+   "pendapatan_idle": 1190193333.0,
+   "harga_median": 25000000.0
+  },
+  {
+   "kota": "Kodya Jakarta Pusat",
+   "provinsi": "DKI Jakarta",
+   "spbu": 41,
+   "lahan": 295,
+   "tersedia": 50,
+   "okupansi_pct": 83.1,
+   "pendapatan_idle": 1873015398.0,
+   "harga_median": 30000000.0
+  },
+  {
+   "kota": "Kodya Pekan Baru",
+   "provinsi": "Riau",
+   "spbu": 54,
+   "lahan": 286,
+   "tersedia": 49,
+   "okupansi_pct": 82.9,
+   "pendapatan_idle": 764935000.0,
+   "harga_median": 16650000.0
+  },
+  {
+   "kota": "Kabupaten Subang",
+   "provinsi": "Jawa Barat",
+   "spbu": 41,
+   "lahan": 211,
+   "tersedia": 46,
+   "okupansi_pct": 78.2,
+   "pendapatan_idle": 2809288442.0,
+   "harga_median": 15000000.0
+  },
+  {
+   "kota": "Kab. Kendal",
+   "provinsi": "Jawa Tengah",
+   "spbu": 30,
+   "lahan": 201,
+   "tersedia": 45,
+   "okupansi_pct": 77.6,
+   "pendapatan_idle": 646754000.0,
+   "harga_median": 10500000.0
+  },
+  {
+   "kota": "Kodya Makassar",
+   "provinsi": "Sulawesi Selatan",
+   "spbu": 45,
+   "lahan": 254,
+   "tersedia": 44,
+   "okupansi_pct": 82.7,
+   "pendapatan_idle": 1371174665.0,
+   "harga_median": 23100000.0
+  },
+  {
+   "kota": "Kab. Cilacap",
+   "provinsi": "Jawa Tengah",
+   "spbu": 36,
+   "lahan": 301,
+   "tersedia": 43,
+   "okupansi_pct": 85.7,
+   "pendapatan_idle": 393832732.0,
+   "harga_median": 10000000.0
+  },
+  {
+   "kota": "Kab. Kudus",
+   "provinsi": "Jawa Tengah",
+   "spbu": 25,
+   "lahan": 227,
+   "tersedia": 43,
+   "okupansi_pct": 81.1,
+   "pendapatan_idle": 451311111.0,
+   "harga_median": 10000000.0
+  },
+  {
+   "kota": "Kabupaten Karawang",
+   "provinsi": "Tidak diketahui",
+   "spbu": 65,
+   "lahan": 280,
+   "tersedia": 42,
+   "okupansi_pct": 85.0,
+   "pendapatan_idle": 2409184674.0,
+   "harga_median": 20000000.0
+  },
+  {
+   "kota": "Kab. Klaten",
+   "provinsi": "Jawa Tengah",
+   "spbu": 34,
+   "lahan": 267,
+   "tersedia": 42,
+   "okupansi_pct": 84.3,
+   "pendapatan_idle": 341234998.0,
+   "harga_median": 10000000.0
+  },
+  {
+   "kota": "Kodya Bogor",
+   "provinsi": "Jawa Barat",
+   "spbu": 29,
+   "lahan": 186,
+   "tersedia": 41,
+   "okupansi_pct": 78.0,
+   "pendapatan_idle": 864220389.0,
+   "harga_median": 26450000.0
+  },
+  {
+   "kota": "Kab. Semarang",
+   "provinsi": "Jawa Tengah",
+   "spbu": 41,
+   "lahan": 345,
+   "tersedia": 41,
+   "okupansi_pct": 88.1,
+   "pendapatan_idle": 897500000.0,
+   "harga_median": 12000000.0
+  },
+  {
+   "kota": "Kab. Sukoharjo",
+   "provinsi": "Jawa Tengah",
+   "spbu": 31,
+   "lahan": 263,
+   "tersedia": 41,
+   "okupansi_pct": 84.4,
+   "pendapatan_idle": 757483333.0,
+   "harga_median": 13700000.0
+  },
+  {
+   "kota": "Kab. Brebes",
+   "provinsi": "Jawa Tengah",
+   "spbu": 38,
+   "lahan": 280,
+   "tersedia": 40,
+   "okupansi_pct": 85.7,
+   "pendapatan_idle": 542272000.0,
+   "harga_median": 11500000.0
+  },
+  {
+   "kota": "Kab. Pati",
+   "provinsi": "Jawa Tengah",
+   "spbu": 41,
+   "lahan": 171,
+   "tersedia": 40,
+   "okupansi_pct": 76.6,
+   "pendapatan_idle": 332500000.0,
+   "harga_median": 10000000.0
+  },
+  {
+   "kota": "Kab. Banyumas",
+   "provinsi": "Jawa Tengah",
+   "spbu": 36,
+   "lahan": 362,
+   "tersedia": 38,
+   "okupansi_pct": 89.5,
+   "pendapatan_idle": 561199999.0,
+   "harga_median": 11000000.0
+  },
+  {
+   "kota": "Kab. Jember",
+   "provinsi": "Jawa Timur",
+   "spbu": 40,
+   "lahan": 210,
+   "tersedia": 38,
+   "okupansi_pct": 81.9,
+   "pendapatan_idle": 489494444.0,
+   "harga_median": 12000000.0
+  },
+  {
+   "kota": "KODYA JAMBI",
+   "provinsi": "Jambi",
+   "spbu": 27,
+   "lahan": 142,
+   "tersedia": 38,
+   "okupansi_pct": 73.2,
+   "pendapatan_idle": 2208700000.0,
+   "harga_median": 12000000.0
+  },
+  {
+   "kota": "Kod. Surakarta",
+   "provinsi": "Jawa Tengah",
+   "spbu": 22,
+   "lahan": 200,
+   "tersedia": 37,
+   "okupansi_pct": 81.5,
+   "pendapatan_idle": 392111111.0,
+   "harga_median": 15000000.0
+  },
+  {
+   "kota": "Kodya Jakarta Utara",
+   "provinsi": "DKI Jakarta",
+   "spbu": 43,
+   "lahan": 242,
+   "tersedia": 36,
+   "okupansi_pct": 85.1,
+   "pendapatan_idle": 1047479999.0,
+   "harga_median": 30000000.0
+  },
+  {
+   "kota": "Kab. Badung",
+   "provinsi": "Tidak diketahui",
+   "spbu": 32,
+   "lahan": 143,
+   "tersedia": 35,
+   "okupansi_pct": 75.5,
+   "pendapatan_idle": 243888888.0,
+   "harga_median": 18000000.0
+  }
+ ],
+ "by_segment": [
+  {
+   "segmen": "LPG & Bright Gas",
+   "lahan": 6164,
+   "share_pct": 19.3,
+   "share_tersewa_pct": 23.4,
+   "harga_median": 5000000.0,
+   "harga_q": {
+    "0.1": 1000000.0,
+    "0.25": 2000000.0,
+    "0.5": 5000000.0,
+    "0.75": 10000000.0,
+    "0.9": 20000000.0
+   },
+   "luas_median": 6.0,
+   "harga_m2_median": 607143,
+   "luar_pct": 19.9,
+   "daya_median": 1800.0,
+   "pendapatan_tahunan_diketahui": 12951272164.0
+  },
+  {
+   "segmen": "Kosong (Tersedia)",
+   "lahan": 5574,
+   "share_pct": 17.5,
+   "share_tersewa_pct": null,
+   "harga_median": 15000000.0,
+   "harga_q": {
+    "0.1": 4000000.0,
+    "0.25": 8500000.0,
+    "0.5": 15000000.0,
+    "0.75": 29000000.0,
+    "0.9": 50000000.0
+   },
+   "luas_median": 8.0,
+   "harga_m2_median": 1666667.0,
+   "luar_pct": 19.3,
+   "daya_median": 2200.0,
+   "pendapatan_tahunan_diketahui": 106336314752.0
+  },
+  {
+   "segmen": "Perbankan & ATM",
+   "lahan": 5374,
+   "share_pct": 16.9,
+   "share_tersewa_pct": 20.4,
+   "harga_median": 20000000.0,
+   "harga_q": {
+    "0.1": 9000000.0,
+    "0.25": 12000000.0,
+    "0.5": 20000000.0,
+    "0.75": 28500000.0,
+    "0.9": 36750000.0
+   },
+   "luas_median": 4.0,
+   "harga_m2_median": 3832176,
+   "luar_pct": 2.7,
+   "daya_median": 2200.0,
+   "pendapatan_tahunan_diketahui": 118967600305.0
+  },
+  {
+   "segmen": "Pelumas & Oli",
+   "lahan": 5248,
+   "share_pct": 16.5,
+   "share_tersewa_pct": 20.0,
+   "harga_median": 12000000.0,
+   "harga_q": {
+    "0.1": 4000000.0,
+    "0.25": 7000000.0,
+    "0.5": 12000000.0,
+    "0.75": 18333333.0,
+    "0.9": 31000000.0
+   },
+   "luas_median": 5.0,
+   "harga_m2_median": 2333333.0,
+   "luar_pct": 25.8,
+   "daya_median": 1300.0,
+   "pendapatan_tahunan_diketahui": 58517480105.0
+  },
+  {
+   "segmen": "F&B / Kuliner",
+   "lahan": 2281,
+   "share_pct": 7.2,
+   "share_tersewa_pct": 8.7,
+   "harga_median": 12000000.0,
+   "harga_q": {
+    "0.1": 2400000.0,
+    "0.25": 6000000.0,
+    "0.5": 12000000.0,
+    "0.75": 24192000.0,
+    "0.9": 54000000.0
+   },
+   "luas_median": 9.0,
+   "harga_m2_median": 1500000,
+   "luar_pct": 28.4,
+   "daya_median": 1300.0,
+   "pendapatan_tahunan_diketahui": 48358212282.0
+  },
+  {
+   "segmen": "Minimarket & Ritel",
+   "lahan": 1990,
+   "share_pct": 6.2,
+   "share_tersewa_pct": 7.6,
+   "harga_median": 30000000.0,
+   "harga_q": {
+    "0.1": 5000000.0,
+    "0.25": 10000000.0,
+    "0.5": 30000000.0,
+    "0.75": 60000000.0,
+    "0.9": 150000000.0
+   },
+   "luas_median": 80.0,
+   "harga_m2_median": 399680.5,
+   "luar_pct": 3.2,
+   "daya_median": 7040.0,
+   "pendapatan_tahunan_diketahui": 97006721541.0
+  },
+  {
+   "segmen": "Tidak terklasifikasi",
+   "lahan": 1428,
+   "share_pct": 4.5,
+   "share_tersewa_pct": 5.4,
+   "harga_median": 12000000.0,
+   "harga_q": {
+    "0.1": 3000000.0,
+    "0.25": 6000000.0,
+    "0.5": 12000000.0,
+    "0.75": 24000000.0,
+    "0.9": 40500000.0
+   },
+   "luas_median": 9.0,
+   "harga_m2_median": 1000000,
+   "luar_pct": 20.7,
+   "daya_median": 2200.0,
+   "pendapatan_tahunan_diketahui": 18392569132.0
+  },
+  {
+   "segmen": "Nitrogen & Perawatan",
+   "lahan": 1305,
+   "share_pct": 4.1,
+   "share_tersewa_pct": 5.0,
+   "harga_median": 10000000.0,
+   "harga_q": {
+    "0.1": 5000000.0,
+    "0.25": 5000000.0,
+    "0.5": 10000000.0,
+    "0.75": 20000000.0,
+    "0.9": 35000000.0
+   },
+   "luas_median": 5.0,
+   "harga_m2_median": 2000000.0,
+   "luar_pct": 36.2,
+   "daya_median": 1300.0,
+   "pendapatan_tahunan_diketahui": 18414023666.0
+  },
+  {
+   "segmen": "Lainnya",
+   "lahan": 1231,
+   "share_pct": 3.9,
+   "share_tersewa_pct": 4.7,
+   "harga_median": 12000000.0,
+   "harga_q": {
+    "0.1": 3000000.0,
+    "0.25": 5000000.0,
+    "0.5": 12000000.0,
+    "0.75": 25000000.0,
+    "0.9": 50801000.0
+   },
+   "luas_median": 12.5,
+   "harga_m2_median": 928571.0,
+   "luar_pct": 23.1,
+   "daya_median": 2000.0,
+   "pendapatan_tahunan_diketahui": 28645568305.0
+  },
+  {
+   "segmen": "Pameran & Promosi",
+   "lahan": 583,
+   "share_pct": 1.8,
+   "share_tersewa_pct": 2.2,
+   "harga_median": 15000000.0,
+   "harga_q": {
+    "0.1": 6000000.0,
+    "0.25": 12000000.0,
+    "0.5": 15000000.0,
+    "0.75": 24000000.0,
+    "0.9": 42000000.0
+   },
+   "luas_median": 6.0,
+   "harga_m2_median": 3000000,
+   "luar_pct": 72.9,
+   "daya_median": 1300.0,
+   "pendapatan_tahunan_diketahui": 12176628715.0
+  },
+  {
+   "segmen": "Energi Baru (EV/PLTS)",
+   "lahan": 536,
+   "share_pct": 1.7,
+   "share_tersewa_pct": 2.0,
+   "harga_median": 19200000.0,
+   "harga_q": {
+    "0.1": 5700000.0,
+    "0.25": 9600000.0,
+    "0.5": 19200000.0,
+    "0.75": 57500000.0,
+    "0.9": 80000000.0
+   },
+   "luas_median": 16.0,
+   "harga_m2_median": 2133333,
+   "luar_pct": 33.4,
+   "daya_median": 4000.0,
+   "pendapatan_tahunan_diketahui": 7149409845.0
+  },
+  {
+   "segmen": "Logistik & Ekspedisi",
+   "lahan": 94,
+   "share_pct": 0.3,
+   "share_tersewa_pct": 0.4,
+   "harga_median": 13400000.0,
+   "harga_q": {
+    "0.1": 3000000.0,
+    "0.25": 8000000.0,
+    "0.5": 13300000.0,
+    "0.75": 30000000.0,
+    "0.9": 40000000.0
+   },
+   "luas_median": 9.0,
+   "harga_m2_median": 1500000.0,
+   "luar_pct": 27.7,
+   "daya_median": 2200.0,
+   "pendapatan_tahunan_diketahui": 1523523412.0
+  },
+  {
+   "segmen": "Kesehatan & Jasa",
+   "lahan": 53,
+   "share_pct": 0.2,
+   "share_tersewa_pct": 0.2,
+   "harga_median": 15000000.0,
+   "harga_q": {
+    "0.1": 6000000.0,
+    "0.25": 8000000.0,
+    "0.5": 15000000.0,
+    "0.75": 24000000.0,
+    "0.9": 40000000.0
+   },
+   "luas_median": 28.0,
+   "harga_m2_median": 473333.5,
+   "luar_pct": 5.7,
+   "daya_median": 1200.0,
+   "pendapatan_tahunan_diketahui": 780000000.0
+  }
+ ],
+ "segment_province": [
+  {
+   "provinsi": "Jawa Tengah",
+   "LPG & Bright Gas": 1463,
+   "Perbankan & ATM": 915,
+   "Pelumas & Oli": 1222,
+   "F&B / Kuliner": 391,
+   "Minimarket & Ritel": 536,
+   "Tidak terklasifikasi": 101,
+   "Nitrogen & Perawatan": 377,
+   "Lainnya": 215,
+   "total": 5327
+  },
+  {
+   "provinsi": "Jawa Barat",
+   "LPG & Bright Gas": 999,
+   "Perbankan & ATM": 1152,
+   "Pelumas & Oli": 958,
+   "F&B / Kuliner": 536,
+   "Minimarket & Ritel": 432,
+   "Tidak terklasifikasi": 184,
+   "Nitrogen & Perawatan": 197,
+   "Lainnya": 365,
+   "total": 5123
+  },
+  {
+   "provinsi": "Jawa Timur",
+   "LPG & Bright Gas": 1025,
+   "Perbankan & ATM": 627,
+   "Pelumas & Oli": 1207,
+   "F&B / Kuliner": 674,
+   "Minimarket & Ritel": 267,
+   "Tidak terklasifikasi": 317,
+   "Nitrogen & Perawatan": 167,
+   "Lainnya": 208,
+   "total": 4625
+  },
+  {
+   "provinsi": "DKI Jakarta",
+   "LPG & Bright Gas": 187,
+   "Perbankan & ATM": 489,
+   "Pelumas & Oli": 285,
+   "F&B / Kuliner": 190,
+   "Minimarket & Ritel": 103,
+   "Tidak terklasifikasi": 103,
+   "Nitrogen & Perawatan": 115,
+   "Lainnya": 132,
+   "total": 2024
+  },
+  {
+   "provinsi": "Banten",
+   "LPG & Bright Gas": 133,
+   "Perbankan & ATM": 388,
+   "Pelumas & Oli": 221,
+   "F&B / Kuliner": 125,
+   "Minimarket & Ritel": 89,
+   "Tidak terklasifikasi": 47,
+   "Nitrogen & Perawatan": 81,
+   "Lainnya": 82,
+   "total": 1309
+  },
+  {
+   "provinsi": "Sumatera Utara",
+   "LPG & Bright Gas": 199,
+   "Perbankan & ATM": 224,
+   "Pelumas & Oli": 160,
+   "F&B / Kuliner": 50,
+   "Minimarket & Ritel": 47,
+   "Tidak terklasifikasi": 167,
+   "Nitrogen & Perawatan": 11,
+   "Lainnya": 55,
+   "total": 923
+  },
+  {
+   "provinsi": "DI Yogyakarta",
+   "LPG & Bright Gas": 169,
+   "Perbankan & ATM": 155,
+   "Pelumas & Oli": 196,
+   "F&B / Kuliner": 41,
+   "Minimarket & Ritel": 46,
+   "Tidak terklasifikasi": 7,
+   "Nitrogen & Perawatan": 85,
+   "Lainnya": 27,
+   "total": 742
+  },
+  {
+   "provinsi": "Riau",
+   "LPG & Bright Gas": 130,
+   "Perbankan & ATM": 138,
+   "Pelumas & Oli": 83,
+   "F&B / Kuliner": 37,
+   "Minimarket & Ritel": 41,
+   "Tidak terklasifikasi": 86,
+   "Nitrogen & Perawatan": 0,
+   "Lainnya": 17,
+   "total": 541
+  },
+  {
+   "provinsi": "Sumatera Selatan",
+   "LPG & Bright Gas": 116,
+   "Perbankan & ATM": 87,
+   "Pelumas & Oli": 165,
+   "F&B / Kuliner": 30,
+   "Minimarket & Ritel": 108,
+   "Tidak terklasifikasi": 33,
+   "Nitrogen & Perawatan": 4,
+   "Lainnya": 6,
+   "total": 552
+  },
+  {
+   "provinsi": "Lampung",
+   "LPG & Bright Gas": 241,
+   "Perbankan & ATM": 39,
+   "Pelumas & Oli": 108,
+   "F&B / Kuliner": 23,
+   "Minimarket & Ritel": 20,
+   "Tidak terklasifikasi": 48,
+   "Nitrogen & Perawatan": 0,
+   "Lainnya": 7,
+   "total": 500
+  },
+  {
+   "provinsi": "Sulawesi Selatan",
+   "LPG & Bright Gas": 143,
+   "Perbankan & ATM": 168,
+   "Pelumas & Oli": 26,
+   "F&B / Kuliner": 28,
+   "Minimarket & Ritel": 45,
+   "Tidak terklasifikasi": 11,
+   "Nitrogen & Perawatan": 70,
+   "Lainnya": 21,
+   "total": 520
+  },
+  {
+   "provinsi": "Kepulauan Riau",
+   "LPG & Bright Gas": 95,
+   "Perbankan & ATM": 133,
+   "Pelumas & Oli": 32,
+   "F&B / Kuliner": 32,
+   "Minimarket & Ritel": 30,
+   "Tidak terklasifikasi": 108,
+   "Nitrogen & Perawatan": 11,
+   "Lainnya": 30,
+   "total": 484
+  }
+ ],
+ "segment_columns": [
+  "LPG & Bright Gas",
+  "Perbankan & ATM",
+  "Pelumas & Oli",
+  "F&B / Kuliner",
+  "Minimarket & Ritel",
+  "Tidak terklasifikasi",
+  "Nitrogen & Perawatan",
+  "Lainnya"
+ ],
+ "top_brands": [
+  {
+   "brand": "LPG Non PSO",
+   "lahan": 3725,
+   "segmen": "LPG & Bright Gas"
+  },
+  {
+   "brand": "Enduro Express",
+   "lahan": 2399,
+   "segmen": "Pelumas & Oli"
+  },
+  {
+   "brand": "LPG 3 Kg",
+   "lahan": 1969,
+   "segmen": "LPG & Bright Gas"
+  },
+  {
+   "brand": "Enduro Express (Lokal)",
+   "lahan": 1216,
+   "segmen": "Pelumas & Oli"
+  },
+  {
+   "brand": "Bank BNI",
+   "lahan": 1163,
+   "segmen": "Perbankan & ATM"
+  },
+  {
+   "brand": "ATM Bank Mandiri",
+   "lahan": 1060,
+   "segmen": "Perbankan & ATM"
+  },
+  {
+   "brand": "Outlet Pelumas",
+   "lahan": 997,
+   "segmen": "Pelumas & Oli"
+  },
+  {
+   "brand": "Bank CIMB NIAGA",
+   "lahan": 688,
+   "segmen": "Perbankan & ATM"
+  },
+  {
+   "brand": "Bank BCA",
+   "lahan": 626,
+   "segmen": "Perbankan & ATM"
+  },
+  {
+   "brand": "Es Teh Poci",
+   "lahan": 601,
+   "segmen": "F&B / Kuliner"
+  },
+  {
+   "brand": "Bank BSI",
+   "lahan": 451,
+   "segmen": "Perbankan & ATM"
+  },
+  {
+   "brand": "Bright By Alfamart",
+   "lahan": 421,
+   "segmen": "Minimarket & Ritel"
+  },
+  {
+   "brand": "Bank BRI",
+   "lahan": 420,
+   "segmen": "Perbankan & ATM"
+  },
+  {
+   "brand": "PLTS Ex. PPI",
+   "lahan": 345,
+   "segmen": "Energi Baru (EV/PLTS)"
+  },
+  {
+   "brand": "Pameran Motor",
+   "lahan": 292,
+   "segmen": "Pameran & Promosi"
+  },
+  {
+   "brand": "Cv Albarokah Nitrogen",
+   "lahan": 284,
+   "segmen": "Nitrogen & Perawatan"
+  },
+  {
+   "brand": "BTN",
+   "lahan": 257,
+   "segmen": "Perbankan & ATM"
+  },
+  {
+   "brand": "Indomaret",
+   "lahan": 242,
+   "segmen": "Minimarket & Ritel"
+  },
+  {
+   "brand": "Bright By Indomaret",
+   "lahan": 200,
+   "segmen": "Minimarket & Ritel"
+  },
+  {
+   "brand": "Kebab Turki Babarafi",
+   "lahan": 180,
+   "segmen": "F&B / Kuliner"
+  },
+  {
+   "brand": "Minimarket Alfamart",
+   "lahan": 173,
+   "segmen": "Minimarket & Ritel"
+  },
+  {
+   "brand": "Alfamart",
+   "lahan": 166,
+   "segmen": "Minimarket & Ritel"
+  },
+  {
+   "brand": "Outlet LPG Non PSO",
+   "lahan": 165,
+   "segmen": "LPG & Bright Gas"
+  },
+  {
+   "brand": "Kopi Kenangan",
+   "lahan": 156,
+   "segmen": "F&B / Kuliner"
+  },
+  {
+   "brand": "ATM Bank BRI",
+   "lahan": 142,
+   "segmen": "Perbankan & ATM"
+  }
+ ],
+ "vacancy": {
+  "by_luas": [
+   {
+    "bucket": "< 10 m²",
+    "lahan": 3166
+   },
+   {
+    "bucket": "10–49 m²",
+    "lahan": 1434
+   },
+   {
+    "bucket": "50–199 m²",
+    "lahan": 579
+   },
+   {
+    "bucket": "≥ 200 m²",
+    "lahan": 235
+   },
+   {
+    "bucket": "Tidak ada data",
+    "lahan": 160
+   }
+  ],
+  "by_posisi": [
+   {
+    "posisi": "Didalam Bangunan · Lantai 1",
+    "tersedia": 4375,
+    "total": 25158,
+    "okupansi_pct": 82.6
+   },
+   {
+    "posisi": "Diluar Bangunan · Lantai 0",
+    "tersedia": 1076,
+    "total": 6193,
+    "okupansi_pct": 82.6
+   },
+   {
+    "posisi": "Didalam Bangunan · Lantai 2",
+    "tersedia": 123,
+    "total": 503,
+    "okupansi_pct": 75.5
+   }
+  ],
+  "by_daya": [
+   {
+    "bucket": "Tidak ada data",
+    "lahan": 1772
+   },
+   {
+    "bucket": "< 2.200 W",
+    "lahan": 1624
+   },
+   {
+    "bucket": "2.200–5.499 W",
+    "lahan": 1083
+   },
+   {
+    "bucket": "5.500–21.999 W",
+    "lahan": 635
+   },
+   {
+    "bucket": "≥ 22.000 W",
+    "lahan": 460
+   }
+  ],
+  "spbu_by_jumlah_kosong": [
+   {
+    "jumlah": "1",
+    "spbu": 1456
+   },
+   {
+    "jumlah": "2",
+    "spbu": 647
+   },
+   {
+    "jumlah": "3",
+    "spbu": 300
+   },
+   {
+    "jumlah": "4",
+    "spbu": 131
+   },
+   {
+    "jumlah": "5+",
+    "spbu": 205
+   }
+  ],
+  "tersedia_besar_total": 492,
+  "tersedia_luar_total": 1076,
+  "tersedia_lantai2_total": 123,
+  "tersedia_kecil_total": 3166,
+  "top_by_harga": [
+   {
+    "kode_lahan": "3415138-IN-016",
+    "nomor_spbu": "3415138",
+    "kota": "Kodya Tangerang",
+    "provinsi": "Banten",
+    "luas_valid": null,
+    "harga_tahunan": 1267500000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 52800.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=LuZi2pgamWpZkLoYiGiROw&lahanId=rP8_UqRFLpw6ZCtjXbZuVg"
+   },
+   {
+    "kode_lahan": "3415138-IN-017",
+    "nomor_spbu": "3415138",
+    "kota": "Kodya Tangerang",
+    "provinsi": "Banten",
+    "luas_valid": null,
+    "harga_tahunan": 1044000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 200.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=LuZi2pgamWpZkLoYiGiROw&lahanId=QmZDDuXmB7nKX5-2K8iCMA"
+   },
+   {
+    "kode_lahan": "3341202-IN-009",
+    "nomor_spbu": "3341202",
+    "kota": "Kabupaten Subang",
+    "provinsi": "Jawa Barat",
+    "luas_valid": 160.0,
+    "harga_tahunan": 999999999.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 4800.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=bcEDzUSlagEhUPvF6xaMWw&lahanId=m4kc7N5pW9Am9_jmeqPQTA"
+   },
+   {
+    "kode_lahan": "3341201-IN-003",
+    "nomor_spbu": "3341201",
+    "kota": "Kabupaten Subang",
+    "provinsi": "Jawa Barat",
+    "luas_valid": 240.0,
+    "harga_tahunan": 999999999.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 18000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=sf4-vnW5SN24UovaDKmNcQ&lahanId=puE_6RdRllkKIXAwdkUvVQ"
+   },
+   {
+    "kode_lahan": "3441340-IN-009",
+    "nomor_spbu": "3441340",
+    "kota": "Kabupaten Karawang",
+    "provinsi": "Jawa Barat",
+    "luas_valid": 285.0,
+    "harga_tahunan": 960000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 131000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=bRQZZaK2BeRHckAJhZ3fMQ&lahanId=PSfhzLIGdbY9R_3h4S7sBg"
+   },
+   {
+    "kode_lahan": "3415606-IN-003",
+    "nomor_spbu": "3415606",
+    "kota": "Kabupaten Tangerang",
+    "provinsi": "Banten",
+    "luas_valid": 162.0,
+    "harga_tahunan": 846720000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 2100.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=sf7uoaLC5FyCiN6cJqmMig&lahanId=UKLQ6MKmhX2jtg75y5Ya3g"
+   },
+   {
+    "kode_lahan": "3413809-OU-004",
+    "nomor_spbu": "3413809",
+    "kota": "Kodya Jakarta Timur",
+    "provinsi": "DKI Jakarta",
+    "luas_valid": 99.0,
+    "harga_tahunan": 841816800.0,
+    "posisi_lahan": "Diluar Bangunan",
+    "daya_listrik_w": null,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=_-PGs1C22GjbByKBtdgxqA&lahanId=EH3JzlCNvQ_lmQKWkiroQA"
+   },
+   {
+    "kode_lahan": "5361137-IN-005",
+    "nomor_spbu": "5361137",
+    "kota": "Kab. Gresik",
+    "provinsi": "Jawa Timur",
+    "luas_valid": 240.0,
+    "harga_tahunan": 825000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 11000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=m8F9TupTQDoND3u4FDOSmg&lahanId=njHAkeLGxeeQMSAfeN7Y7g"
+   },
+   {
+    "kode_lahan": "24306177-IN-005",
+    "nomor_spbu": "24306177",
+    "kota": "OGAN ILIR",
+    "provinsi": "Sumatera Selatan",
+    "luas_valid": 86.0,
+    "harga_tahunan": 780000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 400.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=4Vdsl0aGilhA7ca3Y25HvQ&lahanId=s1o4lPuRfIipOqVXmRkzCw"
+   },
+   {
+    "kode_lahan": "6477104-IN-001",
+    "nomor_spbu": "6477104",
+    "kota": "KOTA TARAKAN",
+    "provinsi": "Kalimantan Utara",
+    "luas_valid": 33.0,
+    "harga_tahunan": 750000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 16500.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=qoy6fve9MXbzl7MTeL6zqw&lahanId=ZvWxZxBlmEk5Rt9tCyaFtw"
+   },
+   {
+    "kode_lahan": "4455504-IN-013",
+    "nomor_spbu": "4455504",
+    "kota": "Kab. Sleman",
+    "provinsi": "DI Yogyakarta",
+    "luas_valid": 322.0,
+    "harga_tahunan": 750000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 11000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=N4-N5n6kPy4yZMHm4hOgZA&lahanId=ec_nQXy7ejdiRU8pXxA-mQ"
+   },
+   {
+    "kode_lahan": "2436690-OU-001",
+    "nomor_spbu": "2436690",
+    "kota": "KODYA JAMBI",
+    "provinsi": "Jambi",
+    "luas_valid": null,
+    "harga_tahunan": 650000000.0,
+    "posisi_lahan": "Diluar Bangunan",
+    "daya_listrik_w": null,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=CGrSuGD2SggRXWSvuZWygQ&lahanId=ookfFzbNWVJLITHQyGtrMg"
+   },
+   {
+    "kode_lahan": "4450234-IN-011",
+    "nomor_spbu": "4450234",
+    "kota": "Semarang Kota",
+    "provinsi": "Jawa Tengah",
+    "luas_valid": 60.0,
+    "harga_tahunan": 600000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 11000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=LLDWxFoL08_9stpmw0Dz5g&lahanId=NAke2nzCv2ZfMxmZeAeCOg"
+   },
+   {
+    "kode_lahan": "7490222-OU-003",
+    "nomor_spbu": "7490222",
+    "kota": "Kodya Makassar",
+    "provinsi": "Sulawesi Selatan",
+    "luas_valid": 4500.0,
+    "harga_tahunan": 555555555.0,
+    "posisi_lahan": "Diluar Bangunan",
+    "daya_listrik_w": null,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=p4Ngr0BjA3eUZXZFf_48mw&lahanId=cB_SINSZgpaAn0ke9Kbyvg"
+   },
+   {
+    "kode_lahan": "4450136-IN-001",
+    "nomor_spbu": "4450136",
+    "kota": "Semarang Kota",
+    "provinsi": "Jawa Tengah",
+    "luas_valid": 270.0,
+    "harga_tahunan": 550000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 5500.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=D7wcJIvv1JX9il4FTsifRA&lahanId=AtgPwDWi8Otp7UL2BDSTow"
+   },
+   {
+    "kode_lahan": "3415606-IN-006",
+    "nomor_spbu": "3415606",
+    "kota": "Kabupaten Tangerang",
+    "provinsi": "Banten",
+    "luas_valid": 138.0,
+    "harga_tahunan": 520200000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 10000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=sf7uoaLC5FyCiN6cJqmMig&lahanId=KhiO5uPobNCISUaLsCq6Hg"
+   },
+   {
+    "kode_lahan": "3110701-IN-004",
+    "nomor_spbu": "3110701",
+    "kota": "Kodya Jakarta Pusat",
+    "provinsi": "DKI Jakarta",
+    "luas_valid": 32.0,
+    "harga_tahunan": 504000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 7700.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=YWEH-0HorYEPiDoZBNPt9Q&lahanId=CDlnd9xovQlJnD8uBKbABg"
+   },
+   {
+    "kode_lahan": "2436690-IN-004",
+    "nomor_spbu": "2436690",
+    "kota": "KODYA JAMBI",
+    "provinsi": "Jambi",
+    "luas_valid": 48.0,
+    "harga_tahunan": 500000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 23000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=CGrSuGD2SggRXWSvuZWygQ&lahanId=pMlZG5QqJUdA2YB9jd_MsQ"
+   },
+   {
+    "kode_lahan": "3413809-IN-014",
+    "nomor_spbu": "3413809",
+    "kota": "Kodya Jakarta Timur",
+    "provinsi": "DKI Jakarta",
+    "luas_valid": 295.0,
+    "harga_tahunan": 486750000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 6600.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=_-PGs1C22GjbByKBtdgxqA&lahanId=2U6Zx8zKXQ-F9Z9ncaCPoQ"
+   },
+   {
+    "kode_lahan": "4450502-IN-016",
+    "nomor_spbu": "4450502",
+    "kota": "Kab. Semarang",
+    "provinsi": "Jawa Tengah",
+    "luas_valid": 10.0,
+    "harga_tahunan": 456000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 1200.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=lPlp6FC9-UcBaxlfjh1gHg&lahanId=TNtHZPiDX304Qv7kiGLIfA"
+   }
+  ],
+  "top_by_luas": [
+   {
+    "kode_lahan": "2434582-IN-001",
+    "nomor_spbu": "2434582",
+    "kota": "KAB. LAMPUNG UTARA",
+    "provinsi": "Lampung",
+    "luas_valid": 5000.0,
+    "harga_tahunan": 3000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 4000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=MekTFcQLeqSuavpXljCrdg&lahanId=DxrERugkwdjj46nKDj3LEw"
+   },
+   {
+    "kode_lahan": "7490222-OU-003",
+    "nomor_spbu": "7490222",
+    "kota": "Kodya Makassar",
+    "provinsi": "Sulawesi Selatan",
+    "luas_valid": 4500.0,
+    "harga_tahunan": 555555555.0,
+    "posisi_lahan": "Diluar Bangunan",
+    "daya_listrik_w": null,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=p4Ngr0BjA3eUZXZFf_48mw&lahanId=cB_SINSZgpaAn0ke9Kbyvg"
+   },
+   {
+    "kode_lahan": "2430738-OU-001",
+    "nomor_spbu": "2430738",
+    "kota": "MUSI BANYUASIN",
+    "provinsi": "Sumatera Selatan",
+    "luas_valid": 4500.0,
+    "harga_tahunan": null,
+    "posisi_lahan": "Diluar Bangunan",
+    "daya_listrik_w": null,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=IaKGgdTjPk6Q5VMllYpocQ&lahanId=hH7lL67HxKKo7L_olI4Mlg"
+   },
+   {
+    "kode_lahan": "14201186-IN-003",
+    "nomor_spbu": "14201186",
+    "kota": "Kodya Medan",
+    "provinsi": "Sumatera Utara",
+    "luas_valid": 4000.0,
+    "harga_tahunan": 122102000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 20000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=ktEoM_NLehTI0bE19vU-hQ&lahanId=oGi0vkG-UKUjjygAaKhhbg"
+   },
+   {
+    "kode_lahan": "3443222-IN-011",
+    "nomor_spbu": "3443222",
+    "kota": "Kabupaten Cianjur",
+    "provinsi": "Jawa Barat",
+    "luas_valid": 3700.0,
+    "harga_tahunan": 10000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 3000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=ng3CzH_0rQn-YIgagkBe4A&lahanId=4Qr2X7Uu0rhrcUZPyzpCnQ"
+   },
+   {
+    "kode_lahan": "13292602-IN-001",
+    "nomor_spbu": "13292602",
+    "kota": "Kab. Indragiri Hilir",
+    "provinsi": "Riau",
+    "luas_valid": 3600.0,
+    "harga_tahunan": 300000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 100000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=KbLE7Smzxpy_tWRDMwj_bA&lahanId=XCAnaunWmqE7jzLNI-AuQg"
+   },
+   {
+    "kode_lahan": "13289618-IN-010",
+    "nomor_spbu": "13289618",
+    "kota": "Kab. Rokan Hilir",
+    "provinsi": "Riau",
+    "luas_valid": 3600.0,
+    "harga_tahunan": null,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 5500.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=LHBubgly74VoEkrvT29QkA&lahanId=6GyECzm4x9lnzqGn1KaH_Q"
+   },
+   {
+    "kode_lahan": "2336103-IN-003",
+    "nomor_spbu": "2336103",
+    "kota": "KODYA JAMBI",
+    "provinsi": "Jambi",
+    "luas_valid": 3500.0,
+    "harga_tahunan": 1000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 32000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=pxm8wQJ_vjgZwtS3JGWi2Q&lahanId=8GYqAhodZsegxhaDpZ2mOw"
+   },
+   {
+    "kode_lahan": "2438331-IN-001",
+    "nomor_spbu": "2438331",
+    "kota": "MUKO-MUKO",
+    "provinsi": "Bengkulu",
+    "luas_valid": 3500.0,
+    "harga_tahunan": null,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 13200.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=ZCU6ynvdiHD1ZhtdcMRFZg&lahanId=jwTM4jAhk3NiI9mpGFAARA"
+   },
+   {
+    "kode_lahan": "6476202-IN-002",
+    "nomor_spbu": "6476202",
+    "kota": "KAB. PASIR",
+    "provinsi": "Kalimantan Timur",
+    "luas_valid": 2880.0,
+    "harga_tahunan": 12000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 10000.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=hdVc6v7dAsU3d0gDWKe05g&lahanId=5nFSLr8kBcki25oy3EMaig"
+   },
+   {
+    "kode_lahan": "142021162-OU-001",
+    "nomor_spbu": "142021162",
+    "kota": "Kodya Medan",
+    "provinsi": "Sumatera Utara",
+    "luas_valid": 2862.0,
+    "harga_tahunan": null,
+    "posisi_lahan": "Diluar Bangunan",
+    "daya_listrik_w": null,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=ORBHdDFs40a_v5WHsOlY1Q&lahanId=vD2EwdYMTr0pqWwf7NTS5A"
+   },
+   {
+    "kode_lahan": "3443222-IN-008",
+    "nomor_spbu": "3443222",
+    "kota": "Kabupaten Cianjur",
+    "provinsi": "Jawa Barat",
+    "luas_valid": 2850.0,
+    "harga_tahunan": null,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 1500.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=ng3CzH_0rQn-YIgagkBe4A&lahanId=D-4uGDBy9O-7x6NMQSCIUg"
+   },
+   {
+    "kode_lahan": "3443222-IN-013",
+    "nomor_spbu": "3443222",
+    "kota": "Kabupaten Cianjur",
+    "provinsi": "Jawa Barat",
+    "luas_valid": 2850.0,
+    "harga_tahunan": null,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 1500.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=ng3CzH_0rQn-YIgagkBe4A&lahanId=tQOWNUl18O1Da_-A4mpOmQ"
+   },
+   {
+    "kode_lahan": "3443222-IN-014",
+    "nomor_spbu": "3443222",
+    "kota": "Kabupaten Cianjur",
+    "provinsi": "Jawa Barat",
+    "luas_valid": 2850.0,
+    "harga_tahunan": null,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 1500.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=ng3CzH_0rQn-YIgagkBe4A&lahanId=pqLpdcxouiI-2Sk9wNQQCQ"
+   },
+   {
+    "kode_lahan": "3443222-IN-015",
+    "nomor_spbu": "3443222",
+    "kota": "Kabupaten Cianjur",
+    "provinsi": "Jawa Barat",
+    "luas_valid": 2850.0,
+    "harga_tahunan": null,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 1500.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=ng3CzH_0rQn-YIgagkBe4A&lahanId=qEO1kOt4HXHF7e__lKu1-w"
+   },
+   {
+    "kode_lahan": "3443222-IN-012",
+    "nomor_spbu": "3443222",
+    "kota": "Kabupaten Cianjur",
+    "provinsi": "Jawa Barat",
+    "luas_valid": 2850.0,
+    "harga_tahunan": 7200000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 1500.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=ng3CzH_0rQn-YIgagkBe4A&lahanId=u8cvplM9z0ZSQnGFZVofnQ"
+   },
+   {
+    "kode_lahan": "3443222-IN-017",
+    "nomor_spbu": "3443222",
+    "kota": "Kabupaten Cianjur",
+    "provinsi": "Jawa Barat",
+    "luas_valid": 2850.0,
+    "harga_tahunan": 9600000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 1500.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=ng3CzH_0rQn-YIgagkBe4A&lahanId=YW8vMiCG9OCHkIuE0ok8ug"
+   },
+   {
+    "kode_lahan": "3443222-IN-020",
+    "nomor_spbu": "3443222",
+    "kota": "Kabupaten Cianjur",
+    "provinsi": "Jawa Barat",
+    "luas_valid": 2850.0,
+    "harga_tahunan": 10000000.0,
+    "posisi_lahan": "Didalam Bangunan",
+    "daya_listrik_w": 1500.0,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=ng3CzH_0rQn-YIgagkBe4A&lahanId=6TY0Kdd8H1AqmXUkyMQmeQ"
+   },
+   {
+    "kode_lahan": "24354124-OU-002",
+    "nomor_spbu": "24354124",
+    "kota": "KAB. LAMPUNG SELATAN",
+    "provinsi": "Lampung",
+    "luas_valid": 2760.0,
+    "harga_tahunan": null,
+    "posisi_lahan": "Diluar Bangunan",
+    "daya_listrik_w": null,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=cPCmN-a7eYylSPUOv5mrHg&lahanId=6RrdJkyqMo-gmvK5GiDSfg"
+   },
+   {
+    "kode_lahan": "2437164-OU-001",
+    "nomor_spbu": "2437164",
+    "kota": "KERINCI",
+    "provinsi": "Jambi",
+    "luas_valid": 2485.0,
+    "harga_tahunan": 50000000.0,
+    "posisi_lahan": "Diluar Bangunan",
+    "daya_listrik_w": null,
+    "url": "https://brightspace.pertamina.com/detail/lahan?id=PsZ6rxnSrL8DZqvEoF3Z7A&lahanId=-AScJacVodFvziDEt3vxXw"
+   }
+  ]
+ },
+ "price": {
+  "quantiles": {
+   "0.1": 4000000.0,
+   "0.25": 8000000.0,
+   "0.5": 15000000.0,
+   "0.75": 25250000.0,
+   "0.9": 45000000.0
+  },
+  "histogram": [
+   {
+    "bucket": "<1",
+    "lahan": 366
+   },
+   {
+    "bucket": "1–2,5",
+    "lahan": 999
+   },
+   {
+    "bucket": "2,5–5",
+    "lahan": 1040
+   },
+   {
+    "bucket": "5–10",
+    "lahan": 3860
+   },
+   {
+    "bucket": "10–15",
+    "lahan": 3978
+   },
+   {
+    "bucket": "15–25",
+    "lahan": 4642
+   },
+   {
+    "bucket": "25–50",
+    "lahan": 4048
+   },
+   {
+    "bucket": "50–100",
+    "lahan": 1190
+   },
+   {
+    "bucket": "100–250",
+    "lahan": 411
+   },
+   {
+    "bucket": "250–1.000",
+    "lahan": 182
+   },
+   {
+    "bucket": ">1.000",
+    "lahan": 14
+   }
+  ],
+  "by_posisi": [
+   {
+    "posisi": "Didalam Bangunan · Lantai 1",
+    "harga_median": 15000000.0,
+    "harga_m2_median": 1833333.0
+   },
+   {
+    "posisi": "Didalam Bangunan · Lantai 2",
+    "harga_median": 25000000.0,
+    "harga_m2_median": 1127671.0
+   },
+   {
+    "posisi": "Diluar Bangunan · Lantai 0",
+    "harga_median": 12000000.0,
+    "harga_m2_median": 2345238.0
+   },
+   {
+    "posisi": "Diluar Bangunan · Lantai 1",
+    "harga_median": 26200000.0,
+    "harga_m2_median": 6828571.5
+   }
+  ],
+  "periode": [
+   {
+    "periode": "Tahun",
+    "lahan": 29266
+   },
+   {
+    "periode": "Bulan",
+    "lahan": 2595
+   }
+  ],
+  "outlier_dikeluarkan": 215,
+  "tanpa_harga": 10916
+ },
+ "facilities": {
+  "coverage": [
+   {
+    "fasilitas": "Toilet",
+    "spbu": 2543,
+    "pct": 38.4
+   },
+   {
+    "fasilitas": "Mushola",
+    "spbu": 2539,
+    "pct": 38.3
+   },
+   {
+    "fasilitas": "CCTV",
+    "spbu": 2366,
+    "pct": 35.7
+   },
+   {
+    "fasilitas": "Tempat Parkir",
+    "spbu": 1772,
+    "pct": 26.7
+   },
+   {
+    "fasilitas": "ATM Center",
+    "spbu": 1206,
+    "pct": 18.2
+   },
+   {
+    "fasilitas": "Area Merokok",
+    "spbu": 326,
+    "pct": 4.9
+   },
+   {
+    "fasilitas": "WiFi Gratis",
+    "spbu": 276,
+    "pct": 4.2
+   }
+  ],
+  "spbu_tanpa_data_fasilitas": 3899,
+  "okupansi_dengan_fasilitas": 82.7,
+  "okupansi_tanpa_fasilitas": 82.2
+ },
+ "area": {
+  "by_kategori": [
+   {
+    "kategori": "Lainnya",
+    "titik": 732,
+    "spbu": 541,
+    "okupansi_pct": 82.6,
+    "harga_median": 15000000.0,
+    "jarak_median_km": 0.5
+   },
+   {
+    "kategori": "Restoran/Kuliner",
+    "titik": 634,
+    "spbu": 487,
+    "okupansi_pct": 82.9,
+    "harga_median": 15333333.0,
+    "jarak_median_km": 0.2
+   },
+   {
+    "kategori": "Mal/Pusat belanja",
+    "titik": 392,
+    "spbu": 338,
+    "okupansi_pct": 83.5,
+    "harga_median": 16666666.5,
+    "jarak_median_km": 0.5
+   },
+   {
+    "kategori": "Hotel",
+    "titik": 316,
+    "spbu": 281,
+    "okupansi_pct": 84.6,
+    "harga_median": 18000000.0,
+    "jarak_median_km": 1.0
+   },
+   {
+    "kategori": "Perkantoran/Bisnis",
+    "titik": 343,
+    "spbu": 253,
+    "okupansi_pct": 84.4,
+    "harga_median": 18000000.0,
+    "jarak_median_km": 0.2
+   },
+   {
+    "kategori": "Hiburan",
+    "titik": 135,
+    "spbu": 117,
+    "okupansi_pct": 85.2,
+    "harga_median": 15000000.0,
+    "jarak_median_km": 1.0
+   },
+   {
+    "kategori": "Stasiun/Transportasi",
+    "titik": 91,
+    "spbu": 89,
+    "okupansi_pct": 84.0,
+    "harga_median": 20000000.0,
+    "jarak_median_km": 1.7
+   },
+   {
+    "kategori": "Perumahan",
+    "titik": 79,
+    "spbu": 73,
+    "okupansi_pct": 83.6,
+    "harga_median": 19900000.0,
+    "jarak_median_km": 0.7
+   }
+  ],
+  "okupansi_dengan_data_area": 82.8,
+  "okupansi_tanpa_data_area": 82.4,
+  "harga_median_dengan_area": 15500000.0,
+  "harga_median_tanpa_area": 14000000.0
+ },
+ "alternatives": [
+  {
+   "id": "A1",
+   "nama": "Program pengisian cepat lahan kosong (Occupancy Sprint)",
+   "kategori": "Komersial",
+   "deskripsi": "Kampanye terarah untuk 5.574 lahan kosong: broker UMKM lokal, paket sewa jangka pendek, dan insentif 3 bulan pertama. Prioritas 2.739 SPBU yang punya lahan kosong, terutama 1.329 lahan di kota metropolitan.",
+   "bukti": [
+    "5.574 lahan kosong = potensi Rp 134,6 M/tahun (estimasi)",
+    "2.739 SPBU punya minimal 1 lahan kosong",
+    "Okupansi nasional 82,5%"
+   ],
+   "addressable": 5574,
+   "impact": 7.6,
+   "effort": 2.1,
+   "effort_rincian": {
+    "capex": 1,
+    "regulasi": 1,
+    "mitra": 1,
+    "proses": 2
+   },
+   "kpi": "Okupansi naik 82,5% -> 90% dalam 12 bulan",
+   "kuadran": "Quick Win"
+  },
+  {
+   "id": "A2",
+   "nama": "Standardisasi & dynamic pricing tarif sewa",
+   "kategori": "Komersial",
+   "deskripsi": "11.131 lahan tidak punya harga valid di marketplace dan sebaran harga sangat lebar (P25 Rp 8,0 jt vs P75 Rp 25,2 jt). Bangun model tarif per m² berbasis segmen, kota, posisi, dan area sekitar.",
+   "bukti": [
+    "11.131 lahan tanpa harga valid",
+    "Harga/m² median Rp 2,00 jt/tahun, variasi antarprovinsi besar",
+    "215 harga outlier (salah input) ditemukan"
+   ],
+   "addressable": 11131,
+   "impact": 7.6,
+   "effort": 2.1,
+   "effort_rincian": {
+    "capex": 1,
+    "regulasi": 1,
+    "mitra": 1,
+    "proses": 2
+   },
+   "kpi": "100% lahan punya tarif acuan; uplift pendapatan 5-10%",
+   "kuadran": "Quick Win"
+  },
+  {
+   "id": "A9",
+   "nama": "Pelengkapan profil SPBU & upgrade fasilitas dasar",
+   "kategori": "Enabler",
+   "deskripsi": "3.899 SPBU (58,8%) tidak mencantumkan fasilitas apa pun dan hanya 1.196 SPBU mengisi area sekitar. Okupansi tidak berbeda antara yang mengisi dan tidak (82,7% vs 82,2%), tetapi tarif di SPBU yang mendeskripsikan hotel/perkantoran/stasiun di sekitarnya 20-33% di atas median. Program: wajibkan profil lengkap (fasilitas, area sekitar, foto, tarif) + paket upgrade toilet/mushola/WiFi untuk SPBU prioritas.",
+   "bukti": [
+    "3.899 SPBU tanpa data fasilitas; toilet hanya tercantum di 38,4% SPBU",
+    "Tarif median dekat hotel/perkantoran Rp 18 jt vs nasional Rp 15 jt",
+    "Okupansi dengan vs tanpa data fasilitas: 82,7% vs 82,2% (tidak signifikan) - nilainya di harga, bukan okupansi"
+   ],
+   "addressable": 3899,
+   "impact": 6.9,
+   "effort": 3.2,
+   "effort_rincian": {
+    "capex": 2,
+    "regulasi": 1,
+    "mitra": 1,
+    "proses": 2
+   },
+   "kpi": "100% SPBU berprofil lengkap; cakupan toilet/mushola ≥ 80%",
+   "kuadran": "Quick Win"
+  },
+  {
+   "id": "A3",
+   "nama": "Kios kopi & F&B mikro UMKM (format < 10 m²)",
+   "kategori": "Produk baru",
+   "deskripsi": "3.166 lahan kosong berukuran < 10 m² di dalam bangunan lantai 1: cocok untuk kios kopi/teh/snack dengan format standar (modular booth), bermitra dengan brand lokal & UMKM binaan.",
+   "bukti": [
+    "3.166 lahan kosong < 10 m²",
+    "Segmen F&B sudah 2.281 lahan, harga median Rp 12,0 jt/tahun",
+    "Brand F&B terbukti (Es Teh Poci, Kopi Kenangan, Roti'O) sudah ada di SPBU"
+   ],
+   "addressable": 3166,
+   "impact": 6.7,
+   "effort": 3.2,
+   "effort_rincian": {
+    "capex": 1,
+    "regulasi": 1,
+    "mitra": 2,
+    "proses": 2
+   },
+   "kpi": "1.000 kios baru dalam 18 bulan",
+   "kuadran": "Quick Win"
+  },
+  {
+   "id": "A4",
+   "nama": "Parcel locker & hub logistik last-mile",
+   "kategori": "Produk baru",
+   "deskripsi": "Smart locker/drop point ekspedisi di lahan kecil (2-6 m²) memakai jaringan 6.627 SPBU sebagai titik serah-terima paket 24 jam. Mitra: J&T, JNE, SiCepat, Lalamove yang sudah hadir di 94 lahan.",
+   "bukti": [
+    "Logistik baru 94 lahan (0,4% tersewa) - masih sangat kecil",
+    "3.166 lahan kecil kosong siap pakai",
+    "Daya listrik kebutuhan rendah (< 1,000 W)"
+   ],
+   "addressable": 3166,
+   "impact": 6.7,
+   "effort": 2.1,
+   "effort_rincian": {
+    "capex": 1,
+    "regulasi": 1,
+    "mitra": 2,
+    "proses": 1
+   },
+   "kpi": "500 titik locker, pendapatan sewa + fee per paket",
+   "kuadran": "Quick Win"
+  },
+  {
+   "id": "A5",
+   "nama": "Hub EV charging & battery swap",
+   "kategori": "Energi baru",
+   "deskripsi": "SPKLU/SPBKLU di 1.076 lahan kosong luar bangunan (lantai 0), prioritas kota metropolitan (332 lahan). Data daya listrik lahan luar bangunan praktis kosong di marketplace, jadi pilot diawali survei kapasitas daya & trafo. Pola kemitraan: Electrum, Voltron, Vgreen sudah hadir.",
+   "bukti": [
+    "1.076 lahan kosong di luar bangunan",
+    "Energi baru baru 536 lahan (incl. PLTS) - jauh dari potensi",
+    "6.199 dari 6.200 lahan luar bangunan tidak mencantumkan daya listrik: kesiapan daya belum bisa dinilai dari data"
+   ],
+   "addressable": 1076,
+   "impact": 8.8,
+   "effort": 8.9,
+   "effort_rincian": {
+    "capex": 3,
+    "regulasi": 3,
+    "mitra": 2,
+    "proses": 3
+   },
+   "kpi": "300 titik charging dalam 24 bulan",
+   "kuadran": "Major Project"
+  },
+  {
+   "id": "A6",
+   "nama": "Micro-fulfillment / dark store di lahan besar",
+   "kategori": "Produk baru",
+   "deskripsi": "492 lahan kosong ≥ 100 m² (235 di antaranya ≥ 200 m²) untuk gudang mikro e-commerce/quick-commerce dan modular retail; harga/m² lahan besar jauh lebih rendah sehingga menarik bagi mitra.",
+   "bukti": [
+    "492 lahan kosong ≥ 100 m²",
+    "Lahan besar: harga/m² lebih murah, cocok sewa jangka panjang",
+    "Sebagian berada dekat perumahan & jalan utama"
+   ],
+   "addressable": 492,
+   "impact": 8.4,
+   "effort": 6.6,
+   "effort_rincian": {
+    "capex": 2,
+    "regulasi": 2,
+    "mitra": 2,
+    "proses": 3
+   },
+   "kpi": "100 lahan besar tersewa jangka panjang (≥ 3 th)",
+   "kuadran": "Major Project"
+  },
+  {
+   "id": "A7",
+   "nama": "Digital OOH advertising di kanopi & pylon",
+   "kategori": "Media",
+   "deskripsi": "Monetisasi aset visual (kanopi, pylon, totem) sebagai jaringan iklan digital nasional, memanfaatkan 6.627 SPBU dan traffic harian. Segmen pameran/promosi baru 583 lahan.",
+   "bukti": [
+    "Pameran & promosi 583 lahan - masih ad-hoc",
+    "Tidak memerlukan lahan tambahan",
+    "Jaringan nasional = nilai jual ke advertiser"
+   ],
+   "addressable": 6627,
+   "impact": 7.8,
+   "effort": 5.5,
+   "effort_rincian": {
+    "capex": 2,
+    "regulasi": 2,
+    "mitra": 2,
+    "proses": 2
+   },
+   "kpi": "Pendapatan media Rp 50 M/tahun",
+   "kuadran": "Major Project"
+  },
+  {
+   "id": "A12",
+   "nama": "PLTS kanopi sebagai produk sewa energi",
+   "kategori": "Energi baru",
+   "deskripsi": "536 lahan energi baru sudah ada (mayoritas PLTS Ex. PPI). Skalakan sewa atap kanopi ke mitra PLTS (power purchase) + pasok listrik ke EV charging (A5).",
+   "bukti": [
+    "Atap kanopi = aset belum dimonetisasi di mayoritas SPBU",
+    "Sinergi langsung dengan A5",
+    "Regulasi PLTS atap & jual-beli listrik kompleks"
+   ],
+   "addressable": 6627,
+   "impact": 7.6,
+   "effort": 7.8,
+   "effort_rincian": {
+    "capex": 3,
+    "regulasi": 3,
+    "mitra": 2,
+    "proses": 2
+   },
+   "kpi": "200 SPBU PLTS kanopi",
+   "kuadran": "Major Project"
+  },
+  {
+   "id": "A10",
+   "nama": "Konsolidasi galeri ATM → kiosk layanan digital",
+   "kategori": "Transformasi",
+   "deskripsi": "Segmen perbankan 5.374 lahan berisiko turun karena tren cashless. Konversi bertahap ruang ATM menjadi kiosk layanan digital multi-bank/agen laku pandai + e-commerce pickup, menjaga pendapatan dari ruang yang sama.",
+   "bukti": [
+    "Perbankan & ATM 5.374 lahan (20,4% tersewa)",
+    "Transaksi ATM nasional menurun - risiko churn tenant",
+    "Ruang kecil, sudah ada daya & keamanan (CCTV)"
+   ],
+   "addressable": 5374,
+   "impact": 7.1,
+   "effort": 6.6,
+   "effort_rincian": {
+    "capex": 2,
+    "regulasi": 2,
+    "mitra": 3,
+    "proses": 2
+   },
+   "kpi": "Churn tenant bank < 5%/tahun",
+   "kuadran": "Major Project"
+  },
+  {
+   "id": "A8",
+   "nama": "Paket perawatan kendaraan self-service",
+   "kategori": "Produk baru",
+   "deskripsi": "Standarisasi segmen nitrogen/cuci (1.305 lahan, sangat terfragmentasi: ratusan nama UMKM) menjadi format berbrand 'Pertamina Care': nitrogen, vacuum, cuci cepat, cek oli - di lahan luar bangunan.",
+   "bukti": [
+    "Nitrogen & perawatan 1.305 lahan, >100 nama tenant berbeda",
+    "1.076 lahan luar kosong",
+    "Sinergi dengan Pelumas (segmen #2 terbesar)"
+   ],
+   "addressable": 1076,
+   "impact": 6.1,
+   "effort": 4.4,
+   "effort_rincian": {
+    "capex": 2,
+    "regulasi": 1,
+    "mitra": 2,
+    "proses": 2
+   },
+   "kpi": "Standardisasi 500 titik dalam 18 bulan",
+   "kuadran": "Fill-in"
+  },
+  {
+   "id": "A11",
+   "nama": "Lantai 2 / rooftop: co-working & rest lounge",
+   "kategori": "Produk baru",
+   "deskripsi": "123 lahan kosong di lantai 2 dan 503 lahan lantai 2 total: sebagian besar kosong atau PLTS. Format lounge/co-working mini untuk pengemudi ojol & logistik di kota besar.",
+   "bukti": [
+    "123 lahan lantai 2 kosong",
+    "Okupansi lantai 2 paling rendah",
+    "Butuh akses & renovasi - capex tinggi untuk pasar kecil"
+   ],
+   "addressable": 123,
+   "impact": 4.5,
+   "effort": 7.8,
+   "effort_rincian": {
+    "capex": 3,
+    "regulasi": 2,
+    "mitra": 2,
+    "proses": 3
+   },
+   "kpi": "Pilot 10 lokasi",
+   "kuadran": "Thankless Task"
+  }
+ ]
+}
