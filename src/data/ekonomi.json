@@ -1,0 +1,901 @@
+{
+ "parameter": {
+  "diskonto": 0.1,
+  "horizon_tahun": 10,
+  "ramp": [
+   0.4,
+   0.8,
+   1.0
+  ],
+  "skenario": [
+   "konservatif",
+   "dasar",
+   "optimis"
+  ]
+ },
+ "basis": {
+  "rent_roll_tersewa": 422883009472,
+  "lahan_tersewa_tarif_valid": 17037,
+  "pendapatan_idle": 134551314752,
+  "nfr_share_spbu_pct": 6,
+  "tarif_median": 15000000.0,
+  "sewa_kecil": 13000000.0,
+  "sewa_luar": 12500000.0,
+  "sewa_besar_m2_bulan": 12414
+ },
+ "tolok_ukur": [
+  {
+   "item": "Tarif SPKLU & biaya layanan",
+   "nilai": "Rp 2.466/kWh; fast charging maks Rp 25.000/sesi",
+   "sumber": "Kepmen ESDM 182.K/2023; navigasi.co.id (2026)",
+   "url": "https://navigasi.co.id/detail/1452319/update-tarif-listrik-spklu-pln-2026-per-kwh-biaya-fast-charging-terbaru"
+  },
+  {
+   "item": "Utilisasi SPKLU",
+   "nilai": "48,5 jt kWh / 4.655 unit (2025) ≈ 28 kWh/unit/hari",
+   "sumber": "PLN via Kontan (2026)",
+   "url": "https://industri.kontan.co.id/news/konsumsi-listrik-spklu-lampaui-2025-pln-percepat-perluasan-infrastruktur-ev"
+  },
+  {
+   "item": "Capex charger DC 25–50 kW",
+   "nilai": "Rp 300–500 jt/unit",
+   "sumber": "bukaoutlet.com (blog investor, belum diverifikasi vendor)",
+   "url": "https://bukaoutlet.com/article/perhitungan-modal-bisnis-spklu--rincian-lengkap-untuk-investor"
+  },
+  {
+   "item": "PLTS atap on-grid",
+   "nilai": "Rp 14–20 jt/kWp; 120–140 kWh/kWp/bulan",
+   "sumber": "ESDM via VOI; JARWINN (2025)",
+   "url": "https://jarwinn.co.id/blog/biaya-pasang-panel-surya-2025-estimasi-harga-kalkulator-penghematan"
+  },
+  {
+   "item": "Tarif listrik PLN B2",
+   "nilai": "Rp 1.444,70/kWh",
+   "sumber": "PLN per 31 Des 2025 via Ugems",
+   "url": "https://ugems.id/web/guest/b/daftar-tarif-listrik-13-golongan-pelanggan-pln-per-31-desember-2025"
+  },
+  {
+   "item": "Videotron kota satelit",
+   "nilai": "Rp 10–50 jt/bulan per titik",
+   "sumber": "UNO Indonesia; transads.id",
+   "url": "https://uno.id/iklan-videotron/"
+  },
+  {
+   "item": "Smart/parcel locker",
+   "nilai": "Rp 30–35,5 jt/unit; titip Rp 1.500–6.000/paket",
+   "sumber": "Tokopedia; PopBox",
+   "url": "https://www.tokopedia.com/find/smart-locker"
+  },
+  {
+   "item": "Booth kios & omzet kopi",
+   "nilai": "Booth Rp 6–25 jt; omzet Rp 18–48 jt/bulan",
+   "sumber": "grobong.com; franchisekopi.co.id (simulasi penjual)",
+   "url": "https://www.franchisekopi.co.id/franchise-kopi-box-kontainer/"
+  },
+  {
+   "item": "Sewa gudang Jakarta",
+   "nilai": "Rp 55–150 rb/m²/bulan",
+   "sumber": "Indotama Logs (2025); 99.co",
+   "url": "https://indotamalogs.com/blog/warehouse/sewa-gudang-bulanan-vs-tahunan-di-jakarta-surabaya-mana-lebih-hemat-untuk-perusahaan-anda"
+  },
+  {
+   "item": "Mesin & tarif nitrogen",
+   "nilai": "Mesin Rp 8–29 jt; Rp 5–10 rb/ban",
+   "sumber": "Monotaro; Widya Robotics",
+   "url": "https://www.monotaro.id/k/store/mesin%20nitrogen"
+  },
+  {
+   "item": "Tingkat diskonto",
+   "nilai": "WACC PGEO 7,3% (Alpha Spread) – 11,6% (KB Valbury, Sep 2025) → dipakai 10%",
+   "sumber": "KB Valbury Sekuritas",
+   "url": "https://www.kbvalbury.com/cfind/source/files/pgeo_initiation_20250923.pdf"
+  },
+  {
+   "item": "Porsi NFR di bisnis SPBU",
+   "nilai": "≈ 6% (vs 30–40% di negara maju)",
+   "sumber": "Pertamina Patra Niaga via RRI",
+   "url": "https://rri.co.id/bisnis/958802/pertamina-ajak-pengusaha-bisnis-non-fuel-retail"
+  }
+ ],
+ "belum_ada": [
+  "Skema bagi hasil NFR Pertamina yang berlaku (dipakai asumsi 0–10% omzet)",
+  "Jumlah kendaraan per SPBU per hari (omzet mitra dihitung dari tolok ukur per unit, bukan trafik)",
+  "WACC/hurdle rate resmi Pertamina (dipakai 10%)",
+  "Capex charger DC dari vendor; rate card iklan di SPBU"
+ ],
+ "alternatif": [
+  {
+   "id": "A1",
+   "nama": "Program pengisian cepat lahan kosong (Occupancy Sprint)",
+   "kuadran": "Quick Win",
+   "impact": 7.6,
+   "effort": 2.1,
+   "unit": "lahan kosong terisi",
+   "pool": 5574,
+   "model": "Pertamina menyewakan lahan yang sudah ada; biaya = insentif/komisi pengisian per lahan + tim program.",
+   "asumsi": [
+    "Potensi sewa idle Rp 134.6 M/th dari 5,574 lahan kosong (tarif terpublikasi + median untuk yang tanpa tarif)",
+    "Rata-rata Rp 24.1 jt/lahan/th; konservatif dipotong 15% karena lahan termahal paling sulit terisi",
+    "Terisi 25% / 40% / 55% dari lahan kosong dalam 2 tahun",
+    "Insentif pengisian Rp 2 jt per lahan; tim program Rp 3 M/th; alat & kampanye Rp 1 M"
+   ],
+   "overlap": "A1 adalah 'wadah' generik: lahan yang terisi lewat A3/A4/A5/A6/A8 juga mengurangi stok A1. Jangan dijumlahkan dengan alternatif format.",
+   "skenario": {
+    "konservatif": {
+     "unit": 1394,
+     "pendapatan": 28602413500,
+     "pendapatan_per_unit": 20518231,
+     "omzet_mitra": 0,
+     "capex_pertamina": 3788000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 3000000000,
+     "net": 25602413500,
+     "payback_tahun": 0.4,
+     "npv": 135330991117,
+     "npv_20": 195983022010,
+     "pendapatan_horizon": 235542204201
+    },
+    "dasar": {
+     "unit": 2230,
+     "pendapatan": 53830181539,
+     "pendapatan_per_unit": 24139095,
+     "omzet_mitra": 0,
+     "capex_pertamina": 5460000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 3000000000,
+     "net": 50830181539,
+     "payback_tahun": 0.3,
+     "npv": 270742224994,
+     "npv_20": 391158752951,
+     "pendapatan_horizon": 467637670156
+    },
+    "optimis": {
+     "unit": 3066,
+     "pendapatan": 74010464842,
+     "pendapatan_per_unit": 24139095,
+     "omzet_mitra": 0,
+     "capex_pertamina": 7132000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 3000000000,
+     "net": 71010464842,
+     "payback_tahun": 0.3,
+     "npv": 378726318690,
+     "npv_20": 546949869464,
+     "pendapatan_horizon": 653296276547
+    }
+   }
+  },
+  {
+   "id": "A7",
+   "nama": "Digital OOH advertising di kanopi & pylon",
+   "kuadran": "Major Project",
+   "impact": 7.8,
+   "effort": 5.5,
+   "unit": "layar DOOH di SPBU",
+   "pool": 6627,
+   "model": "Mitra media memasang layar; Pertamina menerima 30% pendapatan iklan kotor.",
+   "asumsi": [
+    "Pendapatan iklan kotor Rp 2 / 4 / 8 jt per layar per bulan; titik videotron kota satelit Rp 10–50 jt/bulan, layar SPBU jauh lebih kecil dan okupansi iklan jarang penuh",
+    "Bagi hasil pemilik lokasi 30% (praktik umum 20–40%)",
+    "Layar + instalasi Rp 60 jt (mitra)",
+    "Belum ada data trafik SPBU untuk menetapkan rate card; angka ini asumsi kasar"
+   ],
+   "overlap": null,
+   "skenario": {
+    "konservatif": {
+     "unit": 500,
+     "pendapatan": 3600000000,
+     "pendapatan_per_unit": 7200000,
+     "omzet_mitra": 12000000000,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 30000000000,
+     "opex_pertamina": 500000000,
+     "net": 3100000000,
+     "payback_tahun": 0.4,
+     "npv": 16344852243,
+     "npv_20": 23688741746,
+     "pendapatan_horizon": 28520000000
+    },
+    "dasar": {
+     "unit": 1500,
+     "pendapatan": 21600000000,
+     "pendapatan_per_unit": 14400000,
+     "omzet_mitra": 72000000000,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 90000000000,
+     "opex_pertamina": 500000000,
+     "net": 21100000000,
+     "payback_tahun": 0.1,
+     "npv": 114153671715,
+     "npv_20": 164139500272,
+     "pendapatan_horizon": 194120000000
+    },
+    "optimis": {
+     "unit": 3000,
+     "pendapatan": 86400000000,
+     "pendapatan_per_unit": 28800000,
+     "omzet_mitra": 288000000000,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 180000000000,
+     "opex_pertamina": 500000000,
+     "net": 85900000000,
+     "payback_tahun": 0.0,
+     "npv": 466265421818,
+     "npv_20": 669762230965,
+     "pendapatan_horizon": 790280000000
+    }
+   }
+  },
+  {
+   "id": "A12",
+   "nama": "PLTS kanopi sebagai produk sewa energi",
+   "kuadran": "Major Project",
+   "impact": 7.6,
+   "effort": 7.8,
+   "unit": "SPBU dengan PLTS kanopi 20 kWp",
+   "pool": 6627,
+   "model": "Pertamina memiliki PLTS dan menjual listrik ke SPBU (sewa energi) 10% di bawah tarif PLN B2.",
+   "asumsi": [
+    "20 kWp per kanopi; produksi 115 / 125 / 135 kWh per kWp per bulan",
+    "Capex Rp 20 / 17 / 14 jt per kWp (pasar 2025–2026 Rp 14–20 jt, on-grid tanpa baterai); O&M 1%/th",
+    "Tarif B2 PLN Rp 1.445/kWh; harga jual 90% tarif PLN agar SPBU hemat 10%",
+    "Umur PLTS 20–25 tahun: NPV 10 tahun negatif, lihat NPV 20 tahun. Belum memperhitungkan regulasi ekspor/net-metering dan struktur kanopi"
+   ],
+   "overlap": null,
+   "skenario": {
+    "konservatif": {
+     "unit": 200,
+     "pendapatan": 7178760000,
+     "pendapatan_per_unit": 35893800,
+     "omzet_mitra": 0,
+     "capex_pertamina": 81000000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 1300000000,
+     "net": 5878760000,
+     "payback_tahun": null,
+     "npv": -49055856913,
+     "npv_20": -35129094378,
+     "pendapatan_horizon": 54084592000
+    },
+    "dasar": {
+     "unit": 500,
+     "pendapatan": 19507500000,
+     "pendapatan_per_unit": 39015000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 171000000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 2200000000,
+     "net": 17307500000,
+     "payback_tahun": null,
+     "npv": -76954103165,
+     "npv_20": -35952694267,
+     "pendapatan_horizon": 159229000000
+    },
+    "optimis": {
+     "unit": 1000,
+     "pendapatan": 42136200000,
+     "pendapatan_per_unit": 42136200,
+     "omzet_mitra": 0,
+     "capex_pertamina": 281000000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 3300000000,
+     "net": 38836200000,
+     "payback_tahun": 8.0,
+     "npv": -69970951399,
+     "npv_20": 22031874904,
+     "pendapatan_horizon": 357293040000
+    }
+   }
+  },
+  {
+   "id": "A3",
+   "nama": "Kios kopi & F&B mikro grab-and-go (format < 10 m²)",
+   "kuadran": "Quick Win",
+   "impact": 6.7,
+   "effort": 3.2,
+   "unit": "kios F&B grab-and-go",
+   "pool": 3166,
+   "model": "Mitra/UMKM investasi booth; Pertamina menerima sewa F&B + bagi hasil omzet (0% / 2% / 3%).",
+   "asumsi": [
+    "Tarif sewa median segmen F&B Rp 12 jt/th (Brightspace); lahan < 10 m² kosong bertarif median Rp 13 jt",
+    "Omzet kios Rp 18 / 30 / 45 jt per bulan (simulasi franchise kopi box & sewa booth, bukan data SPBU)",
+    "Booth modular Rp 20 jt (kisaran pasar Rp 6–25 jt) ditanggung mitra",
+    "Survei: 41% ingin makanan/minuman cepat; 41% tidak mau menambah waktu, jadi format wajib grab-and-go"
+   ],
+   "overlap": "Memakai pool lahan < 10 m² yang sama dengan A4.",
+   "skenario": {
+    "konservatif": {
+     "unit": 400,
+     "pendapatan": 4800000000,
+     "pendapatan_per_unit": 12000000,
+     "omzet_mitra": 86400000000,
+     "capex_pertamina": 1000000000,
+     "capex_mitra": 8000000000,
+     "opex_pertamina": 500000000,
+     "net": 4300000000,
+     "payback_tahun": 0.6,
+     "npv": 22365440207,
+     "npv_20": 32552125648,
+     "pendapatan_horizon": 39560000000
+    },
+    "dasar": {
+     "unit": 1000,
+     "pendapatan": 19200000000,
+     "pendapatan_per_unit": 19200000,
+     "omzet_mitra": 360000000000,
+     "capex_pertamina": 1000000000,
+     "capex_mitra": 20000000000,
+     "opex_pertamina": 500000000,
+     "net": 18700000000,
+     "payback_tahun": 0.1,
+     "npv": 100612495786,
+     "npv_20": 144912732469,
+     "pendapatan_horizon": 172040000000
+    },
+    "optimis": {
+     "unit": 1600,
+     "pendapatan": 45120000000,
+     "pendapatan_per_unit": 28200000,
+     "omzet_mitra": 864000000000,
+     "capex_pertamina": 1000000000,
+     "capex_mitra": 32000000000,
+     "opex_pertamina": 500000000,
+     "net": 44620000000,
+     "payback_tahun": 0.1,
+     "npv": 241457195827,
+     "npv_20": 347161824746,
+     "pendapatan_horizon": 410504000000
+    }
+   }
+  },
+  {
+   "id": "A10",
+   "nama": "Konsolidasi galeri ATM → kiosk layanan digital",
+   "kuadran": "Major Project",
+   "impact": 7.1,
+   "effort": 6.6,
+   "unit": "ruang ATM dikonversi jadi kiosk digital",
+   "pool": 5374,
+   "model": "Pendapatan yang dipertahankan: ruang ATM yang ditinggalkan bank disewakan ulang ke penyedia kiosk digital.",
+   "asumsi": [
+    "5,374 lahan ATM/perbankan, tarif median Rp 20 jt/th (segmen termahal kedua)",
+    "10% / 20% / 30% ruang ATM diperkirakan ditinggalkan bank dalam 5 tahun (transaksi ATM nasional menurun) dan berhasil dikonversi",
+    "Tarif kiosk digital 70% / 85% / 100% dari tarif ATM; kiosk Rp 40 jt (mitra)",
+    "Ini pendapatan yang diselamatkan, bukan tambahan; tanpa konversi, lahan itu menjadi kosong"
+   ],
+   "overlap": null,
+   "skenario": {
+    "konservatif": {
+     "unit": 537,
+     "pendapatan": 7518000000,
+     "pendapatan_per_unit": 14000000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 21480000000,
+     "opex_pertamina": 500000000,
+     "net": 7018000000,
+     "payback_tahun": 0.2,
+     "npv": 37634571948,
+     "npv_20": 54260190185,
+     "pendapatan_horizon": 64565600000
+    },
+    "dasar": {
+     "unit": 1075,
+     "pendapatan": 18275000000,
+     "pendapatan_per_unit": 17000000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 43000000000,
+     "opex_pertamina": 500000000,
+     "net": 17775000000,
+     "payback_tahun": 0.1,
+     "npv": 96086209230,
+     "npv_20": 138195124044,
+     "pendapatan_horizon": 163530000000
+    },
+    "optimis": {
+     "unit": 1612,
+     "pendapatan": 32240000000,
+     "pendapatan_per_unit": 20000000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 64480000000,
+     "opex_pertamina": 500000000,
+     "net": 31740000000,
+     "payback_tahun": 0.0,
+     "npv": 171969551671,
+     "npv_20": 247161504201,
+     "pendapatan_horizon": 292008000000
+    }
+   }
+  },
+  {
+   "id": "A6",
+   "nama": "Micro-fulfillment / dark store di lahan besar",
+   "kuadran": "Major Project",
+   "impact": 8.4,
+   "effort": 6.6,
+   "unit": "lahan besar jadi gudang mikro",
+   "pool": 492,
+   "model": "Lahan ≥ 100 m² disewakan dengan tarif gudang mikro, bukan tarif lahan SPBU; fit-out oleh tenant.",
+   "asumsi": [
+    "492 lahan kosong ≥ 100 m², luas median 186 m², saat ini bertarif ~Rp 12 rb/m²/bulan",
+    "Tarif gudang mikro Rp 45 / 60 / 90 rb per m² per bulan (Jakarta Rp 55–150 rb; SPBU non-pusat diambil di bawahnya)",
+    "Per lahan ≈ Rp 134 jt/th di skenario dasar vs Rp 28 jt dengan tarif sekarang",
+    "Kebutuhan di luar Jabodetabek belum terbukti; skenario konservatif hanya 50 lahan"
+   ],
+   "overlap": null,
+   "skenario": {
+    "konservatif": {
+     "unit": 50,
+     "pendapatan": 5035500000,
+     "pendapatan_per_unit": 100710000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 500000000,
+     "net": 4535500000,
+     "payback_tahun": 0.3,
+     "npv": 24145105596,
+     "npv_20": 34889689739,
+     "pendapatan_horizon": 41726600000
+    },
+    "dasar": {
+     "unit": 120,
+     "pendapatan": 16113600000,
+     "pendapatan_per_unit": 134280000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 500000000,
+     "net": 15613600000,
+     "payback_tahun": 0.1,
+     "npv": 84341543540,
+     "npv_20": 121330109073,
+     "pendapatan_horizon": 143645120000
+    },
+    "optimis": {
+     "unit": 200,
+     "pendapatan": 40284000000,
+     "pendapatan_per_unit": 201420000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 500000000,
+     "net": 39784000000,
+     "payback_tahun": 0.0,
+     "npv": 215679226328,
+     "npv_20": 309927387622,
+     "pendapatan_horizon": 366012800000
+    }
+   }
+  },
+  {
+   "id": "A8",
+   "nama": "Paket perawatan kendaraan self-service",
+   "kuadran": "Fill-in",
+   "impact": 6.1,
+   "effort": 4.4,
+   "unit": "titik perawatan self-service",
+   "pool": 1076,
+   "model": "Mitra memasang mesin nitrogen/perawatan; Pertamina menerima sewa segmen perawatan + bagi hasil 5% / 10% / 10%.",
+   "asumsi": [
+    "Tarif sewa median segmen Nitrogen & Perawatan Rp 10 jt/th",
+    "15 / 30 / 50 kendaraan per hari × tiket rata-rata Rp 20.000 (nitrogen Rp 5–10 rb/ban)",
+    "Mesin nitrogen + kios Rp 30 jt (mesin Rp 8–29 jt di pasar)",
+    "Survei: layanan ban/nitrogen/darurat paling diinginkan (47%) dan 33% responden membelinya di luar SPBU"
+   ],
+   "overlap": "Memakai pool lahan luar bangunan yang sama dengan A5.",
+   "skenario": {
+    "konservatif": {
+     "unit": 200,
+     "pendapatan": 3095000000,
+     "pendapatan_per_unit": 15475000,
+     "omzet_mitra": 21900000000,
+     "capex_pertamina": 300000000,
+     "capex_mitra": 6000000000,
+     "opex_pertamina": 300000000,
+     "net": 2795000000,
+     "payback_tahun": 0.3,
+     "npv": 14887536135,
+     "npv_20": 21508881671,
+     "pendapatan_horizon": 25714000000
+    },
+    "dasar": {
+     "unit": 500,
+     "pendapatan": 15950000000,
+     "pendapatan_per_unit": 31900000,
+     "omzet_mitra": 109500000000,
+     "capex_pertamina": 300000000,
+     "capex_mitra": 15000000000,
+     "opex_pertamina": 300000000,
+     "net": 15650000000,
+     "payback_tahun": 0.0,
+     "npv": 84739334708,
+     "npv_20": 121814131718,
+     "pendapatan_horizon": 143980000000
+    },
+    "optimis": {
+     "unit": 800,
+     "pendapatan": 37200000000,
+     "pendapatan_per_unit": 46500000,
+     "omzet_mitra": 292000000000,
+     "capex_pertamina": 300000000,
+     "capex_mitra": 24000000000,
+     "opex_pertamina": 300000000,
+     "net": 36900000000,
+     "payback_tahun": 0.0,
+     "npv": 200208079920,
+     "npv_20": 287624054978,
+     "pendapatan_horizon": 339480000000
+    }
+   }
+  },
+  {
+   "id": "A2",
+   "nama": "Standardisasi & dynamic pricing tarif sewa",
+   "kuadran": "Quick Win",
+   "impact": 7.6,
+   "effort": 2.1,
+   "unit": "lahan tersewa yang ditarif ulang",
+   "pool": 17037,
+   "model": "Kenaikan tarif pada perpanjangan kontrak lewat tarif acuan (segmen × kota × posisi × luas).",
+   "asumsi": [
+    "Rent roll lahan tersewa dengan tarif valid Rp 423 M/th (17,037 lahan); 9,250 lahan tersewa tanpa tarif valid tidak dihitung",
+    "Kenaikan rata-rata 3% / 6% / 10% pada lahan yang diperbarui; 30% / 50% / 70% lahan diperbarui dalam 3 tahun",
+    "Rentang P25–P75 tarif selebar 3,2× menunjukkan ruang standardisasi; kenaikan 10% masih di bawah dispersi itu",
+    "Model tarif + integrasi sistem Rp 2 M; analis harga Rp 1 M/th"
+   ],
+   "overlap": null,
+   "skenario": {
+    "konservatif": {
+     "unit": 5111,
+     "pendapatan": 3805872621,
+     "pendapatan_per_unit": 744643,
+     "omzet_mitra": 0,
+     "capex_pertamina": 2000000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 1000000000,
+     "net": 2805872621,
+     "payback_tahun": 1.4,
+     "npv": 13246616036,
+     "npv_20": 19893718774,
+     "pendapatan_horizon": 25814028112
+    },
+    "dasar": {
+     "unit": 8518,
+     "pendapatan": 12685745641,
+     "pendapatan_per_unit": 1489287,
+     "omzet_mitra": 0,
+     "capex_pertamina": 2000000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 1000000000,
+     "net": 11685745641,
+     "payback_tahun": 0.4,
+     "npv": 61498276988,
+     "npv_20": 89181768843,
+     "pendapatan_horizon": 107508859895
+    },
+    "optimis": {
+     "unit": 11926,
+     "pendapatan": 29602058878,
+     "pendapatan_per_unit": 2482145,
+     "omzet_mitra": 0,
+     "capex_pertamina": 2000000000,
+     "capex_mitra": 0,
+     "opex_pertamina": 1000000000,
+     "net": 28602058878,
+     "payback_tahun": 0.2,
+     "npv": 153418534073,
+     "npv_20": 221176714708,
+     "pendapatan_horizon": 263138941673
+    }
+   }
+  },
+  {
+   "id": "A4",
+   "nama": "Parcel locker & hub logistik last-mile",
+   "kuadran": "Quick Win",
+   "impact": 6.7,
+   "effort": 2.1,
+   "unit": "parcel locker",
+   "pool": 3166,
+   "model": "Operator locker investasi unit; Pertamina menerima sewa ruang kecil (60% tarif lahan < 10 m²) + 10% fee paket.",
+   "asumsi": [
+    "Sewa ruang locker 60% × Rp 13 jt (footprint ~1 m², di bawah kios)",
+    "15 / 30 / 50 paket per hari per locker × Rp 2.000 fee (PopBox Rp 1.500–6.000); Pertamina 10%",
+    "Unit locker Rp 35 jt (listing Tokopedia Rp 30–35,5 jt) ditanggung operator",
+    "Survei: titik paket hanya dipilih 4% responden; permintaan harus dari mitra logistik, bukan pengguna SPBU"
+   ],
+   "overlap": "Memakai pool lahan < 10 m² yang sama dengan A3.",
+   "skenario": {
+    "konservatif": {
+     "unit": 200,
+     "pendapatan": 1779000000,
+     "pendapatan_per_unit": 8895000,
+     "omzet_mitra": 2190000000,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 7000000000,
+     "opex_pertamina": 300000000,
+     "net": 1479000000,
+     "payback_tahun": 0.8,
+     "npv": 7536624667,
+     "npv_20": 11040370659,
+     "pendapatan_horizon": 13606800000
+    },
+    "dasar": {
+     "unit": 500,
+     "pendapatan": 4995000000,
+     "pendapatan_per_unit": 9990000,
+     "omzet_mitra": 10950000000,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 17500000000,
+     "opex_pertamina": 300000000,
+     "net": 4695000000,
+     "payback_tahun": 0.3,
+     "npv": 25011800413,
+     "npv_20": 36134239516,
+     "pendapatan_horizon": 43194000000
+    },
+    "optimis": {
+     "unit": 1000,
+     "pendapatan": 11450000000,
+     "pendapatan_per_unit": 11450000,
+     "omzet_mitra": 36500000000,
+     "capex_pertamina": 500000000,
+     "capex_mitra": 35000000000,
+     "opex_pertamina": 300000000,
+     "net": 11150000000,
+     "payback_tahun": 0.1,
+     "npv": 60087129840,
+     "npv_20": 86501442087,
+     "pendapatan_horizon": 102580000000
+    }
+   }
+  },
+  {
+   "id": "A5",
+   "nama": "Hub EV charging & battery swap",
+   "kuadran": "Major Project",
+   "impact": 8.8,
+   "effort": 8.9,
+   "unit": "titik SPKLU di lahan luar",
+   "pool": 1076,
+   "model": "Mitra (Electrum/Voltron/PLN) investasi charger; Pertamina menerima sewa lahan luar + bagi hasil 5% / 10% / 10%.",
+   "asumsi": [
+    "Sewa lahan luar bangunan kosong median Rp 12.5 jt/th (Brightspace)",
+    "Utilisasi 20 / 28 / 45 kWh per unit per hari; rata-rata nasional PLN 2025 ≈ 28 kWh (48,5 jt kWh / 4.655 unit)",
+    "Tarif Rp 2.466/kWh + fee fast charging Rp 25.000/sesi (Kepmen ESDM 182.K/2023), 25 kWh/sesi",
+    "Charger DC Rp 500 jt (mitra); survei daya & sipil Rp 25 jt/titik (Pertamina). Data daya lahan luar praktis kosong di marketplace"
+   ],
+   "overlap": "Memakai pool lahan luar bangunan yang sama dengan A8.",
+   "skenario": {
+    "konservatif": {
+     "unit": 100,
+     "pendapatan": 1376509000,
+     "pendapatan_per_unit": 13765090,
+     "omzet_mitra": 2530180000,
+     "capex_pertamina": 3500000000,
+     "capex_mitra": 50000000000,
+     "opex_pertamina": 1000000000,
+     "net": 376509000,
+     "payback_tahun": null,
+     "npv": -1454116622,
+     "npv_20": -562168075,
+     "pendapatan_horizon": 3463882800
+    },
+    "dasar": {
+     "unit": 300,
+     "pendapatan": 4812675600,
+     "pendapatan_per_unit": 16042252,
+     "omzet_mitra": 10626756000,
+     "capex_pertamina": 8500000000,
+     "capex_mitra": 150000000000,
+     "opex_pertamina": 1000000000,
+     "net": 3812675600,
+     "payback_tahun": 3.0,
+     "npv": 12217405526,
+     "npv_20": 21249621113,
+     "pendapatan_horizon": 35076615520
+    },
+    "optimis": {
+     "unit": 600,
+     "pendapatan": 10915743000,
+     "pendapatan_per_unit": 18192905,
+     "omzet_mitra": 34157430000,
+     "capex_pertamina": 16000000000,
+     "capex_mitra": 300000000000,
+     "opex_pertamina": 1000000000,
+     "net": 9915743000,
+     "payback_tahun": 2.4,
+     "npv": 37880395390,
+     "npv_20": 61370756983,
+     "pendapatan_horizon": 91224835600
+    }
+   }
+  },
+  {
+   "id": "A9",
+   "nama": "Pelengkapan profil SPBU & upgrade fasilitas dasar",
+   "kuadran": "Quick Win",
+   "impact": 6.9,
+   "effort": 3.2,
+   "unit": "SPBU yang profilnya dilengkapi",
+   "pool": 3899,
+   "model": "Premi tarif pada 1 lahan per SPBU per tahun yang diperbarui kontraknya; upgrade toilet/musala ditanggung pengelola SPBU.",
+   "asumsi": [
+    "SPBU yang mencatat hotel/perkantoran/stasiun di dekatnya bertarif median Rp 18–20 jt vs Rp 15 jt nasional (+20–33%)",
+    "Premi dipakai konservatif: 10% / 15% / 20% × tarif median, pada 1 lahan yang diperbarui per SPBU per tahun",
+    "Okupansi tidak berubah (82,7% vs 82,2%), jadi hanya efek tarif yang dihitung",
+    "Pelengkapan data Rp 0,5 jt/SPBU (Pertamina); upgrade fasilitas dasar Rp 75 jt/SPBU (pengelola)"
+   ],
+   "overlap": null,
+   "skenario": {
+    "konservatif": {
+     "unit": 1170,
+     "pendapatan": 1755000000,
+     "pendapatan_per_unit": 1500000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 1085000000,
+     "capex_mitra": 87750000000,
+     "opex_pertamina": 1000000000,
+     "net": 755000000,
+     "payback_tahun": 2.2,
+     "npv": 3017536595,
+     "npv_20": 4806129038,
+     "pendapatan_horizon": 6946000000
+    },
+    "dasar": {
+     "unit": 1950,
+     "pendapatan": 4387500000,
+     "pendapatan_per_unit": 2250000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 1475000000,
+     "capex_mitra": 146250000000,
+     "opex_pertamina": 1000000000,
+     "net": 3387500000,
+     "payback_tahun": 1.0,
+     "npv": 16932076442,
+     "npv_20": 24957052473,
+     "pendapatan_horizon": 31165000000
+    },
+    "optimis": {
+     "unit": 2729,
+     "pendapatan": 8187000000,
+     "pendapatan_per_unit": 3000000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 1864500000,
+     "capex_mitra": 204675000000,
+     "opex_pertamina": 1000000000,
+     "net": 7187000000,
+     "payback_tahun": 0.6,
+     "npv": 37188388086,
+     "npv_20": 54214366751,
+     "pendapatan_horizon": 66120400000
+    }
+   }
+  },
+  {
+   "id": "A11",
+   "nama": "Lantai 2 / rooftop: co-working & rest lounge",
+   "kuadran": "Thankless Task",
+   "impact": 4.5,
+   "effort": 7.8,
+   "unit": "unit lantai 2 jadi lounge/co-working",
+   "pool": 123,
+   "model": "Operator lounge investasi fit-out; Pertamina menerima sewa lantai 2 (diskon karena okupansi lantai 2 terendah).",
+   "asumsi": [
+    "123 lahan lantai 2 kosong; tarif median yang diminta Rp 46.5 jt/th tetapi okupansi lantai 2 hanya 75,5%",
+    "Tarif realisasi 60% / 80% / 100% dari tarif minta; fit-out Rp 150 jt/unit (operator)",
+    "Survei: tempat istirahat diinginkan 36% responden, tetapi 82% langsung pergi setelah mengisi BBM",
+    "Hanya 10–50 unit yang masuk akal; dampak kecil"
+   ],
+   "overlap": null,
+   "skenario": {
+    "konservatif": {
+     "unit": 10,
+     "pendapatan": 279000000,
+     "pendapatan_per_unit": 27900000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 200000000,
+     "capex_mitra": 1500000000,
+     "opex_pertamina": 200000000,
+     "net": 79000000,
+     "payback_tahun": 3.3,
+     "npv": 229272041,
+     "npv_20": 416422774,
+     "pendapatan_horizon": 726800000
+    },
+    "dasar": {
+     "unit": 30,
+     "pendapatan": 1116000000,
+     "pendapatan_per_unit": 37200000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 200000000,
+     "capex_mitra": 4500000000,
+     "opex_pertamina": 200000000,
+     "net": 916000000,
+     "payback_tahun": 0.5,
+     "npv": 4777382147,
+     "npv_20": 6947383045,
+     "pendapatan_horizon": 8427200000
+    },
+    "optimis": {
+     "unit": 50,
+     "pendapatan": 2325000000,
+     "pendapatan_per_unit": 46500000,
+     "omzet_mitra": 0,
+     "capex_pertamina": 200000000,
+     "capex_mitra": 7500000000,
+     "opex_pertamina": 200000000,
+     "net": 2125000000,
+     "payback_tahun": 0.2,
+     "npv": 11346874521,
+     "npv_20": 16380992326,
+     "pendapatan_horizon": 19550000000
+    }
+   }
+  }
+ ],
+ "total": {
+  "konservatif": {
+   "ids": [
+    "A7",
+    "A12",
+    "A3",
+    "A10",
+    "A6",
+    "A8",
+    "A2",
+    "A4",
+    "A5",
+    "A9",
+    "A11"
+   ],
+   "pendapatan": 40222641621,
+   "omzet_mitra": 125020180000,
+   "capex_pertamina": 91085000000,
+   "capex_mitra": 211730000000,
+   "npv": 88897581933
+  },
+  "dasar": {
+   "ids": [
+    "A7",
+    "A12",
+    "A3",
+    "A10",
+    "A6",
+    "A8",
+    "A2",
+    "A4",
+    "A5",
+    "A9",
+    "A11"
+   ],
+   "pendapatan": 138643021241,
+   "omzet_mitra": 563076756000,
+   "capex_pertamina": 186475000000,
+   "capex_mitra": 486250000000,
+   "npv": 523416093330
+  },
+  "optimis": {
+   "ids": [
+    "A7",
+    "A12",
+    "A3",
+    "A10",
+    "A6",
+    "A8",
+    "A2",
+    "A4",
+    "A9",
+    "A11"
+   ],
+   "pendapatan": 334944258878,
+   "omzet_mitra": 1480500000000,
+   "capex_pertamina": 288364500000,
+   "capex_mitra": 547655000000,
+   "npv": 1487649450685
+  }
+ }
+}

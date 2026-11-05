@@ -2264,13 +2264,16 @@
   },
   {
    "id": "A3",
-   "nama": "Kios kopi & F&B mikro UMKM (format < 10 m²)",
+   "nama": "Kios kopi & F&B mikro grab-and-go (format < 10 m²)",
    "kategori": "Produk baru",
-   "deskripsi": "3.166 lahan kosong berukuran < 10 m² di dalam bangunan lantai 1: cocok untuk kios kopi/teh/snack dengan format standar (modular booth), bermitra dengan brand lokal & UMKM binaan.",
+   "deskripsi": "3.166 lahan kosong berukuran < 10 m² di dalam bangunan lantai 1: cocok untuk kios kopi/teh/snack dengan format standar (modular booth), bermitra dengan brand lokal & UMKM binaan. Syaratnya format grab-and-go: menu ringkas, produk siap ambil, pembayaran QRIS, dan kios di jalur keluar setelah dispenser agar transaksi selesai tanpa menambah waktu kunjungan.",
    "bukti": [
     "3.166 lahan kosong < 10 m²",
     "Segmen F&B sudah 2.281 lahan, harga median Rp 12,0 jt/tahun",
-    "Brand F&B terbukti (Es Teh Poci, Kopi Kenangan, Roti'O) sudah ada di SPBU"
+    "Brand F&B terbukti (Es Teh Poci, Kopi Kenangan, Roti'O) sudah ada di SPBU",
+    "Survei (73 responden): makanan/minuman cepat dianggap bermanfaat oleh 41% responden",
+    "Survei: kopi/minuman dibeli 26% responden di luar SPBU vs 10% di SPBU dalam 30 hari",
+    "Syarat grab-and-go: 41% tidak mau menambah waktu dan proses pelayanan cepat adalah syarat nomor satu (48%)"
    ],
    "addressable": 3166,
    "impact": 6.7,
@@ -2281,7 +2284,7 @@
     "mitra": 2,
     "proses": 2
    },
-   "kpi": "1.000 kios baru dalam 18 bulan",
+   "kpi": "1.000 kios baru dalam 18 bulan; waktu transaksi rata-rata ≤ 3 menit",
    "kuadran": "Quick Win"
   },
   {

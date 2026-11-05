@@ -35,10 +35,10 @@ function Tip({ title, rows }: { title: string; rows: TipRow[] }) {
 
 /* ------------------------------------------------------------------ Ranked horizontal bars */
 export function RankedBars<T extends Record<string, unknown>>({
-  rows, label, value, format = (v) => n(v), height, highlight, maxRows = 15, color = SERIES[0], tip,
+  rows, label, value, format = (v) => n(v), height, highlight, maxRows = 15, color = SERIES[0], tip, colorOf,
 }: {
   rows: T[]; label: keyof T; value: keyof T; format?: (v: number) => string; height?: number;
-  highlight?: (r: T) => boolean; maxRows?: number; color?: string; tip?: (r: T) => TipRow[];
+  highlight?: (r: T) => boolean; maxRows?: number; color?: string; tip?: (r: T) => TipRow[]; colorOf?: (r: T) => string;
 }) {
   const data = rows.slice(0, maxRows);
   const h = height ?? Math.max(160, data.length * 28 + 16);
@@ -58,9 +58,10 @@ export function RankedBars<T extends Record<string, unknown>>({
             }}
           />
           <Bar dataKey={value as string} radius={[0, 4, 4, 0]} maxBarSize={18} isAnimationActive={false}>
-            {data.map((r, i) => (
-              <Cell key={i} fill={highlight ? (highlight(r) ? color : "var(--muted-mark)") : color} />
-            ))}
+            {data.map((r, i) => {
+              const base = colorOf ? colorOf(r) : color;
+              return <Cell key={i} fill={highlight ? (highlight(r) ? base : "var(--muted-mark)") : base} data-id={(r as { id?: string }).id} cursor={(r as { id?: string }).id ? "pointer" : undefined} />;
+            })}
             <LabelList dataKey={value as string} position="right" formatter={(v: unknown) => format(Number(v))} style={{ fontSize: 11, fill: "var(--ink-2)" }} />
           </Bar>
         </BarChart>
@@ -93,6 +94,44 @@ export function Columns<T extends Record<string, unknown>>({
           </Bar>
         </BarChart>
       </ResponsiveContainer>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ Grouped horizontal bars (2 seri) */
+export function GroupedBars<T extends Record<string, unknown>>({
+  rows, label, series, format = (v) => n(v), height,
+}: { rows: T[]; label: keyof T; series: { key: keyof T; name: string; color: string }[]; format?: (v: number) => string; height?: number }) {
+  const h = height ?? Math.max(180, rows.length * series.length * 22 + rows.length * 10 + 24);
+  return (
+    <div>
+      <div className="mb-2 flex flex-wrap gap-4 text-xs text-ink-2">
+        {series.map((s) => (
+          <span key={String(s.key)} className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-sm" style={{ background: s.color }} aria-hidden />{s.name}</span>
+        ))}
+      </div>
+      <div style={{ height: h }}>
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={rows} layout="vertical" margin={{ top: 4, right: 56, bottom: 4, left: 4 }} barCategoryGap={8} barGap={2}>
+            <CartesianGrid horizontal={false} stroke="var(--grid)" />
+            <XAxis type="number" tick={axisStyle} axisLine={{ stroke: "var(--axis)" }} tickLine={false} tickFormatter={(v) => format(v)} />
+            <YAxis type="category" dataKey={label as string} width={130} tick={{ ...axisStyle, fill: "var(--ink-2)" }} axisLine={false} tickLine={false} interval={0} />
+            <Tooltip
+              cursor={{ fill: "var(--grid)", opacity: 0.4 }}
+              content={({ active, payload }) => {
+                if (!active || !payload?.length) return null;
+                const r = payload[0].payload as T;
+                return <Tip title={String(r[label])} rows={series.map((s) => ({ label: s.name, value: format(Number(r[s.key])) }))} />;
+              }}
+            />
+            {series.map((s) => (
+              <Bar key={String(s.key)} dataKey={s.key as string} name={s.name} fill={s.color} radius={[0, 4, 4, 0]} maxBarSize={16} isAnimationActive={false}>
+                <LabelList dataKey={s.key as string} position="right" formatter={(v: unknown) => format(Number(v))} style={{ fontSize: 11, fill: "var(--ink-2)" }} />
+              </Bar>
+            ))}
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 }

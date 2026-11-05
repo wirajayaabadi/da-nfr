@@ -9,7 +9,9 @@ const items = [
   { href: "/segmen", label: "Segmen tenant" },
   { href: "/harga", label: "Harga sewa" },
   { href: "/lokasi", label: "Lokasi & fasilitas" },
+  { href: "/perilaku", label: "Perilaku konsumen" },
   { href: "/rekomendasi", label: "Rekomendasi inovasi" },
+  { href: "/ekonomi", label: "Dampak ekonomi" },
   { href: "/metodologi", label: "Metodologi & data" },
 ] as const;
 
