@@ -65,7 +65,7 @@ export function DataTable<T extends object>({ rows, columns, max = 50 }: { rows:
 export function ChartCard({ title, note, children, table, className = "" }: { title: string; note?: ReactNode; children: ReactNode; table?: ReactNode; className?: string }) {
   const [showTable, setShowTable] = useState(false);
   return (
-    <section className={`card flex flex-col p-4 ${className}`}>
+    <section className={`card flex min-w-0 flex-col p-4 ${className}`}>
       <div className="mb-3 flex items-start justify-between gap-3">
         <div>
           <h2 className="text-sm font-semibold">{title}</h2>

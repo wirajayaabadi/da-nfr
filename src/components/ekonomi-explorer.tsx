@@ -76,7 +76,7 @@ export function EkonomiExplorer() {
           </div>
         </ChartCard>
 
-        <section className="card p-4 xl:col-span-2" id={sel.id} aria-live="polite">
+        <section className="card min-w-0 p-4 xl:col-span-2" id={sel.id} aria-live="polite">
           <div className="flex items-center gap-2 text-xs text-ink-3"><span className="h-2 w-2 rounded-full" style={{ background: QUADRANT_COLOR[sel.kuadran] }} aria-hidden />{sel.id} · {sel.kuadran} · dampak {n(sel.impact, 1)} / usaha {n(sel.effort, 1)}</div>
           <h3 className="mt-1 text-lg font-semibold leading-snug">{sel.nama}</h3>
           <p className="mt-2 text-sm leading-6 text-ink-2">{sel.model}</p>

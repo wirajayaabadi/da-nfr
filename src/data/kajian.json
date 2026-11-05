@@ -1,0 +1,2204 @@
+{
+ "dibuat": "2026-11-05",
+ "sumber": {
+  "brightspace": "brightspace.pertamina.com (scrape 2026-11-03)",
+  "survei": "Survei perilaku konsumen SPBU (Google Form, November 2026) (n = 73)",
+  "master": "NFR Master Lahan 02-November-2026.xlsx (posisi 2026-11-02; 35.847 baris kontrak → 32.181 lahan disetujui)",
+  "eksternal": "Tolok ukur & berita publik, diverifikasi 5 November 2026; angka riset pasar dipakai sebagai orde besaran"
+ },
+ "skala_verdict": {
+  "kuat": "Bukti mendukung dan cukup untuk keputusan",
+  "sedang": "Bukti ada tetapi parsial atau perlu validasi",
+  "lemah": "Bukti menentang atau terlalu tipis",
+  "belum ada data": "Tidak ada data internal/eksternal yang relevan"
+ },
+ "alternatif": [
+  {
+   "id": "A1",
+   "pertanyaan": "Apakah lahan kosong cukup banyak, bernilai, dan terkonsentrasi sehingga program pengisian terfokus bisa mengembalikan sewa yang hilang tanpa capex?",
+   "ringkasan": "Stok lahan kosong besar (5.574 lahan, 17,5% dari total) dan nilainya terukur: Rp 106,3 M/th sudah bertarif, Rp 134,6 M/th bila yang tanpa tarif dihargai median. Lahan kosong terkonsentrasi: 636 SPBU punya ≥ 3 lahan kosong, jadi program bisa menyasar daftar SPBU, bukan seluruh jaringan. Master lahan menunjukkan sebagian lahan 'Tersewa' sebenarnya kontraknya sudah lewat, sehingga stok yang bisa dipasarkan lebih besar dari yang tampak di marketplace. Risiko utamanya bukan pasokan, tetapi permintaan tenant di luar Jawa dan lahan termahal yang sulit terisi.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "sedang",
+     "alasan": "Survei: 30,1% responden membeli non-BBM dalam 30 hari; kebutuhan ada tetapi tipis per kunjungan. Permintaan tenant harus dibuktikan per kota lewat pipeline calon mitra."
+    },
+    "pasokan": {
+     "nilai": "kuat",
+     "alasan": "5.574 lahan kosong di 2.739 SPBU; 3.693 di antaranya sudah bertarif sehingga langsung bisa dipasarkan."
+    },
+    "ekonomi": {
+     "nilai": "kuat",
+     "alasan": "Skenario dasar Rp 53,8 M/th dengan capex Pertamina Rp 5,5 M; payback 0.3 th karena asetnya sudah ada."
+    },
+    "kesiapan": {
+     "nilai": "kuat",
+     "alasan": "Tidak butuh regulasi baru; butuh tim program, target per region, dan insentif pengisian. Prasyarat data: status lahan di marketplace harus sinkron dengan master."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "brightspace",
+     "label": "Lahan kosong",
+     "nilai": "5.574 dari 31.861 lahan (17,5%)",
+     "catatan": "di 2.739 SPBU; 636 SPBU punya ≥ 3 lahan kosong"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Nilai sewa idle",
+     "nilai": "Rp 106,3 M/th bertarif; Rp 134,6 M/th estimasi",
+     "catatan": "1.881 lahan kosong tanpa tarif dihargai median Rp 15,0 jt"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Komposisi lahan kosong",
+     "nilai": "< 10 m²: 3.166 · luar bangunan: 1.076 · ≥ 100 m²: 492 · lantai 2: 123",
+     "catatan": "menentukan format pengisian yang cocok (A3/A4, A5/A8, A6, A11)"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Okupansi dengan vs tanpa data fasilitas",
+     "nilai": "82,7% vs 82,2%",
+     "catatan": "okupansi tidak dijelaskan oleh fasilitas; faktor lokasi/permintaan lebih menentukan"
+    },
+    {
+     "sumber": "survei",
+     "label": "Membeli non-BBM dalam 30 hari terakhir",
+     "nilai": "30,1%",
+     "catatan": "82,2% langsung pergi setelah mengisi BBM"
+    },
+    {
+     "sumber": "master",
+     "label": "Lahan 'Tersewa' yang kontraknya sudah lewat",
+     "nilai": "7.064",
+     "catatan": "dari 26.870 kontrak bertanggal; perlu dikonfirmasi: perpanjangan otomatis atau status belum diperbarui"
+    },
+    {
+     "sumber": "master",
+     "label": "Lahan disetujui tetapi tidak tayang di marketplace",
+     "nilai": "1.984 (363 kosong)",
+     "catatan": "stok kosong yang tidak dipasarkan"
+    },
+    {
+     "sumber": "master",
+     "label": "Usulan lahan baru menunggu persetujuan",
+     "nilai": "880 lahan di 560 SPBU",
+     "catatan": "pipeline pasokan baru yang akan menambah stok kosong"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Nilai sewa idle per provinsi (10 teratas)",
+     "catatan": "Rp per tahun, lahan kosong bertarif + estimasi median untuk yang tanpa tarif.",
+     "format": "rp",
+     "rows": [
+      {
+       "label": "Jawa Barat",
+       "value": 22433987800.0
+      },
+      {
+       "label": "DKI Jakarta",
+       "value": 15201581301.0
+      },
+      {
+       "label": "Jawa Tengah",
+       "value": 13348324051.0
+      },
+      {
+       "label": "Banten",
+       "value": 10037287128.0
+      },
+      {
+       "label": "Jawa Timur",
+       "value": 8659442943.0
+      },
+      {
+       "label": "Sumatera Utara",
+       "value": 4448424777.0
+      },
+      {
+       "label": "DI Yogyakarta",
+       "value": 3858546135.0
+      },
+      {
+       "label": "Kepulauan Riau",
+       "value": 3602053942.0
+      },
+      {
+       "label": "Jambi",
+       "value": 3450600000.0
+      },
+      {
+       "label": "Kalimantan Barat",
+       "value": 3294100000.0
+      }
+     ],
+     "series": null
+    },
+    {
+     "judul": "Lahan kosong menurut luas",
+     "catatan": "Jumlah lahan; format pengisian mengikuti ukuran.",
+     "format": "n",
+     "rows": [
+      {
+       "label": "< 10 m²",
+       "value": 3166
+      },
+      {
+       "label": "10–49 m²",
+       "value": 1434
+      },
+      {
+       "label": "50–199 m²",
+       "value": 579
+      },
+      {
+       "label": "≥ 200 m²",
+       "value": 235
+      },
+      {
+       "label": "Tidak ada data",
+       "value": 160
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "Porsi NFR di bisnis SPBU",
+     "nilai": "≈ 6% (vs 30–40% di negara maju)",
+     "sumber": "Pertamina Patra Niaga via RRI",
+     "url": "https://rri.co.id/bisnis/958802/pertamina-ajak-pengusaha-bisnis-non-fuel-retail",
+     "relevansi": "Benchmark 30–40% di negara maju menunjukkan ruang tumbuh; pengisian lahan adalah langkah pertama yang paling murah."
+    },
+    {
+     "item": "Skala jaringan mitra NFR",
+     "nilai": "> 1.500 mitra/brand di > 20.000 outlet NFR",
+     "sumber": "Pertamina Patra Niaga via Kontan",
+     "url": "https://industri.kontan.co.id/news/tertarik-join-bisnis-dengan-pertamina-begini-caranya",
+     "relevansi": "Basis mitra sudah ada; program pengisian bisa mulai dari tenant eksisting yang ingin ekspansi."
+    },
+    {
+     "item": "Target historis NFR",
+     "nilai": "2020: target 30% pendapatan SPBU dari NFR pada 2025",
+     "sumber": "Republika (2020)",
+     "url": "https://ekonomi.republika.co.id/berita/qexp73383/pacu-bisnis-ritel-pertamina-tambah-3-000-gerai-bright-store",
+     "relevansi": "Target lama jauh dari tercapai (porsi ≈ 6%); okupansi lahan adalah KPI antara yang paling langsung."
+    },
+    {
+     "item": "Ekspansi format baru",
+     "nilai": "Biru Container; potensi ± 6.000 SPBU",
+     "sumber": "Bisnis.com (Jan 2026)",
+     "url": "https://ekonomi.bisnis.com/read/20260118/44/1944891/diversifikasi-bisnis-spbu-pertamina-patra-niaga-perluas-pendapatan-non-bbm",
+     "relevansi": "Perusahaan sedang aktif mendorong diversifikasi; program pengisian sejalan dengan arah korporat."
+    }
+   ],
+   "risiko": [
+    "Lahan termahal dan lahan di luar Jawa paling lama kosong; target rata-rata 40% bisa meleset bila tidak dibedakan per region.",
+    "Status lahan di marketplace tidak sinkron dengan master (lahan tampil kosong padahal terisi, atau sebaliknya) merusak kepercayaan calon tenant.",
+    "Insentif pengisian bisa menarik tenant berkualitas rendah yang churn dalam setahun."
+   ],
+   "prasyarat": [
+    "Daftar prioritas SPBU (≥ 3 lahan kosong, tarif terpublikasi, kota besar) dan pemilik target per region.",
+    "Sinkronisasi status Tersewa/Tersedia antara master dan Brightspace sebelum kampanye.",
+    "Paket tarif perkenalan terbatas waktu (mis. diskon 6 bulan pertama) daripada diskon permanen."
+   ],
+   "pilot": [
+    "Pilih 3 kota dengan nilai idle terbesar; 90 hari; target isi 25% lahan kosong bertarif.",
+    "Ukur: lahan terisi, hari-ke-sewa, tarif realisasi vs listing, churn 6 bulan.",
+    "Bandingkan dengan 3 kota kontrol tanpa program."
+   ],
+   "data_dibutuhkan": [
+    "Lama kekosongan per lahan (tanggal kosong) untuk membedakan stok lama vs baru.",
+    "Pipeline calon tenant per kota (inquiry Brightspace) untuk mengukur permintaan.",
+    "Alasan tenant keluar (exit survey) pada lahan yang baru kosong."
+   ],
+   "nama": "Program pengisian cepat lahan kosong (Occupancy Sprint)",
+   "kuadran": "Quick Win",
+   "kategori": "Komersial",
+   "impact": 7.6,
+   "effort": 2.1,
+   "kpi": "Okupansi naik 82,5% -> 90% dalam 12 bulan"
+  },
+  {
+   "id": "A2",
+   "pertanyaan": "Apakah dispersi tarif cukup lebar dan siklus kontrak cukup pendek sehingga tarif acuan bisa menaikkan rent roll tanpa menunggu bertahun-tahun?",
+   "ringkasan": "Dua syarat terpenuhi. Dispersi tarif sangat lebar: P25 Rp 8,0 jt vs P75 Rp 25,2 jt (3.2×), dan 11.131 lahan tidak punya tarif valid sama sekali. Master lahan menunjukkan kontrak hampir semuanya 1 tahun (median 1,0 th; 69,1% kontrak aktif berakhir dalam 12 bulan), sehingga tarif acuan bisa diterapkan pada hampir seluruh portofolio dalam satu siklus, jauh lebih cepat dari asumsi 30–70% dalam 3 tahun di model ekonomi. Rent roll berbasis kontrak aktual (Rp 491,0 M/th) juga lebih tinggi dari listing (Rp 422,9 M/th), jadi basis kenaikannya lebih besar.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "sedang",
+     "alasan": "Kenaikan tarif ditanggung tenant; survei konsumen tidak relevan langsung. Risiko churn tenant marjinal (UMKM) bila kenaikan tidak dibedakan per segmen."
+    },
+    "pasokan": {
+     "nilai": "kuat",
+     "alasan": "17.037 lahan tersewa bertarif valid; 11.131 lahan tanpa tarif adalah target standardisasi pertama."
+    },
+    "ekonomi": {
+     "nilai": "kuat",
+     "alasan": "Dasar Rp 12,7 M/th tanpa capex mitra; hanya biaya model tarif dan analis. Siklus 1 tahun di master membuat skenario optimis lebih realistis."
+    },
+    "kesiapan": {
+     "nilai": "sedang",
+     "alasan": "Butuh model tarif (segmen × kota × posisi × luas), tata kelola persetujuan tarif, dan komunikasi ke tenant; perubahan proses di region adalah hambatan utama."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "brightspace",
+     "label": "Sebaran tarif tahunan",
+     "nilai": "P10 Rp 4,0 jt · P25 Rp 8,0 jt · median Rp 15,0 jt · P75 Rp 25,2 jt · P90 Rp 45,0 jt",
+     "catatan": "rasio P75/P25 3.2×; 215 outlier salah input dikeluarkan"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Lahan tanpa tarif valid",
+     "nilai": "11.131 (34,9%)",
+     "catatan": "termasuk 9.250 lahan tersewa yang tarifnya tidak tercatat di marketplace"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Periode tarif",
+     "nilai": "Tahun: 29.266 · Bulan: 2.595",
+     "catatan": "tarif bulanan dikalikan 12; validasi lihat master"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Tarif median per segmen",
+     "nilai": "Perbankan & ATM: Rp 20,0 jt · F&B / Kuliner: Rp 12,0 jt · Minimarket & Ritel: Rp 30,0 jt · LPG & Bright Gas: Rp 5,0 jt",
+     "catatan": "dispersi antarsegmen wajar; dispersi di dalam segmen yang perlu dirapikan"
+    },
+    {
+     "sumber": "master",
+     "label": "Durasi kontrak",
+     "nilai": "median 1,0 th; 74,3% kontrak berdurasi 1 tahun",
+     "catatan": "26.870 kontrak bertanggal"
+    },
+    {
+     "sumber": "master",
+     "label": "Kontrak aktif yang berakhir ≤ 12 bulan",
+     "nilai": "11.127 (0–6 bln) + 7.429 (6–12 bln) = 69,1%",
+     "catatan": "jendela penerapan tarif acuan datang setiap tahun"
+    },
+    {
+     "sumber": "master",
+     "label": "Rent roll berbasis kontrak aktual",
+     "nilai": "Rp 491,0 M/th (17.423 lahan; median Rp 14,8 jt)",
+     "catatan": "vs listing Brightspace Rp 422,9 M/th; model ekonomi A2 memakai basis listing (lebih rendah). 32 kontrak pendek yang teranualisasi > Rp 2 M/th (Rp 238,7 M) dikeluarkan sebagai outlier"
+    },
+    {
+     "sumber": "master",
+     "label": "Validasi anualisasi tarif bulanan",
+     "nilai": "nilai kontrak ÷ durasi ≈ tarif × 12 pada mayoritas lahan berperiode Bulan",
+     "catatan": "asumsi ×12 di pipeline terkonfirmasi"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Kontrak aktif yang berakhir per kuartal",
+     "catatan": "Jumlah kontrak (master lahan, hanya yang bertanggal). Setiap kuartal adalah jendela penerapan tarif acuan.",
+     "format": "n",
+     "rows": [
+      {
+       "label": "2026Q4",
+       "value": 3868
+      },
+      {
+       "label": "2027Q1",
+       "value": 4477
+      },
+      {
+       "label": "2027Q2",
+       "value": 5155
+      },
+      {
+       "label": "2027Q3",
+       "value": 4058
+      },
+      {
+       "label": "2027Q4",
+       "value": 1249
+      },
+      {
+       "label": "2028Q1",
+       "value": 251
+      },
+      {
+       "label": "2028Q2",
+       "value": 222
+      },
+      {
+       "label": "2028Q3",
+       "value": 250
+      }
+     ],
+     "series": null
+    },
+    {
+     "judul": "Sebaran tarif tahunan (histogram)",
+     "catatan": "Jumlah lahan per kelas tarif; ekor kanan panjang.",
+     "format": "n",
+     "rows": [
+      {
+       "label": "<1",
+       "value": 366
+      },
+      {
+       "label": "1–2,5",
+       "value": 999
+      },
+      {
+       "label": "2,5–5",
+       "value": 1040
+      },
+      {
+       "label": "5–10",
+       "value": 3860
+      },
+      {
+       "label": "10–15",
+       "value": 3978
+      },
+      {
+       "label": "15–25",
+       "value": 4642
+      },
+      {
+       "label": "25–50",
+       "value": 4048
+      },
+      {
+       "label": "50–100",
+       "value": 1190
+      },
+      {
+       "label": "100–250",
+       "value": 411
+      },
+      {
+       "label": "250–1.000",
+       "value": 182
+      },
+      {
+       "label": ">1.000",
+       "value": 14
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "Posisi tarif resmi",
+     "nilai": "'Harga sewa kompetitif' + promosi di MyPertamina; tanpa skema tarif publik",
+     "sumber": "Pertamina Patra Niaga via IDX Channel",
+     "url": "https://www.idxchannel.com/economics/pertamina-patra-niaga-buka-peluang-kerja-sama-kembangkan-bisnis-non-fuel/all",
+     "relevansi": "Belum ada tarif acuan yang dipublikasikan; standardisasi adalah ruang kosong yang bisa diisi."
+    },
+    {
+     "item": "Transparansi tata kelola SPBU",
+     "nilai": "Pertamina Way 2.0 menekankan tata kelola transparan",
+     "sumber": "Kontan",
+     "url": "https://industri.kontan.co.id/news/persaingan-pom-bensin-semakin-ketat-begini-langkah-pertamina",
+     "relevansi": "Tarif acuan yang terbuka sejalan dengan arah tata kelola; mengurangi negosiasi kasus per kasus."
+    },
+    {
+     "item": "Porsi NFR di bisnis SPBU",
+     "nilai": "≈ 6% (vs 30–40% di negara maju)",
+     "sumber": "Pertamina Patra Niaga via RRI",
+     "url": "https://rri.co.id/bisnis/958802/pertamina-ajak-pengusaha-bisnis-non-fuel-retail",
+     "relevansi": "Kenaikan tarif 6–10% pada rent roll ≈ Rp 0,4–0,6 T/th adalah cara tercepat menaikkan porsi NFR tanpa unit baru."
+    }
+   ],
+   "risiko": [
+    "Kenaikan seragam memukul tenant UMKM (LPG, nitrogen) yang tarif mediannya rendah; churn menurunkan okupansi.",
+    "Tenant besar (bank, Pertamina Retail) punya kontrak payung; tarif acuan bisa bentrok dengan perjanjian korporat.",
+    "Tarif marketplace dan nilai kontrak tidak selalu sama; tanpa sumber kebenaran tunggal, dynamic pricing tidak bisa diaudit."
+   ],
+   "prasyarat": [
+    "Satu sumber tarif (master) yang memberi makan marketplace, bukan sebaliknya.",
+    "Model tarif per m² dengan faktor segmen, kota, posisi, luas, dan area sekitar; dipublikasikan sebagai rentang.",
+    "Aturan transisi: kenaikan maksimum per perpanjangan (mis. 10%) dan pengecualian untuk UMKM."
+   ],
+   "pilot": [
+    "Terapkan tarif acuan pada kontrak yang berakhir di 2 kuartal pertama di 2 region.",
+    "Ukur: tarif realisasi vs acuan, tingkat perpanjangan, lahan yang kosong karena tarif.",
+    "Prioritaskan lahan tanpa tarif valid: tetapkan tarif sebelum dipasarkan."
+   ],
+   "data_dibutuhkan": [
+    "Nilai kontrak aktual per lahan (ada di master) untuk menggantikan basis listing di model ekonomi.",
+    "Riwayat perpanjangan: berapa persen kontrak diperpanjang dengan kenaikan, dan berapa besar.",
+    "Daftar kontrak payung korporat beserta klausul tarifnya."
+   ],
+   "nama": "Standardisasi & dynamic pricing tarif sewa",
+   "kuadran": "Quick Win",
+   "kategori": "Komersial",
+   "impact": 7.6,
+   "effort": 2.1,
+   "kpi": "100% lahan punya tarif acuan; uplift pendapatan 5-10%"
+  },
+  {
+   "id": "A9",
+   "pertanyaan": "Apakah kelengkapan profil dan fasilitas dasar menaikkan nilai sewa atau okupansi, dan apakah konsumen memilih SPBU karena fasilitas?",
+   "ringkasan": "Datanya tegas pada satu hal dan netral pada hal lain. 3.899 SPBU (58,8%) tidak mencantumkan fasilitas apa pun, dan toilet hanya tercatat di 38,4% SPBU. Okupansi tidak berbeda antara SPBU dengan dan tanpa data fasilitas (82,7% vs 82,2%), tetapi tarif di SPBU yang mencatat hotel/perkantoran/stasiun di sekitarnya 20–33% di atas median. Konsumen memilih SPBU karena dekat (49,3%) dan di rute (39,7%), bukan fasilitas (4,1%); namun 35,6% menganggap tempat istirahat bermanfaat. Kesimpulan: A9 adalah enabler untuk tarif (A2) dan pemasaran lahan, bukan pendorong okupansi sendiri; biayanya kecil dan sejalan dengan program Serv-Q/Pertamina Way.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "sedang",
+     "alasan": "Fasilitas bukan alasan memilih SPBU (4,1%), tetapi tempat istirahat diinginkan 35,6%; toilet/musala dipakai 9,6% setelah mengisi."
+    },
+    "pasokan": {
+     "nilai": "kuat",
+     "alasan": "3.899 SPBU tanpa data fasilitas; 5.431 SPBU tanpa data area sekitar: ruang perbaikan profil sangat besar."
+    },
+    "ekonomi": {
+     "nilai": "sedang",
+     "alasan": "Dasar Rp 4,4 M/th lewat premi tarif 10–20% pada satu lahan per SPBU; efek tidak langsung, sulit diatribusikan."
+    },
+    "kesiapan": {
+     "nilai": "kuat",
+     "alasan": "Sejalan dengan Serv-Q/Pertamina Way dan 'Pantau SPBU'; butuh kewajiban profil lengkap di marketplace dan audit foto."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "brightspace",
+     "label": "SPBU tanpa data fasilitas",
+     "nilai": "3.899 (58,8%)",
+     "catatan": "cakupan: Toilet 38,4% · Mushola 38,3% · CCTV 35,7% · Tempat Parkir 26,7% · ATM Center 18,2%"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Okupansi dengan vs tanpa data fasilitas",
+     "nilai": "82,7% vs 82,2%",
+     "catatan": "tidak signifikan: fasilitas tidak menjelaskan okupansi"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Tarif median dengan vs tanpa data area sekitar",
+     "nilai": "Rp 15,5 jt vs Rp 14,0 jt",
+     "catatan": "premi ada di tarif, bukan okupansi; "
+    },
+    {
+     "sumber": "brightspace",
+     "label": "SPBU dengan data area sekitar",
+     "nilai": "1.196 dari 6.627",
+     "catatan": "2.722 titik; sisanya kosong"
+    },
+    {
+     "sumber": "survei",
+     "label": "Alasan memilih SPBU",
+     "nilai": "dekat 49,3% · di rute 39,7% · fasilitas nyaman 4,1%",
+     "catatan": "lokasi menang; fasilitas pembeda sekunder"
+    },
+    {
+     "sumber": "survei",
+     "label": "Tempat istirahat dianggap bermanfaat",
+     "nilai": "35,6%",
+     "catatan": "prioritas 28,8%; toilet/musala dipakai 9,6% setelah mengisi"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Cakupan fasilitas yang tercantum di profil SPBU",
+     "catatan": "% SPBU (Brightspace). Rendah karena profil tidak diisi, bukan karena fasilitas tidak ada.",
+     "format": "pct",
+     "rows": [
+      {
+       "label": "Toilet",
+       "value": 38.4
+      },
+      {
+       "label": "Mushola",
+       "value": 38.3
+      },
+      {
+       "label": "CCTV",
+       "value": 35.7
+      },
+      {
+       "label": "Tempat Parkir",
+       "value": 26.7
+      },
+      {
+       "label": "ATM Center",
+       "value": 18.2
+      },
+      {
+       "label": "Area Merokok",
+       "value": 4.9
+      },
+      {
+       "label": "WiFi Gratis",
+       "value": 4.2
+      }
+     ],
+     "series": null
+    },
+    {
+     "judul": "Alasan memilih SPBU",
+     "catatan": "% responden (survei).",
+     "format": "pct",
+     "rows": [
+      {
+       "label": "Dekat rumah/kantor",
+       "value": 49.3
+      },
+      {
+       "label": "Di rute perjalanan",
+       "value": 39.7
+      },
+      {
+       "label": "Harga & jenis BBM sesuai",
+       "value": 15.1
+      },
+      {
+       "label": "Percaya kualitas/takaran",
+       "value": 8.2
+      },
+      {
+       "label": "Tidak ada pilihan lain",
+       "value": 6.8
+      },
+      {
+       "label": "Fasilitas nyaman",
+       "value": 4.1
+      },
+      {
+       "label": "Lainnya",
+       "value": 2.7
+      },
+      {
+       "label": "Ada layanan tambahan",
+       "value": 1.4
+      },
+      {
+       "label": "Antrean cepat",
+       "value": 1.4
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "Program layanan Serv-Q / Pertamina Way",
+     "nilai": "Serv-Q sebagai pilar standar layanan nasional SPBU",
+     "sumber": "Kontan",
+     "url": "https://industri.kontan.co.id/news/kenyamanan-pelanggan-meningkat-lewat-program-serv-q-pertamina",
+     "relevansi": "Upgrade toilet/musala sudah menjadi program korporat; A9 menambahkan dimensi data profil untuk pemasaran lahan."
+    },
+    {
+     "item": "Inspeksi fasilitas 'Pantau SPBU'",
+     "nilai": "Direksi memeriksa toilet & musala SPBU (Okt 2025)",
+     "sumber": "RM.id",
+     "url": "https://rm.id/baca-berita/ekonomi-bisnis/285631/direksi-pekerja-pertamina-patra-niaga-pastikan-toilet-mushola-spbu-bersih",
+     "relevansi": "Perhatian manajemen tinggi; momentum untuk mewajibkan profil lengkap."
+    },
+    {
+     "item": "Fasilitas & kepuasan pelanggan (studi)",
+     "nilai": "Fasilitas berpengaruh positif signifikan pada kepuasan (studi SPBU Medan)",
+     "sumber": "Repositori UMA",
+     "url": "https://repositori.uma.ac.id/jspui/bitstream/123456789/12038/1/Wan%20Suryani%20%20Prosiding%20Dies%20Natalis%20FEB%20USU.pdf",
+     "relevansi": "Bukti akademik lokal; kepuasan, bukan okupansi tenant."
+    }
+   ],
+   "risiko": [
+    "Profil diisi asal-asalan untuk memenuhi kewajiban; data tidak bisa dipercaya.",
+    "Premi tarif sulit diatribusikan ke profil; manfaat ekonomi tidak terbukti dan program kehilangan dukungan.",
+    "Upgrade fasilitas dibebankan ke pengelola SPBU yang marginnya tipis."
+   ],
+   "prasyarat": [
+    "Skema profil wajib di marketplace: fasilitas, area sekitar, foto, tarif, daya listrik lahan.",
+    "Audit sampel foto/fasilitas oleh region.",
+    "Insentif pengelola SPBU (mis. prioritas pemasaran lahan) untuk profil lengkap."
+   ],
+   "pilot": [
+    "1 region: wajibkan profil lengkap untuk semua SPBU dengan lahan kosong dalam 90 hari.",
+    "Ukur: kelengkapan profil, inquiry lahan di marketplace, tarif realisasi lahan yang baru disewa.",
+    "Bandingkan inquiry sebelum/sesudah dan dengan region kontrol."
+   ],
+   "data_dibutuhkan": [
+    "Data inquiry/kunjungan halaman lahan di Brightspace (analitik web).",
+    "Inventaris fasilitas fisik dari region untuk membedakan 'tidak ada' vs 'tidak diisi'.",
+    "Skor Serv-Q per SPBU untuk dikorelasikan dengan tarif."
+   ],
+   "nama": "Pelengkapan profil SPBU & upgrade fasilitas dasar",
+   "kuadran": "Quick Win",
+   "kategori": "Enabler",
+   "impact": 6.9,
+   "effort": 3.2,
+   "kpi": "100% SPBU berprofil lengkap; cakupan toilet/mushola ≥ 80%"
+  },
+  {
+   "id": "A3",
+   "pertanyaan": "Apakah ada permintaan F&B yang bocor ke luar SPBU, dan apakah format < 10 m² grab-and-go cocok dengan perilaku pengunjung yang tidak mau berlama-lama?",
+   "ringkasan": "Survei memberi dua sinyal yang saling menguatkan: makanan/minuman cepat dianggap bermanfaat oleh 41,1% responden, tetapi kopi/minuman 26,0% dibeli di luar SPBU vs 9,6% di SPBU. Pengunjung tidak mau menunggu (41,1% tidak mau menambah waktu; 47,9% menyebut kecepatan sebagai faktor utama), jadi formatnya harus grab-and-go, bukan kafe. Pasokan lahan ada: 3.166 lahan kosong < 10 m² dengan tarif median Rp 13,0 jt/th. Segmen F&B saat ini 2.281 lahan dan didominasi brand minuman siap saji, menunjukkan format kios sudah terbukti di jaringan. Pasar kopi nasional ramai dan mulai jenuh di kota besar, sehingga diferensiasi SPBU adalah kecepatan dan lokasi, bukan produk.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "kuat",
+     "alasan": "Bermanfaat 41,1%, prioritas 23,3%; kebocoran kopi 26,0% vs 9,6%. Catatan: n = 73, Medan dominan."
+    },
+    "pasokan": {
+     "nilai": "kuat",
+     "alasan": "3.166 lahan kosong < 10 m²; 1.076 lahan luar untuk booth. Diperebutkan dengan A4 (locker)."
+    },
+    "ekonomi": {
+     "nilai": "sedang",
+     "alasan": "Dasar Rp 19,2 M/th untuk Pertamina; omzet mitra Rp 360,0 M/th. Bergantung pada bagi hasil yang belum ada skemanya."
+    },
+    "kesiapan": {
+     "nilai": "kuat",
+     "alasan": "Format kios sudah ada di jaringan (Bright Cafe, brand teh/kopi); perlu standar booth, SOP ≤ 3 menit, dan kurasi mitra."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "survei",
+     "label": "Makanan/minuman cepat dianggap bermanfaat",
+     "nilai": "41,1%",
+     "catatan": "prioritas utama 23,3%; Bright Cafe/kopi diketahui 24,7%"
+    },
+    {
+     "sumber": "survei",
+     "label": "Kebocoran: kopi/minuman dibeli di luar vs di SPBU",
+     "nilai": "26,0% vs 9,6%",
+     "catatan": "makanan siap saji 16,4% vs 11,0%; dari yang membeli non-BBM, 31,8% membeli kopi"
+    },
+    {
+     "sumber": "survei",
+     "label": "Tidak mau menambah waktu kunjungan",
+     "nilai": "41,1%",
+     "catatan": "82,2% langsung pergi; 'proses pelayanan cepat' faktor #1 (47,9%)"
+    },
+    {
+     "sumber": "survei",
+     "label": "Pengeluaran per pembelian non-BBM",
+     "nilai": "modus Rp 25–50 rb (31,8%)",
+     "catatan": "cocok dengan tiket kopi + snack"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Lahan kosong < 10 m²",
+     "nilai": "3.166 lahan; tarif median Rp 13,0 jt/th",
+     "catatan": "format booth juga bisa di lahan luar"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Segmen F&B saat ini",
+     "nilai": "2.281 lahan (8,7% dari tersewa); tarif median Rp 12,0 jt; luas median 9 m²",
+     "catatan": "brand teratas: Es Teh Poci (601), Kebab Turki Babarafi (180), Kopi Kenangan (156), Roti'O (123)"
+    },
+    {
+     "sumber": "master",
+     "label": "Tenant F&B (badan hukum)",
+     "nilai": "1.592 lahan; teratas PT Poci Kreasi Mandiri (604), PT Baba Rafi Internasional (191), UMKM MAKANAN DAN MINUMAN (51), PT Dunkindo Lestari (49)",
+     "catatan": "satu operator bisa mengelola ratusan titik: model kemitraan skala jaringan sudah ada"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Di mana konsumen membeli: luar SPBU vs di SPBU",
+     "catatan": "% responden (survei). Selisih = permintaan yang bocor.",
+     "format": "pct",
+     "rows": [
+      {
+       "label": "Makanan siap saji",
+       "luar": 16.4,
+       "spbu": 11.0
+      },
+      {
+       "label": "Kopi/minuman",
+       "luar": 26.0,
+       "spbu": 9.6
+      },
+      {
+       "label": "Kebutuhan harian",
+       "luar": 24.7,
+       "spbu": 2.7
+      },
+      {
+       "label": "Ban/angin/nitrogen",
+       "luar": 32.9,
+       "spbu": 11.0
+      },
+      {
+       "label": "Pembayaran",
+       "luar": 5.5,
+       "spbu": 1.4
+      }
+     ],
+     "series": [
+      {
+       "key": "luar",
+       "name": "Di luar SPBU"
+      },
+      {
+       "key": "spbu",
+       "name": "Di SPBU"
+      }
+     ]
+    },
+    {
+     "judul": "Brand F&B dengan lahan terbanyak",
+     "catatan": "Jumlah lahan tersewa (Brightspace).",
+     "format": "n",
+     "rows": [
+      {
+       "label": "Es Teh Poci",
+       "value": 601
+      },
+      {
+       "label": "Kebab Turki Babarafi",
+       "value": 180
+      },
+      {
+       "label": "Kopi Kenangan",
+       "value": 156
+      },
+      {
+       "label": "Roti'O",
+       "value": 123
+      },
+      {
+       "label": "Warung Mulyadi",
+       "value": 56
+      },
+      {
+       "label": "UMKM MAKANAN DAN MINUMAN",
+       "value": 52
+      },
+      {
+       "label": "Dunkin' Donuts",
+       "value": 51
+      },
+      {
+       "label": "Tomoro Coffee",
+       "value": 34
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "Booth kios & omzet kopi",
+     "nilai": "Booth Rp 6–25 jt; omzet Rp 18–48 jt/bulan",
+     "sumber": "grobong.com; franchisekopi.co.id (simulasi penjual)",
+     "url": "https://www.franchisekopi.co.id/franchise-kopi-box-kontainer/",
+     "relevansi": "Capex mitra Rp 20 jt/booth dan omzet Rp 18–45 jt/bulan dipakai di model; angka simulasi penjual, perlu validasi dengan tenant eksisting."
+    },
+    {
+     "item": "Jumlah kedai kopi nasional",
+     "nilai": "> 10.000 gerai (2025); konsumsi 1,03 kg/kapita, 288 rb ton",
+     "sumber": "Kemenperin via Industry.co.id; Kompas via skripsi",
+     "url": "https://www.industry.co.id/read/142047/kemenperin-kopi-indonesia-siap-mendunia",
+     "relevansi": "Permintaan kopi besar dan tumbuh; SPBU bersaing dengan ribuan kedai, jadi keunggulannya harus kecepatan dan lokasi di rute."
+    },
+    {
+     "item": "Pasar kopi mulai jenuh; format grab & go disarankan",
+     "nilai": "Kontan: gerai coffee shop menjamur, pelaku didorong ke format grab & go (contoh Point Coffee Indomaret)",
+     "sumber": "Kontan Insight",
+     "url": "https://insight.kontan.co.id/news/transformasi-bisnis-kopi-bukan-sekadar-teman-begadang",
+     "relevansi": "Mendukung pilihan format grab-and-go daripada kafe duduk."
+    },
+    {
+     "item": "Kompetitor terdekat",
+     "nilai": "Minimarket sebagai tempat beli kebutuhan harian/kopi (survei: 61,6% responden)",
+     "sumber": "Survei internal + Alfamart/Indomaret quick commerce",
+     "url": "https://www.pulse.bot/ecommerce/news/indonesian-minimart-king-alfamart-boosts-quick-commerce-to-reverse-slowdown-ba8b10f4-1723-41c5-94e0-fb87024dd6a3",
+     "relevansi": "Minimarket di/dekat SPBU adalah pesaing langsung kios; kios harus lebih cepat, bukan lebih lengkap."
+    }
+   ],
+   "risiko": [
+    "Kanibalisasi Bright Store/Bright Cafe milik Pertamina Retail di SPBU yang sama.",
+    "Sampel survei kecil (n = 73) dan condong ke Medan; permintaan kopi bisa berbeda di kota lain.",
+    "Booth di lahan luar menambah antrean kendaraan bila tidak ada jalur ambil cepat."
+   ],
+   "prasyarat": [
+    "Standar booth < 10 m² dan SOP transaksi ≤ 3 menit (pre-order via MyPertamina opsional).",
+    "Skema bagi hasil dengan mitra (belum ada); tarif sewa F&B acuan per kota.",
+    "Zonasi: tidak di SPBU yang sudah punya Bright Cafe kecuali sebagai pelengkap."
+   ],
+   "pilot": [
+    "20 booth di 2 kota (Medan dan satu kota Jawa) dengan 2–3 mitra kopi/teh; 6 bulan.",
+    "Ukur: transaksi/hari, waktu transaksi, omzet, konversi pengunjung, keluhan antrean.",
+    "Uji variasi: booth di dalam vs di luar bangunan; dengan vs tanpa pre-order."
+   ],
+   "data_dibutuhkan": [
+    "Trafik kendaraan per SPBU per hari untuk menaksir konversi.",
+    "Omzet aktual tenant F&B eksisting (dari laporan bagi hasil, bila ada).",
+    "Survei lanjutan dengan sampel lebih besar dan proporsional antar kota."
+   ],
+   "nama": "Kios kopi & F&B mikro grab-and-go (format < 10 m²)",
+   "kuadran": "Quick Win",
+   "kategori": "Produk baru",
+   "impact": 6.7,
+   "effort": 3.2,
+   "kpi": "1.000 kios baru dalam 18 bulan; waktu transaksi rata-rata ≤ 3 menit"
+  },
+  {
+   "id": "A4",
+   "pertanyaan": "Apakah konsumen mau mengambil paket di SPBU, dan apakah operator locker membutuhkan titik SPBU di tengah dominasi pickup minimarket?",
+   "ringkasan": "Sinyal permintaan dari konsumen lemah: titik paket online hanya dianggap bermanfaat oleh 4,1% responden dan diprioritaskan 1,4%; hanya 1,4% tahu layanan paket ada di SPBU. Namun 13,7% tertarik model 'pesan di aplikasi, ambil di SPBU', yang secara operasional sama dengan locker. Volume paket nasional tumbuh dua digit, tetapi jaringan pickup minimarket sudah luas, jadi nilai SPBU bagi operator adalah lokasi di rute dan jam operasional 24 jam, bukan kedekatan dengan rumah. Pasokan lahan sama dengan A3 (3.166 lahan < 10 m²), sehingga A4 lebih tepat sebagai pelengkap di SPBU jalur komuter, bukan program jaringan luas.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "lemah",
+     "alasan": "Bermanfaat 4,1%, prioritas 1,4%; permintaan tersirat lewat 'pesan di aplikasi, ambil di SPBU' 13,7%."
+    },
+    "pasokan": {
+     "nilai": "kuat",
+     "alasan": "3.166 lahan kosong < 10 m²; locker hanya butuh 2–4 m² dan listrik kecil. Diperebutkan dengan A3."
+    },
+    "ekonomi": {
+     "nilai": "sedang",
+     "alasan": "Dasar Rp 5,0 M/th; capex ditanggung operator (Rp 17,5 M). Pendapatan Pertamina kecil per unit, nilainya di trafik tambahan."
+    },
+    "kesiapan": {
+     "nilai": "sedang",
+     "alasan": "Mitra operator (PopBox, kurir besar) tersedia; butuh akses 24 jam, CCTV, dan integrasi aplikasi. Segmen logistik di jaringan masih kecil."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "survei",
+     "label": "Titik paket online dianggap bermanfaat",
+     "nilai": "4,1%",
+     "catatan": "prioritas 1,4%; tahu ada layanan paket di SPBU 1,4%"
+    },
+    {
+     "sumber": "survei",
+     "label": "Tertarik 'pesan di aplikasi, ambil di SPBU'",
+     "nilai": "13,7%",
+     "catatan": "'datang langsung' 58,9%; tidak tertarik 12,3%"
+    },
+    {
+     "sumber": "survei",
+     "label": "Tempat biasa memakai jasa logistik",
+     "nilai": "6,8%",
+     "catatan": "marketplace 6,8%; kebutuhan logistik bukan bagian rutin kunjungan SPBU"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Segmen Logistik & Ekspedisi saat ini",
+     "nilai": "94 lahan (0,4% dari tersewa); tarif median Rp 13,4 jt",
+     "catatan": "brand teratas: Lalamove (28), J&T EXPRESS (25), JNE Express (19), Nitrogen Pit Stop Express (11)"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Lahan kosong < 10 m² dengan daya tercatat",
+     "nilai": "1.990 dari 3.166",
+     "catatan": "locker butuh ± 300–500 W; sebagian besar lahan kecil mencantumkan daya"
+    },
+    {
+     "sumber": "master",
+     "label": "Tenant logistik (badan hukum)",
+     "nilai": "89 lahan; teratas PT Lalamove Logistik Indonesia (28), PT GLOBAL JET EXPRESS (25), PT Tiki Jalur Nugraha Ekakurir (17), PT Lion Express (11)",
+     "catatan": "kurir besar sudah menyewa di jaringan; locker bisa ditawarkan ke tenant yang sama"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Minat cara mengakses layanan di SPBU",
+     "catatan": "% responden (survei).",
+     "format": "pct",
+     "rows": [
+      {
+       "label": "Datang langsung",
+       "value": 58.9
+      },
+      {
+       "label": "Pesan di aplikasi, ambil di SPBU",
+       "value": 13.7
+      },
+      {
+       "label": "Tidak tertarik",
+       "value": 12.3
+      },
+      {
+       "label": "Tidak ada preferensi",
+       "value": 9.6
+      },
+      {
+       "label": "Pesan dengan jadwal",
+       "value": 5.5
+      }
+     ],
+     "series": null
+    },
+    {
+     "judul": "Brand logistik dengan lahan terbanyak",
+     "catatan": "Jumlah lahan tersewa (Brightspace).",
+     "format": "n",
+     "rows": [
+      {
+       "label": "Lalamove",
+       "value": 28
+      },
+      {
+       "label": "J&T EXPRESS",
+       "value": 25
+      },
+      {
+       "label": "JNE Express",
+       "value": 19
+      },
+      {
+       "label": "Nitrogen Pit Stop Express",
+       "value": 11
+      },
+      {
+       "label": "JNE",
+       "value": 4
+      },
+      {
+       "label": "Tiga Dara Express",
+       "value": 2
+      },
+      {
+       "label": "Gudang Multifungsi SPBU 5466132",
+       "value": 1
+      },
+      {
+       "label": "Kios JNE Heris",
+       "value": 1
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "Smart/parcel locker",
+     "nilai": "Rp 30–35,5 jt/unit; titip Rp 1.500–6.000/paket",
+     "sumber": "Tokopedia; PopBox",
+     "url": "https://www.tokopedia.com/find/smart-locker",
+     "relevansi": "Capex Rp 35 jt/unit dan fee Rp 2.000/paket dipakai di model."
+    },
+    {
+     "item": "Volume paket regional",
+     "nilai": "J&T Express 2025: 30,13 miliar paket global (+22,2%); Asia Tenggara 7,66 miliar (+67,8%)",
+     "sumber": "J&T Express via AAP (Jan 2026)",
+     "url": "https://www.aap.com.au/aapreleases/cision20260106ae57298",
+     "relevansi": "Volume last-mile tumbuh cepat; operator mencari titik serah yang murah dan 24 jam."
+    },
+    {
+     "item": "Struktur pasar logistik e-commerce Indonesia",
+     "nilai": "Last-mile ≈ 38% pendapatan layanan; pasar ± USD 5,8–7,8 miliar (2025, estimasi riset pasar)",
+     "sumber": "Ken Research",
+     "url": "https://www.kenresearch.com/industry-reports/indonesia-e-commerce-logistics-market",
+     "relevansi": "Angka riset pasar bervariasi; dipakai sebagai orde besaran, bukan proyeksi."
+    },
+    {
+     "item": "Pesaing: pickup di minimarket",
+     "nilai": "Alfamart mengubah ± 3.500 toko menjadi hub pengiriman; dark store 50 → 100",
+     "sumber": "Pulse / Alfamart",
+     "url": "https://www.pulse.bot/ecommerce/news/indonesian-minimart-king-alfamart-boosts-quick-commerce-to-reverse-slowdown-ba8b10f4-1723-41c5-94e0-fb87024dd6a3",
+     "relevansi": "Jaringan pickup minimarket sudah luas; SPBU harus menawarkan diferensiasi (rute komuter, 24 jam, parkir mudah)."
+    }
+   ],
+   "risiko": [
+    "Utilisasi locker rendah di luar kota besar; operator menarik unit setelah masa uji.",
+    "Lahan < 10 m² diperebutkan dengan kios F&B yang menghasilkan sewa lebih tinggi per m².",
+    "Keamanan paket dan tanggung jawab kehilangan di area SPBU."
+   ],
+   "prasyarat": [
+    "Kemitraan dengan 1–2 operator locker yang sudah punya integrasi marketplace.",
+    "Seleksi SPBU jalur komuter dengan parkir aman; akses 24 jam.",
+    "Skema fee per paket atau sewa tetap; model memakai 60% tarif lahan kecil + 10% fee."
+   ],
+   "pilot": [
+    "10 locker di SPBU jalur komuter Jabodetabek; 6 bulan; operator menanggung unit.",
+    "Ukur: paket/hari, waktu tinggal paket, keluhan, pembelian ikutan di SPBU.",
+    "Hentikan bila < 15 paket/hari setelah 4 bulan (skenario konservatif)."
+   ],
+   "data_dibutuhkan": [
+    "Volume paket per kecamatan dari operator untuk memilih lokasi.",
+    "Survei konsumen dengan pertanyaan spesifik locker (bukan 'titik paket online' generik).",
+    "Pengalaman tenant logistik eksisting di SPBU: volume dan churn."
+   ],
+   "nama": "Parcel locker & hub logistik last-mile",
+   "kuadran": "Quick Win",
+   "kategori": "Produk baru",
+   "impact": 6.7,
+   "effort": 2.1,
+   "kpi": "500 titik locker, pendapatan sewa + fee per paket"
+  },
+  {
+   "id": "A5",
+   "pertanyaan": "Apakah lahan luar SPBU tersedia di kota yang adopsi EV-nya nyata, dan apakah model sewa + bagi hasil memberi nilai finansial atau hanya strategis?",
+   "ringkasan": "Pasokan lahan luar ada (1.076 lahan kosong di luar bangunan) tetapi tidak ada yang mencantumkan daya listrik (0 dari 1.076; kesenjangan data, bukan bukti tidak ada daya), jadi kelayakan teknis harus disurvei. Adopsi EV tumbuh cepat (BEV 69 rb unit Jan–Okt 2025, sudah melampaui 2024) dan PLN mengejar 4.300 SPKLU, tetapi utilisasi nasional masih ≈ 28 kWh/unit/hari sehingga pendapatan Pertamina dari sewa + bagi hasil kecil (Rp 4,8 M/th dasar). Survei hanya 5,5% responden tahu ada charging di SPBU dan 30,1% pengguna mobil. Nilainya strategis (posisi di transisi energi, trafik EV premium), bukan finansial jangka pendek; tenant charging yang sudah ada di jaringan menunjukkan mitra tersedia.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "sedang",
+     "alasan": "Adopsi EV naik tajam secara nasional tetapi terkonsentrasi di Jabodetabek/Jawa; survei: hanya 5,5% tahu layanan charging di SPBU."
+    },
+    "pasokan": {
+     "nilai": "sedang",
+     "alasan": "1.076 lahan luar kosong, tetapi daya listrik tidak tercatat (0 punya data). Diperebutkan dengan A8."
+    },
+    "ekonomi": {
+     "nilai": "lemah",
+     "alasan": "Dasar Rp 4,8 M/th untuk Pertamina; capex mitra Rp 150,0 M. Utilisasi 28 kWh/hari belum cukup untuk bagi hasil berarti."
+    },
+    "kesiapan": {
+     "nilai": "sedang",
+     "alasan": "Mitra (PLN, Electrum, Voltron) aktif; tarif diatur Kepmen ESDM. Hambatan: kapasitas daya SPBU dan izin sambungan."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "brightspace",
+     "label": "Lahan kosong di luar bangunan",
+     "nilai": "1.076 lahan; tarif median Rp 12,5 jt/th",
+     "catatan": "pool yang sama dengan A8"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Lahan luar dengan data daya listrik",
+     "nilai": "0 dari 1.076 lahan kosong luar",
+     "catatan": "kesenjangan data, bukan bukti tidak ada daya; survei teknis diperlukan"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Segmen Energi Baru saat ini",
+     "nilai": "536 lahan tersewa",
+     "catatan": "tenant charging/swap: Project Swapping Station Electrum (28), Swapping Station - Kymco (26), Charging Station - Vgreen (20), Charging Station - Voltron (20)"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Lahan luar kosong di 5 provinsi teratas",
+     "nilai": "Jawa Barat (210), DKI Jakarta (155), Jawa Timur (152), Jawa Tengah (127), Banten (84)",
+     "catatan": "cocokkan dengan sebaran EV (Jabodetabek, Jabar, Jatim, Bali)"
+    },
+    {
+     "sumber": "survei",
+     "label": "Tahu ada charging EV di SPBU",
+     "nilai": "5,5%",
+     "catatan": "pengguna mobil pribadi 30,1%; motor 68,5%"
+    },
+    {
+     "sumber": "master",
+     "label": "Tenant energi baru (badan hukum)",
+     "nilai": "54 lahan; teratas PT Vgreen Global Charging Station Investment Indonesia (41), PT Swap Energi Indonesia (12), CV Motor Anugerah Listrik Kudus Jaya (1)",
+     "catatan": "termasuk PT Pertamina Power Indonesia (PLTS internal, 332 lahan) yang bukan charging"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Lahan kosong di luar bangunan per provinsi",
+     "catatan": "Jumlah lahan (Brightspace). Pool bersama A5/A8.",
+     "format": "n",
+     "rows": [
+      {
+       "label": "Jawa Barat",
+       "value": 210
+      },
+      {
+       "label": "DKI Jakarta",
+       "value": 155
+      },
+      {
+       "label": "Jawa Timur",
+       "value": 152
+      },
+      {
+       "label": "Jawa Tengah",
+       "value": 127
+      },
+      {
+       "label": "Banten",
+       "value": 84
+      },
+      {
+       "label": "Sumatera Utara",
+       "value": 70
+      },
+      {
+       "label": "DI Yogyakarta",
+       "value": 49
+      },
+      {
+       "label": "Jambi",
+       "value": 25
+      },
+      {
+       "label": "Kepulauan Riau",
+       "value": 24
+      },
+      {
+       "label": "Kalimantan Barat",
+       "value": 21
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "Tarif SPKLU & biaya layanan",
+     "nilai": "Rp 2.466/kWh; fast charging maks Rp 25.000/sesi",
+     "sumber": "Kepmen ESDM 182.K/2023; navigasi.co.id (2026)",
+     "url": "https://navigasi.co.id/detail/1452319/update-tarif-listrik-spklu-pln-2026-per-kwh-biaya-fast-charging-terbaru",
+     "relevansi": "Tarif diatur; pendapatan per kWh tetap, jadi utilisasi yang menentukan."
+    },
+    {
+     "item": "Utilisasi SPKLU",
+     "nilai": "48,5 jt kWh / 4.655 unit (2025) ≈ 28 kWh/unit/hari",
+     "sumber": "PLN via Kontan (2026)",
+     "url": "https://industri.kontan.co.id/news/konsumsi-listrik-spklu-lampaui-2025-pln-percepat-perluasan-infrastruktur-ev",
+     "relevansi": "28 kWh/unit/hari nasional dipakai sebagai skenario dasar."
+    },
+    {
+     "item": "Capex charger DC 25–50 kW",
+     "nilai": "Rp 300–500 jt/unit",
+     "sumber": "bukaoutlet.com (blog investor, belum diverifikasi vendor)",
+     "url": "https://bukaoutlet.com/article/perhitungan-modal-bisnis-spklu--rincian-lengkap-untuk-investor",
+     "relevansi": "Capex mitra Rp 500 jt/unit di model; belum diverifikasi vendor."
+    },
+    {
+     "item": "Penjualan BEV 2025",
+     "nilai": "69.146 unit Jan–Okt 2025 (2024: 43.188 unit, 4,98% pasar); BYD 36%",
+     "sumber": "Gaikindo via GoodStats",
+     "url": "https://goodstats.id/article/byd-puncaki-pasar-mobil-listrik-indonesia-2025-bavHR",
+     "relevansi": "Permintaan charging tumbuh > 50%/th; utilisasi SPKLU akan naik seiring populasi."
+    },
+    {
+     "item": "Jaringan SPKLU PLN",
+     "nilai": "3.233 unit (Des 2024), target ± 4.300 unit akhir 2025; 1.283 unit hasil kemitraan",
+     "sumber": "Kontan Insight; Fortune Indonesia",
+     "url": "https://insight.kontan.co.id/news/pembangunan-spklu-kejar-laju-mobil-listrik",
+     "relevansi": "PLN mengejar lokasi lewat kemitraan: SPBU di rute antarkota adalah aset yang dicari."
+    }
+   ],
+   "risiko": [
+    "Daya listrik SPBU tidak cukup; biaya sambungan baru membuat mitra mundur.",
+    "Utilisasi rendah di luar Jabodetabek membuat bagi hasil nyaris nol selama 3–5 tahun.",
+    "Regulasi tarif membatasi margin; perubahan kebijakan subsidi EV mengubah permintaan."
+   ],
+   "prasyarat": [
+    "Survei daya listrik dan jarak ke gardu untuk lahan luar di kota prioritas.",
+    "Perjanjian dengan mitra charging: capex mitra, sewa lahan luar + bagi hasil (model 5–10%).",
+    "Pemilihan SPBU di rute tol/antarkota dengan trafik mobil tinggi."
+   ],
+   "pilot": [
+    "15 titik di koridor Jakarta–Bandung–Semarang dengan satu mitra; 12 bulan.",
+    "Ukur: kWh/hari, sesi/hari, pendapatan bagi hasil, pembelian non-BBM pengguna EV.",
+    "Bandingkan titik di SPBU vs titik mitra di luar SPBU."
+   ],
+   "data_dibutuhkan": [
+    "Kapasitas daya listrik per SPBU (data internal teknik).",
+    "Trafik kendaraan EV per koridor (data mitra/PLN).",
+    "Pengalaman tenant charging eksisting: utilisasi dan masalah operasional."
+   ],
+   "nama": "Hub EV charging & battery swap",
+   "kuadran": "Major Project",
+   "kategori": "Energi baru",
+   "impact": 8.8,
+   "effort": 8.9,
+   "kpi": "300 titik charging dalam 24 bulan"
+  },
+  {
+   "id": "A6",
+   "pertanyaan": "Apakah lahan ≥ 100 m² yang kosong berada di kota tempat quick-commerce/logistik butuh gudang mikro, dan apakah selisih tarif gudang vs tarif lahan SPBU cukup besar?",
+   "ringkasan": "Selisih tarifnya besar: lahan ≥ 100 m² saat ini disewakan ≈ Rp 12.414/m²/bulan, sedangkan gudang mikro di Jakarta Rp 55–150 rb/m²/bulan. Stoknya terbatas (492 lahan kosong ≥ 100 m², luas median 186 m²) dan sebagian di luar kota besar. Permintaan eksternal nyata tetapi berpusat di kota besar: quick commerce Indonesia ± USD 3,1 miliar (2025) dan Alfamart/Indomaret mengonversi ribuan toko menjadi hub pengiriman. Pendapatan per lahan tinggi (Rp 134,3 jt/th dasar) tanpa capex Pertamina, jadi A6 layak sebagai program selektif untuk 100–200 lahan di kota besar, bukan program jaringan.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "sedang",
+     "alasan": "Quick commerce dan logistik last-mile tumbuh, tetapi operator memilih lokasi padat penduduk; permintaan di luar Jabodetabek/kota besar belum terbukti."
+    },
+    "pasokan": {
+     "nilai": "sedang",
+     "alasan": "492 lahan kosong ≥ 100 m²; 152 di Jabodetabek/Jabar/Jatim."
+    },
+    "ekonomi": {
+     "nilai": "kuat",
+     "alasan": "Dasar Rp 16,1 M/th dari 120 lahan; kenaikan tarif per lahan terbesar di antara semua alternatif; fit-out oleh tenant."
+    },
+    "kesiapan": {
+     "nilai": "sedang",
+     "alasan": "Butuh izin peruntukan (gudang di SPBU), akses truk kecil, jam bongkar muat, dan standar keselamatan di area BBM."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "brightspace",
+     "label": "Lahan kosong ≥ 100 m²",
+     "nilai": "492 lahan; luas median 186 m²",
+     "catatan": "tarif median per m² saat ini ≈ Rp 12.414/bulan"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Lahan besar kosong di 5 provinsi teratas",
+     "nilai": "Jawa Barat (79), Jawa Tengah (78), Sumatera Utara (51), Jawa Timur (36), Sumatera Selatan (31)",
+     "catatan": "prioritaskan yang di kota dengan quick commerce aktif"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Lahan besar kosong di luar bangunan",
+     "nilai": "73 dari 492",
+     "catatan": "lahan luar cocok untuk kontainer/gudang modular"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Tenant logistik & minimarket saat ini",
+     "nilai": "Logistik 94 lahan; Minimarket & Ritel 1.990 lahan",
+     "catatan": "calon penyewa gudang mikro sudah ada di jaringan"
+    },
+    {
+     "sumber": "survei",
+     "label": "Kebutuhan harian dianggap bermanfaat di SPBU",
+     "nilai": "11,0%",
+     "catatan": "gudang mikro melayani pengiriman, bukan pembeli di lokasi; survei konsumen tidak menjadi penentu"
+    },
+    {
+     "sumber": "master",
+     "label": "Tenant di lahan ≥ 100 m² (master)",
+     "nilai": "1.698 lahan tersewa; teratas PT Sumber Alfaria Trijaya Tbk (Co Brand) (274), PT Indomarco Prismatama (172), PT Sumber Alfaria Trijaya (163), PT Indomarco Pristamatama (CO Branding) (103)",
+     "catatan": "lahan besar hari ini didominasi minimarket co-brand; tarif gudang mikro harus bersaing dengan tarif minimarket, bukan tarif lahan kosong"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Lahan kosong ≥ 100 m² per provinsi",
+     "catatan": "Jumlah lahan (Brightspace).",
+     "format": "n",
+     "rows": [
+      {
+       "label": "Jawa Barat",
+       "value": 79
+      },
+      {
+       "label": "Jawa Tengah",
+       "value": 78
+      },
+      {
+       "label": "Sumatera Utara",
+       "value": 51
+      },
+      {
+       "label": "Jawa Timur",
+       "value": 36
+      },
+      {
+       "label": "Sumatera Selatan",
+       "value": 31
+      },
+      {
+       "label": "DI Yogyakarta",
+       "value": 21
+      },
+      {
+       "label": "Banten",
+       "value": 20
+      },
+      {
+       "label": "Kepulauan Riau",
+       "value": 19
+      },
+      {
+       "label": "Riau",
+       "value": 18
+      },
+      {
+       "label": "Jambi",
+       "value": 17
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "Sewa gudang Jakarta",
+     "nilai": "Rp 55–150 rb/m²/bulan",
+     "sumber": "Indotama Logs (2025); 99.co",
+     "url": "https://indotamalogs.com/blog/warehouse/sewa-gudang-bulanan-vs-tahunan-di-jakarta-surabaya-mana-lebih-hemat-untuk-perusahaan-anda",
+     "relevansi": "Model memakai Rp 45–90 rb/m²/bulan (di bawah Jakarta) untuk SPBU non-pusat."
+    },
+    {
+     "item": "Pasar quick commerce Indonesia",
+     "nilai": "± USD 3,11 miliar (2025), CAGR ± 6%; grocery 52%",
+     "sumber": "Mordor Intelligence",
+     "url": "https://www.mordorintelligence.com/industry-reports/indonesia-quick-commerce-market",
+     "relevansi": "Permintaan hub mikro ada, terutama grocery; angka riset pasar sebagai orde besaran."
+    },
+    {
+     "item": "Konversi toko jadi hub pengiriman",
+     "nilai": "Alfamart: ± 3.500 toko jadi hub 1 jam; dark store 50 → 100",
+     "sumber": "Pulse / Alfamart",
+     "url": "https://www.pulse.bot/ecommerce/news/indonesian-minimart-king-alfamart-boosts-quick-commerce-to-reverse-slowdown-ba8b10f4-1723-41c5-94e0-fb87024dd6a3",
+     "relevansi": "Pemain ritel memilih memakai toko sendiri; SPBU harus menawarkan lahan luar yang tidak dimiliki minimarket."
+    },
+    {
+     "item": "Model padat aset",
+     "nilai": "Quick commerce padat aset (hub + armada); profitabilitas menantang",
+     "sumber": "KrASIA",
+     "url": "https://kr-asia.com/can-quick-commerce-find-solid-footing-in-indonesia",
+     "relevansi": "Risiko mitra: operator bisa menutup hub saat pendanaan ketat; kontrak minimal 2–3 tahun."
+    }
+   ],
+   "risiko": [
+    "Aktivitas bongkar muat di area SPBU bertentangan dengan keselamatan dan menambah kemacetan.",
+    "Operator quick commerce rentan secara finansial; churn hub tinggi.",
+    "Lahan besar di luar kota besar tidak punya permintaan gudang mikro; tarif gudang tidak berlaku."
+   ],
+   "prasyarat": [
+    "Kajian HSSE: zona aman, jam operasi, jenis kendaraan yang boleh masuk.",
+    "Daftar lahan ≥ 100 m² dengan akses jalan terpisah dari jalur pengisian.",
+    "Tarif gudang per m² per kota, bukan tarif lahan SPBU generik."
+   ],
+   "pilot": [
+    "10 lahan di Jabodetabek + Surabaya dengan 2 operator (kurir, grocery); 12 bulan.",
+    "Ukur: tarif realisasi/m², jumlah pengiriman/hari, insiden HSSE, keluhan pengelola SPBU.",
+    "Bandingkan tarif realisasi dengan tarif lahan SPBU sebelumnya."
+   ],
+   "data_dibutuhkan": [
+    "Akses jalan dan denah tiap lahan besar (apakah bisa dilewati kendaraan roda 4).",
+    "Permintaan operator per kecamatan (jumlah order/hari).",
+    "Batasan izin peruntukan lahan SPBU untuk pergudangan."
+   ],
+   "nama": "Micro-fulfillment / dark store di lahan besar",
+   "kuadran": "Major Project",
+   "kategori": "Produk baru",
+   "impact": 8.4,
+   "effort": 6.6,
+   "kpi": "100 lahan besar tersewa jangka panjang (≥ 3 th)"
+  },
+  {
+   "id": "A7",
+   "pertanyaan": "Apakah SPBU punya audiens yang cukup besar, sering, dan lama menunggu untuk dijual sebagai inventori iklan digital, dan siapa yang membiayai layarnya?",
+   "ringkasan": "Audiensnya ada dan tertawan: 83,5% responden datang ≥ 1×/minggu dan 68,5% mengantre ≥ 5 menit, waktu yang cukup untuk paparan iklan. Jaringan 6.627 SPBU adalah inventori DOOH terbesar yang belum dimonetisasi secara terpusat; segmen 'Pameran & Promosi' saat ini hanya 583 lahan. Pasar DOOH Indonesia tumbuh (Statista ± €131 jt 2025) tetapi rate card per layar SPBU tidak ada di sumber publik, sehingga rentang pendapatan sangat lebar (Rp 3,6 M–Rp 86,4 M/th). Model mitra media (capex layar oleh mitra, Pertamina 30% kotor) menghindari capex, tetapi data trafik per SPBU adalah prasyarat untuk menjual inventori.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "sedang",
+     "alasan": "Audiens tertawan: 83,5% datang ≥ 1×/minggu, 68,5% mengantre ≥ 5 menit. Permintaan pengiklan bergantung pada data trafik yang belum ada."
+    },
+    "pasokan": {
+     "nilai": "kuat",
+     "alasan": "6.627 SPBU; kanopi/pylon tersedia di hampir semua lokasi. 6.205 SPBU punya koordinat untuk segmentasi lokasi."
+    },
+    "ekonomi": {
+     "nilai": "sedang",
+     "alasan": "Dasar Rp 21,6 M/th tanpa capex Pertamina; rentang paling lebar karena rate card tidak diketahui."
+    },
+    "kesiapan": {
+     "nilai": "sedang",
+     "alasan": "Perlu izin reklame per daerah, standar keselamatan listrik di area BBM, dan mitra media nasional; kontrak eksklusif berisiko."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "survei",
+     "label": "Frekuensi kunjungan ≥ 1×/minggu",
+     "nilai": "83,5%",
+     "catatan": "1–2×/minggu 60,3%; hampir tiap hari 6,8%"
+    },
+    {
+     "sumber": "survei",
+     "label": "Mengantre ≥ 5 menit",
+     "nilai": "68,5%",
+     "catatan": "11–20 menit 27,4%; > 20 menit 11,0%: waktu paparan iklan"
+    },
+    {
+     "sumber": "survei",
+     "label": "Promo/poin loyalitas sebagai faktor",
+     "nilai": "16,4%",
+     "catatan": "iklan di SPBU paling efektif untuk promo produk Pertamina sendiri dan tenant"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "SPBU dan koordinat",
+     "nilai": "6.627 SPBU; 6.205 berkoordinat",
+     "catatan": "memungkinkan paket inventori per kota/koridor"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Segmen Pameran & Promosi saat ini",
+     "nilai": "583 lahan; tarif median Rp 15,0 jt",
+     "catatan": "iklan belum dikelola sebagai inventori jaringan"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Area sekitar tercatat",
+     "nilai": "2.722 titik di 1.196 SPBU",
+     "catatan": "hotel/perkantoran/stasiun di sekitar = segmen audiens premium"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Lama mengantre saat mengisi BBM",
+     "catatan": "% responden (survei). Durasi paparan iklan.",
+     "format": "pct",
+     "rows": [
+      {
+       "label": "Tidak mengantre",
+       "value": 4.1
+      },
+      {
+       "label": "< 5 menit",
+       "value": 27.4
+      },
+      {
+       "label": "5–10 menit",
+       "value": 30.1
+      },
+      {
+       "label": "11–20 menit",
+       "value": 27.4
+      },
+      {
+       "label": "> 20 menit",
+       "value": 11.0
+      }
+     ],
+     "series": null
+    },
+    {
+     "judul": "Kategori area sekitar SPBU (titik tercatat)",
+     "catatan": "Jumlah titik (Brightspace).",
+     "format": "n",
+     "rows": [
+      {
+       "label": "Restoran/Kuliner",
+       "value": 634
+      },
+      {
+       "label": "Mal/Pusat belanja",
+       "value": 392
+      },
+      {
+       "label": "Perkantoran/Bisnis",
+       "value": 343
+      },
+      {
+       "label": "Hotel",
+       "value": 316
+      },
+      {
+       "label": "Hiburan",
+       "value": 135
+      },
+      {
+       "label": "Stasiun/Transportasi",
+       "value": 91
+      },
+      {
+       "label": "Perumahan",
+       "value": 79
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "Videotron kota satelit",
+     "nilai": "Rp 10–50 jt/bulan per titik",
+     "sumber": "UNO Indonesia; transads.id",
+     "url": "https://uno.id/iklan-videotron/",
+     "relevansi": "Model memakai Rp 2–8 jt/layar/bulan kotor, jauh di bawah videotron jalan raya."
+    },
+    {
+     "item": "Belanja iklan DOOH Indonesia",
+     "nilai": "± €131 jt (2025); tren bergeser ke DOOH & programmatic",
+     "sumber": "Statista Market Insights",
+     "url": "https://statista.com/outlook/amo/advertising/out-of-home-advertising/indonesia",
+     "relevansi": "Pasar cukup besar untuk menyerap inventori ribuan layar; angka sumber lain (USD 4,8 M) tidak dipakai karena definisinya berbeda."
+    },
+    {
+     "item": "Pertumbuhan belanja iklan nasional",
+     "nilai": "+5,1% (2025)",
+     "sumber": "Dentsu Indonesia",
+     "url": "https://www.dentsu.com/id/en/insights/our-blog/dentsu-digital-advertising-market-report-2025",
+     "relevansi": "Pertumbuhan moderat; DOOH tumbuh lebih cepat dari rata-rata."
+    }
+   ],
+   "risiko": [
+    "Tanpa data trafik terverifikasi, pengiklan membayar rate rendah atau tidak membeli.",
+    "Izin reklame daerah dan pajak reklame menggerus margin; berbeda tiap kota.",
+    "Layar di area pengisian berisiko keselamatan (listrik, distraksi) dan konflik dengan branding Pertamina."
+   ],
+   "prasyarat": [
+    "Alat ukur trafik (loop counter/kamera) di SPBU pilot untuk audit audiens.",
+    "Standar teknis layar di area SPBU (zona, daya, pemadaman darurat).",
+    "Tender mitra media dengan bagi hasil, bukan sewa tetap, dan porsi slot untuk promo Pertamina."
+   ],
+   "pilot": [
+    "50 layar di 2 kota dengan satu mitra media; 12 bulan; capex mitra.",
+    "Ukur: fill rate, CPM realisasi, pendapatan kotor/layar, impresi terverifikasi.",
+    "Uji dua posisi: kanopi vs pylon pintu masuk."
+   ],
+   "data_dibutuhkan": [
+    "Trafik kendaraan per SPBU per hari (data POS/nozzle).",
+    "Rate card DOOH retail pembanding (minimarket, mal) dari mitra media.",
+    "Peta izin reklame per kota prioritas."
+   ],
+   "nama": "Digital OOH advertising di kanopi & pylon",
+   "kuadran": "Major Project",
+   "kategori": "Media",
+   "impact": 7.8,
+   "effort": 5.5,
+   "kpi": "Pendapatan media Rp 50 M/tahun"
+  },
+  {
+   "id": "A12",
+   "pertanyaan": "Apakah PLTS kanopi layak sebagai produk sewa energi milik Pertamina pada tarif dan capex saat ini, atau lebih baik dijalankan lewat mitra/entitas internal yang sudah ada?",
+   "ringkasan": "Secara teknis pasokannya terbesar (6.627 SPBU berkanopi), tetapi secara finansial A12 satu-satunya alternatif dengan NPV negatif (10 th Rp -77,0 M; 20 th Rp -36,0 M) karena imbal hasil ≈ 10–11% nyaris sama dengan diskonto 10%. Regulasi Permen ESDM 2/2024 menghapus ekspor listrik dan memberlakukan kuota, sehingga PLTS harus diukur dari konsumsi sendiri SPBU. Master lahan menunjukkan PLTS sudah berjalan: PT Pertamina Power Indonesia menyewa 332 lahan di 304 SPBU, 233 di antaranya bernilai sewa Rp 0 (internal), jadi segmen 'Energi Baru' di Brightspace sebagian besar adalah PLTS PPI, bukan tenant komersial. Rekomendasi: jangan jadikan produk sewa energi baru dari nol; konsolidasikan dengan program PPI yang ada, dan jalankan sebagai sewa lahan kanopi ke ESCO/PPI dengan tarif nominal bila Pertamina tidak mau menanggung capex.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "kuat",
+     "alasan": "SPBU butuh listrik siang hari (pompa, pendingin, kanopi); tarif B2 Rp 1.445/kWh membuat penghematan 10% berarti. Survei konsumen tidak relevan."
+    },
+    "pasokan": {
+     "nilai": "kuat",
+     "alasan": "6.627 SPBU berkanopi; 304 sudah punya PLTS PPI (master)."
+    },
+    "ekonomi": {
+     "nilai": "lemah",
+     "alasan": "NPV 10 th Rp -77,0 M; payback > 10 th di skenario dasar; layak hanya bila capex ≤ Rp 14 jt/kWp atau ada insentif."
+    },
+    "kesiapan": {
+     "nilai": "sedang",
+     "alasan": "Teknologi matang dan PPI sudah mengoperasikan; hambatan: kuota PLTS atap, struktur kanopi, dan alokasi capex antar-entitas Pertamina."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "brightspace",
+     "label": "SPBU (pool kanopi)",
+     "nilai": "6.627",
+     "catatan": "6.205 berkoordinat: bisa dipetakan terhadap radiasi matahari per wilayah"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Tenant PLTS/solar di Brightspace",
+     "nilai": "PLTS Ex. PPI (345), PLTS BKL (47), PLTS - UJB (6), PLTS - Eternal (3)",
+     "catatan": "segmen Energi Baru 536 lahan"
+    },
+    {
+     "sumber": "master",
+     "label": "Lahan PLTS PT Pertamina Power Indonesia",
+     "nilai": "332 lahan di 304 SPBU; 233 bersewa Rp 0, sisanya total Rp 4 M",
+     "catatan": "program PLTS internal sudah berjalan nyaris tanpa pendapatan sewa; A12 harus dikonsolidasikan dengannya"
+    },
+    {
+     "sumber": "master",
+     "label": "Sebaran PLTS PPI (provinsi teratas)",
+     "nilai": "Jawa Timur (71), Jawa Tengah (54), Jawa Barat (46), DKI Jakarta (41), Bali (20)",
+     "catatan": "lokasi berikutnya sebaiknya mengisi provinsi yang belum tersentuh"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Lahan PLTS PT Pertamina Power Indonesia per provinsi",
+     "catatan": "Jumlah lahan (master lahan). Sebagian besar bersewa Rp 0: program internal.",
+     "format": "n",
+     "rows": [
+      {
+       "label": "Jawa Timur",
+       "value": 71
+      },
+      {
+       "label": "Jawa Tengah",
+       "value": 54
+      },
+      {
+       "label": "Jawa Barat",
+       "value": 46
+      },
+      {
+       "label": "DKI Jakarta",
+       "value": 41
+      },
+      {
+       "label": "Bali",
+       "value": 20
+      },
+      {
+       "label": "Banten",
+       "value": 16
+      },
+      {
+       "label": "Lampung",
+       "value": 14
+      },
+      {
+       "label": "Tidak diketahui",
+       "value": 12
+      },
+      {
+       "label": "Kalimantan Timur",
+       "value": 11
+      },
+      {
+       "label": "Kalimantan Barat",
+       "value": 10
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "PLTS atap on-grid",
+     "nilai": "Rp 14–20 jt/kWp; 120–140 kWh/kWp/bulan",
+     "sumber": "ESDM via VOI; JARWINN (2025)",
+     "url": "https://jarwinn.co.id/blog/biaya-pasang-panel-surya-2025-estimasi-harga-kalkulator-penghematan",
+     "relevansi": "Capex Rp 14–20 jt/kWp dan produksi 120–140 kWh/kWp/bulan dipakai di model."
+    },
+    {
+     "item": "Tarif listrik PLN B2",
+     "nilai": "Rp 1.444,70/kWh",
+     "sumber": "PLN per 31 Des 2025 via Ugems",
+     "url": "https://ugems.id/web/guest/b/daftar-tarif-listrik-13-golongan-pelanggan-pln-per-31-desember-2025",
+     "relevansi": "Harga jual listrik PLTS ke SPBU = 90% tarif B2."
+    },
+    {
+     "item": "Regulasi PLTS atap",
+     "nilai": "Permen ESDM 2/2024: ekspor-impor listrik dihapus, sistem kuota per klaster; kuota 1.593 MW (2024–2028)",
+     "sumber": "Bisnis.com",
+     "url": "https://ekonomi.bisnis.com/read/20240507/44/1763672/kuota-plts-atap-disepakati-pelaku-usaha-siap-tancap-gas",
+     "relevansi": "Tanpa ekspor, ukuran PLTS harus mengikuti beban siang SPBU; kuota membatasi laju pemasangan."
+    },
+    {
+     "item": "Rincian aturan",
+     "nilai": "Kelebihan listrik ke jaringan tidak diperhitungkan dalam tagihan; pelanggan lama tetap boleh ekspor 10 th",
+     "sumber": "Kompas",
+     "url": "https://lestari.kompas.com/read/2024/02/25/110000086/revisi-plts-atap-disahkan-ada-aturan-kuota",
+     "relevansi": "Model 20 kWp per SPBU harus divalidasi terhadap beban siang; over-sizing membuang produksi."
+    }
+   ],
+   "risiko": [
+    "Capex tidak turun ke Rp 14 jt/kWp; NPV tetap negatif.",
+    "Kuota PLTS atap habis di klaster prioritas; antrean pemasangan.",
+    "Tumpang tindih peran dengan PPI: dua program PLTS di jaringan yang sama."
+   ],
+   "prasyarat": [
+    "Data beban listrik siang per SPBU dan kapasitas struktur kanopi.",
+    "Kesepakatan peran dengan PPI/ESCO: siapa memiliki aset dan bagaimana sewa lahan dihitung.",
+    "Capex vendor aktual dan skema insentif (bila ada) sebelum keputusan skala."
+   ],
+   "pilot": [
+    "Tidak perlu pilot baru: audit 20 SPBU PLTS PPI eksisting (produksi aktual kWh/kWp, penghematan, masalah).",
+    "Ukur: kWh/kWp/bulan aktual vs asumsi 125, penghematan tagihan, downtime.",
+    "Tetapkan tarif sewa lahan kanopi nominal untuk PPI/ESCO agar NFR mencatat pendapatan."
+   ],
+   "data_dibutuhkan": [
+    "Produksi aktual PLTS PPI per SPBU (kWh/bulan).",
+    "Tagihan listrik SPBU per bulan (beban siang).",
+    "Capex per kWp dari pengadaan PPI terakhir."
+   ],
+   "nama": "PLTS kanopi sebagai produk sewa energi",
+   "kuadran": "Major Project",
+   "kategori": "Energi baru",
+   "impact": 7.6,
+   "effort": 7.8,
+   "kpi": "200 SPBU PLTS kanopi"
+  },
+  {
+   "id": "A10",
+   "pertanyaan": "Seberapa besar pendapatan sewa yang terancam oleh penutupan ATM, dan apakah kiosk digital bisa menggantikan bank sebagai penyewa ruang yang sama?",
+   "ringkasan": "Perbankan & ATM adalah segmen penyewa terbesar ketiga (5.374 lahan, 20,4% dari tersewa) dengan tarif median Rp 20,0 jt, dan terkonsentrasi di beberapa bank besar. Master lahan: 6.478 lahan disewa bank dan 4.721 kontrak bank berakhir dalam 12 bulan, jadi risiko churn datang cepat. Secara nasional jumlah ATM turun 1.399 unit dalam setahun (89.774 unit per Q3 2025) dan OJK memperkirakan tren berlanjut, meski BCA masih menambah. Di sisi konsumen, ATM/pembayaran masih layanan kedua paling dikenal (53,4%) tetapi pembayaran digital hanya diinginkan 15,1%. A10 adalah pendapatan yang diselamatkan (Rp 18,3 M/th dasar), bukan baru; prioritasnya adalah peta jatuh tempo kontrak bank dan negosiasi ulang format (ATM + kiosk + layanan agen) sebelum bank menutup titik.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "sedang",
+     "alasan": "Permintaan kiosk digital dari konsumen lemah (15,1%); permintaan datang dari bank/fintech yang butuh titik layanan fisik murah menggantikan ATM."
+    },
+    "pasokan": {
+     "nilai": "kuat",
+     "alasan": "5.374 lahan bank; ruang ATM berstandar (listrik, keamanan) mudah dialihfungsikan."
+    },
+    "ekonomi": {
+     "nilai": "sedang",
+     "alasan": "Dasar Rp 18,3 M/th sebagai pendapatan yang dipertahankan; sewa kiosk kemungkinan lebih rendah dari sewa ATM (bank membayar premi)."
+    },
+    "kesiapan": {
+     "nilai": "sedang",
+     "alasan": "Negosiasi korporat dengan bank; kontrak payung; penyedia kiosk (agen laku pandai, fintech) belum tentu mau membayar tarif setara."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "brightspace",
+     "label": "Segmen Perbankan & ATM",
+     "nilai": "5.374 lahan (20,4% dari tersewa); tarif median Rp 20,0 jt; luas median 4 m²",
+     "catatan": "pendapatan tahunan tercatat Rp 119,0 M"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Bank dengan lahan terbanyak",
+     "nilai": "Bank BNI (1163), ATM Bank Mandiri (1060), Bank CIMB NIAGA (688), Bank BCA (626), Bank BSI (451), Bank BRI (420)",
+     "catatan": "konsentrasi tinggi: keputusan satu bank memengaruhi ratusan lahan"
+    },
+    {
+     "sumber": "survei",
+     "label": "Tahu ada ATM/pembayaran di SPBU",
+     "nilai": "53,4%",
+     "catatan": "pembayaran digital dianggap bermanfaat 15,1%; kebocoran pembayaran 5,5% vs 1,4%"
+    },
+    {
+     "sumber": "master",
+     "label": "Tenant bank (badan hukum)",
+     "nilai": "6.478 lahan; PT Bank Negara Indonesia Tbk (1194), PT Bank Mandiri Persero Tbk (1004), PT Bank CIMB Niaga Tbk (630), PT Bank Central Asia (492), PT Bank Rakyat Indonesia Tbk (457)",
+     "catatan": "sewa kontrak median Rp 20,0 jt/th"
+    },
+    {
+     "sumber": "master",
+     "label": "Kontrak bank yang berakhir ≤ 12 bulan",
+     "nilai": "4.721",
+     "catatan": "jendela negosiasi ulang format"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Tenant perbankan dengan lahan terbanyak",
+     "catatan": "Jumlah lahan tersewa (master lahan, badan hukum).",
+     "format": "n",
+     "rows": [
+      {
+       "label": "PT Bank Negara Indonesia Tbk",
+       "value": 1194
+      },
+      {
+       "label": "PT Bank Mandiri Persero Tbk",
+       "value": 1004
+      },
+      {
+       "label": "PT Bank CIMB Niaga Tbk",
+       "value": 630
+      },
+      {
+       "label": "PT Bank Central Asia",
+       "value": 492
+      },
+      {
+       "label": "PT Bank Rakyat Indonesia Tbk",
+       "value": 457
+      },
+      {
+       "label": "PT Bank Syariah Indonesia Tbk",
+       "value": 455
+      },
+      {
+       "label": "PT Bank Tabungan Negara (Persero)Tbk",
+       "value": 253
+      },
+      {
+       "label": "PT Bank Rakyat Indonesia",
+       "value": 162
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "Jumlah ATM nasional",
+     "nilai": "89.774 unit (Q3 2025), turun 1.399 unit yoy; OJK: tren berlanjut",
+     "sumber": "OJK via Metro TV; Bisnis.com",
+     "url": "https://www.metrotvnews.com/read/NQAC0XOO-jumlah-atm-di-indonesia-terus-turun-kini-tersisa-89774-unit",
+     "relevansi": "Risiko churn ATM nyata dan bertahap (± 1,5%/th), bukan tiba-tiba; cukup waktu untuk transisi format."
+    },
+    {
+     "item": "Proyeksi OJK",
+     "nilai": "Penurunan jumlah ATM kemungkinan terus berlanjut; keputusan bisnis tiap bank",
+     "sumber": "Bisnis.com (Jan 2026)",
+     "url": "https://finansial.bisnis.com/read/20260124/90/1946859/ojk-tren-penurunan-jumlah-atm-kemungkinan-terus-berlanjut",
+     "relevansi": "Negosiasi per bank, bukan kebijakan seragam."
+    },
+    {
+     "item": "Transaksi ATM",
+     "nilai": "Volume transaksi ATM turun 8,62% (2024)",
+     "sumber": "Bank Indonesia via Kontan",
+     "url": "https://keuangan.kontan.co.id/news/bank-indonesia-catat-penurunan-signifikan-jumlah-transaksi-atm-di-indonesia",
+     "relevansi": "Nilai ATM bagi bank menurun lebih cepat dari jumlah unit; tekanan tarif sewa akan datang."
+    },
+    {
+     "item": "Pengecualian",
+     "nilai": "BCA menambah ATM: 20.008 unit (Sep 2025) dari 19.439",
+     "sumber": "Bisnis.com",
+     "url": "https://finansial.bisnis.com/read/20260121/90/1945681/ribuan-atm-tutup-sepanjang-2025-intip-kondisinya-di-btn-dan-bca",
+     "relevansi": "Tidak semua bank menutup; segmentasikan tenant bank berdasarkan strategi jaringannya."
+    }
+   ],
+   "risiko": [
+    "Bank menutup ATM lebih cepat dari jadwal kontrak; ruang kosong sulit diisi dengan tarif setara.",
+    "Penyedia kiosk digital membayar jauh di bawah tarif bank; pendapatan 'diselamatkan' hanya sebagian.",
+    "Keamanan ruang ATM (cash) vs kiosk tanpa cash mengubah kebutuhan fasilitas."
+   ],
+   "prasyarat": [
+    "Peta jatuh tempo kontrak bank per SPBU (dari master) dan dialog dengan 5 bank terbesar.",
+    "Format ruang multi-fungsi: ATM/CRM + kiosk layanan + agen laku pandai.",
+    "Tarif acuan untuk ruang ATM yang dikonversi (lebih rendah dari ATM, lebih tinggi dari lahan kecil generik)."
+   ],
+   "pilot": [
+    "Negosiasi 2 bank dengan kontrak berakhir ≤ 6 bulan di 1 region; tawarkan paket format baru.",
+    "Ukur: tingkat perpanjangan, tarif realisasi vs sebelumnya, lahan yang kosong setelah ATM ditarik.",
+    "Uji kiosk digital (fintech/agen) di 10 ruang ATM yang kosong."
+   ],
+   "data_dibutuhkan": [
+    "Tanggal berakhir dan nilai kontrak per bank (ada di master).",
+    "Rencana jaringan ATM tiap bank (dari dialog korporat).",
+    "Tarif yang bersedia dibayar penyedia kiosk/agen."
+   ],
+   "nama": "Konsolidasi galeri ATM → kiosk layanan digital",
+   "kuadran": "Major Project",
+   "kategori": "Transformasi",
+   "impact": 7.1,
+   "effort": 6.6,
+   "kpi": "Churn tenant bank < 5%/tahun"
+  },
+  {
+   "id": "A8",
+   "pertanyaan": "Apakah layanan ban/nitrogen adalah permintaan nyata yang belum terlayani di SPBU, dan apakah skor dampak A8 (Fill-in) terlalu rendah?",
+   "ringkasan": "Ini sinyal permintaan terkuat di survei: ban/nitrogen/darurat dianggap bermanfaat oleh 46,6% responden dan menjadi prioritas #1 (34,2%), layanan paling dikenal (60,3%), tetapi 32,9% membelinya di luar SPBU vs 11,0% di SPBU. Pengguna motor (50,0%) lebih menginginkannya daripada mobil (36,4%), dan 145 juta sepeda motor adalah pasar terbesar. Segmen nitrogen/perawatan saat ini 1.305 lahan dengan 162 nama tenant berbeda dan tarif median rendah (Rp 10,0 jt), jadi peluangnya adalah standardisasi format dan kualitas, bukan menambah titik. Skor dampak A8 saat ini (Fill-in) tampak terlalu rendah dibanding bukti permintaan; layak dinaikkan setelah pilot.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "kuat",
+     "alasan": "Bermanfaat 46,6%, prioritas #1 34,2%; kebocoran 32,9% vs 11,0%. Sampel kecil tetapi konsisten di semua pertanyaan."
+    },
+    "pasokan": {
+     "nilai": "kuat",
+     "alasan": "1.305 lahan nitrogen/perawatan sudah ada + 1.076 lahan luar kosong; format bisa menggantikan tenant tak berstandar."
+    },
+    "ekonomi": {
+     "nilai": "sedang",
+     "alasan": "Dasar Rp 15,9 M/th; pendapatan per titik kecil (tiket Rp 20 rb) tetapi capex mitra rendah (Rp 30,0 jt/titik)."
+    },
+    "kesiapan": {
+     "nilai": "kuat",
+     "alasan": "Mitra UMKM sudah ratusan; butuh standar merek ('Pertamina Care'), SOP, dan mesin bersertifikat. Sinergi dengan Pelumas/Enduro."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "survei",
+     "label": "Ban, nitrogen & darurat dianggap bermanfaat",
+     "nilai": "46,6%",
+     "catatan": "prioritas #1: 34,2%; layanan paling dikenal 60,3%"
+    },
+    {
+     "sumber": "survei",
+     "label": "Kebocoran: beli ban/nitrogen di luar vs di SPBU",
+     "nilai": "32,9% vs 11,0%",
+     "catatan": "tempat beli biasa: bengkel 16,4%"
+    },
+    {
+     "sumber": "survei",
+     "label": "Motor vs mobil yang menginginkan layanan ini",
+     "nilai": "50,0% vs 36,4%",
+     "catatan": "responden motor 50, mobil 22"
+    },
+    {
+     "sumber": "survei",
+     "label": "Produk yang dibeli oleh pembeli non-BBM",
+     "nilai": "nitrogen/ban 36,4%",
+     "catatan": "setara dengan makanan/minuman sebagai pembelian terbanyak"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Segmen Nitrogen & Perawatan",
+     "nilai": "1.305 lahan (5,0% dari tersewa); 162 nama tenant berbeda",
+     "catatan": "tarif median Rp 10,0 jt; luar bangunan 36,2%"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Lahan kosong di luar bangunan",
+     "nilai": "1.076 lahan",
+     "catatan": "pool bersama A5"
+    },
+    {
+     "sumber": "master",
+     "label": "Tenant nitrogen/perawatan (badan hukum)",
+     "nilai": "1.054 lahan; 59 nama berbeda",
+     "catatan": "sangat terfragmentasi: tidak ada operator jaringan"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Layanan yang diinginkan: pengguna motor vs mobil",
+     "catatan": "% responden per kelompok (survei).",
+     "format": "pct",
+     "rows": [
+      {
+       "label": "Ban, nitrogen & darurat",
+       "motor": 50.0,
+       "mobil": 36.4
+      },
+      {
+       "label": "Makanan/minuman cepat",
+       "motor": 34.0,
+       "mobil": 54.5
+      },
+      {
+       "label": "Tempat istirahat",
+       "motor": 34.0,
+       "mobil": 40.9
+      },
+      {
+       "label": "Servis ringan",
+       "motor": 26.0,
+       "mobil": 13.6
+      },
+      {
+       "label": "Pembayaran digital",
+       "motor": 18.0,
+       "mobil": 9.1
+      },
+      {
+       "label": "Kebutuhan harian",
+       "motor": 12.0,
+       "mobil": 9.1
+      },
+      {
+       "label": "Cuci cepat",
+       "motor": 14.0,
+       "mobil": 4.5
+      },
+      {
+       "label": "Tidak butuh",
+       "motor": 14.0,
+       "mobil": 0.0
+      }
+     ],
+     "series": [
+      {
+       "key": "motor",
+       "name": "Motor"
+      },
+      {
+       "key": "mobil",
+       "name": "Mobil"
+      }
+     ]
+    },
+    {
+     "judul": "Tenant nitrogen/perawatan terbanyak",
+     "catatan": "Jumlah lahan tersewa (Brightspace); ekor panjang nama UMKM.",
+     "format": "n",
+     "rows": [
+      {
+       "label": "Cv Albarokah Nitrogen",
+       "value": 284
+      },
+      {
+       "label": "Other Services - 8clean",
+       "value": 60
+      },
+      {
+       "label": "N2 Nitrolite",
+       "value": 51
+      },
+      {
+       "label": "3_Wax",
+       "value": 42
+      },
+      {
+       "label": "AJ NITROGEN",
+       "value": 40
+      },
+      {
+       "label": "GO Nitrogen",
+       "value": 35
+      },
+      {
+       "label": "NITROGEN",
+       "value": 33
+      },
+      {
+       "label": "Champions Autocare",
+       "value": 32
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "Mesin & tarif nitrogen",
+     "nilai": "Mesin Rp 8–29 jt; Rp 5–10 rb/ban",
+     "sumber": "Monotaro; Widya Robotics",
+     "url": "https://www.monotaro.id/k/store/mesin%20nitrogen",
+     "relevansi": "Capex mitra Rp 30 jt/titik dan tiket Rp 20 rb dipakai di model."
+    },
+    {
+     "item": "Populasi kendaraan bermotor",
+     "nilai": "172,9 juta unit (2025); 145,2 juta sepeda motor",
+     "sumber": "BPS via Detik Oto",
+     "url": "https://oto.detik.com/berita/d-8534826/jangan-kaget-segini-jumlah-kendaraan-di-ri-paling-banyak-bukan-di-jakarta",
+     "relevansi": "Pasar perawatan ringan didominasi motor; format harus cepat dan murah (tiket Rp 10–20 rb)."
+    },
+    {
+     "item": "Sebaran kendaraan per provinsi",
+     "nilai": "Jawa Barat 28,1 juta; Jakarta 12,3 juta",
+     "sumber": "GoodStats (BPS 2025)",
+     "url": "https://data.goodstats.id/statistic/10-provinsi-dengan-jumlah-kendaraan-terbanyak-2025-Rtffq",
+     "relevansi": "Prioritas standardisasi di Jabar, Jatim, Jateng, Sumut sesuai populasi motor."
+    }
+   ],
+   "risiko": [
+    "Standardisasi menggusur UMKM eksisting; resistensi pengelola SPBU dan tenant lama.",
+    "Tiket kecil: pendapatan Pertamina per titik rendah bila bagi hasil tidak terkumpul (tunai).",
+    "Kualitas layanan (tekanan ban, keselamatan) menjadi tanggung jawab merek Pertamina."
+   ],
+   "prasyarat": [
+    "Standar format 'Pertamina Care' (mesin, SOP, harga, seragam) dan skema kemitraan untuk tenant lama bergabung.",
+    "Pembayaran digital (QRIS/MyPertamina) agar omzet tercatat untuk bagi hasil.",
+    "Paket bundel dengan Pelumas/Enduro di lokasi yang sama."
+   ],
+   "pilot": [
+    "30 titik di Medan + Bandung (motor dominan); 6 bulan; mesin oleh mitra.",
+    "Ukur: kendaraan/hari, tiket rata-rata, omzet digital, kepuasan, perubahan kunjungan ulang.",
+    "Tinjau ulang skor dampak A8 setelah data pilot."
+   ],
+   "data_dibutuhkan": [
+    "Omzet tenant nitrogen eksisting (sampel) untuk kalibrasi 15–50 kendaraan/hari.",
+    "Survei lanjutan dengan sampel lebih besar di kota Jawa.",
+    "Data keluhan/insiden layanan ban di SPBU."
+   ],
+   "nama": "Paket perawatan kendaraan self-service",
+   "kuadran": "Fill-in",
+   "kategori": "Produk baru",
+   "impact": 6.1,
+   "effort": 4.4,
+   "kpi": "Standardisasi 500 titik dalam 18 bulan"
+  },
+  {
+   "id": "A11",
+   "pertanyaan": "Apakah ada cukup pengunjung yang mau tinggal lebih dari 10 menit di SPBU untuk mengisi lounge/co-working di lantai 2 yang sekarang paling sulit disewakan?",
+   "ringkasan": "Permintaannya tipis: hanya 9,6% responden mau menambah > 5 menit di SPBU dan 82,2% langsung pergi, meski 35,6% menganggap tempat istirahat bermanfaat (lebih cocok dijawab dengan musala/toilet/kursi, bukan lounge berbayar). Pasokannya kecil: 503 lahan lantai 2, 123 kosong, okupansi 75,5% (terendah), tarif median Rp 24,5 jt. Pasar co-working nasional sendiri goyah (CoHive pailit 2023; okupansi baik hanya di CBD Jakarta). Nilai ekonomi Rp 1,1 M/th dasar, terkecil dari semua alternatif. Kajian ini mengonfirmasi posisi Thankless Task: tunda, kecuali untuk SPBU rest area tol tertentu.",
+   "verdict": {
+    "permintaan": {
+     "nilai": "lemah",
+     "alasan": "Mau tinggal > 5 menit hanya 9,6%; tempat istirahat diinginkan tetapi dalam bentuk gratis/cepat."
+    },
+    "pasokan": {
+     "nilai": "lemah",
+     "alasan": "123 lahan lantai 2 kosong dari 503; okupansi lantai 2 75,5%."
+    },
+    "ekonomi": {
+     "nilai": "lemah",
+     "alasan": "Dasar Rp 1,1 M/th; capex fit-out mitra Rp 4,5 M untuk pendapatan Pertamina yang kecil."
+    },
+    "kesiapan": {
+     "nilai": "lemah",
+     "alasan": "Operator co-working selektif pasca-2023; akses lantai 2 (tangga, toilet) sering tidak memadai."
+    }
+   },
+   "internal": [
+    {
+     "sumber": "brightspace",
+     "label": "Lahan lantai 2",
+     "nilai": "503 lahan; 123 kosong; okupansi 75,5%",
+     "catatan": "tarif median tersewa Rp 24,5 jt vs nasional Rp 15,0 jt"
+    },
+    {
+     "sumber": "brightspace",
+     "label": "Lahan lantai 2 kosong di provinsi teratas",
+     "nilai": "Jawa Tengah (19), Jawa Barat (15), Jawa Timur (15), DKI Jakarta (12), Lampung (8)",
+     "catatan": "sangat tersebar"
+    },
+    {
+     "sumber": "survei",
+     "label": "Mau menambah waktu > 5 menit di SPBU",
+     "nilai": "9,6%",
+     "catatan": "tidak mau sama sekali 41,1%; tergantung layanan 24,7%"
+    },
+    {
+     "sumber": "survei",
+     "label": "Tempat istirahat dianggap bermanfaat",
+     "nilai": "35,6%",
+     "catatan": "prioritas 28,8%; usia 55+ 32,9% responden"
+    },
+    {
+     "sumber": "survei",
+     "label": "Langsung pergi setelah mengisi BBM",
+     "nilai": "82,2%",
+     "catatan": "lounge bertentangan dengan pola kunjungan"
+    }
+   ],
+   "grafik": [
+    {
+     "judul": "Kesediaan menambah waktu kunjungan",
+     "catatan": "% responden (survei).",
+     "format": "pct",
+     "rows": [
+      {
+       "label": "Tidak mau",
+       "value": 41.1
+      },
+      {
+       "label": "1–3 menit",
+       "value": 13.7
+      },
+      {
+       "label": "4–5 menit",
+       "value": 11.0
+      },
+      {
+       "label": "6–10 menit",
+       "value": 5.5
+      },
+      {
+       "label": "> 10 menit",
+       "value": 4.1
+      },
+      {
+       "label": "Tergantung layanan",
+       "value": 24.7
+      }
+     ],
+     "series": null
+    }
+   ],
+   "eksternal": [
+    {
+     "item": "Tarif & okupansi co-working",
+     "nilai": "GoWork: Rp 125 rb/hari – Rp 2,5 jt/bulan; okupansi 70% (Plaza Indonesia)",
+     "sumber": "Kontan",
+     "url": "https://industri.kontan.co.id/news/gowork-kembali-buka-gerai-di-plaza-indonesia",
+     "relevansi": "Tarif CBD tidak berlaku di SPBU; model memakai sewa lantai 2 berdiskon."
+    },
+    {
+     "item": "Risiko operator",
+     "nilai": "CoHive dinyatakan pailit (2023)",
+     "sumber": "Bisnis.com",
+     "url": "https://ekonomi.bisnis.com/read/20230201/47/1623781/cohive-pailit-bagaimana-prospek-bisnis-coworking-space-di-2023",
+     "relevansi": "Operator co-working rentan; kontrak jangka panjang sulit didapat."
+    },
+    {
+     "item": "Okupansi kantor Jakarta 2025",
+     "nilai": "Pasokan minim, okupansi berpeluang membaik tetapi lambat (PDB ± 5%)",
+     "sumber": "Fortune Indonesia / Colliers",
+     "url": "https://www.fortuneidn.com/news/pasokan-kantor-di-jakarta-minim-okupansi-berpeluang-tumbuh-di-2025-00-4vfn9-7qf1wd",
+     "relevansi": "Permintaan ruang kerja fleksibel belum kuat; tidak ada dorongan pasar untuk lokasi non-CBD."
+    }
+   ],
+   "risiko": [
+    "Fit-out mahal untuk pendapatan kecil; operator menutup setelah masa promosi.",
+    "Lantai 2 sering tanpa akses disabilitas/toilet, menambah capex.",
+    "Mengalihkan perhatian tim dari Quick Win yang nilainya puluhan kali lebih besar."
+   ],
+   "prasyarat": [
+    "Batasi ke SPBU rest area tol atau SPBU dekat kampus/perkantoran dengan bukti permintaan.",
+    "Operator menanggung seluruh fit-out; Pertamina hanya sewa berdiskon.",
+    "Alternatif murah dulu: kursi/area istirahat gratis + musala/toilet bersih (A9)."
+   ],
+   "pilot": [
+    "Maksimal 3 lokasi rest area tol bila ada operator yang mengajukan; 12 bulan.",
+    "Ukur: okupansi kursi/jam, pendapatan operator, dampak ke pembelian non-BBM.",
+    "Tidak dianjurkan sebagai program; evaluasi ulang hanya bila ada permintaan operator."
+   ],
+   "data_dibutuhkan": [
+    "Daftar SPBU rest area tol dan trafik pengunjung yang berhenti > 15 menit.",
+    "Minat operator (RFI) sebelum menyiapkan lahan.",
+    "Kondisi akses lantai 2 per lahan (tangga, toilet, AC)."
+   ],
+   "nama": "Lantai 2 / rooftop: co-working & rest lounge",
+   "kuadran": "Thankless Task",
+   "kategori": "Produk baru",
+   "impact": 4.5,
+   "effort": 7.8,
+   "kpi": "Pilot 10 lokasi"
+  }
+ ]
+}
