@@ -1,4 +1,6 @@
 import type { Metadata, Viewport } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import { Suspense } from "react";
 import "./globals.css";
 import { Nav } from "@/components/nav";
@@ -24,9 +26,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <div className="mx-auto flex max-w-[1400px] flex-col gap-6 px-4 py-6 lg:flex-row lg:px-8">
           <aside className="lg:sticky lg:top-6 lg:h-[calc(100vh-3rem)] lg:w-60 lg:shrink-0">
             <div className="mb-4">
-              <div className="text-xs font-semibold uppercase tracking-wider text-ink-3">Pertamina · NFR</div>
-              <div className="text-lg font-semibold leading-tight">Brightspace Analytics</div>
-              <div className="mt-1 text-xs text-ink-3">{data.generated_from}</div>
+              {/* Wordmark hijau gelap: di mode gelap diberi alas putih agar tetap terbaca. */}
+              <Link href="/" className="inline-block rounded-md dark:bg-white dark:px-2.5 dark:py-2" aria-label="Pertamina NFR Analytics, ke ringkasan eksekutif">
+                <Image src="/pertamina-logo.webp" alt="Pertamina" width={3840} height={894} priority className="h-auto w-44" />
+              </Link>
+              <div className="mt-2 text-xs text-ink-3">NFR · {data.generated_from}</div>
             </div>
             {/* Suspense: rute dinamis (/data/spbu/[id]) tidak tahu pathname saat prerender shell. */}
             <Suspense fallback={null}><Nav /></Suspense>

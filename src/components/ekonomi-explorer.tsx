@@ -12,7 +12,7 @@ const subscribeHash = (cb: () => void) => {
   return () => window.removeEventListener("hashchange", cb);
 };
 const SHORT: Record<string, string> = {
-  A1: "Isi lahan kosong", A2: "Standardisasi tarif", A3: "Kios F&B grab-and-go", A4: "Parcel locker", A5: "Hub EV charging",
+  A1: "Commercial Intelligence", A2: "Standardisasi tarif", A3: "Kios F&B grab-and-go", A4: "Parcel locker", A5: "Hub EV charging",
   A6: "Gudang mikro", A7: "DOOH advertising", A8: "Perawatan self-service", A9: "Profil & fasilitas", A10: "ATM → kiosk digital",
   A11: "Lounge lantai 2", A12: "PLTS kanopi",
 };

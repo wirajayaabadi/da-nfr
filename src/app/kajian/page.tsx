@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { kajian, ASPEK_LABEL, ASPEK_ORDER, VERDICT_COLOR, KUADRAN_ORDER, type Verdict } from "@/lib/kajian";
+import { kajian, ASPEK_LABEL, ASPEK_ORDER, VERDICT_COLOR, KUADRAN_ORDER, SIKAP_COLOR, SIKAP_ORDER, type Verdict } from "@/lib/kajian";
 import { ekonomi } from "@/lib/ekonomi";
 import { rp } from "@/lib/format";
 import { PageHeader, Pill, Insight } from "@/components/ui";
@@ -20,12 +20,26 @@ export default function Page() {
         Dari 48 penilaian (12 alternatif × 4 aspek): <strong>{count("kuat")} kuat</strong>, <strong>{count("sedang")} sedang</strong>, <strong>{count("lemah")} lemah</strong>. Penilaian adalah pertimbangan konsultan atas bukti yang dicantumkan di tiap halaman; sampel survei kecil (n = 73) sehingga sinyal permintaan dibaca sebagai arah, bukan besaran.
       </Insight>
 
+      <div className="mt-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
+        {SIKAP_ORDER.map((t) => {
+          const xs = items.filter((a) => a.rencana.sikap.tingkat === t);
+          return (
+            <section key={t} className="card p-3">
+              <div className="flex items-center gap-1.5 text-xs font-semibold"><span className="h-2.5 w-2.5 rounded-full" style={{ background: SIKAP_COLOR[t] }} aria-hidden />{xs[0]?.rencana.sikap.label ?? t}</div>
+              <div className="mt-1 text-2xl font-semibold">{xs.length}</div>
+              <div className="mt-1 flex flex-wrap gap-1">{xs.map((a) => <Link key={a.id} href={`/kajian/${a.id}#rencana`} className="rounded border border-grid px-1 text-[11px] text-ink-2 hover:bg-plane">{a.id}</Link>)}</div>
+            </section>
+          );
+        })}
+      </div>
+
       <div className="card mt-4 overflow-x-auto p-4">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-grid text-left text-xs uppercase tracking-wide text-ink-3">
               <th className="py-2 pr-3 font-medium">Alternatif</th>
               {ASPEK_ORDER.map((k) => <th key={k} className="py-2 pr-3 font-medium">{ASPEK_LABEL[k]}</th>)}
+              <th className="py-2 pr-3 font-medium">Yang akan kita lakukan</th>
               <th className="py-2 pr-3 text-right font-medium">Pendapatan/th (dasar)</th>
             </tr>
           </thead>
@@ -43,6 +57,9 @@ export default function Page() {
                     <span className="inline-flex items-center gap-1.5 whitespace-nowrap text-xs"><span className="h-2 w-2 rounded-full" style={{ background: VERDICT_COLOR[a.verdict[k].nilai] }} aria-hidden />{a.verdict[k].nilai}</span>
                   </td>
                 ))}
+                <td className="py-2 pr-3 align-top">
+                  <Link href={`/kajian/${a.id}#rencana`} className="inline-flex min-w-[7rem] items-start gap-1.5 text-xs font-semibold hover:underline"><span className="mt-1 h-2 w-2 shrink-0 rounded-full" style={{ background: SIKAP_COLOR[a.rencana.sikap.tingkat] }} aria-hidden />{a.rencana.sikap.label}</Link>
+                </td>
                 <td className="tnum py-2 pr-3 text-right align-top">{rp(eko[a.id]?.skenario.dasar.pendapatan)}</td>
               </tr>
             ))}

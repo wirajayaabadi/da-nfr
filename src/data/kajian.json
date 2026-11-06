@@ -1,5 +1,5 @@
 {
- "dibuat": "2026-11-05",
+ "dibuat": "2026-11-06",
  "sumber": {
   "brightspace": "brightspace.pertamina.com (scrape 2026-11-03)",
   "survei": "Survei perilaku konsumen SPBU (Google Form, November 2026) (n = 73)",
@@ -213,7 +213,557 @@
     "Pipeline calon tenant per kota (inquiry Brightspace) untuk mengukur permintaan.",
     "Alasan tenant keluar (exit survey) pada lahan yang baru kosong."
    ],
-   "nama": "Program pengisian cepat lahan kosong (Occupancy Sprint)",
+   "rencana": {
+    "sikap": {
+     "tingkat": "segera",
+     "label": "Jalankan segera"
+    },
+    "inti": "Kita membentuk tim sprint 12 bulan untuk mengisi lahan kosong yang sudah bertarif, mulai dari 636 SPBU yang punya ≥ 3 lahan kosong di kota besar. Sebelum kampanye, status lahan dibersihkan dulu agar yang dipasarkan benar-benar kosong. Setiap lahan lalu dipasarkan bersama rekomendasi pasarnya (usaha yang cocok, tarif wajar, kandidat tenant) dan dicocokkan proaktif ke tenant eksisting, UMKM binaan, dan broker lokal lewat business matching; paket sewa perkenalan menutup transaksinya. Dengan begitu Pertamina tidak hanya menjadi pemilik lahan, tetapi juga commercial matchmaker bagi dealer, brand, dan UMKM.",
+    "cara_kerja": [
+     "Pertamina tidak membangun apa pun: lahan yang sudah ada disewakan pada tarif listing atau tarif acuan (A2).",
+     "Biaya program hanya insentif pengisian ± Rp 2 jt per lahan terisi, tim program, dan kampanye (capex dasar Rp 5,5 M).",
+     "Calon tenant pertama adalah tenant multi-lokasi yang sudah ada (bank, LPG, pelumas, F&B) karena proses kontraknya sudah dikenal.",
+     "Paket perkenalan berupa diskon terbatas waktu dengan kontrak minimal 1 tahun, bukan potongan tarif permanen.",
+     "Business matching & rekomendasi pasar (bagian berikutnya) menjadi mesin penjualannya: tim tidak menawarkan lahan ke siapa saja, tetapi ke tenant yang polanya cocok."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–1",
+      "judul": "Bersihkan data & tetapkan target",
+      "kegiatan": [
+       "Tarik daftar lahan Tersedia dengan tarif valid dari halaman Data SPBU & lahan, urutkan per SPBU dan kota.",
+       "Konfirmasi 7.064 lahan 'Tersewa' yang kontraknya sudah lewat dan 363 lahan kosong yang disetujui tetapi tidak tayang.",
+       "Tetapkan target pengisian per region dan penanggung jawabnya."
+      ]
+     },
+     {
+      "fase": "Bulan 1–4",
+      "judul": "Pilot 3 kota",
+      "kegiatan": [
+       "Kampanye ke tenant eksisting dan broker lokal di 3 kota dengan nilai idle terbesar; 3 kota lain sebagai kontrol.",
+       "Tim pilot memakai kartu rekomendasi per lahan dan daftar matching per tenant (prototipe dari data yang ada).",
+       "Ukur mingguan: lahan terisi, hari-ke-sewa, tarif realisasi vs listing."
+      ]
+     },
+     {
+      "fase": "Bulan 4–12",
+      "judul": "Skala nasional",
+      "kegiatan": [
+       "Perluas ke semua region dengan paket yang terbukti; laporan okupansi bulanan per region.",
+       "Lahan yang tetap kosong > 6 bulan dialihkan ke format khusus (A3, A4, A6, A8)."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Pemilik program: daftar prioritas, paket tarif perkenalan, insentif broker."
+     },
+     {
+      "pihak": "Regional / Sales Area",
+      "tugas": "Target pengisian, follow-up calon tenant, laporan mingguan."
+     },
+     {
+      "pihak": "Pengelola SPBU",
+      "tugas": "Menunjukkan lahan ke calon tenant dan memperbarui status lahan."
+     },
+     {
+      "pihak": "Tim Brightspace",
+      "tugas": "Sinkronisasi status master ↔ marketplace, menayangkan lahan yang belum tampil; kemudian fitur rekomendasi di halaman lahan."
+     },
+     {
+      "pihak": "Tim data / analytics",
+      "tugas": "Model rekomendasi & matching, pengayaan data lokasi, pengukuran akurasi."
+     },
+     {
+      "pihak": "Dealer DODO",
+      "tugas": "Mendaftarkan lahan di SPBU-nya ke platform dan menyetujui calon tenant yang dijodohkan."
+     },
+     {
+      "pihak": "Broker / mitra lokal & UMKM binaan",
+      "tugas": "Mencari dan menjadi tenant; broker dibayar komisi per lahan terisi."
+     }
+    ],
+    "ambang": {
+     "lanjut": "Pilot mengisi ≥ 25% lahan kosong bertarif dalam 90 hari dengan tarif realisasi ≥ 85% listing.",
+     "berhenti": "Kurang dari 10% terisi setelah 90 hari: masalahnya permintaan lokal, alihkan ke format khusus per ukuran lahan."
+    }
+   },
+   "matching": {
+    "konsep": "Setiap lahan kosong dipasarkan bersama jawabannya: usaha apa yang cocok, berapa tarif wajarnya, siapa calon penyewanya, dan mengapa. Mesinnya dua arah: dari lahan ke usaha (rekomendasi pasar) dan dari tenant ke lahan (business matching). Keduanya membaca pola sewa lahan serupa di sekitar lahan itu, kondisi lokasi SPBU, dan riwayat kontrak.",
+    "pengguna": [
+     {
+      "pihak": "Tim NFR pusat & region",
+      "kebutuhan": "Daftar calon tenant per lahan kosong dan daftar lahan per tenant, siap ditindaklanjuti; prioritas harian untuk sprint A1."
+     },
+     {
+      "pihak": "Calon tenant di Brightspace",
+      "kebutuhan": "Saat membuka satu lahan: usaha yang cocok, tarif wajar, lahan sejenis yang sudah tersewa, dan tombol ajukan minat; saat masuk dengan profil usaha: lahan yang disarankan."
+     },
+     {
+      "pihak": "UMKM binaan Pertamina",
+      "kebutuhan": "Masuk sebagai kumpulan kandidat tersendiri: produk, kota, dan kesiapan modal dicocokkan dengan lahan kecil bertarif perkenalan."
+     }
+    ],
+    "arah": [
+     {
+      "nama": "Lahan → usaha (rekomendasi pasar)",
+      "isi": "Untuk tiap lahan kosong: 3 segmen usaha teratas yang cocok, tarif wajar (rentang P25–P75 pembanding), kandidat tenant yang sudah beroperasi di kota itu, dan alasannya. Dipakai tim penjualan dan ditampilkan di halaman lahan Brightspace."
+     },
+     {
+      "nama": "Tenant → lahan (business matching)",
+      "isi": "Untuk tiap tenant eksisting, calon tenant, atau UMKM binaan: lahan kosong yang mirip dengan jejak usahanya (provinsi, ukuran, posisi, tarif), dikecualikan SPBU yang sudah ia tempati. Menjadi daftar penawaran proaktif, bukan menunggu inquiry."
+     }
+    ],
+    "logika": [
+     {
+      "lapisan": "1 · Lookalike",
+      "isi": "Segmen apa yang menyewa lahan sejenis (kota × ukuran × posisi) dan berapa tarifnya.",
+      "sumber": "Brightspace",
+      "status": "ada"
+     },
+     {
+      "lapisan": "2 · Celah di SPBU",
+      "isi": "Jangan sarankan segmen yang sudah ada di SPBU itu; utamakan yang melengkapi bauran tenant.",
+      "sumber": "Brightspace",
+      "status": "ada"
+     },
+     {
+      "lapisan": "3 · Kandidat tenant",
+      "isi": "Tenant yang sudah beroperasi di kota/provinsi itu pada segmen tersebut; prioritas tenant ≥ 5 lahan dan UMKM binaan.",
+      "sumber": "Master lahan + daftar UMKM binaan",
+      "status": "sebagian"
+     },
+     {
+      "lapisan": "4 · Konteks lokasi",
+      "isi": "Kepadatan POI (kantor, sekolah, perumahan, pasar, kompetitor) di radius 0,5–2 km, area sekitar yang diisi pengelola, trafik SPBU.",
+      "sumber": "OpenStreetMap, BPS, area sekitar (A9), data BBM internal",
+      "status": "belum"
+     },
+     {
+      "lapisan": "5 · Bukti keberhasilan",
+      "isi": "Utamakan segmen/tenant yang kontraknya diperpanjang dan membayar penuh, bukan yang sekadar pernah menyewa.",
+      "sumber": "Riwayat kontrak master, hasil penawaran (umpan balik)",
+      "status": "sebagian"
+     },
+     {
+      "lapisan": "6 · Jalur format baru",
+      "isi": "Lookalike meniru pola lama (LPG, bank, pelumas). Format yang sedang didorong (A3, A4, A8) diberi kuota rekomendasi agar tetap muncul.",
+      "sumber": "Kebijakan NFR",
+      "status": "rancangan"
+     }
+    ],
+    "aset": [
+     {
+      "item": "Lahan kosong dengan ≥ 10 pembanding tersewa sejenis (kota × ukuran × posisi)",
+      "nilai": "4.188 dari 5.574",
+      "status": "ada",
+      "guna": "Dasar rekomendasi lookalike"
+     },
+     {
+      "item": "Lahan kosong dengan ≥ 3 pembanding",
+      "nilai": "5.000",
+      "status": "ada",
+      "guna": "Cakupan minimum; sisanya pakai pembanding tingkat provinsi"
+     },
+     {
+      "item": "Tenant unik di master (kontrak aktif)",
+      "nilai": "3.835",
+      "status": "ada",
+      "guna": "Kumpulan kandidat untuk matching"
+     },
+     {
+      "item": "Tenant dengan ≥ 5 lahan (kandidat ekspansi)",
+      "nilai": "779",
+      "status": "ada",
+      "guna": "Prioritas pertama matching"
+     },
+     {
+      "item": "Tenant dengan ≥ 20 lahan (akun besar)",
+      "nilai": "183",
+      "status": "ada",
+      "guna": "Dikelola sebagai key account"
+     },
+     {
+      "item": "Kode lahan dengan > 1 baris riwayat kontrak",
+      "nilai": "760",
+      "status": "sebagian",
+      "guna": "Proksi perpanjangan = tanda tenant berhasil; masih tipis"
+     },
+     {
+      "item": "Lahan kosong dengan koordinat SPBU",
+      "nilai": "5.574",
+      "status": "ada",
+      "guna": "Kunci untuk menempelkan data lokasi eksternal"
+     },
+     {
+      "item": "Lahan kosong di SPBU dengan data area sekitar",
+      "nilai": "1.343 (24,1%)",
+      "status": "sebagian",
+      "guna": "Konteks lokasi internal; perlu dilengkapi (A9) atau diganti data eksternal"
+     },
+     {
+      "item": "Lahan kosong dengan daya listrik tercantum",
+      "nilai": "3.802 (68,2%)",
+      "status": "sebagian",
+      "guna": "Filter kelayakan untuk F&B, EV, perawatan"
+     },
+     {
+      "item": "Trafik kendaraan / volume BBM per SPBU",
+      "nilai": "tidak ada",
+      "status": "belum",
+      "guna": "Faktor lokasi terpenting bagi tenant; minta akses data internal"
+     },
+     {
+      "item": "Inquiry / leads Brightspace per lahan",
+      "nilai": "tidak ada",
+      "status": "belum",
+      "guna": "Sinyal permintaan nyata dan umpan balik untuk model"
+     },
+     {
+      "item": "Kontak & profil tenant (PIC, rencana ekspansi)",
+      "nilai": "tidak ada",
+      "status": "belum",
+      "guna": "Syarat matching bisa ditindaklanjuti tim penjualan"
+     },
+     {
+      "item": "Daftar UMKM binaan Pertamina (produk, kota, kesiapan)",
+      "nilai": "tidak ada",
+      "status": "belum",
+      "guna": "Kumpulan kandidat kedua di sisi matching"
+     },
+     {
+      "item": "Tipe kepemilikan SPBU (COCO / DODO) & pemilik lahan",
+      "nilai": "tidak ada",
+      "status": "belum",
+      "guna": "Menentukan siapa penerima sewa dan di mana management/brokerage fee berlaku"
+     },
+     {
+      "item": "POI & data wilayah eksternal (OpenStreetMap, BPS per kecamatan)",
+      "nilai": "belum ditarik",
+      "status": "belum",
+      "guna": "Kepadatan kantor/sekolah/perumahan/pasar di sekitar SPBU"
+     }
+    ],
+    "contoh_lahan": {
+     "kode": "4450129-IN-002",
+     "spbu": "4450129",
+     "spbu_id": "6St-klzURTKnF0kNltDinw",
+     "kota": "Semarang Kota",
+     "prov": "Jawa Tengah",
+     "luas": 4.0,
+     "posisi": "Didalam Bangunan",
+     "lantai": "Lantai 1",
+     "daya": 1300.0,
+     "tarif_listing": 9000000.0,
+     "fasilitas": [
+      "CCTV",
+      "ATM Center",
+      "Mushola",
+      "Toilet",
+      "Tempat Parkir (maksimal 10 mobil)",
+      "Area Merokok"
+     ],
+     "area": [
+      {
+       "nama": "ATM CENTER",
+       "kategori": "business",
+       "km": 0.02
+      }
+     ],
+     "pembanding": {
+      "jumlah": 351,
+      "definisi": "lahan tersewa < 10 m², didalam bangunan, di Semarang Kota",
+      "segmen": [
+       {
+        "label": "Perbankan & ATM",
+        "value": 115
+       },
+       {
+        "label": "LPG & Bright Gas",
+        "value": 94
+       },
+       {
+        "label": "Pelumas & Oli",
+        "value": 74
+       },
+       {
+        "label": "F&B / Kuliner",
+        "value": 34
+       },
+       {
+        "label": "Nitrogen & Perawatan",
+        "value": 27
+       },
+       {
+        "label": "Minimarket & Ritel",
+        "value": 3
+       }
+      ]
+     },
+     "segmen_ada": [
+      "LPG & Bright Gas",
+      "Pelumas & Oli",
+      "Perbankan & ATM"
+     ],
+     "rekomendasi": [
+      {
+       "segmen": "F&B / Kuliner",
+       "share_pct": 9.7,
+       "kandidat": [
+        {
+         "tenant": "PT Poci Kreasi Mandiri",
+         "lahan": 41
+        },
+        {
+         "tenant": "Koperasi Himpunan Mitra Energi Semarang",
+         "lahan": 8
+        },
+        {
+         "tenant": "PT Baba Rafi Internasional",
+         "lahan": 6
+        }
+       ],
+       "tingkat_kandidat": "kota",
+       "alasan": "9,7% lahan sejenis di Semarang Kota disewa segmen ini, dan SPBU ini belum memilikinya."
+      },
+      {
+       "segmen": "Nitrogen & Perawatan",
+       "share_pct": 7.7,
+       "kandidat": [
+        {
+         "tenant": "CV Semangat Membangun",
+         "lahan": 10
+        },
+        {
+         "tenant": "CV Sinar Mustika",
+         "lahan": 10
+        },
+        {
+         "tenant": "CV Padamu Negri",
+         "lahan": 8
+        }
+       ],
+       "tingkat_kandidat": "kota",
+       "alasan": "7,7% lahan sejenis di Semarang Kota disewa segmen ini, dan SPBU ini belum memilikinya."
+      }
+     ],
+     "tarif_wajar": {
+      "p25": 7500000.0,
+      "median": 12000000.0,
+      "p75": 20000000.0,
+      "n": 199
+     },
+     "belum_terjawab": [
+      "Trafik kendaraan harian SPBU ini",
+      "Apakah tenant pembanding memperpanjang kontraknya",
+      "POI di radius 1 km (kantor, sekolah, perumahan)"
+     ]
+    },
+    "contoh_tenant": {
+     "tenant": "PT Poci Kreasi Mandiri",
+     "lahan": 595,
+     "spbu": 338,
+     "segmen": "F&B / Kuliner",
+     "provinsi": [
+      {
+       "label": "Jawa Timur",
+       "value": 290
+      },
+      {
+       "label": "Jawa Tengah",
+       "value": 163
+      },
+      {
+       "label": "Jawa Barat",
+       "value": 84
+      },
+      {
+       "label": "Jambi",
+       "value": 12
+      },
+      {
+       "label": "DKI Jakarta",
+       "value": 9
+      },
+      {
+       "label": "Kepulauan Riau",
+       "value": 9
+      }
+     ],
+     "luas_p25": 3.0,
+     "luas_p75": 6.0,
+     "posisi": "Didalam Bangunan",
+     "tarif_median": 10000000.0,
+     "kriteria": "lahan kosong 3,0–6,0 m², didalam bangunan, di provinsi yang sudah dilayani, di SPBU yang belum memiliki tenant ini",
+     "cocok": 1221,
+     "cocok_spbu": 813,
+     "kota_teratas": [
+      {
+       "label": "Kodya Surabaya",
+       "value": 46
+      },
+      {
+       "label": "Kodya Jakarta Selatan",
+       "value": 45
+      },
+      {
+       "label": "Kodya Jakarta Timur",
+       "value": 37
+      },
+      {
+       "label": "Kodya Tangerang",
+       "value": 34
+      },
+      {
+       "label": "Kabupaten Cirebon",
+       "value": 33
+      },
+      {
+       "label": "Kodya Bekasi",
+       "value": 32
+      },
+      {
+       "label": "Kabupaten Bekasi",
+       "value": 31
+      },
+      {
+       "label": "Kodya Bandung",
+       "value": 31
+      }
+     ],
+     "contoh": [
+      {
+       "kode": "14201186-IN-004",
+       "kota": "Kodya Medan",
+       "luas": 3.0,
+       "tarif": 10000000.0
+      },
+      {
+       "kode": "14201193-IN-013",
+       "kota": "Kodya Medan",
+       "luas": 5.0,
+       "tarif": 10000000.0
+      },
+      {
+       "kode": "14223338-IN-001",
+       "kota": "Kab. Toba Samosir",
+       "luas": 6.0,
+       "tarif": 10000000.0
+      },
+      {
+       "kode": "14224302-IN-002",
+       "kota": "Kab. Tapanuli Utara",
+       "luas": 3.0,
+       "tarif": 10000000.0
+      },
+      {
+       "kode": "14224303-IN-005",
+       "kota": "Kab. Toba Samosir",
+       "luas": 4.0,
+       "tarif": 10000000.0
+      }
+     ]
+    },
+    "tahapan": [
+     {
+      "fase": "Minggu 1–4",
+      "judul": "Gambaran di kajian (tahap ini)",
+      "kegiatan": [
+       "Kartu rekomendasi dan daftar matching dihitung dari data yang ada, ditampilkan di halaman ini dan di halaman Data.",
+       "Diuji bersama tim region di 3 kota pilot A1: apakah rekomendasinya masuk akal dan bisa ditindaklanjuti."
+      ]
+     },
+     {
+      "fase": "Bulan 2–4",
+      "judul": "Pengayaan & validasi",
+      "kegiatan": [
+       "Tarik POI OpenStreetMap dan data BPS per kecamatan; minta akses inquiry Brightspace, kontak tenant, volume BBM per SPBU.",
+       "Uji akurasi: sembunyikan segmen lahan yang sudah tersewa, minta model menebak, bandingkan dengan kenyataan.",
+       "Susun daftar UMKM binaan sebagai kumpulan kandidat."
+      ]
+     },
+     {
+      "fase": "Bulan 4–12",
+      "judul": "Fitur di Brightspace",
+      "kegiatan": [
+       "Internal: daftar calon tenant per lahan dan daftar lahan per tenant di alat kerja tim penjualan.",
+       "Eksternal: panel 'cocok untuk' dan 'lahan serupa' di halaman lahan; tombol ajukan minat yang mencatat hasilnya.",
+       "Setiap penawaran dan hasilnya dicatat kembali agar rekomendasi belajar dari kontrak yang benar-benar terjadi."
+      ]
+     }
+    ],
+    "ukuran": [
+     "Akurasi tebakan segmen pada lahan yang sudah tersewa (target awal ≥ 60% benar di 3 segmen teratas).",
+     "Rasio rekomendasi → penawaran → kontrak per bulan; hari-ke-sewa lahan yang direkomendasikan vs yang tidak.",
+     "Tarif realisasi terhadap tarif wajar yang disarankan.",
+     "Porsi kontrak baru yang datang dari matching proaktif, bukan inquiry pasif.",
+     "Jumlah dealer DODO yang memakai layanan matching dan pendapatan fee (bila skemanya disetujui)."
+    ],
+    "risiko": [
+     "Bias pola lama: tanpa kuota format baru, rekomendasi hanya mengulang LPG, bank, dan pelumas.",
+     "Tanpa data trafik, rekomendasi lokasi hanya menebak dari lahan tetangga; nilainya terbatas untuk tenant besar yang punya data sendiri.",
+     "Kandidat tenant dari master tidak otomatis bisa dihubungi; butuh kontak PIC dan persetujuan penggunaan data.",
+     "Rekomendasi yang terlihat 'pintar' tetapi tidak dipakai tim penjualan: ukur pemakaian sejak prototipe.",
+     "Kewenangan memungut management/brokerage fee, terutama atas lahan di SPBU DODO, belum jelas; perlu kajian hukum dan kontrak dealer sebelum fee dijadikan target."
+    ],
+    "nilai_tambah": {
+     "peran": "Pertamina tidak hanya menjadi pemilik lahan, tetapi juga berperan sebagai commercial matchmaker: mempertemukan lahan (milik Pertamina maupun dealer) dengan brand dan UMKM yang paling cocok, berbekal data yang hanya Pertamina miliki.",
+     "poin": [
+      {
+       "pihak": "Pertamina",
+       "judul": "Aktif mencari tenant, bukan hanya menunggu pihak ketiga",
+       "isi": "Hari ini lahan menunggu inquiry di marketplace atau dibawa broker. Dengan platform, tim NFR memegang daftar calon tenant per lahan dan daftar lahan per tenant, lalu menawarkan lebih dulu.",
+       "angka": "5.574 lahan kosong siap ditawarkan ke 3.835 tenant aktif di master sebagai kandidat pertama.",
+       "syarat": null
+      },
+      {
+       "pihak": "Dealer DODO",
+       "judul": "Mendapat bantuan mengembangkan asetnya",
+       "isi": "Dealer tidak perlu memasarkan lahannya sendiri: ia menerima rekomendasi usaha yang cocok, tarif wajar dari lahan sejenis, dan calon tenant yang sudah terbukti di kotanya.",
+       "angka": "Belum terukur: tipe kepemilikan SPBU (COCO/DODO) tidak tercatat di Brightspace maupun master lahan.",
+       "syarat": "Tandai tipe kepemilikan per SPBU agar porsi lahan dealer dan dampaknya bisa dihitung."
+      },
+      {
+       "pihak": "Brand & calon tenant",
+       "judul": "Mendapat akses ke lokasi yang sudah dikurasi",
+       "isi": "Brand tidak lagi menyisir ribuan listing. Ia menerima lahan yang cocok dengan jejak usahanya (wilayah, ukuran, posisi, tarif), lengkap dengan bukti lahan sejenis yang sudah tersewa.",
+       "angka": "Contoh: PT Poci Kreasi Mandiri → 1.221 lahan cocok di 813 SPBU yang belum ia tempati.",
+       "syarat": null
+      },
+      {
+       "pihak": "Pertamina",
+       "judul": "Pendapatan sewa, ditambah management fee atau brokerage fee",
+       "isi": "Sewa tetap menjadi pendapatan utama dari lahan yang terisi. Di atasnya, Pertamina bisa memungut management fee atau brokerage fee atas transaksi yang dijodohkan, misalnya untuk lahan di SPBU dealer.",
+       "angka": "Sewa skenario dasar Rp 53,8 M/th dari 2.230 lahan terisi. Kepekaan: tiap 1% fee atas nilai sewa yang dijodohkan ≈ Rp 538,3 jt/th.",
+       "syarat": "Hanya jika model komersial dan kewenangan Pertamina memungkinkan; tarif fee dan lahan yang berhak dikenai fee belum ditetapkan, jadi fee tidak dimasukkan ke target."
+      }
+     ],
+     "pergeseran": [
+      {
+       "aspek": "Cara mendapat tenant",
+       "dulu": "Menunggu inquiry marketplace atau dibawa pihak ketiga",
+       "nanti": "Penawaran proaktif dari daftar calon tenant per lahan"
+      },
+      {
+       "aspek": "Peran Pertamina",
+       "dulu": "Pemilik dan pengelola lahan",
+       "nanti": "Commercial matchmaker antara lahan, dealer, brand, dan UMKM"
+      },
+      {
+       "aspek": "Nilai bagi dealer DODO",
+       "dulu": "Memasarkan lahan sendiri",
+       "nanti": "Rekomendasi usaha, tarif wajar, dan calon tenant"
+      },
+      {
+       "aspek": "Sumber pendapatan",
+       "dulu": "Sewa",
+       "nanti": "Sewa + management/brokerage fee (bersyarat)"
+      }
+     ]
+    }
+   },
+   "nama": "NFR Commercial Intelligence & Partnership Platform",
    "kuadran": "Quick Win",
    "kategori": "Komersial",
    "impact": 7.6,
@@ -429,6 +979,65 @@
     "Riwayat perpanjangan: berapa persen kontrak diperpanjang dengan kenaikan, dan berapa besar.",
     "Daftar kontrak payung korporat beserta klausul tarifnya."
    ],
+   "rencana": {
+    "sikap": {
+     "tingkat": "segera",
+     "label": "Jalankan segera"
+    },
+    "inti": "Kita menyusun tarif acuan per m² berdasarkan segmen, kota, posisi, dan luas dari data tarif yang ada. Tarif ini diterapkan setiap kali kontrak diperpanjang dan setiap kali lahan ditawarkan. Karena hampir semua kontrak berdurasi 1 tahun (69% kontrak aktif berakhir ≤ 12 bulan), hampir seluruh portofolio akan melewati satu siklus tarif dalam setahun.",
+    "cara_kerja": [
+     "Tarif acuan = median tarif per m² untuk lahan serupa, dengan batas bawah dan atas.",
+     "Master lahan menjadi satu-satunya sumber tarif, lalu menyuplai marketplace (bukan sebaliknya).",
+     "Kontrak di bawah acuan dinaikkan bertahap (usulan maks. +15% per perpanjangan) untuk menekan churn; kontrak di atas acuan dipertahankan.",
+     "11.131 lahan tanpa tarif valid diberi tarif acuan sebelum dipasarkan. Tidak ada capex fisik; biaya hanya model dan alat (Rp 2,0 M)."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–2",
+      "judul": "Bangun model",
+      "kegiatan": [
+       "Model tarif per m² diuji pada data historis; sepakati aturan kenaikan maksimum dengan fungsi komersial dan Legal."
+      ]
+     },
+     {
+      "fase": "Bulan 2–8",
+      "judul": "Pilot 2 region",
+      "kegiatan": [
+       "Terapkan pada kontrak yang berakhir di 2 kuartal pertama; region lain sebagai kontrol.",
+       "Pantau uplift tarif dan churn per segmen."
+      ]
+     },
+     {
+      "fase": "Bulan 8–18",
+      "judul": "Berlaku nasional",
+      "kegiatan": [
+       "Tarif acuan tampil otomatis di marketplace dan dipakai di semua perpanjangan; tinjau ulang tiap 6 bulan."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Pemilik model dan kebijakan tarif."
+     },
+     {
+      "pihak": "Tim data / Brightspace",
+      "tugas": "Otomasi tarif acuan dan penayangan di marketplace."
+     },
+     {
+      "pihak": "Regional / Sales Area",
+      "tugas": "Negosiasi perpanjangan dengan tenant."
+     },
+     {
+      "pihak": "Legal",
+      "tugas": "Klausul penyesuaian tarif di kontrak standar."
+     }
+    ],
+    "ambang": {
+     "lanjut": "Uplift tarif rata-rata ≥ 5% pada kontrak yang diperpanjang dan churn tidak naik > 2 poin dibanding region kontrol.",
+     "berhenti": "Churn naik > 5 poin: turunkan batas kenaikan per perpanjangan, jangan cabut tarif acuan."
+    }
+   },
    "nama": "Standardisasi & dynamic pricing tarif sewa",
    "kuadran": "Quick Win",
    "kategori": "Komersial",
@@ -621,6 +1230,63 @@
     "Inventaris fasilitas fisik dari region untuk membedakan 'tidak ada' vs 'tidak diisi'.",
     "Skor Serv-Q per SPBU untuk dikorelasikan dengan tarif."
    ],
+   "rencana": {
+    "sikap": {
+     "tingkat": "segera",
+     "label": "Jalankan segera"
+    },
+    "inti": "Kita mewajibkan setiap SPBU yang punya lahan untuk melengkapi profilnya di Brightspace dalam 90 hari: fasilitas, area sekitar, foto, tarif, dan daya listrik lahan. Ini murah dan memperbaiki data untuk semua alternatif lain. Upgrade fisik toilet, musala, dan WiFi hanya dilakukan di SPBU prioritas dan dibiayai pengelola SPBU.",
+    "cara_kerja": [
+     "Profil lengkap menjadi syarat lahan tampil di halaman depan marketplace.",
+     "Data area sekitar dipakai sebagai premi di tarif acuan (A2), karena tarif di SPBU yang mencatat hotel/perkantoran/stasiun 20–33% di atas median.",
+     "Upgrade fasilitas fisik diinvestasikan pengelola SPBU; Pertamina memberi standar dan daftar prioritas."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–1",
+      "judul": "Siapkan isian wajib",
+      "kegiatan": [
+       "Tetapkan field wajib dan panduan foto; tampilkan skor kelengkapan profil per SPBU."
+      ]
+     },
+     {
+      "fase": "Bulan 1–4",
+      "judul": "Pilot 1 region",
+      "kegiatan": [
+       "Semua SPBU dengan lahan kosong di 1 region wajib melengkapi profil; bandingkan inquiry dengan region lain."
+      ]
+     },
+     {
+      "fase": "Bulan 4–12",
+      "judul": "Nasional",
+      "kegiatan": [
+       "Laporan kelengkapan per region tiap bulan; daftar SPBU prioritas upgrade fasilitas."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "Tim Brightspace",
+      "tugas": "Field wajib, validasi isian, skor kelengkapan."
+     },
+     {
+      "pihak": "Regional / Sales Area",
+      "tugas": "Memantau dan menagih kelengkapan."
+     },
+     {
+      "pihak": "Pengelola SPBU",
+      "tugas": "Mengisi data dan mendanai upgrade fasilitas."
+     },
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Standar fasilitas minimum."
+     }
+    ],
+    "ambang": {
+     "lanjut": "Kelengkapan profil ≥ 90% dan inquiry per lahan naik dibanding region kontrol.",
+     "berhenti": "Inquiry tidak berubah setelah 6 bulan: tetap wajibkan profil untuk kualitas data, tetapi hentikan dorongan upgrade fisik."
+    }
+   },
    "nama": "Pelengkapan profil SPBU & upgrade fasilitas dasar",
    "kuadran": "Quick Win",
    "kategori": "Enabler",
@@ -828,6 +1494,67 @@
     "Omzet aktual tenant F&B eksisting (dari laporan bagi hasil, bila ada).",
     "Survei lanjutan dengan sampel lebih besar dan proporsional antar kota."
    ],
+   "rencana": {
+    "sikap": {
+     "tingkat": "pilot",
+     "label": "Pilot dulu, lalu skala"
+    },
+    "inti": "Kita menawarkan lahan kosong < 10 m² di dalam bangunan (3.166 lahan) kepada brand kopi/teh dan UMKM F&B dengan booth standar grab-and-go: menu ringkas, produk siap ambil, bayar QRIS, posisi di jalur keluar. Mitra berinvestasi booth dan menjalankannya; Pertamina menerima sewa ditambah bagi hasil omzet yang kecil.",
+    "cara_kerja": [
+     "Pertamina menyediakan lahan, standar booth, SOP, dan izin; mitra membiayai booth dan operasi.",
+     "Pendapatan Pertamina: sewa segmen F&B + bagi hasil 0% / 2% / 3% omzet (konservatif / dasar / optimis).",
+     "Mitra dikurasi: 2–3 brand kopi/teh nasional + UMKM binaan; tenant F&B eksisting diajak ikut format yang sama."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–2",
+      "judul": "Standar & mitra",
+      "kegiatan": [
+       "Desain booth modular < 10 m², SOP transaksi ≤ 3 menit, seleksi 2–3 mitra."
+      ]
+     },
+     {
+      "fase": "Bulan 2–8",
+      "judul": "Pilot 20 booth",
+      "kegiatan": [
+       "20 booth di 2 kota (Medan dan satu kota Jawa); ukur omzet, waktu transaksi, dan pembayaran sewa."
+      ]
+     },
+     {
+      "fase": "Bulan 8–24",
+      "judul": "Roll-out",
+      "kegiatan": [
+       "Bertahap menuju 1.000 kios bila lolos ambang; prioritas SPBU dengan trafik tinggi."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Kurasi mitra dan standar format."
+     },
+     {
+      "pihak": "Regional / Sales Area",
+      "tugas": "Memilih lokasi pilot."
+     },
+     {
+      "pihak": "Pengelola SPBU",
+      "tugas": "Penempatan booth dan sambungan listrik."
+     },
+     {
+      "pihak": "Mitra F&B",
+      "tugas": "Investasi booth dan operasi harian."
+     },
+     {
+      "pihak": "HSSE",
+      "tugas": "Persetujuan penempatan di area SPBU."
+     }
+    ],
+    "ambang": {
+     "lanjut": "≥ 70% booth pilot membayar sewa penuh setelah 6 bulan dan waktu transaksi rata-rata ≤ 3 menit.",
+     "berhenti": "< 50% booth bertahan 6 bulan: format atau lokasi salah, perbaiki sebelum menambah titik."
+    }
+   },
    "nama": "Kios kopi & F&B mikro grab-and-go (format < 10 m²)",
    "kuadran": "Quick Win",
    "kategori": "Produk baru",
@@ -1015,6 +1742,63 @@
     "Survei konsumen dengan pertanyaan spesifik locker (bukan 'titik paket online' generik).",
     "Pengalaman tenant logistik eksisting di SPBU: volume dan churn."
    ],
+   "rencana": {
+    "sikap": {
+     "tingkat": "pilot",
+     "label": "Pilot dulu, lalu skala"
+    },
+    "inti": "Kita tidak membangun jaringan locker sendiri. Kita membuka lahan kecil 2–6 m² bagi 1–2 operator locker/ekspedisi yang menanggung unitnya, lalu menguji model 'pesan di aplikasi, ambil di SPBU' di jalur komuter. Karena sinyal permintaan konsumen lemah, skala hanya dilakukan bila volume paket terbukti.",
+    "cara_kerja": [
+     "Operator berinvestasi unit locker; Pertamina menerima sewa ruang kecil (± 60% tarif lahan < 10 m²) + 10% fee per paket.",
+     "Lokasi dipilih dari data volume paket operator, bukan dari ketersediaan lahan saja.",
+     "Integrasi dengan MyPertamina bersifat opsional, tidak menjadi syarat pilot."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–3",
+      "judul": "Kontrak kerangka",
+      "kegiatan": [
+       "Negosiasi dengan operator yang sudah terintegrasi marketplace; pilih 10 lokasi komuter Jabodetabek."
+      ]
+     },
+     {
+      "fase": "Bulan 3–9",
+      "judul": "Pilot 10 locker",
+      "kegiatan": [
+       "Ukur paket per locker per hari, jam puncak, dan keluhan."
+      ]
+     },
+     {
+      "fase": "Bulan 9–18",
+      "judul": "Skala bersyarat",
+      "kegiatan": [
+       "Perluas menuju 500 titik hanya di area yang volumenya terbukti."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Kontrak kerangka dengan operator."
+     },
+     {
+      "pihak": "Regional / Sales Area",
+      "tugas": "Usulan lokasi."
+     },
+     {
+      "pihak": "Pengelola SPBU",
+      "tugas": "Listrik dan akses 24 jam."
+     },
+     {
+      "pihak": "Operator locker",
+      "tugas": "Unit, perawatan, integrasi aplikasi."
+     }
+    ],
+    "ambang": {
+     "lanjut": "Rata-rata volume paket per locker setelah 6 bulan cukup untuk membuat fee paket ≥ sewa ruangnya (usulan: ≥ 15 paket/hari).",
+     "berhenti": "< 5 paket/locker/hari: hentikan ekspansi, pertahankan hanya titik yang ramai."
+    }
+   },
    "nama": "Parcel locker & hub logistik last-mile",
    "kuadran": "Quick Win",
    "kategori": "Produk baru",
@@ -1189,6 +1973,67 @@
     "Trafik kendaraan EV per koridor (data mitra/PLN).",
     "Pengalaman tenant charging eksisting: utilisasi dan masalah operasional."
    ],
+   "rencana": {
+    "sikap": {
+     "tingkat": "bersyarat",
+     "label": "Siapkan prasyarat, lalu pilot"
+    },
+    "inti": "Kita tidak berinvestasi charger sendiri. Langkah pertama adalah survei daya listrik dan trafo pada lahan luar bangunan di kota prioritas, karena 1.076 lahan luar kosong belum punya data daya. Setelah itu lahan luar dibuka untuk mitra SPKLU (PLN, Electrum, Voltron) dengan skema sewa ditambah bagi hasil, mulai dari koridor dengan trafik EV tertinggi.",
+    "cara_kerja": [
+     "Mitra menanggung charger dan instalasi; Pertamina menerima sewa lahan luar + bagi hasil 5–10% pendapatan pengisian.",
+     "Pertamina menanggung survei teknis dan penyiapan lahan (capex dasar Rp 8,5 M).",
+     "Jumlah titik mengikuti utilisasi aktual, bukan target kuantitas."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–4",
+      "judul": "Survei teknis",
+      "kegiatan": [
+       "Survei daya dan jarak ke gardu untuk lahan luar di kota metropolitan; kajian HSSE jarak aman dari dispenser."
+      ]
+     },
+     {
+      "fase": "Bulan 4–16",
+      "judul": "Pilot koridor",
+      "kegiatan": [
+       "15 titik di koridor Jakarta–Bandung–Semarang dengan satu mitra; ukur kWh per titik per hari."
+      ]
+     },
+     {
+      "fase": "Bulan 16–36",
+      "judul": "Skala bertahap",
+      "kegiatan": [
+       "Tambah titik menuju 300 di lokasi yang utilisasinya melampaui rata-rata nasional."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Skema kemitraan dan kontrak."
+     },
+     {
+      "pihak": "Teknik / engineering",
+      "tugas": "Survei daya dan trafo."
+     },
+     {
+      "pihak": "HSSE",
+      "tugas": "Standar keselamatan penempatan."
+     },
+     {
+      "pihak": "Mitra SPKLU",
+      "tugas": "Investasi dan operasi charger."
+     },
+     {
+      "pihak": "PLN",
+      "tugas": "Penyambungan daya."
+     }
+    ],
+    "ambang": {
+     "lanjut": "Utilisasi titik pilot di atas rata-rata nasional (≈ 28 kWh/unit/hari) setelah 12 bulan.",
+     "berhenti": "Utilisasi jauh di bawah rata-rata nasional: pertahankan titik yang ada, tunda ekspansi sampai adopsi EV naik."
+    }
+   },
    "nama": "Hub EV charging & battery swap",
    "kuadran": "Major Project",
    "kategori": "Energi baru",
@@ -1356,6 +2201,67 @@
     "Permintaan operator per kecamatan (jumlah order/hari).",
     "Batasan izin peruntukan lahan SPBU untuk pergudangan."
    ],
+   "rencana": {
+    "sikap": {
+     "tingkat": "pilot",
+     "label": "Pilot dulu, lalu skala"
+    },
+    "inti": "Kita memasarkan lahan kosong ≥ 100 m² (492 lahan) sebagai gudang mikro untuk quick-commerce, kurir, dan grocery. Tarifnya mengikuti pasar gudang, bukan tarif lahan SPBU, dengan kontrak minimal 3 tahun dan fit-out oleh tenant.",
+    "cara_kerja": [
+     "Tarif per m² mendekati pasar gudang mikro (Jakarta Rp 55–150 rb/m²/bulan) dengan diskon lokasi; jauh di atas tarif lahan besar saat ini.",
+     "Kontrak ≥ 3 tahun agar tenant mau berinvestasi fit-out.",
+     "Akses kendaraan, jam bongkar muat, dan jenis barang diatur HSSE."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–3",
+      "judul": "Saring lahan",
+      "kegiatan": [
+       "Dari halaman Data, saring lahan Tersedia ≥ 100 m² di kota besar; cek denah dan akses roda empat; kajian HSSE."
+      ]
+     },
+     {
+      "fase": "Bulan 3–15",
+      "judul": "Pilot 10 lahan",
+      "kegiatan": [
+       "10 lahan di Jabodetabek dan Surabaya dengan 2 operator (kurir dan grocery)."
+      ]
+     },
+     {
+      "fase": "Bulan 15–24",
+      "judul": "Skala",
+      "kegiatan": [
+       "Menuju 100 lahan besar tersewa jangka panjang."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Pemasaran ke operator quick-commerce dan logistik."
+     },
+     {
+      "pihak": "HSSE",
+      "tugas": "Aturan akses dan operasi."
+     },
+     {
+      "pihak": "Regional / Sales Area",
+      "tugas": "Verifikasi lahan."
+     },
+     {
+      "pihak": "Pengelola SPBU",
+      "tugas": "Koordinasi operasional harian."
+     },
+     {
+      "pihak": "Operator",
+      "tugas": "Fit-out dan operasi gudang."
+     }
+    ],
+    "ambang": {
+     "lanjut": "Tarif realisasi ≥ 3× tarif lahan besar saat ini, kontrak ≥ 3 tahun, tanpa insiden HSSE.",
+     "berhenti": "Operator hanya mau tarif lahan biasa atau kontrak pendek: kembalikan lahan ke pool A1."
+    }
+   },
    "nama": "Micro-fulfillment / dark store di lahan besar",
    "kuadran": "Major Project",
    "kategori": "Produk baru",
@@ -1532,6 +2438,67 @@
     "Rate card DOOH retail pembanding (minimarket, mal) dari mitra media.",
     "Peta izin reklame per kota prioritas."
    ],
+   "rencana": {
+    "sikap": {
+     "tingkat": "pilot",
+     "label": "Pilot dulu, lalu skala"
+    },
+    "inti": "Kita menunjuk satu mitra media lewat tender untuk memasang dan menjual layar iklan digital di kanopi, pylon, dan area antre. Pertamina menerima 30% pendapatan iklan kotor tanpa capex layar. Sebelum inventori dijual, kita memasang alat ukur trafik di SPBU pilot agar pengiklan punya data audiens.",
+    "cara_kerja": [
+     "Mitra media menanggung layar, instalasi, dan penjualan iklan; Pertamina menyediakan lokasi dan data trafik.",
+     "Asumsi dasar: Rp 14,4 jt per layar per tahun untuk Pertamina.",
+     "Pedoman konten: kategori terlarang, tidak mengganggu pengemudi, tidak bersaing dengan produk Pertamina."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–4",
+      "judul": "Tender & ukur trafik",
+      "kegiatan": [
+       "Tender mitra media; pasang penghitung trafik di SPBU pilot; sepakati pedoman konten."
+      ]
+     },
+     {
+      "fase": "Bulan 4–16",
+      "judul": "Pilot 50 layar",
+      "kegiatan": [
+       "50 layar di 2 kota; ukur pendapatan per layar dan tingkat isi slot iklan."
+      ]
+     },
+     {
+      "fase": "Bulan 16–30",
+      "judul": "Jaringan nasional",
+      "kegiatan": [
+       "Bertahap menuju 1.500 layar di SPBU dengan trafik tertinggi."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Tender dan kontrak mitra."
+     },
+     {
+      "pihak": "Corporate Communication",
+      "tugas": "Pedoman konten dan merek."
+     },
+     {
+      "pihak": "HSSE",
+      "tugas": "Keselamatan pemasangan."
+     },
+     {
+      "pihak": "Mitra media",
+      "tugas": "Capex layar dan penjualan iklan."
+     },
+     {
+      "pihak": "Pengelola SPBU",
+      "tugas": "Akses pemasangan dan listrik."
+     }
+    ],
+    "ambang": {
+     "lanjut": "Pendapatan per layar pilot ≥ asumsi dasar dan tingkat isi slot iklan ≥ 50%.",
+     "berhenti": "Pendapatan per layar < separuh asumsi: batasi ke SPBU trafik tertinggi saja."
+    }
+   },
    "nama": "Digital OOH advertising di kanopi & pylon",
    "kuadran": "Major Project",
    "kategori": "Media",
@@ -1687,6 +2654,63 @@
     "Tagihan listrik SPBU per bulan (beban siang).",
     "Capex per kWp dari pengadaan PPI terakhir."
    ],
+   "rencana": {
+    "sikap": {
+     "tingkat": "tahan",
+     "label": "Tahan, jangan dikejar aktif"
+    },
+    "inti": "Kita tidak memperluas PLTS kanopi dulu. PT Pertamina Power Indonesia sudah menjalankan PLTS di 332 lahan (304 SPBU), jadi langkah pertama adalah mengaudit kinerja aktual 20 SPBU PLTS yang sudah ada. Ekspansi hanya dilakukan bila audit menunjukkan imbal hasil di atas biaya modal, dan diprioritaskan di SPBU dengan beban listrik siang tinggi atau yang akan menjadi titik SPKLU (A5).",
+    "cara_kerja": [
+     "Skema: PPI memiliki PLTS dan menjual listrik ke SPBU sedikit di bawah tarif PLN.",
+     "Kapasitas mengikuti konsumsi sendiri SPBU karena Permen ESDM 2/2024 menghapus ekspor listrik.",
+     "Perlu kebijakan harga sewa lahan internal: 233 lahan PPI saat ini bersewa Rp 0."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–4",
+      "judul": "Audit PLTS eksisting",
+      "kegiatan": [
+       "Kumpulkan produksi kWh/kWp, penghematan tagihan, dan masalah operasi dari 20 SPBU PLTS PPI."
+      ]
+     },
+     {
+      "fase": "Bulan 4–6",
+      "judul": "Hitung ulang",
+      "kegiatan": [
+       "Perbarui model ekonomi dengan data aktual; tetapkan harga sewa lahan internal untuk PPI."
+      ]
+     },
+     {
+      "fase": "Bulan 6+",
+      "judul": "Putuskan",
+      "kegiatan": [
+       "Ekspansi selektif bila lolos ambang; bila tidak, hentikan dan fokus ke SPBU yang sudah ada."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "PT Pertamina Power Indonesia",
+      "tugas": "Data produksi dan operasi PLTS."
+     },
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Menghitung ulang ekonomi dan menetapkan sewa lahan internal."
+     },
+     {
+      "pihak": "Teknik",
+      "tugas": "Kapasitas struktur kanopi."
+     },
+     {
+      "pihak": "Regional / Sales Area",
+      "tugas": "Data beban listrik per SPBU."
+     }
+    ],
+    "ambang": {
+     "lanjut": "Imbal hasil aktual > 12% per tahun (di atas diskonto 10% ditambah margin).",
+     "berhenti": "Imbal hasil aktual ≤ 10%: tidak ada ekspansi; PLTS hanya bila digabung dengan titik SPKLU."
+    }
+   },
    "nama": "PLTS kanopi sebagai produk sewa energi",
    "kuadran": "Major Project",
    "kategori": "Energi baru",
@@ -1840,6 +2864,63 @@
     "Rencana jaringan ATM tiap bank (dari dialog korporat).",
     "Tarif yang bersedia dibayar penyedia kiosk/agen."
    ],
+   "rencana": {
+    "sikap": {
+     "tingkat": "segera",
+     "label": "Jalankan segera"
+    },
+    "inti": "Kita tidak menunggu bank keluar. Dengan peta jatuh tempo kontrak dari master (4.721 kontrak bank berakhir ≤ 12 bulan), kita mendekati bank 3–6 bulan sebelum kontraknya habis. Bank ditawari perpanjangan dengan format lebih kecil, atau ruangnya dikonversi menjadi kiosk layanan digital: agen laku pandai, setor-tarik multi-bank, dan pickup e-commerce.",
+    "cara_kerja": [
+     "Tujuannya mempertahankan pendapatan dari ruang yang sama, bukan menambah lahan.",
+     "Ruang yang dilepas bank langsung ditawarkan ke penyedia kiosk digital; penyedia menanggung perangkat.",
+     "Bank besar dikelola sebagai key account nasional, bukan per SPBU."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–2",
+      "judul": "Peta risiko",
+      "kegiatan": [
+       "Dari halaman Data, saring segmen Perbankan dengan status kontrak ≤ 6 bulan dan 6–12 bulan; dialog dengan 5 bank terbesar."
+      ]
+     },
+     {
+      "fase": "Bulan 2–8",
+      "judul": "Pilot negosiasi",
+      "kegiatan": [
+       "Negosiasi dengan 2 bank di 1 region; tawarkan format baru; cari penyedia kiosk untuk ruang yang dilepas."
+      ]
+     },
+     {
+      "fase": "Bulan 8–18",
+      "judul": "Program retensi nasional",
+      "kegiatan": [
+       "Siklus tetap: setiap kontrak bank dihubungi 6 bulan sebelum berakhir."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Key account bank dan penyedia kiosk."
+     },
+     {
+      "pihak": "Regional / Sales Area",
+      "tugas": "Negosiasi lokal."
+     },
+     {
+      "pihak": "Legal",
+      "tugas": "Kontrak format baru."
+     },
+     {
+      "pihak": "Penyedia kiosk digital",
+      "tugas": "Perangkat dan operasi kiosk."
+     }
+    ],
+    "ambang": {
+     "lanjut": "Churn tenant bank < 5% per tahun dan ≥ 50% ruang yang dilepas terisi ulang dalam 6 bulan.",
+     "berhenti": "Bank tetap keluar dan kiosk tidak terisi: kembalikan ruang ke pool A1 dengan tarif acuan."
+    }
+   },
    "nama": "Konsolidasi galeri ATM → kiosk layanan digital",
    "kuadran": "Major Project",
    "kategori": "Transformasi",
@@ -2055,6 +3136,67 @@
     "Survei lanjutan dengan sampel lebih besar di kota Jawa.",
     "Data keluhan/insiden layanan ban di SPBU."
    ],
+   "rencana": {
+    "sikap": {
+     "tingkat": "pilot",
+     "label": "Pilot dulu, lalu skala"
+    },
+    "inti": "Kita menyatukan tenant nitrogen, tambal ban, cuci, dan perawatan yang terfragmentasi (1.054 lahan dengan 59 nama tenant di master) ke dalam satu format berbrand 'Pertamina Care'. Formatnya punya standar mesin, harga, dan SOP, dengan fokus pada sepeda motor. Tenant lama diajak bergabung lebih dulu; lahan luar yang kosong diisi mitra baru.",
+    "cara_kerja": [
+     "Mitra menanggung mesin; Pertamina menerima sewa + bagi hasil 5–10% omzet.",
+     "Harga layanan transparan dan seragam, bisa dipesan atau dibayar lewat MyPertamina.",
+     "Survei menunjukkan ini sinyal permintaan terkuat, jadi skor dampaknya layak ditinjau setelah pilot."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–3",
+      "judul": "Standar & konversi",
+      "kegiatan": [
+       "Standar format, daftar layanan, dan skema bagi tenant lama untuk bergabung."
+      ]
+     },
+     {
+      "fase": "Bulan 3–9",
+      "judul": "Pilot 30 titik",
+      "kegiatan": [
+       "30 titik di Medan dan Bandung (dominan motor); ukur kendaraan per hari dan omzet."
+      ]
+     },
+     {
+      "fase": "Bulan 9–18",
+      "judul": "Skala",
+      "kegiatan": [
+       "Menuju 500 titik standar."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Merek, standar, dan kontrak kemitraan."
+     },
+     {
+      "pihak": "Tenant perawatan eksisting",
+      "tugas": "Konversi ke format standar."
+     },
+     {
+      "pihak": "Marketing",
+      "tugas": "Integrasi MyPertamina."
+     },
+     {
+      "pihak": "Pengelola SPBU",
+      "tugas": "Lahan luar dan listrik."
+     },
+     {
+      "pihak": "Regional / Sales Area",
+      "tugas": "Pemilihan titik."
+     }
+    ],
+    "ambang": {
+     "lanjut": "Kendaraan per titik per hari di atas asumsi dasar model ekonomi dan ≥ 70% tenant lama di area pilot bergabung.",
+     "berhenti": "Tenant lama menolak dan volume rendah: biarkan sebagai segmen sewa biasa."
+    }
+   },
    "nama": "Paket perawatan kendaraan self-service",
    "kuadran": "Fill-in",
    "kategori": "Produk baru",
@@ -2193,6 +3335,59 @@
     "Minat operator (RFI) sebelum menyiapkan lahan.",
     "Kondisi akses lantai 2 per lahan (tangga, toilet, AC)."
    ],
+   "rencana": {
+    "sikap": {
+     "tingkat": "tahan",
+     "label": "Tahan, jangan dikejar aktif"
+    },
+    "inti": "Kita tidak meluncurkan program lounge atau co-working, karena permintaan, pasokan, dan ekonominya lemah. Yang kita lakukan: 123 lahan lantai 2 yang kosong masuk ke daftar A1 dengan tarif diskon untuk penggunaan umum, kebutuhan istirahat pengemudi dijawab lewat fasilitas dasar (A9), dan pilot lounge hanya dibuka bila ada operator yang mengajukan sendiri di rest area tol.",
+    "cara_kerja": [
+     "Tidak ada anggaran program; Pertamina hanya menanggapi proposal operator.",
+     "Operator menanggung fit-out; Pertamina menerima sewa lantai 2 dengan diskon.",
+     "Kebutuhan tempat istirahat (musala, toilet, kursi) lebih murah dipenuhi lewat standar fasilitas A9."
+    ],
+    "tahapan": [
+     {
+      "fase": "Bulan 0–3",
+      "judul": "Masukkan ke A1",
+      "kegiatan": [
+       "Lahan lantai 2 kosong dipasarkan bersama lahan kosong lain dengan tarif diskon."
+      ]
+     },
+     {
+      "fase": "Bulan 3–12",
+      "judul": "Tanggapi proposal",
+      "kegiatan": [
+       "Pilot maksimal 3 lokasi rest area tol bila ada operator yang mengajukan."
+      ]
+     },
+     {
+      "fase": "Bulan 12+",
+      "judul": "Evaluasi",
+      "kegiatan": [
+       "Tinjau ulang hanya bila pilot operator menunjukkan permintaan."
+      ]
+     }
+    ],
+    "peran": [
+     {
+      "pihak": "Tim NFR pusat",
+      "tugas": "Menilai proposal operator."
+     },
+     {
+      "pihak": "Regional / Sales Area",
+      "tugas": "Memasarkan lantai 2 lewat A1."
+     },
+     {
+      "pihak": "Operator (bila ada)",
+      "tugas": "Fit-out dan operasi."
+     }
+    ],
+    "ambang": {
+     "lanjut": "Operator menanggung fit-out dan lokasi punya pengunjung yang singgah > 15 menit dalam jumlah memadai.",
+     "berhenti": "Tidak ada proposal operator dalam 12 bulan: tutup opsi ini."
+    }
+   },
    "nama": "Lantai 2 / rooftop: co-working & rest lounge",
    "kuadran": "Thankless Task",
    "kategori": "Produk baru",
