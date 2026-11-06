@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import * as React from "react";
 import geo from "@/data/provinces-geo.json";
 import { n, pct, rp } from "@/lib/format";
@@ -327,7 +328,10 @@ export function IndonesiaSpbuMap({ provinces, pointsUrl = "/map_points.json", cl
               <Stat k="Lahan NFR" v={n(spbuSel.lahan)} />
               <Stat k="Lahan kosong" v={n(spbuSel.kosong)} tone={spbuSel.kosong > 0 ? "warn" : undefined} />
             </dl>
-            <a href={SPBU_URL(spbuSel.id)} target="_blank" rel="noreferrer" className="mt-3 inline-block text-sm text-accent underline">Buka di Brightspace ↗</a>
+            <div className="mt-3 flex flex-wrap gap-3 text-sm">
+              <Link href={`/data/spbu/${spbuSel.id}`} className="text-accent underline">Detail & lahan</Link>
+              <a href={SPBU_URL(spbuSel.id)} target="_blank" rel="noreferrer" className="text-accent underline">Buka di Brightspace ↗</a>
+            </div>
           </div>
         ) : sel.kota ? (
           <Panel title={sel.kota} sub={sel.prov}>

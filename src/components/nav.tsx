@@ -9,6 +9,7 @@ const items = [
   { href: "/segmen", label: "Segmen tenant" },
   { href: "/harga", label: "Harga sewa" },
   { href: "/lokasi", label: "Lokasi & fasilitas" },
+  { href: "/data", label: "Data SPBU & lahan" },
   { href: "/perilaku", label: "Perilaku konsumen" },
   { href: "/rekomendasi", label: "Rekomendasi inovasi" },
   { href: "/kajian", label: "Kajian alternatif" },

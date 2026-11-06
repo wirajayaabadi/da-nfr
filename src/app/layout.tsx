@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Suspense } from "react";
 import "./globals.css";
 import { Nav } from "@/components/nav";
 import { data } from "@/lib/data";
@@ -27,7 +28,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <div className="text-lg font-semibold leading-tight">Brightspace Analytics</div>
               <div className="mt-1 text-xs text-ink-3">{data.generated_from}</div>
             </div>
-            <Nav />
+            {/* Suspense: rute dinamis (/data/spbu/[id]) tidak tahu pathname saat prerender shell. */}
+            <Suspense fallback={null}><Nav /></Suspense>
           </aside>
           <main id="konten" className="min-w-0 flex-1">{children}</main>
         </div>
