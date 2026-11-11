@@ -1,0 +1,220 @@
+import type { Assistant, Member, Mentor, Workgroup } from '@/types/team';
+
+/**
+ * SUMBER DATA PERSONEL — satu-satunya file yang perlu diubah untuk memperbarui profil.
+ *
+ * - Seluruh nama, organisasi, dan foto di bawah masih DUMMY.
+ * - Foto: simpan file di /public/photos/ (JPG/WebP, persegi, ±800×800 px), lalu isi
+ *   `photo: '/photos/nama-file.jpg'`. Foto kosong atau gagal dimuat → inisial otomatis.
+ * - `linkedinUrl` dan `cvUrl` hanya diisi bila tersedia dan disetujui pemiliknya.
+ *   Tombolnya otomatis tersembunyi selama nilainya kosong.
+ * - Urutan di file ini = urutan tampil di halaman.
+ */
+
+export const workgroups: Workgroup[] = [
+  { id: 'strategy', name: 'Strategy & Objective Team', accent: 'red' },
+  { id: 'benchmarking', name: 'Benchmarking Team', accent: 'blue' },
+  { id: 'customer', name: 'Customer Insights Team', accent: 'green' },
+  { id: 'business', name: 'Business Analysis Team', accent: 'red' },
+  { id: 'financial', name: 'Financial Analysis Team', accent: 'blue' },
+  { id: 'stakeholder', name: 'Stakeholder & Impact Team', accent: 'green' },
+];
+
+export const members: Member[] = [
+  {
+    id: 'anggota-01',
+    name: 'Anggota 01',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'strategy',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-1.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+  {
+    id: 'anggota-02',
+    name: 'Anggota 02',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'strategy',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-2.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+  {
+    id: 'anggota-03',
+    name: 'Anggota 03',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'benchmarking',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-3.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+  {
+    id: 'anggota-04',
+    name: 'Anggota 04',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'benchmarking',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-4.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+  {
+    id: 'anggota-05',
+    name: 'Anggota 05',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'customer',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-1.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+  {
+    id: 'anggota-06',
+    name: 'Anggota 06',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'customer',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-2.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+  {
+    id: 'anggota-07',
+    name: 'Anggota 07',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'business',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-3.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+  {
+    id: 'anggota-08',
+    name: 'Anggota 08',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'business',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-4.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+  {
+    id: 'anggota-09',
+    name: 'Anggota 09',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'financial',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-1.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+  {
+    id: 'anggota-10',
+    name: 'Anggota 10',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'financial',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-2.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+  {
+    id: 'anggota-11',
+    name: 'Anggota 11',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'stakeholder',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-3.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+  {
+    id: 'anggota-12',
+    name: 'Anggota 12',
+    company: 'BUMN / Unit',
+    role: 'Peran dalam ALP',
+    teamId: 'stakeholder',
+    summary: 'Ringkasan kontribusi utama anggota dalam satu kalimat.',
+    photo: '/avatars/dummy-4.svg',
+    bio: 'Bio singkat anggota. Ganti teks ini melalui src/data/team.ts.',
+    skills: ['Keahlian 1', 'Keahlian 2', 'Keahlian 3'],
+    learningGoal: 'Hal yang ingin dipelajari melalui Action Learning Project.',
+    linkedinUrl: '',
+    cvUrl: '',
+  },
+];
+
+/**
+ * Mentor tampil paling awal di bagian tim sebagai kartu sorotan.
+ * Bila ada lebih dari satu mentor, setiap mentor mendapat kartu sorotan sendiri.
+ */
+export const mentors: Mentor[] = [
+  {
+    id: 'mentor-01',
+    name: 'Mentor 01',
+    position: 'Jabatan Mentor',
+    institution: 'Direktorat / Unit, Pertamina',
+    description: 'Bidang pendampingan mentor kepada tim. Ganti melalui src/data/team.ts.',
+    focusAreas: ['Area fokus 1', 'Area fokus 2', 'Area fokus 3'],
+    message: 'Pesan atau kutipan singkat dari mentor untuk tim (opsional).',
+    photo: '/avatars/dummy-1.svg',
+  },
+];
+
+/** Asisten kelas tampil setelah daftar anggota. */
+export const assistants: Assistant[] = [
+  {
+    id: 'asisten-01',
+    name: 'Asisten Kelas 01',
+    institution: 'Institusi / Jabatan',
+    description: 'Bentuk dukungan asisten kelas kepada tim. Ganti melalui src/data/team.ts.',
+    photo: '/avatars/dummy-2.svg',
+  },
+];

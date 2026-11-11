@@ -1,0 +1,2 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Avatar dummy"><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F1F4F8"/><stop offset="1" stop-color="#E2E8F0"/></linearGradient></defs>
+<rect width="240" height="240" fill="url(#bg)"/><path d="M40 240c4-46 38-72 80-72s76 26 80 72z" fill="#AEB9C8"/><path d="M70 120c0-42 22-66 50-66s50 24 50 66c0 30-14 50-26 60H96c-12-10-26-30-26-60z" fill="#8F9BAD"/><ellipse cx="120" cy="114" rx="32" ry="37" fill="#C3CCD8"/></svg>
