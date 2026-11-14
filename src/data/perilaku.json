@@ -1009,9 +1009,9 @@
    "layanan_teratas": "Ban, nitrogen & darurat, Makanan/minuman cepat",
    "beli_nonbbm_pct": 25.0,
    "spbu": 93,
-   "lahan": 602,
-   "kosong": 139,
-   "okupansi_pct": 76.9
+   "lahan": 605,
+   "kosong": 141,
+   "okupansi_pct": 76.7
   },
   {
    "kabkota": "Kota Tangerang",
@@ -1021,9 +1021,9 @@
    "layanan_teratas": "Ban, nitrogen & darurat, Makanan/minuman cepat",
    "beli_nonbbm_pct": 50.0,
    "spbu": 57,
-   "lahan": 456,
-   "kosong": 90,
-   "okupansi_pct": 80.3
+   "lahan": 450,
+   "kosong": 83,
+   "okupansi_pct": 81.6
   },
   {
    "kabkota": "Kabupaten Deli Serdang",
@@ -1033,9 +1033,9 @@
    "layanan_teratas": "Makanan/minuman cepat, Ban, nitrogen & darurat",
    "beli_nonbbm_pct": 0.0,
    "spbu": 52,
-   "lahan": 0,
-   "kosong": 0,
-   "okupansi_pct": null
+   "lahan": 271,
+   "kosong": 73,
+   "okupansi_pct": 73.1
   },
   {
    "kabkota": "Kabupaten Purbalingga",
@@ -1069,9 +1069,9 @@
    "layanan_teratas": "Pembayaran digital, Ban, nitrogen & darurat",
    "beli_nonbbm_pct": 100.0,
    "spbu": 29,
-   "lahan": 186,
-   "kosong": 41,
-   "okupansi_pct": 78.0
+   "lahan": 185,
+   "kosong": 40,
+   "okupansi_pct": 78.4
   },
   {
    "kabkota": "Kota Tangerang Selatan",
@@ -1081,9 +1081,9 @@
    "layanan_teratas": "Ban, nitrogen & darurat, Tempat istirahat",
    "beli_nonbbm_pct": 100.0,
    "spbu": 50,
-   "lahan": 402,
-   "kosong": 56,
-   "okupansi_pct": 86.1
+   "lahan": 403,
+   "kosong": 53,
+   "okupansi_pct": 86.8
   },
   {
    "kabkota": "Kabupaten Pati",
@@ -1093,9 +1093,9 @@
    "layanan_teratas": "Makanan/minuman cepat, Ban, nitrogen & darurat",
    "beli_nonbbm_pct": 0.0,
    "spbu": 41,
-   "lahan": 171,
+   "lahan": 173,
    "kosong": 40,
-   "okupansi_pct": 76.6
+   "okupansi_pct": 76.9
   },
   {
    "kabkota": "Kabupaten Jepara",
@@ -1117,9 +1117,9 @@
    "layanan_teratas": "Pesan via aplikasi",
    "beli_nonbbm_pct": 0.0,
    "spbu": 64,
-   "lahan": 814,
+   "lahan": 816,
    "kosong": 161,
-   "okupansi_pct": 80.2
+   "okupansi_pct": 80.3
   },
   {
    "kabkota": "Kabupaten Kotawaringin Timur",
@@ -1141,9 +1141,9 @@
    "layanan_teratas": "Ban, nitrogen & darurat",
    "beli_nonbbm_pct": 0.0,
    "spbu": 62,
-   "lahan": 447,
-   "kosong": 58,
-   "okupansi_pct": 87.0
+   "lahan": 452,
+   "kosong": 61,
+   "okupansi_pct": 86.5
   },
   {
    "kabkota": "Kabupaten Subang",
@@ -1154,8 +1154,8 @@
    "beli_nonbbm_pct": 100.0,
    "spbu": 41,
    "lahan": 211,
-   "kosong": 46,
-   "okupansi_pct": 78.2
+   "kosong": 45,
+   "okupansi_pct": 78.7
   },
   {
    "kabkota": "Kota Depok",
@@ -1165,9 +1165,9 @@
    "layanan_teratas": "–",
    "beli_nonbbm_pct": 0.0,
    "spbu": 46,
-   "lahan": 302,
-   "kosong": 33,
-   "okupansi_pct": 89.1
+   "lahan": 308,
+   "kosong": 35,
+   "okupansi_pct": 88.6
   },
   {
    "kabkota": "Kota Administrasi Jakarta Pusat",
@@ -1177,9 +1177,9 @@
    "layanan_teratas": "Makanan/minuman cepat, Ban, nitrogen & darurat",
    "beli_nonbbm_pct": 100.0,
    "spbu": 41,
-   "lahan": 295,
-   "kosong": 50,
-   "okupansi_pct": 83.1
+   "lahan": 298,
+   "kosong": 51,
+   "okupansi_pct": 82.9
   },
   {
    "kabkota": "Kabupaten Banyuwangi",
@@ -1189,9 +1189,9 @@
    "layanan_teratas": "Makanan/minuman cepat, Tempat istirahat",
    "beli_nonbbm_pct": 0.0,
    "spbu": 41,
-   "lahan": 252,
-   "kosong": 31,
-   "okupansi_pct": 87.7
+   "lahan": 253,
+   "kosong": 30,
+   "okupansi_pct": 88.1
   },
   {
    "kabkota": "Kabupaten Batang",
@@ -1201,9 +1201,9 @@
    "layanan_teratas": "Servis ringan, Tempat istirahat",
    "beli_nonbbm_pct": 0.0,
    "spbu": 24,
-   "lahan": 137,
-   "kosong": 30,
-   "okupansi_pct": 78.1
+   "lahan": 135,
+   "kosong": 28,
+   "okupansi_pct": 79.3
   },
   {
    "kabkota": "Kota Administrasi Jakarta Timur",
@@ -1213,9 +1213,9 @@
    "layanan_teratas": "Tempat istirahat",
    "beli_nonbbm_pct": 0.0,
    "spbu": 81,
-   "lahan": 741,
-   "kosong": 134,
-   "okupansi_pct": 81.9
+   "lahan": 744,
+   "kosong": 129,
+   "okupansi_pct": 82.7
   },
   {
    "kabkota": "Kota Bandung",
@@ -1225,9 +1225,9 @@
    "layanan_teratas": "Makanan/minuman cepat",
    "beli_nonbbm_pct": 0.0,
    "spbu": 86,
-   "lahan": 609,
+   "lahan": 608,
    "kosong": 80,
-   "okupansi_pct": 86.9
+   "okupansi_pct": 86.8
   },
   {
    "kabkota": "Kota Serang",
@@ -1237,9 +1237,9 @@
    "layanan_teratas": "Makanan/minuman cepat, Servis ringan",
    "beli_nonbbm_pct": 100.0,
    "spbu": 20,
-   "lahan": 83,
-   "kosong": 13,
-   "okupansi_pct": 84.3
+   "lahan": 84,
+   "kosong": 14,
+   "okupansi_pct": 83.3
   },
   {
    "kabkota": "Kabupaten Semarang",
@@ -1249,9 +1249,9 @@
    "layanan_teratas": "Makanan/minuman cepat, Servis ringan",
    "beli_nonbbm_pct": 0.0,
    "spbu": 41,
-   "lahan": 345,
+   "lahan": 346,
    "kosong": 41,
-   "okupansi_pct": 88.1
+   "okupansi_pct": 88.2
   },
   {
    "kabkota": "Kabupaten Tangerang",
@@ -1261,9 +1261,9 @@
    "layanan_teratas": "Makanan/minuman cepat, Servis ringan",
    "beli_nonbbm_pct": 0.0,
    "spbu": 77,
-   "lahan": 336,
+   "lahan": 340,
    "kosong": 57,
-   "okupansi_pct": 83.0
+   "okupansi_pct": 83.2
   },
   {
    "kabkota": "Kota Binjai",
@@ -1274,8 +1274,8 @@
    "beli_nonbbm_pct": 0.0,
    "spbu": 8,
    "lahan": 51,
-   "kosong": 8,
-   "okupansi_pct": 84.3
+   "kosong": 7,
+   "okupansi_pct": 86.3
   },
   {
    "kabkota": "Kota Padang Sidimpuan",
@@ -1297,9 +1297,9 @@
    "layanan_teratas": "Servis ringan, Ban, nitrogen & darurat",
    "beli_nonbbm_pct": 0.0,
    "spbu": 26,
-   "lahan": 77,
+   "lahan": 78,
    "kosong": 14,
-   "okupansi_pct": 81.8
+   "okupansi_pct": 82.1
   },
   {
    "kabkota": "Kota Surakarta",
@@ -1310,8 +1310,8 @@
    "beli_nonbbm_pct": 0.0,
    "spbu": 22,
    "lahan": 200,
-   "kosong": 37,
-   "okupansi_pct": 81.5
+   "kosong": 34,
+   "okupansi_pct": 83.0
   }
  ]
 }

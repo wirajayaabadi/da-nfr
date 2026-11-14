@@ -18,7 +18,7 @@ export default function Page() {
       <PageHeader title="Metodologi & kualitas data" lead="Bagaimana data dikumpulkan, dibersihkan, dan diubah menjadi skor rekomendasi. Semua langkah dapat direproduksi dengan skrip di repositori (brightspace_scraper.py dan analytics.py)." />
       <div className="grid gap-4 lg:grid-cols-2">
         <Section title="Sumber data">
-          <p>Marketplace publik <strong>brightspace.pertamina.com</strong> (Pertamina Patra Niaga), diambil pada 3 November 2026 tanpa login: daftar SPBU per kota (endpoint JSON), halaman detail SPBU (alamat, koordinat, fasilitas, area sekitar) dan daftar lahan per SPBU (kode, status, luas, daya, tarif, spesifikasi, outlet).</p>
+          <p>Marketplace publik <strong>brightspace.pertamina.com</strong> (Pertamina Patra Niaga), diambil pada 14 November 2026 tanpa login: daftar SPBU per kota (endpoint JSON), halaman detail SPBU (alamat, koordinat, fasilitas, area sekitar) dan daftar lahan per SPBU (kode, status, luas, daya, tarif, spesifikasi, outlet).</p>
           <p>Cakupan: {n(o.spbu)} SPBU, {n(o.lahan)} lahan, {n(o.area_sekitar_titik)} titik area sekitar, {n(o.kota)} kota/kabupaten. Data merefleksikan apa yang dipublikasikan pengelola SPBU di marketplace, bukan seluruh aset NFR Pertamina.</p>
         </Section>
         <Section title="Pembersihan">
