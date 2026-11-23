@@ -7,10 +7,12 @@ export type KotaSurvei = {
 };
 export type Perilaku = {
   sumber: string; n: number; n_beli: number; n_tidak_beli: number;
+  /** Responden di data mentah, yang dikeluarkan dari analisis, dan alasannya (lihat perilaku_dashboard.py). */
+  n_awal: number; n_dikeluarkan: number; dikeluarkan: string;
   ringkasan: {
     langsung_pergi_pct: number; beli_nonbbm_pct: number; tidak_mau_tambah_waktu_pct: number; q21_rata: number;
     q21_top2_pct: number; q21_bottom2_pct: number; sengaja_datang_pct: number; medan_raya_pct: number;
-    usia_55_pct: number; usia_18_pct: number; ibadah_toilet_isian_bebas: number; q20_lebih_dari_satu: number; kota_terpetakan: number;
+    usia_55_pct: number; usia_tidak_menjawab: number; ibadah_toilet_isian_bebas: number; q20_lebih_dari_satu: number; kota_terpetakan: number;
   };
   profil: { kendaraan: Dist[]; bbm: Dist[]; frekuensi: Dist[]; usia: Dist[]; alasan_spbu: Dist[] };
   kunjungan: { antre: Dist[]; setelah_isi: Dist[]; waktu_tambahan: Dist[] };

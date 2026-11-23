@@ -1,8 +1,8 @@
 {
- "dibuat": "2026-11-14",
+ "dibuat": "2026-11-22",
  "sumber": {
   "brightspace": "brightspace.pertamina.com (scrape 2026-11-14)",
-  "survei": "Survei perilaku konsumen SPBU (Google Form, November 2026) (n = 73)",
+  "survei": "Survei perilaku konsumen SPBU (Google Form, November 2026) (n = 59)",
   "master": "NFR Master Lahan 02-November-2026.xlsx (posisi 2026-11-02; 35.847 baris kontrak → 32.181 lahan disetujui)",
   "eksternal": "Tolok ukur & berita publik, diverifikasi 5 November 2026; angka riset pasar dipakai sebagai orde besaran"
  },
@@ -20,7 +20,7 @@
    "verdict": {
     "permintaan": {
      "nilai": "sedang",
-     "alasan": "Survei: 30,1% responden membeli non-BBM dalam 30 hari; kebutuhan ada tetapi tipis per kunjungan. Permintaan tenant harus dibuktikan per kota lewat pipeline calon mitra."
+     "alasan": "Survei: 32,2% responden membeli non-BBM dalam 30 hari; kebutuhan ada tetapi tipis per kunjungan. Permintaan tenant harus dibuktikan per kota lewat pipeline calon mitra."
     },
     "pasokan": {
      "nilai": "kuat",
@@ -63,8 +63,8 @@
     {
      "sumber": "survei",
      "label": "Membeli non-BBM dalam 30 hari terakhir",
-     "nilai": "30,1%",
-     "catatan": "82,2% langsung pergi setelah mengisi BBM"
+     "nilai": "32,2%",
+     "catatan": "78,0% langsung pergi setelah mengisi BBM"
     },
     {
      "sumber": "master",
@@ -1048,11 +1048,11 @@
   {
    "id": "A9",
    "pertanyaan": "Apakah kelengkapan profil dan fasilitas dasar menaikkan nilai sewa atau okupansi, dan apakah konsumen memilih SPBU karena fasilitas?",
-   "ringkasan": "Datanya tegas pada satu hal dan netral pada hal lain. 3.893 SPBU (58,7%) tidak mencantumkan fasilitas apa pun, dan toilet hanya tercatat di 38,5% SPBU. Okupansi tidak berbeda antara SPBU dengan dan tanpa data fasilitas (82,7% vs 82,5%), tetapi tarif di SPBU yang mencatat hotel/perkantoran/stasiun di sekitarnya 20–33% di atas median. Konsumen memilih SPBU karena dekat (49,3%) dan di rute (39,7%), bukan fasilitas (4,1%); namun 35,6% menganggap tempat istirahat bermanfaat. Kesimpulan: A9 adalah enabler untuk tarif (A2) dan pemasaran lahan, bukan pendorong okupansi sendiri; biayanya kecil dan sejalan dengan program Serv-Q/Pertamina Way.",
+   "ringkasan": "Datanya tegas pada satu hal dan netral pada hal lain. 3.893 SPBU (58,7%) tidak mencantumkan fasilitas apa pun, dan toilet hanya tercatat di 38,5% SPBU. Okupansi tidak berbeda antara SPBU dengan dan tanpa data fasilitas (82,7% vs 82,5%), tetapi tarif di SPBU yang mencatat hotel/perkantoran/stasiun di sekitarnya 20–33% di atas median. Konsumen memilih SPBU karena dekat (45,8%) dan di rute (42,4%), bukan fasilitas (3,4%); namun 39,0% menganggap tempat istirahat bermanfaat. Kesimpulan: A9 adalah enabler untuk tarif (A2) dan pemasaran lahan, bukan pendorong okupansi sendiri; biayanya kecil dan sejalan dengan program Serv-Q/Pertamina Way.",
    "verdict": {
     "permintaan": {
      "nilai": "sedang",
-     "alasan": "Fasilitas bukan alasan memilih SPBU (4,1%), tetapi tempat istirahat diinginkan 35,6%; toilet/musala dipakai 9,6% setelah mengisi."
+     "alasan": "Fasilitas bukan alasan memilih SPBU (3,4%), tetapi tempat istirahat diinginkan 39,0%; toilet/musala dipakai 11,9% setelah mengisi."
     },
     "pasokan": {
      "nilai": "kuat",
@@ -1095,14 +1095,14 @@
     {
      "sumber": "survei",
      "label": "Alasan memilih SPBU",
-     "nilai": "dekat 49,3% · di rute 39,7% · fasilitas nyaman 4,1%",
+     "nilai": "dekat 45,8% · di rute 42,4% · fasilitas nyaman 3,4%",
      "catatan": "lokasi menang; fasilitas pembeda sekunder"
     },
     {
      "sumber": "survei",
      "label": "Tempat istirahat dianggap bermanfaat",
-     "nilai": "35,6%",
-     "catatan": "prioritas 28,8%; toilet/musala dipakai 9,6% setelah mengisi"
+     "nilai": "39,0%",
+     "catatan": "prioritas 25,4%; toilet/musala dipakai 11,9% setelah mengisi"
     }
    ],
    "grafik": [
@@ -1149,39 +1149,39 @@
      "rows": [
       {
        "label": "Dekat rumah/kantor",
-       "value": 49.3
+       "value": 45.8
       },
       {
        "label": "Di rute perjalanan",
-       "value": 39.7
+       "value": 42.4
       },
       {
        "label": "Harga & jenis BBM sesuai",
-       "value": 15.1
-      },
-      {
-       "label": "Percaya kualitas/takaran",
-       "value": 8.2
+       "value": 16.9
       },
       {
        "label": "Tidak ada pilihan lain",
-       "value": 6.8
+       "value": 8.5
+      },
+      {
+       "label": "Percaya kualitas/takaran",
+       "value": 8.5
       },
       {
        "label": "Fasilitas nyaman",
-       "value": 4.1
+       "value": 3.4
       },
       {
        "label": "Lainnya",
-       "value": 2.7
+       "value": 1.7
       },
       {
        "label": "Ada layanan tambahan",
-       "value": 1.4
+       "value": 1.7
       },
       {
        "label": "Antrean cepat",
-       "value": 1.4
+       "value": 1.7
       }
      ],
      "series": null
@@ -1297,11 +1297,11 @@
   {
    "id": "A3",
    "pertanyaan": "Apakah ada permintaan F&B yang bocor ke luar SPBU, dan apakah format < 10 m² grab-and-go cocok dengan perilaku pengunjung yang tidak mau berlama-lama?",
-   "ringkasan": "Survei memberi dua sinyal yang saling menguatkan: makanan/minuman cepat dianggap bermanfaat oleh 41,1% responden, tetapi kopi/minuman 26,0% dibeli di luar SPBU vs 9,6% di SPBU. Pengunjung tidak mau menunggu (41,1% tidak mau menambah waktu; 47,9% menyebut kecepatan sebagai faktor utama), jadi formatnya harus grab-and-go, bukan kafe. Pasokan lahan ada: 3.319 lahan kosong < 10 m² dengan tarif median Rp 13,3 jt/th. Segmen F&B saat ini 2.385 lahan dan didominasi brand minuman siap saji, menunjukkan format kios sudah terbukti di jaringan. Pasar kopi nasional ramai dan mulai jenuh di kota besar, sehingga diferensiasi SPBU adalah kecepatan dan lokasi, bukan produk.",
+   "ringkasan": "Survei memberi dua sinyal yang saling menguatkan: makanan/minuman cepat dianggap bermanfaat oleh 44,1% responden, tetapi kopi/minuman 22,0% dibeli di luar SPBU vs 10,2% di SPBU. Pengunjung tidak mau menunggu (37,3% tidak mau menambah waktu; 47,5% menyebut kecepatan sebagai faktor utama), jadi formatnya harus grab-and-go, bukan kafe. Pasokan lahan ada: 3.319 lahan kosong < 10 m² dengan tarif median Rp 13,3 jt/th. Segmen F&B saat ini 2.385 lahan dan didominasi brand minuman siap saji, menunjukkan format kios sudah terbukti di jaringan. Pasar kopi nasional ramai dan mulai jenuh di kota besar, sehingga diferensiasi SPBU adalah kecepatan dan lokasi, bukan produk.",
    "verdict": {
     "permintaan": {
      "nilai": "kuat",
-     "alasan": "Bermanfaat 41,1%, prioritas 23,3%; kebocoran kopi 26,0% vs 9,6%. Catatan: n = 73, Medan dominan."
+     "alasan": "Bermanfaat 44,1%, prioritas 25,4%; kebocoran kopi 22,0% vs 10,2%. Catatan: n = 59, Medan dominan."
     },
     "pasokan": {
      "nilai": "kuat",
@@ -1320,25 +1320,25 @@
     {
      "sumber": "survei",
      "label": "Makanan/minuman cepat dianggap bermanfaat",
-     "nilai": "41,1%",
-     "catatan": "prioritas utama 23,3%; Bright Cafe/kopi diketahui 24,7%"
+     "nilai": "44,1%",
+     "catatan": "prioritas utama 25,4%; Bright Cafe/kopi diketahui 20,3%"
     },
     {
      "sumber": "survei",
      "label": "Kebocoran: kopi/minuman dibeli di luar vs di SPBU",
-     "nilai": "26,0% vs 9,6%",
-     "catatan": "makanan siap saji 16,4% vs 11,0%; dari yang membeli non-BBM, 31,8% membeli kopi"
+     "nilai": "22,0% vs 10,2%",
+     "catatan": "makanan siap saji 11,9% vs 8,5%; dari yang membeli non-BBM, 31,6% membeli kopi"
     },
     {
      "sumber": "survei",
      "label": "Tidak mau menambah waktu kunjungan",
-     "nilai": "41,1%",
-     "catatan": "82,2% langsung pergi; 'proses pelayanan cepat' faktor #1 (47,9%)"
+     "nilai": "37,3%",
+     "catatan": "78,0% langsung pergi; 'proses pelayanan cepat' faktor #1 (47,5%)"
     },
     {
      "sumber": "survei",
      "label": "Pengeluaran per pembelian non-BBM",
-     "nilai": "modus Rp 25–50 rb (31,8%)",
+     "nilai": "modus Rp 25–50 rb (26,3%)",
      "catatan": "cocok dengan tiket kopi + snack"
     },
     {
@@ -1368,28 +1368,28 @@
      "rows": [
       {
        "label": "Makanan siap saji",
-       "luar": 16.4,
-       "spbu": 11.0
+       "luar": 11.9,
+       "spbu": 8.5
       },
       {
        "label": "Kopi/minuman",
-       "luar": 26.0,
-       "spbu": 9.6
+       "luar": 22.0,
+       "spbu": 10.2
       },
       {
        "label": "Kebutuhan harian",
-       "luar": 24.7,
-       "spbu": 2.7
+       "luar": 25.4,
+       "spbu": 3.4
       },
       {
        "label": "Ban/angin/nitrogen",
-       "luar": 32.9,
-       "spbu": 11.0
+       "luar": 32.2,
+       "spbu": 13.6
       },
       {
        "label": "Pembayaran",
-       "luar": 5.5,
-       "spbu": 1.4
+       "luar": 5.1,
+       "spbu": 1.7
       }
      ],
      "series": [
@@ -1468,7 +1468,7 @@
     },
     {
      "item": "Kompetitor terdekat",
-     "nilai": "Minimarket sebagai tempat beli kebutuhan harian/kopi (survei: 61,6% responden)",
+     "nilai": "Minimarket sebagai tempat beli kebutuhan harian/kopi (survei: 59,3% responden)",
      "sumber": "Survei internal + Alfamart/Indomaret quick commerce",
      "url": "https://www.pulse.bot/ecommerce/news/indonesian-minimart-king-alfamart-boosts-quick-commerce-to-reverse-slowdown-ba8b10f4-1723-41c5-94e0-fb87024dd6a3",
      "relevansi": "Minimarket di/dekat SPBU adalah pesaing langsung kios; kios harus lebih cepat, bukan lebih lengkap."
@@ -1476,7 +1476,7 @@
    ],
    "risiko": [
     "Kanibalisasi Bright Store/Bright Cafe milik Pertamina Retail di SPBU yang sama.",
-    "Sampel survei kecil (n = 73) dan condong ke Medan; permintaan kopi bisa berbeda di kota lain.",
+    "Sampel survei kecil (n = 59) dan condong ke Medan; permintaan kopi bisa berbeda di kota lain.",
     "Booth di lahan luar menambah antrean kendaraan bila tidak ada jalur ambil cepat."
    ],
    "prasyarat": [
@@ -1565,11 +1565,11 @@
   {
    "id": "A4",
    "pertanyaan": "Apakah konsumen mau mengambil paket di SPBU, dan apakah operator locker membutuhkan titik SPBU di tengah dominasi pickup minimarket?",
-   "ringkasan": "Sinyal permintaan dari konsumen lemah: titik paket online hanya dianggap bermanfaat oleh 4,1% responden dan diprioritaskan 1,4%; hanya 1,4% tahu layanan paket ada di SPBU. Namun 13,7% tertarik model 'pesan di aplikasi, ambil di SPBU', yang secara operasional sama dengan locker. Volume paket nasional tumbuh dua digit, tetapi jaringan pickup minimarket sudah luas, jadi nilai SPBU bagi operator adalah lokasi di rute dan jam operasional 24 jam, bukan kedekatan dengan rumah. Pasokan lahan sama dengan A3 (3.319 lahan < 10 m²), sehingga A4 lebih tepat sebagai pelengkap di SPBU jalur komuter, bukan program jaringan luas.",
+   "ringkasan": "Sinyal permintaan dari konsumen lemah: titik paket online hanya dianggap bermanfaat oleh 5,1% responden dan diprioritaskan 1,7%; hanya 1,7% tahu layanan paket ada di SPBU. Namun 11,9% tertarik model 'pesan di aplikasi, ambil di SPBU', yang secara operasional sama dengan locker. Volume paket nasional tumbuh dua digit, tetapi jaringan pickup minimarket sudah luas, jadi nilai SPBU bagi operator adalah lokasi di rute dan jam operasional 24 jam, bukan kedekatan dengan rumah. Pasokan lahan sama dengan A3 (3.319 lahan < 10 m²), sehingga A4 lebih tepat sebagai pelengkap di SPBU jalur komuter, bukan program jaringan luas.",
    "verdict": {
     "permintaan": {
      "nilai": "lemah",
-     "alasan": "Bermanfaat 4,1%, prioritas 1,4%; permintaan tersirat lewat 'pesan di aplikasi, ambil di SPBU' 13,7%."
+     "alasan": "Bermanfaat 5,1%, prioritas 1,7%; permintaan tersirat lewat 'pesan di aplikasi, ambil di SPBU' 11,9%."
     },
     "pasokan": {
      "nilai": "kuat",
@@ -1588,19 +1588,19 @@
     {
      "sumber": "survei",
      "label": "Titik paket online dianggap bermanfaat",
-     "nilai": "4,1%",
-     "catatan": "prioritas 1,4%; tahu ada layanan paket di SPBU 1,4%"
+     "nilai": "5,1%",
+     "catatan": "prioritas 1,7%; tahu ada layanan paket di SPBU 1,7%"
     },
     {
      "sumber": "survei",
      "label": "Tertarik 'pesan di aplikasi, ambil di SPBU'",
-     "nilai": "13,7%",
-     "catatan": "'datang langsung' 58,9%; tidak tertarik 12,3%"
+     "nilai": "11,9%",
+     "catatan": "'datang langsung' 67,8%; tidak tertarik 6,8%"
     },
     {
      "sumber": "survei",
      "label": "Tempat biasa memakai jasa logistik",
-     "nilai": "6,8%",
+     "nilai": "5,1%",
      "catatan": "marketplace 6,8%; kebutuhan logistik bukan bagian rutin kunjungan SPBU"
     },
     {
@@ -1630,23 +1630,23 @@
      "rows": [
       {
        "label": "Datang langsung",
-       "value": 58.9
-      },
-      {
-       "label": "Pesan di aplikasi, ambil di SPBU",
-       "value": 13.7
-      },
-      {
-       "label": "Tidak tertarik",
-       "value": 12.3
+       "value": 67.8
       },
       {
        "label": "Tidak ada preferensi",
-       "value": 9.6
+       "value": 11.9
+      },
+      {
+       "label": "Pesan di aplikasi, ambil di SPBU",
+       "value": 11.9
+      },
+      {
+       "label": "Tidak tertarik",
+       "value": 6.8
       },
       {
        "label": "Pesan dengan jadwal",
-       "value": 5.5
+       "value": 1.7
       }
      ],
      "series": null
@@ -1809,11 +1809,11 @@
   {
    "id": "A5",
    "pertanyaan": "Apakah lahan luar SPBU tersedia di kota yang adopsi EV-nya nyata, dan apakah model sewa + bagi hasil memberi nilai finansial atau hanya strategis?",
-   "ringkasan": "Pasokan lahan luar ada (1.101 lahan kosong di luar bangunan) tetapi tidak ada yang mencantumkan daya listrik (0 dari 1.101; kesenjangan data, bukan bukti tidak ada daya), jadi kelayakan teknis harus disurvei. Adopsi EV tumbuh cepat (BEV 69 rb unit Jan–Okt 2025, sudah melampaui 2024) dan PLN mengejar 4.300 SPKLU, tetapi utilisasi nasional masih ≈ 28 kWh/unit/hari sehingga pendapatan Pertamina dari sewa + bagi hasil kecil (Rp 4,7 M/th dasar). Survei hanya 5,5% responden tahu ada charging di SPBU dan 30,1% pengguna mobil. Nilainya strategis (posisi di transisi energi, trafik EV premium), bukan finansial jangka pendek; tenant charging yang sudah ada di jaringan menunjukkan mitra tersedia.",
+   "ringkasan": "Pasokan lahan luar ada (1.101 lahan kosong di luar bangunan) tetapi tidak ada yang mencantumkan daya listrik (0 dari 1.101; kesenjangan data, bukan bukti tidak ada daya), jadi kelayakan teknis harus disurvei. Adopsi EV tumbuh cepat (BEV 69 rb unit Jan–Okt 2025, sudah melampaui 2024) dan PLN mengejar 4.300 SPKLU, tetapi utilisasi nasional masih ≈ 28 kWh/unit/hari sehingga pendapatan Pertamina dari sewa + bagi hasil kecil (Rp 4,7 M/th dasar). Survei hanya 5,1% responden tahu ada charging di SPBU dan 32,2% pengguna mobil. Nilainya strategis (posisi di transisi energi, trafik EV premium), bukan finansial jangka pendek; tenant charging yang sudah ada di jaringan menunjukkan mitra tersedia.",
    "verdict": {
     "permintaan": {
      "nilai": "sedang",
-     "alasan": "Adopsi EV naik tajam secara nasional tetapi terkonsentrasi di Jabodetabek/Jawa; survei: hanya 5,5% tahu layanan charging di SPBU."
+     "alasan": "Adopsi EV naik tajam secara nasional tetapi terkonsentrasi di Jabodetabek/Jawa; survei: hanya 5,1% tahu layanan charging di SPBU."
     },
     "pasokan": {
      "nilai": "sedang",
@@ -1856,8 +1856,8 @@
     {
      "sumber": "survei",
      "label": "Tahu ada charging EV di SPBU",
-     "nilai": "5,5%",
-     "catatan": "pengguna mobil pribadi 30,1%; motor 68,5%"
+     "nilai": "5,1%",
+     "catatan": "pengguna mobil pribadi 32,2%; motor 66,1%"
     },
     {
      "sumber": "master",
@@ -2091,7 +2091,7 @@
     {
      "sumber": "survei",
      "label": "Kebutuhan harian dianggap bermanfaat di SPBU",
-     "nilai": "11,0%",
+     "nilai": "13,6%",
      "catatan": "gudang mikro melayani pengiriman, bukan pembeli di lokasi; survei konsumen tidak menjadi penentu"
     },
     {
@@ -2272,11 +2272,11 @@
   {
    "id": "A7",
    "pertanyaan": "Apakah SPBU punya audiens yang cukup besar, sering, dan lama menunggu untuk dijual sebagai inventori iklan digital, dan siapa yang membiayai layarnya?",
-   "ringkasan": "Audiensnya ada dan tertawan: 83,5% responden datang ≥ 1×/minggu dan 68,5% mengantre ≥ 5 menit, waktu yang cukup untuk paparan iklan. Jaringan 6.627 SPBU adalah inventori DOOH terbesar yang belum dimonetisasi secara terpusat; segmen 'Pameran & Promosi' saat ini hanya 588 lahan. Pasar DOOH Indonesia tumbuh (Statista ± €131 jt 2025) tetapi rate card per layar SPBU tidak ada di sumber publik, sehingga rentang pendapatan sangat lebar (Rp 3,6 M–Rp 86,4 M/th). Model mitra media (capex layar oleh mitra, Pertamina 30% kotor) menghindari capex, tetapi data trafik per SPBU adalah prasyarat untuk menjual inventori.",
+   "ringkasan": "Audiensnya ada dan tertawan: 83,0% responden datang ≥ 1×/minggu dan 66,1% mengantre ≥ 5 menit, waktu yang cukup untuk paparan iklan. Jaringan 6.627 SPBU adalah inventori DOOH terbesar yang belum dimonetisasi secara terpusat; segmen 'Pameran & Promosi' saat ini hanya 588 lahan. Pasar DOOH Indonesia tumbuh (Statista ± €131 jt 2025) tetapi rate card per layar SPBU tidak ada di sumber publik, sehingga rentang pendapatan sangat lebar (Rp 3,6 M–Rp 86,4 M/th). Model mitra media (capex layar oleh mitra, Pertamina 30% kotor) menghindari capex, tetapi data trafik per SPBU adalah prasyarat untuk menjual inventori.",
    "verdict": {
     "permintaan": {
      "nilai": "sedang",
-     "alasan": "Audiens tertawan: 83,5% datang ≥ 1×/minggu, 68,5% mengantre ≥ 5 menit. Permintaan pengiklan bergantung pada data trafik yang belum ada."
+     "alasan": "Audiens tertawan: 83,0% datang ≥ 1×/minggu, 66,1% mengantre ≥ 5 menit. Permintaan pengiklan bergantung pada data trafik yang belum ada."
     },
     "pasokan": {
      "nilai": "kuat",
@@ -2295,19 +2295,19 @@
     {
      "sumber": "survei",
      "label": "Frekuensi kunjungan ≥ 1×/minggu",
-     "nilai": "83,5%",
-     "catatan": "1–2×/minggu 60,3%; hampir tiap hari 6,8%"
+     "nilai": "83,0%",
+     "catatan": "1–2×/minggu 59,3%; hampir tiap hari 5,1%"
     },
     {
      "sumber": "survei",
      "label": "Mengantre ≥ 5 menit",
-     "nilai": "68,5%",
-     "catatan": "11–20 menit 27,4%; > 20 menit 11,0%: waktu paparan iklan"
+     "nilai": "66,1%",
+     "catatan": "11–20 menit 25,4%; > 20 menit 10,2%: waktu paparan iklan"
     },
     {
      "sumber": "survei",
      "label": "Promo/poin loyalitas sebagai faktor",
-     "nilai": "16,4%",
+     "nilai": "18,6%",
      "catatan": "iklan di SPBU paling efektif untuk promo produk Pertamina sendiri dan tenant"
     },
     {
@@ -2337,23 +2337,23 @@
      "rows": [
       {
        "label": "Tidak mengantre",
-       "value": 4.1
+       "value": 5.1
       },
       {
        "label": "< 5 menit",
-       "value": 27.4
+       "value": 28.8
       },
       {
        "label": "5–10 menit",
-       "value": 30.1
+       "value": 30.5
       },
       {
        "label": "11–20 menit",
-       "value": 27.4
+       "value": 25.4
       },
       {
        "label": "> 20 menit",
-       "value": 11.0
+       "value": 10.2
       }
      ],
      "series": null
@@ -2721,11 +2721,11 @@
   {
    "id": "A10",
    "pertanyaan": "Seberapa besar pendapatan sewa yang terancam oleh penutupan ATM, dan apakah kiosk digital bisa menggantikan bank sebagai penyewa ruang yang sama?",
-   "ringkasan": "Perbankan & ATM adalah segmen penyewa terbesar ketiga (5.784 lahan, 20,6% dari tersewa) dengan tarif median Rp 20,0 jt, dan terkonsentrasi di beberapa bank besar. Master lahan: 6.478 lahan disewa bank dan 4.721 kontrak bank berakhir dalam 12 bulan, jadi risiko churn datang cepat. Secara nasional jumlah ATM turun 1.399 unit dalam setahun (89.774 unit per Q3 2025) dan OJK memperkirakan tren berlanjut, meski BCA masih menambah. Di sisi konsumen, ATM/pembayaran masih layanan kedua paling dikenal (53,4%) tetapi pembayaran digital hanya diinginkan 15,1%. A10 adalah pendapatan yang diselamatkan (Rp 19,7 M/th dasar), bukan baru; prioritasnya adalah peta jatuh tempo kontrak bank dan negosiasi ulang format (ATM + kiosk + layanan agen) sebelum bank menutup titik.",
+   "ringkasan": "Perbankan & ATM adalah segmen penyewa terbesar ketiga (5.784 lahan, 20,6% dari tersewa) dengan tarif median Rp 20,0 jt, dan terkonsentrasi di beberapa bank besar. Master lahan: 6.478 lahan disewa bank dan 4.721 kontrak bank berakhir dalam 12 bulan, jadi risiko churn datang cepat. Secara nasional jumlah ATM turun 1.399 unit dalam setahun (89.774 unit per Q3 2025) dan OJK memperkirakan tren berlanjut, meski BCA masih menambah. Di sisi konsumen, ATM/pembayaran masih layanan kedua paling dikenal (50,8%) tetapi pembayaran digital hanya diinginkan 13,6%. A10 adalah pendapatan yang diselamatkan (Rp 19,7 M/th dasar), bukan baru; prioritasnya adalah peta jatuh tempo kontrak bank dan negosiasi ulang format (ATM + kiosk + layanan agen) sebelum bank menutup titik.",
    "verdict": {
     "permintaan": {
      "nilai": "sedang",
-     "alasan": "Permintaan kiosk digital dari konsumen lemah (15,1%); permintaan datang dari bank/fintech yang butuh titik layanan fisik murah menggantikan ATM."
+     "alasan": "Permintaan kiosk digital dari konsumen lemah (13,6%); permintaan datang dari bank/fintech yang butuh titik layanan fisik murah menggantikan ATM."
     },
     "pasokan": {
      "nilai": "kuat",
@@ -2756,8 +2756,8 @@
     {
      "sumber": "survei",
      "label": "Tahu ada ATM/pembayaran di SPBU",
-     "nilai": "53,4%",
-     "catatan": "pembayaran digital dianggap bermanfaat 15,1%; kebocoran pembayaran 5,5% vs 1,4%"
+     "nilai": "50,8%",
+     "catatan": "pembayaran digital dianggap bermanfaat 13,6%; kebocoran pembayaran 5,1% vs 1,7%"
     },
     {
      "sumber": "master",
@@ -2931,11 +2931,11 @@
   {
    "id": "A8",
    "pertanyaan": "Apakah layanan ban/nitrogen adalah permintaan nyata yang belum terlayani di SPBU, dan apakah skor dampak A8 (Fill-in) terlalu rendah?",
-   "ringkasan": "Ini sinyal permintaan terkuat di survei: ban/nitrogen/darurat dianggap bermanfaat oleh 46,6% responden dan menjadi prioritas #1 (34,2%), layanan paling dikenal (60,3%), tetapi 32,9% membelinya di luar SPBU vs 11,0% di SPBU. Pengguna motor (50,0%) lebih menginginkannya daripada mobil (36,4%), dan 145 juta sepeda motor adalah pasar terbesar. Segmen nitrogen/perawatan saat ini 1.369 lahan dengan 164 nama tenant berbeda dan tarif median rendah (Rp 10,0 jt), jadi peluangnya adalah standardisasi format dan kualitas, bukan menambah titik. Skor dampak A8 saat ini (Fill-in) tampak terlalu rendah dibanding bukti permintaan; layak dinaikkan setelah pilot.",
+   "ringkasan": "Ini sinyal permintaan terkuat di survei: ban/nitrogen/darurat dianggap bermanfaat oleh 49,2% responden dan menjadi prioritas #1 (35,6%), layanan paling dikenal (57,6%), tetapi 32,2% membelinya di luar SPBU vs 13,6% di SPBU. Pengguna motor (51,3%) lebih menginginkannya daripada mobil (42,1%), dan 145 juta sepeda motor adalah pasar terbesar. Segmen nitrogen/perawatan saat ini 1.369 lahan dengan 164 nama tenant berbeda dan tarif median rendah (Rp 10,0 jt), jadi peluangnya adalah standardisasi format dan kualitas, bukan menambah titik. Skor dampak A8 saat ini (Fill-in) tampak terlalu rendah dibanding bukti permintaan; layak dinaikkan setelah pilot.",
    "verdict": {
     "permintaan": {
      "nilai": "kuat",
-     "alasan": "Bermanfaat 46,6%, prioritas #1 34,2%; kebocoran 32,9% vs 11,0%. Sampel kecil tetapi konsisten di semua pertanyaan."
+     "alasan": "Bermanfaat 49,2%, prioritas #1 35,6%; kebocoran 32,2% vs 13,6%. Sampel kecil tetapi konsisten di semua pertanyaan."
     },
     "pasokan": {
      "nilai": "kuat",
@@ -2954,26 +2954,26 @@
     {
      "sumber": "survei",
      "label": "Ban, nitrogen & darurat dianggap bermanfaat",
-     "nilai": "46,6%",
-     "catatan": "prioritas #1: 34,2%; layanan paling dikenal 60,3%"
+     "nilai": "49,2%",
+     "catatan": "prioritas #1: 35,6%; layanan paling dikenal 57,6%"
     },
     {
      "sumber": "survei",
      "label": "Kebocoran: beli ban/nitrogen di luar vs di SPBU",
-     "nilai": "32,9% vs 11,0%",
-     "catatan": "tempat beli biasa: bengkel 16,4%"
+     "nilai": "32,2% vs 13,6%",
+     "catatan": "tempat beli biasa: bengkel 16,9%"
     },
     {
      "sumber": "survei",
      "label": "Motor vs mobil yang menginginkan layanan ini",
-     "nilai": "50,0% vs 36,4%",
-     "catatan": "responden motor 50, mobil 22"
+     "nilai": "51,3% vs 42,1%",
+     "catatan": "responden motor 39, mobil 19"
     },
     {
      "sumber": "survei",
      "label": "Produk yang dibeli oleh pembeli non-BBM",
-     "nilai": "nitrogen/ban 36,4%",
-     "catatan": "setara dengan makanan/minuman sebagai pembelian terbanyak"
+     "nilai": "nitrogen/ban 42,1%",
+     "catatan": "pembelian terbanyak; berikutnya kopi atau minuman siap saji (31,6%)"
     },
     {
      "sumber": "brightspace",
@@ -3002,42 +3002,42 @@
      "rows": [
       {
        "label": "Ban, nitrogen & darurat",
-       "motor": 50.0,
-       "mobil": 36.4
+       "motor": 51.3,
+       "mobil": 42.1
       },
       {
        "label": "Makanan/minuman cepat",
-       "motor": 34.0,
-       "mobil": 54.5
+       "motor": 38.5,
+       "mobil": 52.6
       },
       {
        "label": "Tempat istirahat",
-       "motor": 34.0,
-       "mobil": 40.9
+       "motor": 35.9,
+       "mobil": 47.4
       },
       {
        "label": "Servis ringan",
-       "motor": 26.0,
-       "mobil": 13.6
-      },
-      {
-       "label": "Pembayaran digital",
-       "motor": 18.0,
-       "mobil": 9.1
+       "motor": 25.6,
+       "mobil": 10.5
       },
       {
        "label": "Kebutuhan harian",
-       "motor": 12.0,
-       "mobil": 9.1
+       "motor": 15.4,
+       "mobil": 10.5
+      },
+      {
+       "label": "Pembayaran digital",
+       "motor": 15.4,
+       "mobil": 10.5
       },
       {
        "label": "Cuci cepat",
-       "motor": 14.0,
-       "mobil": 4.5
+       "motor": 15.4,
+       "mobil": 5.3
       },
       {
        "label": "Tidak butuh",
-       "motor": 14.0,
+       "motor": 12.8,
        "mobil": 0.0
       }
      ],
@@ -3207,11 +3207,11 @@
   {
    "id": "A11",
    "pertanyaan": "Apakah ada cukup pengunjung yang mau tinggal lebih dari 10 menit di SPBU untuk mengisi lounge/co-working di lantai 2 yang sekarang paling sulit disewakan?",
-   "ringkasan": "Permintaannya tipis: hanya 9,6% responden mau menambah > 5 menit di SPBU dan 82,2% langsung pergi, meski 35,6% menganggap tempat istirahat bermanfaat (lebih cocok dijawab dengan musala/toilet/kursi, bukan lounge berbayar). Pasokannya kecil: 543 lahan lantai 2, 134 kosong, okupansi 75,3% (terendah), tarif median Rp 25,3 jt. Pasar co-working nasional sendiri goyah (CoHive pailit 2023; okupansi baik hanya di CBD Jakarta). Nilai ekonomi Rp 1,2 M/th dasar, terkecil dari semua alternatif. Kajian ini mengonfirmasi posisi Thankless Task: tunda, kecuali untuk SPBU rest area tol tertentu.",
+   "ringkasan": "Permintaannya tipis: hanya 8,5% responden mau menambah > 5 menit di SPBU dan 78,0% langsung pergi, meski 39,0% menganggap tempat istirahat bermanfaat (lebih cocok dijawab dengan musala/toilet/kursi, bukan lounge berbayar). Pasokannya kecil: 543 lahan lantai 2, 134 kosong, okupansi 75,3% (terendah), tarif median Rp 25,3 jt. Pasar co-working nasional sendiri goyah (CoHive pailit 2023; okupansi baik hanya di CBD Jakarta). Nilai ekonomi Rp 1,2 M/th dasar, terkecil dari semua alternatif. Kajian ini mengonfirmasi posisi Thankless Task: tunda, kecuali untuk SPBU rest area tol tertentu.",
    "verdict": {
     "permintaan": {
      "nilai": "lemah",
-     "alasan": "Mau tinggal > 5 menit hanya 9,6%; tempat istirahat diinginkan tetapi dalam bentuk gratis/cepat."
+     "alasan": "Mau tinggal > 5 menit hanya 8,5%; tempat istirahat diinginkan tetapi dalam bentuk gratis/cepat."
     },
     "pasokan": {
      "nilai": "lemah",
@@ -3242,19 +3242,19 @@
     {
      "sumber": "survei",
      "label": "Mau menambah waktu > 5 menit di SPBU",
-     "nilai": "9,6%",
-     "catatan": "tidak mau sama sekali 41,1%; tergantung layanan 24,7%"
+     "nilai": "8,5%",
+     "catatan": "tidak mau sama sekali 37,3%; tergantung layanan 27,1%"
     },
     {
      "sumber": "survei",
      "label": "Tempat istirahat dianggap bermanfaat",
-     "nilai": "35,6%",
-     "catatan": "prioritas 28,8%; usia 55+ 32,9% responden"
+     "nilai": "39,0%",
+     "catatan": "prioritas 25,4%; usia 55+ 40,7% responden"
     },
     {
      "sumber": "survei",
      "label": "Langsung pergi setelah mengisi BBM",
-     "nilai": "82,2%",
+     "nilai": "78,0%",
      "catatan": "lounge bertentangan dengan pola kunjungan"
     }
    ],
@@ -3266,27 +3266,27 @@
      "rows": [
       {
        "label": "Tidak mau",
-       "value": 41.1
+       "value": 37.3
       },
       {
        "label": "1–3 menit",
-       "value": 13.7
+       "value": 13.6
       },
       {
        "label": "4–5 menit",
-       "value": 11.0
+       "value": 13.6
       },
       {
        "label": "6–10 menit",
-       "value": 5.5
+       "value": 5.1
       },
       {
        "label": "> 10 menit",
-       "value": 4.1
+       "value": 3.4
       },
       {
        "label": "Tergantung layanan",
-       "value": 24.7
+       "value": 27.1
       }
      ],
      "series": null

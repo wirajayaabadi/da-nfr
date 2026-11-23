@@ -56,7 +56,7 @@ export default function Page() {
       />
 
       <Insight tone="warn">
-        Sampel kecil dan tidak acak: {n(s.n)} responden, {P(r.medan_raya_pct)} dari Medan, Deli Serdang, dan Binjai, {P(r.usia_55_pct)} berusia 55+ dan {P(r.usia_18_pct)} di bawah 18 tahun. Baca sebagai sinyal arah, bukan estimasi nasional; selisih beberapa persen di antara opsi tidak bermakna.
+        Sampel kecil dan tidak acak: {n(s.n)} responden, {P(r.medan_raya_pct)} dari Medan, Deli Serdang, dan Binjai, dan {P(r.usia_55_pct)} berusia 55+. Baca sebagai sinyal arah, bukan estimasi nasional; selisih beberapa persen di antara opsi tidak bermakna.{s.n_dikeluarkan > 0 && <> Dari {n(s.n_awal)} jawaban yang masuk, {n(s.n_dikeluarkan)} responden {s.dikeluarkan} tidak ikut dianalisis.</>}
       </Insight>
 
       <div className="mt-4 grid gap-4 lg:grid-cols-3">
@@ -176,7 +176,7 @@ export default function Page() {
         <ChartCard title="Frekuensi mengisi BBM" table={distTable(s.profil.frekuensi)}>
           <RankedBars rows={s.profil.frekuensi} label="label" value="pct" format={P} tip={tip()} />
         </ChartCard>
-        <ChartCard title="Usia" table={distTable(s.profil.usia)}>
+        <ChartCard title="Usia" note={s.n_dikeluarkan > 0 ? `Tanpa ${n(s.n_dikeluarkan)} responden ${s.dikeluarkan}, yang tidak ikut dianalisis.` : undefined} table={distTable(s.profil.usia)}>
           <RankedBars rows={s.profil.usia} label="label" value="pct" format={P} highlight={substantive} tip={tip()} />
         </ChartCard>
       </div>
@@ -185,7 +185,7 @@ export default function Page() {
           <RankedBars rows={s.profil.alasan_spbu} label="label" value="pct" format={P} tip={tip()} />
         </ChartCard>
       </div>
-      <p className="mt-4 text-xs text-ink-3">{s.sumber}. Data dinormalisasi dengan <code>normalize_perilaku.py</code> dan diringkas dengan <code>perilaku_dashboard.py</code>; aturan pemetaan kota dan opsi ada di <code>out/perilaku/kodebuku.json</code>.</p>
+      <p className="mt-4 text-xs text-ink-3">{s.sumber}. Data dinormalisasi dengan <code>normalize_perilaku.py</code> dan diringkas dengan <code>perilaku_dashboard.py</code>; aturan pemetaan kota dan opsi ada di <code>out/perilaku/kodebuku.json</code>.{s.n_dikeluarkan > 0 && <> Responden {s.dikeluarkan} disaring saat peringkasan; data mentahnya tidak diubah.</>}</p>
     </>
   );
 }

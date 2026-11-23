@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
+import Akun from "@/components/akun";
 import { Nav } from "@/components/nav";
 import { data } from "@/lib/data";
 
@@ -23,6 +24,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <Link href="/" className="mt-3 inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-xs text-ink-3 hover:bg-surface hover:text-ink">
             <span aria-hidden="true">←</span> Halaman depan ALP
           </Link>
+          {/* Akun yang sedang masuk. Halaman ini dijaga proxy (src/proxy.ts); blok ini hanya menampilkan siapa yang masuk. */}
+          <div className="mt-3 border-t border-grid px-3 pt-3">
+            <Suspense fallback={<div className="h-11" />}><Akun /></Suspense>
+          </div>
         </aside>
         <main id="konten" className="min-w-0 flex-1">{children}</main>
       </div>

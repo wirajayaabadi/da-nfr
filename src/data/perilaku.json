@@ -1,68 +1,71 @@
 {
  "sumber": "Survei perilaku konsumen SPBU (Google Form, November 2026)",
- "n": 73,
- "n_beli": 22,
- "n_tidak_beli": 51,
+ "n": 59,
+ "n_awal": 73,
+ "n_dikeluarkan": 14,
+ "dikeluarkan": "berusia di bawah 18 tahun",
+ "n_beli": 19,
+ "n_tidak_beli": 40,
  "ringkasan": {
-  "langsung_pergi_pct": 82.2,
-  "beli_nonbbm_pct": 30.1,
-  "tidak_mau_tambah_waktu_pct": 41.1,
-  "q21_rata": 3.41,
-  "q21_top2_pct": 45.2,
-  "q21_bottom2_pct": 20.5,
-  "sengaja_datang_pct": 52.1,
-  "medan_raya_pct": 42.5,
-  "usia_55_pct": 32.9,
-  "usia_18_pct": 19.2,
+  "langsung_pergi_pct": 78.0,
+  "beli_nonbbm_pct": 32.2,
+  "tidak_mau_tambah_waktu_pct": 37.3,
+  "q21_rata": 3.49,
+  "q21_top2_pct": 50.8,
+  "q21_bottom2_pct": 20.3,
+  "sengaja_datang_pct": 50.8,
+  "medan_raya_pct": 30.5,
+  "usia_55_pct": 40.7,
+  "usia_tidak_menjawab": 2,
   "ibadah_toilet_isian_bebas": 5,
-  "q20_lebih_dari_satu": 10,
-  "kota_terpetakan": 67
+  "q20_lebih_dari_satu": 7,
+  "kota_terpetakan": 54
  },
  "profil": {
   "kendaraan": [
    {
     "label": "Sepeda motor",
     "opsi": "Sepeda motor",
-    "n": 50,
-    "pct": 68.5
+    "n": 39,
+    "pct": 66.1
    },
    {
     "label": "Mobil pribadi",
     "opsi": "Mobil pribadi",
-    "n": 22,
-    "pct": 30.1
+    "n": 19,
+    "pct": 32.2
    },
    {
     "label": "Lainnya",
     "opsi": "Lainnya",
     "n": 1,
-    "pct": 1.4
+    "pct": 1.7
    }
   ],
   "bbm": [
    {
     "label": "Pertalite",
     "opsi": "Pertalite",
-    "n": 47,
+    "n": 38,
     "pct": 64.4
    },
    {
     "label": "Pertamax",
     "opsi": "Pertamax",
-    "n": 18,
-    "pct": 24.7
+    "n": 15,
+    "pct": 25.4
    },
    {
     "label": "Biosolar/Solar",
     "opsi": "Biosolar/Solar",
-    "n": 6,
-    "pct": 8.2
+    "n": 5,
+    "pct": 8.5
    },
    {
     "label": "Pertamax Turbo",
     "opsi": "Pertamax Turbo",
-    "n": 2,
-    "pct": 2.7
+    "n": 1,
+    "pct": 1.7
    }
   ],
   "frekuensi": [
@@ -70,131 +73,125 @@
     "label": "≤ 1×/bulan",
     "opsi": "Sekali sebulan atau lebih jarang",
     "n": 2,
-    "pct": 2.7
+    "pct": 3.4
    },
    {
     "label": "2–3×/bulan",
     "opsi": "2–3 kali sebulan",
-    "n": 10,
-    "pct": 13.7
+    "n": 8,
+    "pct": 13.6
    },
    {
     "label": "1–2×/minggu",
     "opsi": "1–2 kali seminggu",
-    "n": 44,
-    "pct": 60.3
+    "n": 35,
+    "pct": 59.3
    },
    {
     "label": "3–5×/minggu",
     "opsi": "3–5 kali seminggu",
-    "n": 12,
-    "pct": 16.4
+    "n": 11,
+    "pct": 18.6
    },
    {
     "label": "Hampir tiap hari",
     "opsi": "Hampir setiap hari",
-    "n": 5,
-    "pct": 6.8
+    "n": 3,
+    "pct": 5.1
    }
   ],
   "usia": [
    {
-    "label": "< 18",
-    "opsi": "Di bawah 18 tahun",
-    "n": 14,
-    "pct": 19.2
-   },
-   {
     "label": "18–24",
     "opsi": "18–24 tahun",
     "n": 5,
-    "pct": 6.8
+    "pct": 8.5
    },
    {
     "label": "25–34",
     "opsi": "25–34 tahun",
     "n": 10,
-    "pct": 13.7
+    "pct": 16.9
    },
    {
     "label": "35–44",
     "opsi": "35–44 tahun",
     "n": 12,
-    "pct": 16.4
+    "pct": 20.3
    },
    {
     "label": "45–54",
     "opsi": "45–54 tahun",
     "n": 6,
-    "pct": 8.2
+    "pct": 10.2
    },
    {
     "label": "55+",
     "opsi": "55 tahun atau lebih",
     "n": 24,
-    "pct": 32.9
+    "pct": 40.7
    },
    {
     "label": "Tidak menjawab",
     "opsi": "Memilih tidak menjawab",
     "n": 2,
-    "pct": 2.7
+    "pct": 3.4
    }
   ],
   "alasan_spbu": [
    {
     "label": "Dekat rumah/kantor",
     "opsi": "Dekat rumah atau tempat kerja",
-    "n": 36,
-    "pct": 49.3
+    "n": 27,
+    "pct": 45.8
    },
    {
     "label": "Di rute perjalanan",
     "opsi": "Berada di rute perjalanan",
-    "n": 29,
-    "pct": 39.7
+    "n": 25,
+    "pct": 42.4
    },
    {
     "label": "Harga & jenis BBM sesuai",
     "opsi": "Harga dan jenis BBM yang sesuai",
-    "n": 11,
-    "pct": 15.1
-   },
-   {
-    "label": "Percaya kualitas/takaran",
-    "opsi": "Kepercayaan terhadap kualitas dan takaran BBM",
-    "n": 6,
-    "pct": 8.2
+    "n": 10,
+    "pct": 16.9
    },
    {
     "label": "Tidak ada pilihan lain",
     "opsi": "Tidak memiliki pilihan SPBU lain yang praktis",
     "n": 5,
-    "pct": 6.8
+    "pct": 8.5
+   },
+   {
+    "label": "Percaya kualitas/takaran",
+    "opsi": "Kepercayaan terhadap kualitas dan takaran BBM",
+    "n": 5,
+    "pct": 8.5
    },
    {
     "label": "Fasilitas nyaman",
     "opsi": "Fasilitas SPBU yang nyaman",
-    "n": 3,
-    "pct": 4.1
+    "n": 2,
+    "pct": 3.4
    },
    {
     "label": "Lainnya",
     "opsi": "Lainnya",
-    "n": 2,
-    "pct": 2.7
+    "n": 1,
+    "pct": 1.7
    },
    {
     "label": "Ada layanan tambahan",
     "opsi": "Tersedia layanan tambahan selain BBM",
     "n": 1,
-    "pct": 1.4
+    "pct": 1.7
    },
    {
     "label": "Antrean cepat",
     "opsi": "Antrean relatif cepat",
     "n": 1,
-    "pct": 1.4
+    "pct": 1.7
    }
   ]
  },
@@ -204,101 +201,101 @@
     "label": "Tidak mengantre",
     "opsi": "Tidak mengantre",
     "n": 3,
-    "pct": 4.1
+    "pct": 5.1
    },
    {
     "label": "< 5 menit",
     "opsi": "Kurang dari 5 menit",
-    "n": 20,
-    "pct": 27.4
+    "n": 17,
+    "pct": 28.8
    },
    {
     "label": "5–10 menit",
     "opsi": "5–10 menit",
-    "n": 22,
-    "pct": 30.1
+    "n": 18,
+    "pct": 30.5
    },
    {
     "label": "11–20 menit",
     "opsi": "11–20 menit",
-    "n": 20,
-    "pct": 27.4
+    "n": 15,
+    "pct": 25.4
    },
    {
     "label": "> 20 menit",
     "opsi": "Lebih dari 20 menit",
-    "n": 8,
-    "pct": 11.0
+    "n": 6,
+    "pct": 10.2
    }
   ],
   "setelah_isi": [
    {
     "label": "Langsung pergi",
     "opsi": "Langsung meninggalkan SPBU",
-    "n": 60,
-    "pct": 82.2
+    "n": 46,
+    "pct": 78.0
    },
    {
     "label": "Toilet/musala/istirahat",
     "opsi": "Menggunakan toilet, musala, atau fasilitas istirahat",
     "n": 7,
-    "pct": 9.6
+    "pct": 11.9
    },
    {
     "label": "Aktivitas lainnya",
     "opsi": "Aktivitas lainnya",
     "n": 4,
-    "pct": 5.5
+    "pct": 6.8
    },
    {
     "label": "Belanja lainnya",
     "opsi": "Berbelanja kebutuhan lainnya",
     "n": 1,
-    "pct": 1.4
+    "pct": 1.7
    },
    {
     "label": "Beli makan/minum",
     "opsi": "Membeli makanan atau minuman",
     "n": 1,
-    "pct": 1.4
+    "pct": 1.7
    }
   ],
   "waktu_tambahan": [
    {
     "label": "Tidak mau",
     "opsi": "Tidak ingin menambah waktu",
-    "n": 30,
-    "pct": 41.1
+    "n": 22,
+    "pct": 37.3
    },
    {
     "label": "1–3 menit",
     "opsi": "1–3 menit",
-    "n": 10,
-    "pct": 13.7
+    "n": 8,
+    "pct": 13.6
    },
    {
     "label": "4–5 menit",
     "opsi": "4–5 menit",
     "n": 8,
-    "pct": 11.0
+    "pct": 13.6
    },
    {
     "label": "6–10 menit",
     "opsi": "6–10 menit",
-    "n": 4,
-    "pct": 5.5
+    "n": 3,
+    "pct": 5.1
    },
    {
     "label": "> 10 menit",
     "opsi": "Lebih dari 10 menit, jika layanannya dibutuhkan",
-    "n": 3,
-    "pct": 4.1
+    "n": 2,
+    "pct": 3.4
    },
    {
     "label": "Tergantung layanan",
     "opsi": "Bergantung pada jenis layanan",
-    "n": 18,
-    "pct": 24.7
+    "n": 16,
+    "pct": 27.1
    }
   ]
  },
@@ -307,88 +304,88 @@
    {
     "label": "Nitrogen/ban",
     "opsi": "Pengisian nitrogen atau layanan ban",
-    "n": 44,
-    "pct": 60.3
+    "n": 34,
+    "pct": 57.6
    },
    {
     "label": "ATM/pembayaran",
     "opsi": "ATM atau layanan pembayaran",
-    "n": 39,
-    "pct": 53.4
+    "n": 30,
+    "pct": 50.8
    },
    {
     "label": "Bright Store",
     "opsi": "Bright Store/minimarket",
-    "n": 29,
-    "pct": 39.7
+    "n": 22,
+    "pct": 37.3
    },
    {
     "label": "Gerai makanan",
     "opsi": "Gerai makanan dan minuman",
-    "n": 26,
-    "pct": 35.6
+    "n": 19,
+    "pct": 32.2
    },
    {
     "label": "Bright Cafe/kopi",
     "opsi": "Bright Cafe atau gerai kopi",
-    "n": 18,
-    "pct": 24.7
+    "n": 12,
+    "pct": 20.3
    },
    {
     "label": "Ganti oli",
     "opsi": "Layanan penggantian oli",
-    "n": 16,
-    "pct": 21.9
-   },
-   {
-    "label": "Cuci kendaraan",
-    "opsi": "Cuci kendaraan",
-    "n": 5,
-    "pct": 6.8
+    "n": 8,
+    "pct": 13.6
    },
    {
     "label": "Lainnya",
     "opsi": "Lainnya",
     "n": 4,
-    "pct": 5.5
+    "pct": 6.8
    },
    {
     "label": "Charging EV",
     "opsi": "Layanan pengisian daya kendaraan listrik",
-    "n": 4,
-    "pct": 5.5
+    "n": 3,
+    "pct": 5.1
    },
    {
     "label": "Tidak tahu",
     "opsi": "Tidak mengetahui adanya layanan tersebut",
-    "n": 3,
-    "pct": 4.1
+    "n": 2,
+    "pct": 3.4
+   },
+   {
+    "label": "Cuci kendaraan",
+    "opsi": "Cuci kendaraan",
+    "n": 2,
+    "pct": 3.4
    },
    {
     "label": "Paket",
     "opsi": "Layanan pengambilan/pengiriman paket",
     "n": 1,
-    "pct": 1.4
+    "pct": 1.7
    }
   ],
   "beli_30hari": [
    {
     "label": "Tidak",
     "opsi": "Tidak",
-    "n": 43,
-    "pct": 58.9
+    "n": 34,
+    "pct": 57.6
    },
    {
     "label": "Ya",
     "opsi": "Ya",
-    "n": 22,
-    "pct": 30.1
+    "n": 19,
+    "pct": 32.2
    },
    {
     "label": "Tidak Ingat",
     "opsi": "Tidak Ingat",
-    "n": 8,
-    "pct": 11.0
+    "n": 6,
+    "pct": 10.2
    }
   ],
   "produk_dibeli": [
@@ -396,37 +393,37 @@
     "label": "Pengisian nitrogen/layanan ban",
     "opsi": "Pengisian nitrogen/layanan ban",
     "n": 8,
-    "pct": 36.4
-   },
-   {
-    "label": "Makanan dan minuman",
-    "opsi": "Makanan dan minuman",
-    "n": 8,
-    "pct": 36.4
+    "pct": 42.1
    },
    {
     "label": "Kopi atau minuman siap saji",
     "opsi": "Kopi atau minuman siap saji",
-    "n": 7,
-    "pct": 31.8
+    "n": 6,
+    "pct": 31.6
+   },
+   {
+    "label": "Makanan dan minuman",
+    "opsi": "Makanan dan minuman",
+    "n": 5,
+    "pct": 26.3
    },
    {
     "label": "Kebutuhan harian",
     "opsi": "Kebutuhan harian",
     "n": 2,
-    "pct": 9.1
+    "pct": 10.5
    },
    {
     "label": "Lainnya",
     "opsi": "Lainnya",
     "n": 2,
-    "pct": 9.1
+    "pct": 10.5
    },
    {
     "label": "Layanan pembayaran",
     "opsi": "Layanan pembayaran",
     "n": 1,
-    "pct": 4.5
+    "pct": 5.3
    }
   ],
   "pengeluaran": [
@@ -434,241 +431,235 @@
     "label": "< Rp10 rb",
     "opsi": "Kurang dari Rp10.000",
     "n": 2,
-    "pct": 9.1
+    "pct": 10.5
    },
    {
     "label": "Rp10–25 rb",
     "opsi": "Rp10.000–Rp24.999",
     "n": 4,
-    "pct": 18.2
+    "pct": 21.1
    },
    {
     "label": "Rp25–50 rb",
     "opsi": "Rp25.000–Rp49.999",
-    "n": 7,
-    "pct": 31.8
+    "n": 5,
+    "pct": 26.3
    },
    {
     "label": "Rp50–100 rb",
     "opsi": "Rp50.000–Rp99.999",
     "n": 4,
-    "pct": 18.2
+    "pct": 21.1
    },
    {
     "label": "≥ Rp100 rb",
     "opsi": "Rp100.000 atau lebih",
     "n": 2,
-    "pct": 9.1
+    "pct": 10.5
    },
    {
     "label": "Tidak ingat",
     "opsi": "Tidak ingat",
-    "n": 3,
-    "pct": 13.6
+    "n": 2,
+    "pct": 10.5
    }
   ],
   "alasan_tidak": [
    {
     "label": "Tidak sedang butuh",
     "opsi": "Tidak sedang membutuhkan produk atau layanan lain",
-    "n": 35,
-    "pct": 68.6
+    "n": 27,
+    "pct": 67.5
    },
    {
     "label": "Ingin segera jalan",
     "opsi": "Ingin segera melanjutkan perjalanan",
-    "n": 14,
-    "pct": 27.5
+    "n": 12,
+    "pct": 30.0
    },
    {
     "label": "Harga lebih mahal",
     "opsi": "Harga dirasa lebih mahal",
-    "n": 6,
-    "pct": 11.8
+    "n": 4,
+    "pct": 10.0
    },
    {
     "label": "Lebih nyaman di tempat lain",
     "opsi": "Lebih nyaman membeli di tempat lain",
-    "n": 3,
-    "pct": 5.9
+    "n": 2,
+    "pct": 5.0
    },
    {
     "label": "Produk tidak tersedia",
     "opsi": "Produk atau layanan yang dibutuhkan tidak tersedia",
     "n": 1,
-    "pct": 2.0
+    "pct": 2.5
    },
    {
     "label": "Lainnya",
     "opsi": "Lainnya",
     "n": 1,
-    "pct": 2.0
-   },
-   {
-    "label": "Tidak tahu layanannya",
-    "opsi": "Tidak mengetahui layanan yang tersedia",
-    "n": 1,
-    "pct": 2.0
+    "pct": 2.5
    }
   ],
   "sengaja_datang": [
    {
-    "label": "Ya, beberapa kali",
-    "opsi": "Ya, beberapa kali",
-    "n": 30,
-    "pct": 41.1
-   },
-   {
     "label": "Belum pernah",
     "opsi": "Belum pernah",
-    "n": 29,
-    "pct": 39.7
+    "n": 25,
+    "pct": 42.4
+   },
+   {
+    "label": "Ya, beberapa kali",
+    "opsi": "Ya, beberapa kali",
+    "n": 23,
+    "pct": 39.0
    },
    {
     "label": "Ya, satu kali",
     "opsi": "Ya, satu kali",
-    "n": 8,
-    "pct": 11.0
+    "n": 7,
+    "pct": 11.9
    },
    {
     "label": "Tidak ingat",
     "opsi": "Tidak ingat",
-    "n": 6,
-    "pct": 8.2
+    "n": 4,
+    "pct": 6.8
    }
   ]
  },
  "kebocoran": [
   {
    "kategori": "Makanan siap saji",
-   "luar": 16.4,
-   "spbu": 11.0
+   "luar": 11.9,
+   "spbu": 8.5
   },
   {
    "kategori": "Kopi/minuman",
-   "luar": 26.0,
-   "spbu": 9.6
+   "luar": 22.0,
+   "spbu": 10.2
   },
   {
    "kategori": "Kebutuhan harian",
-   "luar": 24.7,
-   "spbu": 2.7
+   "luar": 25.4,
+   "spbu": 3.4
   },
   {
    "kategori": "Ban/angin/nitrogen",
-   "luar": 32.9,
-   "spbu": 11.0
+   "luar": 32.2,
+   "spbu": 13.6
   },
   {
    "kategori": "Pembayaran",
-   "luar": 5.5,
-   "spbu": 1.4
+   "luar": 5.1,
+   "spbu": 1.7
   }
  ],
  "tempat_beli": [
   {
    "label": "Minimarket",
    "opsi": "Minimarket (Indomaret, Alfamart, dan sejenisnya)",
-   "n": 45,
-   "pct": 61.6
-  },
-  {
-   "label": "Bengkel",
-   "opsi": "Bengkel atau tempat servis",
-   "n": 12,
-   "pct": 16.4
+   "n": 35,
+   "pct": 59.3
   },
   {
    "label": "Tidak relevan",
    "opsi": "Tidak relevan",
-   "n": 12,
-   "pct": 16.4
+   "n": 11,
+   "pct": 18.6
+  },
+  {
+   "label": "Bengkel",
+   "opsi": "Bengkel atau tempat servis",
+   "n": 10,
+   "pct": 16.9
   },
   {
    "label": "Kedai kopi/makan",
    "opsi": "Kedai kopi atau tempat makan",
-   "n": 10,
-   "pct": 13.7
+   "n": 7,
+   "pct": 11.9
   },
   {
    "label": "Warung",
    "opsi": "Warung atau toko lokal",
-   "n": 9,
-   "pct": 12.3
+   "n": 7,
+   "pct": 11.9
   },
   {
    "label": "Marketplace",
    "opsi": "Marketplace atau aplikasi online",
-   "n": 5,
+   "n": 4,
    "pct": 6.8
   },
   {
    "label": "Logistik",
    "opsi": "Penyedia layanan logistik",
-   "n": 5,
-   "pct": 6.8
+   "n": 3,
+   "pct": 5.1
   }
  ],
  "alasan_tempat": [
   {
    "label": "Lebih dekat atau mudah dijangkau",
    "opsi": "Lebih dekat atau mudah dijangkau",
-   "n": 38,
-   "pct": 52.1
-  },
-  {
-   "label": "Sudah menjadi kebiasaan",
-   "opsi": "Sudah menjadi kebiasaan",
-   "n": 13,
-   "pct": 17.8
-  },
-  {
-   "label": "Produk lebih lengkap",
-   "opsi": "Produk lebih lengkap",
-   "n": 11,
-   "pct": 15.1
+   "n": 33,
+   "pct": 55.9
   },
   {
    "label": "Pelayanan lebih cepat",
    "opsi": "Pelayanan lebih cepat",
-   "n": 10,
-   "pct": 13.7
+   "n": 8,
+   "pct": 13.6
+  },
+  {
+   "label": "Sudah menjadi kebiasaan",
+   "opsi": "Sudah menjadi kebiasaan",
+   "n": 8,
+   "pct": 13.6
+  },
+  {
+   "label": "Produk lebih lengkap",
+   "opsi": "Produk lebih lengkap",
+   "n": 8,
+   "pct": 13.6
   },
   {
    "label": "Harga lebih murah",
    "opsi": "Harga lebih murah",
-   "n": 5,
+   "n": 4,
    "pct": 6.8
-  },
-  {
-   "label": "Lebih percaya pada penyedia layanan tersebut",
-   "opsi": "Lebih percaya pada penyedia layanan tersebut",
-   "n": 3,
-   "pct": 4.1
   },
   {
    "label": "Lainnya",
    "opsi": "Lainnya",
    "n": 2,
-   "pct": 2.7
+   "pct": 3.4
+  },
+  {
+   "label": "Lebih percaya pada penyedia layanan tersebut",
+   "opsi": "Lebih percaya pada penyedia layanan tersebut",
+   "n": 2,
+   "pct": 3.4
   },
   {
    "label": "Kualitas lebih baik",
    "opsi": "Kualitas lebih baik",
-   "n": 2,
-   "pct": 2.7
+   "n": 1,
+   "pct": 1.7
   },
   {
    "label": "Tersedia promo atau program loyalitas",
    "opsi": "Tersedia promo atau program loyalitas",
    "n": 1,
-   "pct": 1.4
+   "pct": 1.7
   },
   {
    "label": "Tidak relevan",
    "opsi": "Tidak relevan",
    "n": 1,
-   "pct": 1.4
+   "pct": 1.7
   }
  ],
  "permintaan": {
@@ -676,338 +667,332 @@
    {
     "label": "Ban, nitrogen & darurat",
     "opsi": "Layanan ban, nitrogen, dan kebutuhan darurat kendaraan",
-    "n": 34,
-    "pct": 46.6
+    "n": 29,
+    "pct": 49.2
    },
    {
     "label": "Makanan/minuman cepat",
     "opsi": "Makanan/minuman praktis dengan proses pembelian cepat",
-    "n": 30,
-    "pct": 41.1
+    "n": 26,
+    "pct": 44.1
    },
    {
     "label": "Tempat istirahat",
     "opsi": "Tempat istirahat yang nyaman bagi pengemudi",
-    "n": 26,
-    "pct": 35.6
+    "n": 23,
+    "pct": 39.0
    },
    {
     "label": "Servis ringan",
     "opsi": "Layanan servis motor atau mobil ringan",
-    "n": 16,
-    "pct": 21.9
-   },
-   {
-    "label": "Pembayaran digital",
-    "opsi": "Layanan pembayaran dan transaksi digital",
-    "n": 11,
-    "pct": 15.1
+    "n": 12,
+    "pct": 20.3
    },
    {
     "label": "Kebutuhan harian",
     "opsi": "Layanan kebutuhan harian",
     "n": 8,
-    "pct": 11.0
+    "pct": 13.6
+   },
+   {
+    "label": "Pembayaran digital",
+    "opsi": "Layanan pembayaran dan transaksi digital",
+    "n": 8,
+    "pct": 13.6
    },
    {
     "label": "Cuci cepat",
     "opsi": "Layanan cuci kendaraan cepat",
-    "n": 8,
-    "pct": 11.0
+    "n": 7,
+    "pct": 11.9
    },
    {
     "label": "Tidak butuh",
     "opsi": "Tidak membutuhkan layanan tambahan",
-    "n": 7,
-    "pct": 9.6
-   },
-   {
-    "label": "Area kurir/ojol",
-    "opsi": "Area khusus bagi kurir atau ojek online",
-    "n": 4,
-    "pct": 5.5
+    "n": 5,
+    "pct": 8.5
    },
    {
     "label": "Lainnya",
     "opsi": "Lainnya",
     "n": 3,
-    "pct": 4.1
+    "pct": 5.1
    },
    {
     "label": "Pesan via aplikasi",
     "opsi": "Pemesanan produk melalui aplikasi untuk diambil di SPBU",
     "n": 3,
-    "pct": 4.1
+    "pct": 5.1
+   },
+   {
+    "label": "Area kurir/ojol",
+    "opsi": "Area khusus bagi kurir atau ojek online",
+    "n": 3,
+    "pct": 5.1
    },
    {
     "label": "Titik paket online",
     "opsi": "Titik pengambilan atau pengembalian paket online",
     "n": 3,
-    "pct": 4.1
+    "pct": 5.1
    }
   ],
   "prioritas": [
    {
     "label": "Ban, nitrogen & darurat",
     "opsi": "Layanan ban, nitrogen, dan kebutuhan darurat kendaraan",
-    "n": 25,
-    "pct": 34.2
+    "n": 21,
+    "pct": 35.6
    },
    {
     "label": "Tempat istirahat",
     "opsi": "Tempat istirahat yang nyaman bagi pengemudi",
-    "n": 21,
-    "pct": 28.8
+    "n": 15,
+    "pct": 25.4
    },
    {
     "label": "Makanan/minuman cepat",
     "opsi": "Makanan/minuman praktis dengan proses pembelian cepat",
-    "n": 17,
-    "pct": 23.3
+    "n": 15,
+    "pct": 25.4
    },
    {
     "label": "Servis ringan",
     "opsi": "Layanan servis motor atau mobil ringan",
-    "n": 8,
-    "pct": 11.0
+    "n": 5,
+    "pct": 8.5
    },
    {
     "label": "Tidak butuh",
     "opsi": "Tidak membutuhkan layanan tambahan",
-    "n": 7,
-    "pct": 9.6
+    "n": 5,
+    "pct": 8.5
    },
    {
     "label": "Pembayaran digital",
     "opsi": "Layanan pembayaran dan transaksi digital",
-    "n": 4,
-    "pct": 5.5
-   },
-   {
-    "label": "Kebutuhan harian",
-    "opsi": "Layanan kebutuhan harian",
     "n": 3,
-    "pct": 4.1
+    "pct": 5.1
    },
    {
     "label": "Lainnya",
     "opsi": "Lainnya",
     "n": 2,
-    "pct": 2.7
+    "pct": 3.4
    },
    {
-    "label": "Cuci cepat",
-    "opsi": "Layanan cuci kendaraan cepat",
-    "n": 1,
-    "pct": 1.4
+    "label": "Kebutuhan harian",
+    "opsi": "Layanan kebutuhan harian",
+    "n": 2,
+    "pct": 3.4
    },
    {
     "label": "Titik paket online",
     "opsi": "Titik pengambilan atau pengembalian paket online",
     "n": 1,
-    "pct": 1.4
+    "pct": 1.7
    }
   ],
   "kemungkinan": [
    {
     "label": "1",
-    "n": 9,
-    "pct": 12.3
+    "n": 8,
+    "pct": 13.6
    },
    {
     "label": "2",
-    "n": 6,
-    "pct": 8.2
+    "n": 4,
+    "pct": 6.8
    },
    {
     "label": "3",
-    "n": 25,
-    "pct": 34.2
+    "n": 17,
+    "pct": 28.8
    },
    {
     "label": "4",
-    "n": 12,
-    "pct": 16.4
+    "n": 11,
+    "pct": 18.6
    },
    {
     "label": "5",
-    "n": 21,
-    "pct": 28.8
+    "n": 19,
+    "pct": 32.2
    }
   ],
   "faktor": [
    {
     "label": "Proses pelayanan cepat",
     "opsi": "Proses pelayanan cepat",
-    "n": 35,
-    "pct": 47.9
-   },
-   {
-    "label": "Harga kompetitif",
-    "opsi": "Harga kompetitif",
-    "n": 23,
-    "pct": 31.5
+    "n": 28,
+    "pct": 47.5
    },
    {
     "label": "Lokasi & akses nyaman",
     "opsi": "Lokasi dan akses yang nyaman",
-    "n": 21,
-    "pct": 28.8
+    "n": 19,
+    "pct": 32.2
+   },
+   {
+    "label": "Harga kompetitif",
+    "opsi": "Harga kompetitif",
+    "n": 18,
+    "pct": 30.5
    },
    {
     "label": "Tidak ganggu isi BBM",
     "opsi": "Tidak mengganggu aktivitas pengisian BBM",
-    "n": 19,
-    "pct": 26.0
+    "n": 17,
+    "pct": 28.8
    },
    {
     "label": "Kualitas terjamin",
     "opsi": "Kualitas produk atau layanan terjamin",
-    "n": 14,
-    "pct": 19.2
-   },
-   {
-    "label": "Pembayaran mudah",
-    "opsi": "Pembayaran mudah",
-    "n": 13,
-    "pct": 17.8
+    "n": 12,
+    "pct": 20.3
    },
    {
     "label": "Promo/poin loyalitas",
     "opsi": "Tersedia promo atau poin loyalitas",
-    "n": 12,
-    "pct": 16.4
+    "n": 11,
+    "pct": 18.6
+   },
+   {
+    "label": "Pembayaran mudah",
+    "opsi": "Pembayaran mudah",
+    "n": 11,
+    "pct": 18.6
    },
    {
     "label": "Jam operasional panjang",
     "opsi": "Jam operasional panjang",
-    "n": 11,
-    "pct": 15.1
+    "n": 8,
+    "pct": 13.6
    },
    {
     "label": "Lainnya",
     "opsi": "Lainnya",
-    "n": 2,
-    "pct": 2.7
+    "n": 1,
+    "pct": 1.7
    }
   ],
   "cara_akses": [
    {
     "label": "Datang langsung",
     "opsi": "Datang langsung ke toko atau lokasi layanan",
-    "n": 43,
-    "pct": 58.9
-   },
-   {
-    "label": "Pesan di aplikasi, ambil di SPBU",
-    "opsi": "Memesan terlebih dahulu melalui aplikasi, lalu mengambilnya di area khusus",
-    "n": 10,
-    "pct": 13.7
-   },
-   {
-    "label": "Tidak tertarik",
-    "opsi": "Tidak tertarik menggunakan layanan tambahan",
-    "n": 9,
-    "pct": 12.3
+    "n": 40,
+    "pct": 67.8
    },
    {
     "label": "Tidak ada preferensi",
     "opsi": "Tidak memiliki preferensi",
     "n": 7,
-    "pct": 9.6
+    "pct": 11.9
+   },
+   {
+    "label": "Pesan di aplikasi, ambil di SPBU",
+    "opsi": "Memesan terlebih dahulu melalui aplikasi, lalu mengambilnya di area khusus",
+    "n": 7,
+    "pct": 11.9
+   },
+   {
+    "label": "Tidak tertarik",
+    "opsi": "Tidak tertarik menggunakan layanan tambahan",
+    "n": 4,
+    "pct": 6.8
    },
    {
     "label": "Pesan dengan jadwal",
     "opsi": "Memesan layanan melalui aplikasi dengan jadwal kedatangan",
-    "n": 4,
-    "pct": 5.5
+    "n": 1,
+    "pct": 1.7
    }
   ],
   "motor_vs_mobil": [
    {
     "layanan": "Ban, nitrogen & darurat",
-    "semua": 46.6,
-    "motor": 50.0,
-    "mobil": 36.4
+    "semua": 49.2,
+    "motor": 51.3,
+    "mobil": 42.1
    },
    {
     "layanan": "Makanan/minuman cepat",
-    "semua": 41.1,
-    "motor": 34.0,
-    "mobil": 54.5
+    "semua": 44.1,
+    "motor": 38.5,
+    "mobil": 52.6
    },
    {
     "layanan": "Tempat istirahat",
-    "semua": 35.6,
-    "motor": 34.0,
-    "mobil": 40.9
+    "semua": 39.0,
+    "motor": 35.9,
+    "mobil": 47.4
    },
    {
     "layanan": "Servis ringan",
-    "semua": 21.9,
-    "motor": 26.0,
-    "mobil": 13.6
-   },
-   {
-    "layanan": "Pembayaran digital",
-    "semua": 15.1,
-    "motor": 18.0,
-    "mobil": 9.1
+    "semua": 20.3,
+    "motor": 25.6,
+    "mobil": 10.5
    },
    {
     "layanan": "Kebutuhan harian",
-    "semua": 11.0,
-    "motor": 12.0,
-    "mobil": 9.1
+    "semua": 13.6,
+    "motor": 15.4,
+    "mobil": 10.5
+   },
+   {
+    "layanan": "Pembayaran digital",
+    "semua": 13.6,
+    "motor": 15.4,
+    "mobil": 10.5
    },
    {
     "layanan": "Cuci cepat",
-    "semua": 11.0,
-    "motor": 14.0,
-    "mobil": 4.5
+    "semua": 11.9,
+    "motor": 15.4,
+    "mobil": 5.3
    },
    {
     "layanan": "Tidak butuh",
-    "semua": 9.6,
-    "motor": 14.0,
-    "mobil": 0.0
-   },
-   {
-    "layanan": "Area kurir/ojol",
-    "semua": 5.5,
-    "motor": 8.0,
+    "semua": 8.5,
+    "motor": 12.8,
     "mobil": 0.0
    },
    {
     "layanan": "Lainnya",
-    "semua": 4.1,
-    "motor": 2.0,
-    "mobil": 4.5
+    "semua": 5.1,
+    "motor": 2.6,
+    "mobil": 5.3
    },
    {
     "layanan": "Pesan via aplikasi",
-    "semua": 4.1,
-    "motor": 6.0,
+    "semua": 5.1,
+    "motor": 7.7,
+    "mobil": 0.0
+   },
+   {
+    "layanan": "Area kurir/ojol",
+    "semua": 5.1,
+    "motor": 7.7,
     "mobil": 0.0
    },
    {
     "layanan": "Titik paket online",
-    "semua": 4.1,
-    "motor": 4.0,
-    "mobil": 4.5
+    "semua": 5.1,
+    "motor": 5.1,
+    "mobil": 5.3
    }
   ],
-  "n_motor": 50,
-  "n_mobil": 22
+  "n_motor": 39,
+  "n_mobil": 19
  },
  "kota": [
   {
    "kabkota": "Kota Medan",
    "provinsi": "Sumatera Utara",
-   "responden": 24,
+   "responden": 14,
    "ambigu": 0,
-   "layanan_teratas": "Ban, nitrogen & darurat, Makanan/minuman cepat",
-   "beli_nonbbm_pct": 25.0,
+   "layanan_teratas": "Makanan/minuman cepat, Ban, nitrogen & darurat",
+   "beli_nonbbm_pct": 28.6,
    "spbu": 93,
    "lahan": 605,
    "kosong": 141,
@@ -1026,18 +1011,6 @@
    "okupansi_pct": 81.6
   },
   {
-   "kabkota": "Kabupaten Deli Serdang",
-   "provinsi": "Sumatera Utara",
-   "responden": 6,
-   "ambigu": 0,
-   "layanan_teratas": "Makanan/minuman cepat, Ban, nitrogen & darurat",
-   "beli_nonbbm_pct": 0.0,
-   "spbu": 52,
-   "lahan": 271,
-   "kosong": 73,
-   "okupansi_pct": 73.1
-  },
-  {
    "kabkota": "Kabupaten Purbalingga",
    "provinsi": "Jawa Tengah",
    "responden": 4,
@@ -1048,6 +1021,18 @@
    "lahan": 110,
    "kosong": 21,
    "okupansi_pct": 80.9
+  },
+  {
+   "kabkota": "Kabupaten Deli Serdang",
+   "provinsi": "Sumatera Utara",
+   "responden": 3,
+   "ambigu": 0,
+   "layanan_teratas": "Makanan/minuman cepat, Ban, nitrogen & darurat",
+   "beli_nonbbm_pct": 0.0,
+   "spbu": 52,
+   "lahan": 271,
+   "kosong": 73,
+   "okupansi_pct": 73.1
   },
   {
    "kabkota": "Kabupaten Banyumas",
