@@ -1,5 +1,5 @@
 {
- "dibuat": "2026-11-22",
+ "dibuat": "2026-11-25",
  "sumber": {
   "brightspace": "brightspace.pertamina.com (scrape 2026-11-14)",
   "survei": "Survei perilaku konsumen SPBU (Google Form, November 2026) (n = 59)",
@@ -762,6 +762,754 @@
       }
      ]
     }
+   },
+   "masalah": {
+    "pertanyaan": "Mengapa lahan kosong yang dipilih sebagai masalah, mengapa lahan itu kosong, dan apa yang bisa diperbuat aplikasi pencocokan?",
+    "inti": "Atribut lahan bukan penjelasan utama kekosongan. Lahan kecil, lahan bertarif, dan lahan di dalam maupun di luar bangunan kosong pada tingkat yang dekat dengan rata-rata 17,4%. Lahan besar memang lebih sering kosong, tetapi jumlahnya sedikit. Yang berbeda tajam adalah wilayah dan SPBU-nya. Dugaan kerja kami: lahan tidak sampai ke penyewa yang tepat. Dugaan itu belum terbukti, karena alasan di tiap SPBU hanya diketahui pengelolanya: 0 dari 20 lahan verifikasi sudah terjawab.",
+    "alasan": [
+     {
+      "judul": "Besar dan terukur",
+      "angka": "5.917 lahan",
+      "isi": "17,4% dari 33.990 lahan kosong, di 2.900 SPBU. Tarif acuannya Rp 143,4 M per tahun, termasuk perkiraan untuk lahan tanpa tarif."
+     },
+     {
+      "judul": "Terkonsentrasi",
+      "angka": "674 SPBU",
+      "isi": "SPBU itu memuat 51% lahan kosong, jadi pekerjaannya bisa dimulai dari satu daftar SPBU, bukan seluruh jaringan."
+     },
+     {
+      "judul": "Belum punya proses",
+      "angka": "pengamatan",
+      "isi": "Di Brightspace, tenant mencari sendiri per kota atau kode SPBU, dan SPBU menunggu peminat datang. Ini pengamatan situs (14 Nov 2026) dan wawancara dealer, bukan angka."
+     },
+     {
+      "judul": "Bisa diuji dengan data yang ada",
+      "angka": "66% bertarif",
+      "isi": "Luas tercatat di 97% lahan kosong dan tarif di 66%. Pencocokan bisa diuji tanpa menunggu data baru."
+     }
+    ],
+    "banding": [
+     {
+      "isu": "Lahan kosong",
+      "angka": "5.917 lahan; tarif acuan Rp 143,4 M per tahun",
+      "sifat": "Belum punya proses yang berjalan, dan bisa diuji dengan data yang ada.",
+      "keputusan": "Dikerjakan"
+     },
+     {
+      "isu": "Kontrak yang akan habis",
+      "angka": "18.556 kontrak (69%) habis dalam 12 bulan",
+      "sifat": "Siklus rutin: 74% kontrak berdurasi sekitar satu tahun, dan perpanjangan sudah punya pelaku.",
+      "keputusan": "Dijaga"
+     },
+     {
+      "isu": "Konsentrasi tenant",
+      "angka": "10 tenant terbesar memegang 23% lahan tersewa",
+      "sifat": "Risiko portofolio, bukan pekerjaan yang bisa diuji dalam enam minggu.",
+      "keputusan": "Dipantau"
+     },
+     {
+      "isu": "Ketergantungan pada bank dan ATM",
+      "angka": "6.478 lahan (24% lahan tersewa)",
+      "sifat": "Risiko saat perpanjangan, bukan kekosongan hari ini.",
+      "keputusan": "Dipantau"
+     }
+    ],
+    "penyebab": [
+     {
+      "dugaan": "Lahannya terlalu kecil",
+      "bukti": "Lahan ≤ 10 m²: 15,4% kosong, di bawah rata-rata 17,4%. 58% lahan kosong sekecil itu karena 65% dari semua lahan memang ≤ 10 m².",
+      "terbukti": "tidak"
+     },
+     {
+      "dugaan": "Lahan besar lebih sulit terisi",
+      "bukti": "Tingkat kosong naik di kelas yang lebih besar, sampai 26,4% di kelas > 300 m². Tetapi lahan di atas 10 m² hanya 39% dari lahan kosong.",
+      "terbukti": "sebagian"
+     },
+     {
+      "dugaan": "Tarif tidak tercantum",
+      "bukti": "Lahan tanpa tarif: 16,9% kosong. Lahan bertarif: 17,7% kosong. Mencantumkan tarif saja tidak membuat lahan lebih laku.",
+      "terbukti": "tidak"
+     },
+     {
+      "dugaan": "Tarif kemahalan",
+      "bukti": "Di SPBU dan kelas luas yang sama, tarif per m² lahan kosong 1,00 kali lahan tersewa (nilai tengah dari 1.810 pasangan). Dibanding lahan tersewa sekelas di kotanya, 36,6% lahan kosong bertarif dipatok lebih dari 1,25 kali nilai tengah; pada lahan tersewa sendiri angkanya 35,5%.",
+      "terbukti": "tidak"
+     },
+     {
+      "dugaan": "Posisi lahan",
+      "bukti": "Di dalam bangunan: 17,5% kosong. Di luar bangunan: 17,0% kosong.",
+      "terbukti": "tidak"
+     },
+     {
+      "dugaan": "Wilayah dan lokasi",
+      "bukti": "Antarprovinsi: Nusa Tenggara Barat 6% sampai Kalimantan Barat 34%. Menurut lingkungan SPBU: pusat kota 15% sampai luar kota 20%.",
+      "terbukti": "ya"
+     },
+     {
+      "dugaan": "SPBU tertentu",
+      "bukti": "674 SPBU dengan 3 lahan kosong atau lebih memuat 51% lahan kosong. 50% SPBU berlahan tidak punya lahan kosong sama sekali.",
+      "terbukti": "ya"
+     },
+     {
+      "dugaan": "Data salah",
+      "bukti": "746 lahan (13%) kosong di Brightspace tetapi tercatat tersewa di master lahan. Sebagian karena satu kode lahan dipakai beberapa lahan.",
+      "terbukti": "ya"
+     },
+     {
+      "dugaan": "Permintaan setempat atau upaya pemasaran pengelola",
+      "bukti": "Data tidak mencatatnya. Hanya pengelola SPBU yang tahu. Lembar verifikasi: 0 dari 20 lahan sudah terjawab.",
+      "terbukti": "belum"
+     }
+    ],
+    "kelas_luas": [
+     {
+      "label": "≤ 10 m²",
+      "value": 15.4,
+      "kosong": 3409,
+      "total": 22117
+     },
+     {
+      "label": "10–37 m²",
+      "value": 19.8,
+      "kosong": 1268,
+      "total": 6403
+     },
+     {
+      "label": "37–74 m²",
+      "value": 24.7,
+      "kosong": 408,
+      "total": 1649
+     },
+     {
+      "label": "74–150 m²",
+      "value": 23.1,
+      "kosong": 345,
+      "total": 1494
+     },
+     {
+      "label": "150–300 m²",
+      "value": 20.2,
+      "kosong": 166,
+      "total": 821
+     },
+     {
+      "label": "> 300 m²",
+      "value": 26.4,
+      "kosong": 139,
+      "total": 526
+     }
+    ],
+    "rata_rata": 17.4,
+    "penanda": {
+     "total": 5917,
+     "rows": [
+      {
+       "label": "SPBU menumpuk lahan kosong",
+       "value": 3005,
+       "pct": 50.8,
+       "tersewa_pct": null
+      },
+      {
+       "label": "Tanpa tarif",
+       "value": 1964,
+       "pct": 33.2,
+       "tersewa_pct": 34.6
+      },
+      {
+       "label": "Tarif di atas lahan sekelas",
+       "value": 1427,
+       "pct": 24.1,
+       "tersewa_pct": 23.0
+      },
+      {
+       "label": "Tercatat tersewa di master lahan",
+       "value": 746,
+       "pct": 12.6,
+       "tersewa_pct": null
+      },
+      {
+       "label": "Belum ada penyewa sekelas di kota ini",
+       "value": 171,
+       "pct": 2.9,
+       "tersewa_pct": null
+      },
+      {
+       "label": "Tarif di luar rentang wajar",
+       "value": 51,
+       "pct": 0.9,
+       "tersewa_pct": null
+      },
+      {
+       "label": "Tidak ada penanda dari data",
+       "value": 967,
+       "pct": 16.3,
+       "tersewa_pct": null
+      }
+     ],
+     "catatan": "Satu lahan bisa punya lebih dari satu penanda. Penanda menunjukkan apa yang terlihat di data, bukan alasan sebenarnya lahan itu kosong."
+    },
+    "sampel": {
+     "sumber": "Lembar verifikasi 20 lahan kosong (Jabodetabek; 8 COCO dan 12 DODO, dipilih acak menurut kelas luas, paling banyak satu lahan per SPBU).",
+     "terverifikasi": 0,
+     "rows": [
+      {
+       "kode": "3110303-OU-020",
+       "spbu_id": "Amseaiw8KGPaRng6tDcL3A",
+       "kota": "Kodya Jakarta Pusat",
+       "tipe": "COCO",
+       "luas": 9.0,
+       "kelas": "≤ 10 m²",
+       "tarif": 48000000.0,
+       "posisi": "Diluar Bangunan",
+       "rasio_tarif": 0.76,
+       "pembanding": 154,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 5,
+       "spbu_lahan": 29,
+       "master": "Tersedia",
+       "penanda": [
+        "SPBU menumpuk lahan kosong"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3111401-IN-012",
+       "spbu_id": "H4c33CYF7xoAdFsBMQ6W4A",
+       "kota": "Kodya Jakarta Barat",
+       "tipe": "COCO",
+       "luas": 2.0,
+       "kelas": "≤ 10 m²",
+       "tarif": 1100000.0,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": 0.11,
+       "pembanding": 168,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 3,
+       "spbu_lahan": 27,
+       "master": "Tersewa",
+       "penanda": [
+        "Tercatat tersewa di master lahan",
+        "SPBU menumpuk lahan kosong"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3112402-IN-016",
+       "spbu_id": "goC_zcXrk81DiwH_kx2Ylw",
+       "kota": "Kodya Jakarta Selatan",
+       "tipe": "COCO",
+       "luas": 4.0,
+       "kelas": "≤ 10 m²",
+       "tarif": null,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": null,
+       "pembanding": 0,
+       "tingkat_pembanding": null,
+       "spbu_kosong": 13,
+       "spbu_lahan": 30,
+       "master": "Tersedia",
+       "penanda": [
+        "SPBU menumpuk lahan kosong",
+        "Tanpa tarif"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3114301-IN-010",
+       "spbu_id": "nl1gyBQBdKb7XhlE4lvO-Q",
+       "kota": "Kodya Jakarta Utara",
+       "tipe": "COCO",
+       "luas": 2.0,
+       "kelas": "≤ 10 m²",
+       "tarif": null,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": null,
+       "pembanding": 0,
+       "tingkat_pembanding": null,
+       "spbu_kosong": 2,
+       "spbu_lahan": 15,
+       "master": "Tersewa",
+       "penanda": [
+        "Tercatat tersewa di master lahan",
+        "Tanpa tarif"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3115401-IN-007",
+       "spbu_id": "yqvd_9TVMNBmDaRJsl_ptg",
+       "kota": "KotaTangerangSelatan",
+       "tipe": "COCO",
+       "luas": 3.0,
+       "kelas": "≤ 10 m²",
+       "tarif": 87000000.0,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": 5.8,
+       "pembanding": 228,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 2,
+       "spbu_lahan": 22,
+       "master": "Tersewa",
+       "penanda": [
+        "Tercatat tersewa di master lahan",
+        "Tarif di atas lahan sekelas"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3112402-IN-011",
+       "spbu_id": "goC_zcXrk81DiwH_kx2Ylw",
+       "kota": "Kodya Jakarta Selatan",
+       "tipe": "COCO",
+       "luas": 16.0,
+       "kelas": "10–37 m²",
+       "tarif": null,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": null,
+       "pembanding": 0,
+       "tingkat_pembanding": null,
+       "spbu_kosong": 13,
+       "spbu_lahan": 30,
+       "master": "Tersedia",
+       "penanda": [
+        "SPBU menumpuk lahan kosong",
+        "Tanpa tarif"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3117503-OU-002",
+       "spbu_id": "aS2NFWpXh4HVuWmNm34wXQ",
+       "kota": "Kabupaten Bekasi",
+       "tipe": "COCO",
+       "luas": 28.0,
+       "kelas": "10–37 m²",
+       "tarif": 2352000.0,
+       "posisi": "Diluar Bangunan",
+       "rasio_tarif": 0.06,
+       "pembanding": 49,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 6,
+       "spbu_lahan": 20,
+       "master": "Tersedia",
+       "penanda": [
+        "SPBU menumpuk lahan kosong"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3113301-OU-001",
+       "spbu_id": "00_4THvOc47x_oQaFN-MLw",
+       "kota": "Kodya Jakarta Timur",
+       "tipe": "COCO",
+       "luas": 80.0,
+       "kelas": "74–150 m²",
+       "tarif": null,
+       "posisi": "Diluar Bangunan",
+       "rasio_tarif": null,
+       "pembanding": 0,
+       "tingkat_pembanding": null,
+       "spbu_kosong": 5,
+       "spbu_lahan": 26,
+       "master": "Tersedia",
+       "penanda": [
+        "SPBU menumpuk lahan kosong",
+        "Tanpa tarif"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3412302-OU-003",
+       "spbu_id": "uM2ciq1TP38HyEv5CCASDg",
+       "kota": "Kodya Jakarta Selatan",
+       "tipe": "DODO",
+       "luas": 3.0,
+       "kelas": "≤ 10 m²",
+       "tarif": 23000000.0,
+       "posisi": "Diluar Bangunan",
+       "rasio_tarif": 1.1,
+       "pembanding": 397,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 2,
+       "spbu_lahan": 4,
+       "master": "Tersedia",
+       "penanda": [],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3412806-OU-002",
+       "spbu_id": "-WWJk-b7WLqhlmtG4L8hzw",
+       "kota": "Kodya Jakarta Selatan",
+       "tipe": "DODO",
+       "luas": 4.0,
+       "kelas": "≤ 10 m²",
+       "tarif": 6600000.0,
+       "posisi": "Diluar Bangunan",
+       "rasio_tarif": 0.24,
+       "pembanding": 397,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 1,
+       "spbu_lahan": 6,
+       "master": "Tersedia",
+       "penanda": [],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3413910-OU-003",
+       "spbu_id": "aYkzVG2HNtXhJLXseUnEZg",
+       "kota": "Kodya Jakarta Timur",
+       "tipe": "DODO",
+       "luas": 9.0,
+       "kelas": "≤ 10 m²",
+       "tarif": null,
+       "posisi": "Diluar Bangunan",
+       "rasio_tarif": null,
+       "pembanding": 0,
+       "tingkat_pembanding": null,
+       "spbu_kosong": 1,
+       "spbu_lahan": 4,
+       "master": "Tersedia",
+       "penanda": [
+        "Tanpa tarif"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3416515-OU-015",
+       "spbu_id": "Hkeplf37SVOTMxebsDCf0Q",
+       "kota": "Kodya Depok",
+       "tipe": "DODO",
+       "luas": 3.0,
+       "kelas": "≤ 10 m²",
+       "tarif": null,
+       "posisi": "Diluar Bangunan",
+       "rasio_tarif": null,
+       "pembanding": 0,
+       "tingkat_pembanding": null,
+       "spbu_kosong": 4,
+       "spbu_lahan": 15,
+       "master": "Tersedia",
+       "penanda": [
+        "SPBU menumpuk lahan kosong",
+        "Tanpa tarif"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3416817-OU-005",
+       "spbu_id": "lFQDIdxFlbfQFNQRWmEqWA",
+       "kota": "Kabupaten Bogor",
+       "tipe": "DODO",
+       "luas": 6.0,
+       "kelas": "≤ 10 m²",
+       "tarif": 21600000.0,
+       "posisi": "Diluar Bangunan",
+       "rasio_tarif": 0.6,
+       "pembanding": 230,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 1,
+       "spbu_lahan": 4,
+       "master": "Tersedia",
+       "penanda": [],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3417141-IN-001",
+       "spbu_id": "J_0bLg5ozOkvvZDt0DjLhA",
+       "kota": "Kodya Bekasi",
+       "tipe": "DODO",
+       "luas": 9.0,
+       "kelas": "≤ 10 m²",
+       "tarif": 6000000.0,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": 0.16,
+       "pembanding": 399,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 4,
+       "spbu_lahan": 7,
+       "master": "Tersedia",
+       "penanda": [
+        "SPBU menumpuk lahan kosong"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3417205-IN-005",
+       "spbu_id": "2vmcpGbqdGzxSZMdTeYjNQ",
+       "kota": "Kabupaten Bekasi",
+       "tipe": "DODO",
+       "luas": 6.0,
+       "kelas": "≤ 10 m²",
+       "tarif": 23000000.0,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": 0.96,
+       "pembanding": 330,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 5,
+       "spbu_lahan": 22,
+       "master": "Tersedia",
+       "penanda": [
+        "SPBU menumpuk lahan kosong"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3412304-IN-014",
+       "spbu_id": "TX0__XA70DR65G9niBFKzQ",
+       "kota": "Kodya Jakarta Selatan",
+       "tipe": "DODO",
+       "luas": 20.0,
+       "kelas": "10–37 m²",
+       "tarif": 5000000.0,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": 0.18,
+       "pembanding": 90,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 8,
+       "spbu_lahan": 18,
+       "master": "Tersedia",
+       "penanda": [
+        "SPBU menumpuk lahan kosong"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3416511-IN-003",
+       "spbu_id": "hRl08Xj7roFBzi4-7fkzQQ",
+       "kota": "Kodya Depok",
+       "tipe": "DODO",
+       "luas": 28.0,
+       "kelas": "10–37 m²",
+       "tarif": 24000000.0,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": 0.59,
+       "pembanding": 34,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 1,
+       "spbu_lahan": 7,
+       "master": "Tersedia",
+       "penanda": [],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3417149-IN-004",
+       "spbu_id": "EjweJ00frO4Z9-CkbT9Mcg",
+       "kota": "Kodya Bekasi",
+       "tipe": "DODO",
+       "luas": 24.0,
+       "kelas": "10–37 m²",
+       "tarif": 6000000.0,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": 0.14,
+       "pembanding": 59,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 4,
+       "spbu_lahan": 30,
+       "master": "Tersedia",
+       "penanda": [
+        "SPBU menumpuk lahan kosong"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3416514-IN-003",
+       "spbu_id": "q6twIzLeR8YMxUIIasGORQ",
+       "kota": "Kodya Depok",
+       "tipe": "DODO",
+       "luas": 160.0,
+       "kelas": "150–300 m²",
+       "tarif": 20000000.0,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": 0.63,
+       "pembanding": 92,
+       "tingkat_pembanding": "provinsi",
+       "spbu_kosong": 1,
+       "spbu_lahan": 6,
+       "master": "Tersedia",
+       "penanda": [],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      },
+      {
+       "kode": "3416942-IN-004",
+       "spbu_id": "E6txTHkJiYFBB6WhIzwavQ",
+       "kota": "Kabupaten Bogor",
+       "tipe": "DODO",
+       "luas": 63.0,
+       "kelas": "37–74 m²",
+       "tarif": 70118000.0,
+       "posisi": "Didalam Bangunan",
+       "rasio_tarif": 1.44,
+       "pembanding": 19,
+       "tingkat_pembanding": "kota",
+       "spbu_kosong": 4,
+       "spbu_lahan": 13,
+       "master": "Tersewa",
+       "penanda": [
+        "Tercatat tersewa di master lahan",
+        "SPBU menumpuk lahan kosong",
+        "Tarif di atas lahan sekelas"
+       ],
+       "benar_kosong": null,
+       "sejak": null,
+       "alasan": null,
+       "keterangan": null,
+       "ditanyakan": null,
+       "cara": null
+      }
+     ],
+     "ringkas": [
+      "12 dari 20: spbu menumpuk lahan kosong",
+      "6 dari 20: tanpa tarif",
+      "2 dari 20: tarif di atas lahan sekelas",
+      "4 dari 20: tercatat tersewa di master lahan",
+      "5 dari 20: tidak ada penanda dari data"
+     ],
+     "kode_alasan": {
+      "A": "Tidak ada peminat",
+      "B": "Ada peminat tetapi tidak cocok (ukuran, daya, akses)",
+      "C": "Tarif tidak disepakati",
+      "D": "Pengelola tidak menawarkan atau menahan lahan",
+      "E": "Data salah, lahan sudah terisi",
+      "F": "Lainnya"
+     },
+     "batas_tarif": 1.25,
+     "min_pembanding": 5
+    },
+    "aplikasi": {
+     "bisa": [
+      {
+       "penyebab": "Lahan tidak sampai ke penyewa yang ukurannya cocok",
+       "tindakan": "Mencocokkan per kelas ukuran: tenant hanya melihat lahan yang masuk rentang kebutuhannya, dan pengelola melihat jenis usaha yang biasa menyewa ukuran itu."
+      },
+      {
+       "penyebab": "674 SPBU menumpuk lahan kosong",
+       "tindakan": "Memberi daftar kerja: SPBU itu memuat 51% lahan kosong, diurutkan dari yang terbanyak."
+      },
+      {
+       "penyebab": "1.964 lahan kosong tanpa tarif",
+       "tindakan": "Menandai lahan yang datanya belum lengkap dan menampilkan tarif lahan tersewa sekelas sebagai acuan bagi pengelola."
+      },
+      {
+       "penyebab": "1.427 lahan bertarif di atas lahan sekelas",
+       "tindakan": "Menunjukkan selisihnya kepada pengelola. Keputusan tarif tetap di tangan pengelola. Lahan tersewa pun banyak yang tarifnya setinggi itu, jadi ini bahan cek, bukan penyebab."
+      },
+      {
+       "penyebab": "746 lahan berstatus beda di dua sumber",
+       "tindakan": "Menahan lahan itu dari penawaran sampai statusnya dipastikan, supaya tenant tidak ditawari lahan yang sudah terisi."
+      },
+      {
+       "penyebab": "Alasan kosong tidak pernah dicatat",
+       "tindakan": "Mencatat alasan menolak dan alasan kosong dengan kode yang sama (A sampai F), supaya penyebab menjadi data, bukan dugaan."
+      }
+     ],
+     "tidak_bisa": [
+      "Mengubah ukuran, posisi, atau lokasi lahan.",
+      "Menurunkan tarif: tarif ditetapkan pengelola dan punya batas bawah.",
+      "Memutuskan apakah pengusaha SPBU mau menyewakan lahannya.",
+      "Menciptakan permintaan di wilayah yang memang sepi."
+     ]
+    },
+    "batas": [
+     "Semua angka adalah potret Brightspace per 14 November 2026; riwayat kapan lahan mulai kosong tidak ada.",
+     "Tarif pembanding memakai lahan tersewa sekelas di kota yang sama, atau di provinsi bila pembandingnya kurang dari lima.",
+     "Tipe SPBU dibaca dari digit kedua nomor SPBU, bukan dari daftar resmi.",
+     "Dua puluh lahan verifikasi semuanya di Jabodetabek, jadi tidak mewakili seluruh Indonesia."
+    ]
    },
    "nama": "NFR Commercial Intelligence & Partnership Platform",
    "kuadran": "Quick Win",

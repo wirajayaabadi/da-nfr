@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { kajian, ASPEK_LABEL, ASPEK_ORDER, VERDICT_COLOR, SUMBER_LABEL, SUMBER_COLOR, KUADRAN_ORDER, SIKAP_COLOR, STATUS_DATA_COLOR, type Grafik, type Matching, type Rencana, type Sumber } from "@/lib/kajian";
+import { kajian, ASPEK_LABEL, ASPEK_ORDER, VERDICT_COLOR, SUMBER_LABEL, SUMBER_COLOR, KUADRAN_ORDER, SIKAP_COLOR, STATUS_DATA_COLOR, TERBUKTI_COLOR, TERBUKTI_LABEL, type Grafik, type Masalah, type Matching, type Rencana, type Sumber } from "@/lib/kajian";
 import { ekonomi, SKENARIO_LABEL, type Skenario } from "@/lib/ekonomi";
 import { n, pct, rp } from "@/lib/format";
 import { ChartCard, DataTable, Pill, Insight } from "@/components/ui";
@@ -45,6 +45,8 @@ export function KajianDetail({ id }: { id: string }) {
       </div>
 
       <div className="mt-4"><Insight><strong>Ringkasan kajian.</strong> {a.ringkasan}</Insight></div>
+
+      {a.masalah && <MasalahSection m={a.masalah} />}
 
       <RencanaSection r={a.rencana} />
       {a.matching?.nilai_tambah && <NilaiTambahSection v={a.matching.nilai_tambah} />}
@@ -168,6 +170,179 @@ function ListCard({ title, items, tone, ordered }: { title: string; items: strin
       <div className="min-w-0">
         <h3 className="text-sm font-semibold">{title}</h3>
         <Tag className={`mt-2 space-y-1.5 pl-5 text-sm leading-5 ${ordered ? "list-decimal" : "list-disc"}`}>{items.map((s) => <li key={s}>{s}</li>)}</Tag>
+      </div>
+    </section>
+  );
+}
+
+/**
+ * Kajian A1: mengapa lahan kosong yang dipilih, mengapa lahan itu kosong, bukti per lahan, dan peran aplikasi pencocokan.
+ * Kolom isi dasbor sempit (dua bilah menu di kiri), jadi tabel di sini paling banyak tiga kolom lebar atau enam kolom angka,
+ * dan putusan ditaruh di bawah nama barisnya supaya tidak tersembunyi di balik gulir mendatar.
+ */
+function MasalahSection({ m }: { m: Masalah }) {
+  const th = "py-2 pr-3 font-medium";
+  const kepala = "border-b border-grid text-left text-xs uppercase tracking-wide text-ink-3";
+  const s = m.sampel;
+  const kali = (v: number) => `${n(v, 2)}×`;
+  const kota = (v: string) => v.replace(/^Kodya /, "").replace(/^Kabupaten /, "Kab. ").replace(/^Kota(?=[A-Z])/, "").replace(/([a-z])([A-Z])/g, "$1 $2");
+  return (
+    <section className="mt-8" aria-labelledby="masalah">
+      <h2 id="masalah" className="text-base font-semibold">Mengapa lahan kosong, dan mengapa lahan itu kosong</h2>
+      <p className="mt-1 max-w-4xl border-l-2 border-accent pl-3 text-sm italic leading-6 text-ink-2">{m.pertanyaan}</p>
+      <div className="mt-3"><Insight><strong>Jawaban singkat.</strong> {m.inti}</Insight></div>
+
+      <h3 className="mb-3 mt-6 text-sm font-semibold">1. Mengapa lahan kosong yang dipilih sebagai masalah</h3>
+      <div className="grid gap-3 sm:grid-cols-2">
+        {m.alasan.map((x) => (
+          <section key={x.judul} className="card p-4">
+            <div className="text-xs font-semibold uppercase tracking-wide text-ink-3">{x.judul}</div>
+            <div className="tnum mt-1 text-xl font-semibold">{x.angka}</div>
+            <p className="mt-1.5 text-xs leading-5 text-ink-2">{x.isi}</p>
+          </section>
+        ))}
+      </div>
+      <div className="card mt-3 p-4">
+        <h4 className="text-xs font-semibold uppercase tracking-wide text-ink-3">Dibanding isu lain yang terlihat di data</h4>
+        <table className="mt-2 w-full text-sm">
+          <thead><tr className={kepala}><th className={th}>Isu dan keputusan</th><th className={th}>Angka</th><th className={th}>Sifatnya</th></tr></thead>
+          <tbody>
+            {m.banding.map((b) => (
+              <tr key={b.isu} className="border-b border-grid/60 align-top last:border-0">
+                <td className="w-[28%] py-2 pr-3">
+                  <div className="font-medium">{b.isu}</div>
+                  <div className="mt-1"><Pill color={b.keputusan === "Dikerjakan" ? "var(--status-good)" : "var(--muted-mark)"}>{b.keputusan}</Pill></div>
+                </td>
+                <td className="tnum w-[32%] py-2 pr-3">{b.angka}</td>
+                <td className="py-2 pr-3 text-xs leading-5 text-ink-2">{b.sifat}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h3 className="mb-3 mt-6 text-sm font-semibold">2. Apakah penyebabnya ukuran, tarif, atau lokasi</h3>
+      <div className="card p-4">
+        <p className="text-xs leading-5 text-ink-3">Tiap dugaan diuji pada semua {n(m.kelas_luas.reduce((t, k) => t + k.total, 0))} lahan berluas tercatat, bukan pada contoh pilihan.</p>
+        <table className="mt-2 w-full text-sm">
+          <thead><tr className={kepala}><th className={th}>Dugaan penyebab</th><th className={th}>Yang ditunjukkan data</th></tr></thead>
+          <tbody>
+            {m.penyebab.map((x) => (
+              <tr key={x.dugaan} className="border-b border-grid/60 align-top last:border-0">
+                <td className="w-[34%] py-2 pr-3">
+                  <div className="font-medium">{x.dugaan}</div>
+                  <div className="mt-1 inline-flex items-center gap-1.5 text-xs font-semibold">
+                    <span className="h-2.5 w-2.5 rounded-full" style={{ background: TERBUKTI_COLOR[x.terbukti] }} aria-hidden />
+                    Terbukti: {TERBUKTI_LABEL[x.terbukti].toLowerCase()}
+                  </div>
+                </td>
+                <td className="py-2 pr-3 text-xs leading-5 text-ink-2">{x.bukti}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="mt-3">
+        <ChartCard
+          title="Tingkat kosong per kelas luas"
+          note={`Rata-rata semua lahan ${pct(m.rata_rata, 1)}. Lahan terkecil justru paling jarang kosong.`}
+          table={<DataTable rows={m.kelas_luas} columns={[
+            { key: "label", label: "Kelas luas" },
+            { key: "kosong", label: "Kosong", align: "right", render: (r) => n(r.kosong) },
+            { key: "total", label: "Semua lahan", align: "right", render: (r) => n(r.total) },
+            { key: "value", label: "Tingkat kosong", align: "right", render: (r) => pct(r.value, 1) },
+          ]} />}
+        >
+          <RankedBars rows={m.kelas_luas} label="label" value="value" format={(v) => pct(v, 1)} height={m.kelas_luas.length * 30 + 16} />
+        </ChartCard>
+      </div>
+
+      <h3 className="mb-3 mt-6 text-sm font-semibold">3. Bukti per lahan: {s.rows.length} lahan kosong</h3>
+      <div className="card p-4">
+        <p className="max-w-4xl text-sm leading-6">
+          Baris kedua tiap lahan memuat penanda, yaitu apa yang terlihat di data untuk lahan itu, dan alasan dari pengelola SPBU.{" "}
+          <strong>{s.terverifikasi} dari {s.rows.length} alasan sudah terjawab.</strong> Selama belum terjawab, alasan sebenarnya belum terbukti.
+        </p>
+        <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-xs text-ink-2">{s.ringkas.map((r) => <li key={r} className="tnum">{r}</li>)}</ul>
+        <div className="mt-3 overflow-x-auto">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className={kepala}>
+                <th className={th}>Lahan</th><th className={`${th} text-right`}>Luas</th><th className={`${th} text-right`}>Tarif acuan/th</th>
+                <th className={`${th} text-right`}>vs sekelas</th><th className={`${th} text-right`}>Kosong di SPBU</th><th className={th}>Master</th>
+              </tr>
+            </thead>
+            {s.rows.map((r) => (
+              <tbody key={r.kode} className="tnum border-b border-grid/60 last:border-0">
+                <tr className="align-top">
+                  <td className="whitespace-nowrap pb-0.5 pr-3 pt-2">
+                    <Link className="font-medium underline underline-offset-2" href={`/data/spbu/${r.spbu_id}`}>{r.kode}</Link>
+                    <span className="ml-2 text-ink-3">{kota(r.kota)} · {r.tipe}</span>
+                  </td>
+                  <td className="whitespace-nowrap pb-0.5 pr-3 pt-2 text-right">{r.luas === null ? "–" : `${n(r.luas, r.luas % 1 ? 1 : 0)} m²`}</td>
+                  <td className="whitespace-nowrap pb-0.5 pr-3 pt-2 text-right">{r.tarif === null ? <span className="text-ink-3">tidak tercatat</span> : rp(r.tarif, 1)}</td>
+                  <td className={`whitespace-nowrap pb-0.5 pr-3 pt-2 text-right ${r.rasio_tarif !== null && r.rasio_tarif > s.batas_tarif ? "font-semibold text-critical" : ""}`} title={r.rasio_tarif === null ? undefined : `Dibanding ${n(r.pembanding)} lahan tersewa sekelas di ${r.tingkat_pembanding} ini`}>
+                    {r.rasio_tarif === null ? "–" : kali(r.rasio_tarif)}
+                  </td>
+                  <td className="whitespace-nowrap pb-0.5 pr-3 pt-2 text-right">{n(r.spbu_kosong)} dari {n(r.spbu_lahan)}</td>
+                  <td className={`whitespace-nowrap pb-0.5 pr-3 pt-2 ${r.master === "Tersewa" ? "font-semibold text-critical" : ""}`}>{r.master ?? "–"}</td>
+                </tr>
+                <tr>
+                  <td colSpan={6} className="pb-2 pr-3 leading-5">
+                    <span className="text-ink-3">Penanda: </span>{r.penanda.length ? r.penanda.join("; ") : <span className="text-ink-3">tidak ada</span>}
+                    <span className="mx-2 text-ink-3" aria-hidden>|</span>
+                    <span className="text-ink-3">Alasan pengelola: </span>
+                    {r.alasan
+                      ? <><strong>{r.alasan}.</strong> {s.kode_alasan[r.alasan]}{r.keterangan ? ` (${r.keterangan})` : ""}</>
+                      : r.benar_kosong ? `benar kosong: ${r.benar_kosong}` : <span className="text-ink-3">belum ditanyakan</span>}
+                  </td>
+                </tr>
+              </tbody>
+            ))}
+          </table>
+        </div>
+        <p className="mt-3 text-xs leading-5 text-ink-3">
+          {s.sumber} Kolom “vs sekelas” adalah tarif per m² dibagi nilai tengah lahan tersewa berkelas luas sama di kota itu (paling sedikit {s.min_pembanding} pembanding); di atas {kali(s.batas_tarif)} ditandai.
+          Alasan diisi di berkas <code>out/Verifikasi 20 lahan kosong.xlsx</code>, lalu <code>python kajian.py</code> dijalankan ulang.
+        </p>
+      </div>
+
+      <div className="card mt-3 p-4">
+        <h4 className="text-xs font-semibold uppercase tracking-wide text-ink-3">Penanda yang sama pada semua {n(m.penanda.total)} lahan kosong</h4>
+        <table className="mt-2 w-full text-sm">
+          <thead><tr className={kepala}><th className={th}>Penanda</th><th className={`${th} text-right`}>Lahan kosong</th><th className={`${th} text-right`}>Porsi</th><th className={`${th} text-right`}>Pada lahan tersewa</th></tr></thead>
+          <tbody className="tnum">
+            {m.penanda.rows.map((r) => (
+              <tr key={r.label} className="border-b border-grid/60 last:border-0">
+                <td className="py-2 pr-3">{r.label}</td>
+                <td className="py-2 pr-3 text-right">{n(r.value)}</td>
+                <td className="py-2 pr-3 text-right font-medium">{pct(r.pct, 1)}</td>
+                <td className="py-2 pr-3 text-right text-ink-2">{r.tersewa_pct === null ? "–" : pct(r.tersewa_pct, 1)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <p className="mt-2 text-xs leading-5 text-ink-3">{m.penanda.catatan} Kolom terakhir adalah garis dasar: bila porsinya hampir sama pada lahan tersewa, penanda itu tidak membedakan lahan kosong.</p>
+      </div>
+
+      <h3 className="mb-3 mt-6 text-sm font-semibold">4. Apa yang bisa diperbuat aplikasi pencocokan</h3>
+      <div className="card p-4">
+        <table className="w-full text-sm">
+          <thead><tr className={kepala}><th className={th}>Yang ditemukan</th><th className={th}>Yang bisa dikerjakan aplikasi</th></tr></thead>
+          <tbody>
+            {m.aplikasi.bisa.map((x) => (
+              <tr key={x.penyebab} className="border-b border-grid/60 align-top last:border-0">
+                <td className="w-[36%] py-2 pr-3 font-medium">{x.penyebab}</td>
+                <td className="py-2 pr-3 text-xs leading-5 text-ink-2">{x.tindakan}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="mt-3"><ListCard title="Yang tidak bisa diselesaikan aplikasi" items={m.aplikasi.tidak_bisa} tone="var(--status-critical)" /></div>
+
+      <div className="mt-3 rounded-md bg-plane p-3 text-xs leading-5 text-ink-2">
+        <strong>Batas bagian ini.</strong> {m.batas.join(" ")}
       </div>
     </section>
   );

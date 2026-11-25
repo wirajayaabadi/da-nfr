@@ -47,6 +47,31 @@ export type Matching = {
     pergeseran: { aspek: string; dulu: string; nanti: string }[];
   };
 };
+/** Apakah satu dugaan penyebab didukung data. "belum" berarti data tidak bisa menjawabnya. */
+export type Terbukti = "ya" | "sebagian" | "tidak" | "belum";
+export type SampelLahan = {
+  kode: string; spbu_id: string; kota: string; tipe: string; luas: number | null; kelas: string; tarif: number | null; posisi: string;
+  rasio_tarif: number | null; pembanding: number; tingkat_pembanding: string | null; spbu_kosong: number; spbu_lahan: number;
+  master: string | null; penanda: string[];
+  benar_kosong: string | null; sejak: string | null; alasan: string | null; keterangan: string | null; ditanyakan: string | null; cara: string | null;
+};
+/** Kajian A1: mengapa lahan kosong yang dipilih, mengapa lahan itu kosong, dan apa yang bisa diperbuat aplikasi pencocokan. */
+export type Masalah = {
+  pertanyaan: string; inti: string;
+  alasan: { judul: string; angka: string; isi: string }[];
+  banding: { isu: string; angka: string; sifat: string; keputusan: string }[];
+  penyebab: { dugaan: string; bukti: string; terbukti: Terbukti }[];
+  kelas_luas: { label: string; value: number; kosong: number; total: number }[];
+  rata_rata: number;
+  penanda: { total: number; rows: { label: string; value: number; pct: number; tersewa_pct: number | null }[]; catatan: string };
+  sampel: { sumber: string; terverifikasi: number; rows: SampelLahan[]; ringkas: string[]; kode_alasan: Record<string, string>; batas_tarif: number; min_pembanding: number };
+  aplikasi: { bisa: { penyebab: string; tindakan: string }[]; tidak_bisa: string[] };
+  batas: string[];
+};
+export const TERBUKTI_LABEL: Record<Terbukti, string> = { ya: "Ya", sebagian: "Sebagian", tidak: "Tidak", belum: "Belum terbukti" };
+export const TERBUKTI_COLOR: Record<Terbukti, string> = {
+  ya: "var(--status-critical)", sebagian: "var(--status-warning)", tidak: "var(--status-good)", belum: "var(--muted-mark)",
+};
 export const STATUS_DATA_COLOR: Record<StatusData, string> = {
   ada: "var(--status-good)", sebagian: "var(--status-warning)", belum: "var(--status-critical)", rancangan: "var(--series-7)",
 };
@@ -58,6 +83,7 @@ export type KajianAlternatif = {
   risiko: string[]; prasyarat: string[]; pilot: string[]; data_dibutuhkan: string[];
   rencana: Rencana;
   matching?: Matching;
+  masalah?: Masalah;
 };
 export type Kajian = {
   dibuat: string;
